@@ -1,0 +1,625 @@
+2026-01-17 03:19:44,104 - main - INFO - === Logging system initialized ===
+2026-01-17 03:19:44,104 - main - INFO - Log file: logs/app_20260117_031944.log
+2026-01-17 03:19:44,104 - main - INFO - Log level: INFO
+2026-01-17 03:19:44,104 - main - INFO - Timestamp: 20260117_031944
+2026-01-17 03:19:44,151 - main - INFO - Included router: routers.acquisti.router
+2026-01-17 03:19:44,704 - main - INFO - Included router: routers.aihub.router
+2026-01-17 03:19:44,716 - main - INFO - Included router: routers.analytics.router
+2026-01-17 03:19:44,737 - main - INFO - Included router: routers.auth.router
+2026-01-17 03:19:44,744 - main - INFO - Included router: routers.data.router
+2026-01-17 03:19:44,781 - main - INFO - Included router: routers.fornitori.router
+2026-01-17 03:19:44,783 - main - INFO - Included router: routers.health.router
+2026-01-17 03:19:44,885 - main - INFO - Included router: routers.settings.router
+2026-01-17 03:19:44,912 - main - INFO - Included router: routers.storage.router
+2026-01-17 03:19:44,927 - main - INFO - Included router: routers.upload.router
+2026-01-17 03:19:44,943 - main - INFO - Included router: routers.user.router
+2026-01-17 03:19:44,973 - main - INFO - Included router: routers.vendite.router
+2026-01-17 03:19:44,974 - main - INFO - === Application startup initiated ===
+2026-01-17 03:19:44,975 - services.database - DEBUG - [DB_OP] Starting database initialization
+2026-01-17 03:19:44,975 - services.database - INFO - 🔧 Starting database initialization...
+2026-01-17 03:19:44,975 - core.database - INFO - Starting database initialization...
+2026-01-17 03:19:44,975 - core.config - DEBUG - Read dynamic attribute database_url from environment variable DATABASE_URL
+2026-01-17 03:19:44,975 - core.database - INFO - Normalizing database URL for async compatibility...
+2026-01-17 03:19:44,976 - core.database - INFO - Creating async database engine...
+2026-01-17 03:19:44,976 - core.database - INFO - Using QueuePool with connection pooling for non-Lambda environment
+2026-01-17 03:19:45,051 - core.database - INFO - Database engine created successfully
+2026-01-17 03:19:45,051 - core.database - INFO - Creating async session maker...
+2026-01-17 03:19:45,051 - core.database - INFO - Async session maker created successfully
+2026-01-17 03:19:45,051 - core.database - INFO - Database connection initialized successfully
+2026-01-17 03:19:45,051 - services.database - INFO - 🔧 Database connection initialized, now creating tables if tables not exist...
+2026-01-17 03:19:45,052 - core.database - DEBUG - [DB_OP] Starting create_tables
+2026-01-17 03:19:45,052 - core.database - INFO - 🔧 Starting table creation...
+2026-01-17 03:19:46,968 - core.database - INFO - Tables initialized successfully
+2026-01-17 03:19:46,968 - core.database - DEBUG - [DB_OP] Create tables completed in 1.9166s
+2026-01-17 03:19:47,033 - services.database - INFO - 🔧 Table creation completed
+2026-01-17 03:19:47,034 - services.database - INFO - Database initialized successfully
+2026-01-17 03:19:47,034 - services.database - DEBUG - [DB_OP] Database initialization completed in 2.0593s
+2026-01-17 03:19:47,035 - services.mock_data - INFO - Processing mock data file fornitori.json for table fornitori
+2026-01-17 03:19:49,199 - services.mock_data - INFO - Table fornitori already has 5 rows; skipping mock insert
+2026-01-17 03:19:49,263 - services.database - DEBUG - [DB_OP] Starting database initialization
+2026-01-17 03:19:49,264 - services.database - INFO - 🔧 Starting database initialization...
+2026-01-17 03:19:49,264 - core.database - INFO - Starting database initialization...
+2026-01-17 03:19:49,264 - core.database - INFO - Database already initialized
+2026-01-17 03:19:49,264 - services.database - INFO - 🔧 Database connection initialized, now creating tables if tables not exist...
+2026-01-17 03:19:49,264 - core.database - DEBUG - [DB_OP] Starting create_tables
+2026-01-17 03:19:49,264 - core.database - INFO - Tables already initialized
+2026-01-17 03:19:49,264 - services.database - INFO - 🔧 Table creation completed
+2026-01-17 03:19:49,264 - services.database - INFO - Database initialized successfully
+2026-01-17 03:19:49,265 - services.database - DEBUG - [DB_OP] Database initialization completed in 0.0011s
+2026-01-17 03:19:49,265 - core.config - DEBUG - Read dynamic attribute admin_user_id from environment variable ADMIN_USER_ID
+2026-01-17 03:19:49,265 - core.config - DEBUG - Read dynamic attribute admin_user_email from environment variable ADMIN_USER_EMAIL
+2026-01-17 03:19:49,656 - services.auth - DEBUG - Admin user 476166 already exists
+2026-01-17 03:19:49,721 - main - INFO - === Application startup completed successfully ===
+2026-01-17 03:19:53,012 - core.config - DEBUG - Read dynamic attribute jwt_secret_key from environment variable JWT_SECRET_KEY
+2026-01-17 03:19:53,012 - core.config - DEBUG - Read dynamic attribute jwt_algorithm from environment variable JWT_ALGORITHM
+2026-01-17 03:19:53,036 - core.auth - DEBUG - Authentication token validated for user hash: 1fe0bfd6
+2026-01-17 03:19:53,254 - core.auth - DEBUG - Authentication token validated for user hash: 1fe0bfd6
+2026-01-17 03:19:53,255 - core.database - DEBUG - [DB_OP] Starting get_db session creation
+2026-01-17 03:19:53,255 - core.database - DEBUG - [DB_OP] Database session created successfully in 0.0002s
+2026-01-17 03:19:53,255 - routers.analytics - INFO - Analytics request - anno: None, mese: None, categoria: None
+2026-01-17 03:19:53,257 - core.auth - DEBUG - Authentication token validated for user hash: 1fe0bfd6
+2026-01-17 03:19:53,257 - core.database - DEBUG - [DB_OP] Starting get_db session creation
+2026-01-17 03:19:53,257 - core.database - DEBUG - [DB_OP] Database session created successfully in 0.0001s
+2026-01-17 03:19:53,257 - routers.analytics - INFO - Analytics request - anno: None, mese: None, categoria: None
+2026-01-17 03:19:54,040 - routers.analytics - INFO - Acquisti categories: ['Kit', 'Prize']
+2026-01-17 03:19:54,040 - routers.analytics - INFO - Vendite categories: ['Kit', 'Prize', 'Nendo', 'Big', 'Banco', 'Plush']
+2026-01-17 03:19:54,041 - routers.analytics - INFO - Returning 6 categories
+2026-01-17 03:19:54,298 - core.database - DEBUG - [DB_OP] Database session cleanup after 1.0440s
+2026-01-17 03:19:54,546 - routers.analytics - INFO - Acquisti categories: ['Kit', 'Prize']
+2026-01-17 03:19:54,546 - routers.analytics - INFO - Vendite categories: ['Kit', 'Prize', 'Nendo', 'Big', 'Banco', 'Plush']
+2026-01-17 03:19:54,546 - routers.analytics - INFO - Returning 6 categories
+2026-01-17 03:19:54,786 - core.database - DEBUG - [DB_OP] Database session cleanup after 1.5288s
+2026-01-17 03:19:59,668 - core.auth - DEBUG - Authentication token validated for user hash: 1fe0bfd6
+2026-01-17 03:20:00,279 - routers.upload - INFO - Column mapping: {'fornitore': 0, 'data_ordine': 1, 'data_consegna': 2, 'categoria': 3, 'quantita': 4, 'prezzo': 5}
+2026-01-17 03:20:00,447 - routers.upload - INFO - Parsed 73 supplier rows
+2026-01-17 03:20:05,490 - core.auth - DEBUG - Authentication token validated for user hash: 1fe0bfd6
+2026-01-17 03:20:05,491 - core.database - DEBUG - [DB_OP] Starting get_db session creation
+2026-01-17 03:20:05,491 - core.database - DEBUG - [DB_OP] Database session created successfully in 0.0003s
+2026-01-17 03:20:06,526 - services.acquisti - INFO - Created acquisti with id: 147
+2026-01-17 03:20:07,215 - services.acquisti - INFO - Created acquisti with id: 148
+2026-01-17 03:20:07,708 - services.acquisti - INFO - Created acquisti with id: 149
+2026-01-17 03:20:08,212 - services.acquisti - INFO - Created acquisti with id: 150
+2026-01-17 03:20:08,706 - services.acquisti - INFO - Created acquisti with id: 151
+2026-01-17 03:20:09,219 - services.acquisti - INFO - Created acquisti with id: 152
+2026-01-17 03:20:09,711 - services.acquisti - INFO - Created acquisti with id: 153
+2026-01-17 03:20:10,211 - services.acquisti - INFO - Created acquisti with id: 154
+2026-01-17 03:20:10,704 - services.acquisti - INFO - Created acquisti with id: 155
+2026-01-17 03:20:11,205 - services.acquisti - INFO - Created acquisti with id: 156
+2026-01-17 03:20:11,695 - services.acquisti - INFO - Created acquisti with id: 157
+2026-01-17 03:20:12,195 - services.acquisti - INFO - Created acquisti with id: 158
+2026-01-17 03:20:12,688 - services.acquisti - INFO - Created acquisti with id: 159
+2026-01-17 03:20:13,195 - services.acquisti - INFO - Created acquisti with id: 160
+2026-01-17 03:20:13,688 - services.acquisti - INFO - Created acquisti with id: 161
+2026-01-17 03:20:14,190 - services.acquisti - INFO - Created acquisti with id: 162
+2026-01-17 03:20:14,681 - services.acquisti - INFO - Created acquisti with id: 163
+2026-01-17 03:20:15,183 - services.acquisti - INFO - Created acquisti with id: 164
+2026-01-17 03:20:15,675 - services.acquisti - INFO - Created acquisti with id: 165
+2026-01-17 03:20:16,178 - services.acquisti - INFO - Created acquisti with id: 166
+2026-01-17 03:20:16,669 - services.acquisti - INFO - Created acquisti with id: 167
+2026-01-17 03:20:17,172 - services.acquisti - INFO - Created acquisti with id: 168
+2026-01-17 03:20:17,665 - services.acquisti - INFO - Created acquisti with id: 169
+2026-01-17 03:20:18,165 - services.acquisti - INFO - Created acquisti with id: 170
+2026-01-17 03:20:18,661 - services.acquisti - INFO - Created acquisti with id: 171
+2026-01-17 03:20:19,160 - services.acquisti - INFO - Created acquisti with id: 172
+2026-01-17 03:20:19,652 - services.acquisti - INFO - Created acquisti with id: 173
+2026-01-17 03:20:20,151 - services.acquisti - INFO - Created acquisti with id: 174
+2026-01-17 03:20:20,690 - services.acquisti - INFO - Created acquisti with id: 175
+2026-01-17 03:20:21,191 - services.acquisti - INFO - Created acquisti with id: 176
+2026-01-17 03:20:21,684 - services.acquisti - INFO - Created acquisti with id: 177
+2026-01-17 03:20:22,185 - services.acquisti - INFO - Created acquisti with id: 178
+2026-01-17 03:20:22,673 - services.acquisti - INFO - Created acquisti with id: 179
+2026-01-17 03:20:23,175 - services.acquisti - INFO - Created acquisti with id: 180
+2026-01-17 03:20:23,666 - services.acquisti - INFO - Created acquisti with id: 181
+2026-01-17 03:20:24,165 - services.acquisti - INFO - Created acquisti with id: 182
+2026-01-17 03:20:24,655 - services.acquisti - INFO - Created acquisti with id: 183
+2026-01-17 03:20:25,170 - services.acquisti - INFO - Created acquisti with id: 184
+2026-01-17 03:20:25,659 - services.acquisti - INFO - Created acquisti with id: 185
+2026-01-17 03:20:26,160 - services.acquisti - INFO - Created acquisti with id: 186
+2026-01-17 03:20:26,649 - services.acquisti - INFO - Created acquisti with id: 187
+2026-01-17 03:20:27,149 - services.acquisti - INFO - Created acquisti with id: 188
+2026-01-17 03:20:27,638 - services.acquisti - INFO - Created acquisti with id: 189
+2026-01-17 03:20:28,137 - services.acquisti - INFO - Created acquisti with id: 190
+2026-01-17 03:20:28,638 - services.acquisti - INFO - Created acquisti with id: 191
+2026-01-17 03:20:29,141 - services.acquisti - INFO - Created acquisti with id: 192
+2026-01-17 03:20:29,633 - services.acquisti - INFO - Created acquisti with id: 193
+2026-01-17 03:20:30,135 - services.acquisti - INFO - Created acquisti with id: 194
+2026-01-17 03:20:30,628 - services.acquisti - INFO - Created acquisti with id: 195
+2026-01-17 03:20:31,128 - services.acquisti - INFO - Created acquisti with id: 196
+2026-01-17 03:20:31,620 - services.acquisti - INFO - Created acquisti with id: 197
+2026-01-17 03:20:32,122 - services.acquisti - INFO - Created acquisti with id: 198
+2026-01-17 03:20:32,614 - services.acquisti - INFO - Created acquisti with id: 199
+2026-01-17 03:20:33,116 - services.acquisti - INFO - Created acquisti with id: 200
+2026-01-17 03:20:33,606 - services.acquisti - INFO - Created acquisti with id: 201
+2026-01-17 03:20:34,111 - services.acquisti - INFO - Created acquisti with id: 202
+2026-01-17 03:20:34,600 - services.acquisti - INFO - Created acquisti with id: 203
+2026-01-17 03:20:35,099 - services.acquisti - INFO - Created acquisti with id: 204
+2026-01-17 03:20:35,590 - services.acquisti - INFO - Created acquisti with id: 205
+2026-01-17 03:20:36,091 - services.acquisti - INFO - Created acquisti with id: 206
+2026-01-17 03:20:36,602 - services.acquisti - INFO - Created acquisti with id: 207
+2026-01-17 03:20:37,103 - services.acquisti - INFO - Created acquisti with id: 208
+2026-01-17 03:20:37,595 - services.acquisti - INFO - Created acquisti with id: 209
+2026-01-17 03:20:38,098 - services.acquisti - INFO - Created acquisti with id: 210
+2026-01-17 03:20:38,590 - services.acquisti - INFO - Created acquisti with id: 211
+2026-01-17 03:20:39,091 - services.acquisti - INFO - Created acquisti with id: 212
+2026-01-17 03:20:39,585 - services.acquisti - INFO - Created acquisti with id: 213
+2026-01-17 03:20:40,087 - services.acquisti - INFO - Created acquisti with id: 214
+2026-01-17 03:20:40,577 - services.acquisti - INFO - Created acquisti with id: 215
+2026-01-17 03:20:41,079 - services.acquisti - INFO - Created acquisti with id: 216
+2026-01-17 03:20:41,573 - services.acquisti - INFO - Created acquisti with id: 217
+2026-01-17 03:20:42,074 - services.acquisti - INFO - Created acquisti with id: 218
+2026-01-17 03:20:42,565 - services.acquisti - INFO - Created acquisti with id: 219
+2026-01-17 03:20:42,566 - core.database - DEBUG - [DB_OP] Database session cleanup after 37.0749s
+2026-01-17 03:20:51,488 - core.auth - DEBUG - Authentication token validated for user hash: 1fe0bfd6
+2026-01-17 03:20:51,557 - routers.upload - INFO - Processing sheet: Febbraio
+2026-01-17 03:20:51,558 - routers.upload - INFO - Found categories: [(1, 'Prize'), (2, 'Banco'), (3, 'Big'), (4, 'Nendo'), (5, 'Plush'), (6, 'Kit')]
+2026-01-17 03:20:51,559 - routers.upload - INFO - Row 2: Parsed date from column H: 2025-11-12 00:00:00 -> 2025-11-12 00:00:00
+2026-01-17 03:20:51,560 - routers.upload - INFO - Row 3: Parsed date from column H: 2025-11-13 00:00:00 -> 2025-11-13 00:00:00
+2026-01-17 03:20:51,560 - routers.upload - INFO - Row 4: Parsed date from column H: 2025-11-14 00:00:00 -> 2025-11-14 00:00:00
+2026-01-17 03:20:51,560 - routers.upload - INFO - Row 5: Parsed date from column H: 2025-11-15 00:00:00 -> 2025-11-15 00:00:00
+2026-01-17 03:20:51,560 - routers.upload - INFO - Row 6: Parsed date from column H: 2025-11-16 00:00:00 -> 2025-11-16 00:00:00
+2026-01-17 03:20:51,560 - routers.upload - INFO - Row 7: Parsed date from column H: 2025-11-17 00:00:00 -> 2025-11-17 00:00:00
+2026-01-17 03:20:51,560 - routers.upload - INFO - Row 8: Parsed date from column H: 2025-11-18 00:00:00 -> 2025-11-18 00:00:00
+2026-01-17 03:20:51,560 - routers.upload - INFO - Row 9: Parsed date from column H: 2025-11-19 00:00:00 -> 2025-11-19 00:00:00
+2026-01-17 03:20:51,561 - routers.upload - INFO - Row 10: Parsed date from column H: 2025-11-20 00:00:00 -> 2025-11-20 00:00:00
+2026-01-17 03:20:51,561 - routers.upload - INFO - Row 11: Parsed date from column H: 2025-11-21 00:00:00 -> 2025-11-21 00:00:00
+2026-01-17 03:20:51,561 - routers.upload - INFO - Row 12: Parsed date from column H: 2025-11-22 00:00:00 -> 2025-11-22 00:00:00
+2026-01-17 03:20:51,561 - routers.upload - INFO - Row 13: Parsed date from column H: 2025-12-23 00:00:00 -> 2025-12-23 00:00:00
+2026-01-17 03:20:51,562 - routers.upload - INFO - Row 14: Parsed date from column H: 2025-12-24 00:00:00 -> 2025-12-24 00:00:00
+2026-01-17 03:20:51,562 - routers.upload - INFO - Row 15: Parsed date from column H: 2025-12-25 00:00:00 -> 2025-12-25 00:00:00
+2026-01-17 03:20:51,562 - routers.upload - INFO - Row 16: Parsed date from column H: 2025-12-26 00:00:00 -> 2025-12-26 00:00:00
+2026-01-17 03:20:51,562 - routers.upload - INFO - Row 17: Parsed date from column H: 2025-12-27 00:00:00 -> 2025-12-27 00:00:00
+2026-01-17 03:20:51,562 - routers.upload - INFO - Row 18: Parsed date from column H: 2025-12-28 00:00:00 -> 2025-12-28 00:00:00
+2026-01-17 03:20:51,563 - routers.upload - INFO - Row 19: Parsed date from column H: 2025-12-29 00:00:00 -> 2025-12-29 00:00:00
+2026-01-17 03:20:51,563 - routers.upload - INFO - Row 20: Parsed date from column H: 2025-12-30 00:00:00 -> 2025-12-30 00:00:00
+2026-01-17 03:20:51,563 - routers.upload - INFO - Row 21: Parsed date from column H: 2025-12-31 00:00:00 -> 2025-12-31 00:00:00
+2026-01-17 03:20:51,563 - routers.upload - INFO - Row 22: Parsed date from column H: 2026-01-03 00:00:00 -> 2026-01-03 00:00:00
+2026-01-17 03:20:51,564 - routers.upload - INFO - Row 23: Parsed date from column H: 2026-01-05 00:00:00 -> 2026-01-05 00:00:00
+2026-01-17 03:20:51,573 - routers.upload - INFO - Parsed 112 sales records from matrix
+2026-01-17 03:20:51,574 - routers.upload - INFO - Total parsed sales rows: 112
+2026-01-17 03:20:56,618 - core.auth - DEBUG - Authentication token validated for user hash: 1fe0bfd6
+2026-01-17 03:20:56,619 - core.database - DEBUG - [DB_OP] Starting get_db session creation
+2026-01-17 03:20:56,619 - core.database - DEBUG - [DB_OP] Database session created successfully in 0.0002s
+2026-01-17 03:20:57,437 - services.vendite - INFO - Created vendite with id: 459
+2026-01-17 03:20:58,004 - services.vendite - INFO - Created vendite with id: 460
+2026-01-17 03:20:58,429 - services.vendite - INFO - Created vendite with id: 461
+2026-01-17 03:20:58,872 - services.vendite - INFO - Created vendite with id: 462
+2026-01-17 03:20:59,299 - services.vendite - INFO - Created vendite with id: 463
+2026-01-17 03:20:59,743 - services.vendite - INFO - Created vendite with id: 464
+2026-01-17 03:21:00,170 - services.vendite - INFO - Created vendite with id: 465
+2026-01-17 03:21:00,611 - services.vendite - INFO - Created vendite with id: 466
+2026-01-17 03:21:01,040 - services.vendite - INFO - Created vendite with id: 467
+2026-01-17 03:21:01,483 - services.vendite - INFO - Created vendite with id: 468
+2026-01-17 03:21:01,911 - services.vendite - INFO - Created vendite with id: 469
+2026-01-17 03:21:02,353 - services.vendite - INFO - Created vendite with id: 470
+2026-01-17 03:21:02,779 - services.vendite - INFO - Created vendite with id: 471
+2026-01-17 03:21:03,218 - services.vendite - INFO - Created vendite with id: 472
+2026-01-17 03:21:03,649 - services.vendite - INFO - Created vendite with id: 473
+2026-01-17 03:21:04,089 - services.vendite - INFO - Created vendite with id: 474
+2026-01-17 03:21:04,515 - services.vendite - INFO - Created vendite with id: 475
+2026-01-17 03:21:04,956 - services.vendite - INFO - Created vendite with id: 476
+2026-01-17 03:21:05,384 - services.vendite - INFO - Created vendite with id: 477
+2026-01-17 03:21:05,825 - services.vendite - INFO - Created vendite with id: 478
+2026-01-17 03:21:06,253 - services.vendite - INFO - Created vendite with id: 479
+2026-01-17 03:21:06,694 - services.vendite - INFO - Created vendite with id: 480
+2026-01-17 03:21:07,124 - services.vendite - INFO - Created vendite with id: 481
+2026-01-17 03:21:07,566 - services.vendite - INFO - Created vendite with id: 482
+2026-01-17 03:21:07,994 - services.vendite - INFO - Created vendite with id: 483
+2026-01-17 03:21:08,434 - services.vendite - INFO - Created vendite with id: 484
+2026-01-17 03:21:08,862 - services.vendite - INFO - Created vendite with id: 485
+2026-01-17 03:21:09,303 - services.vendite - INFO - Created vendite with id: 486
+2026-01-17 03:21:09,730 - services.vendite - INFO - Created vendite with id: 487
+2026-01-17 03:21:10,170 - services.vendite - INFO - Created vendite with id: 488
+2026-01-17 03:21:10,598 - services.vendite - INFO - Created vendite with id: 489
+2026-01-17 03:21:11,042 - services.vendite - INFO - Created vendite with id: 490
+2026-01-17 03:21:11,469 - services.vendite - INFO - Created vendite with id: 491
+2026-01-17 03:21:11,910 - services.vendite - INFO - Created vendite with id: 492
+2026-01-17 03:21:12,335 - services.vendite - INFO - Created vendite with id: 493
+2026-01-17 03:21:12,775 - services.vendite - INFO - Created vendite with id: 494
+2026-01-17 03:21:13,202 - services.vendite - INFO - Created vendite with id: 495
+2026-01-17 03:21:13,641 - services.vendite - INFO - Created vendite with id: 496
+2026-01-17 03:21:14,067 - services.vendite - INFO - Created vendite with id: 497
+2026-01-17 03:21:14,507 - services.vendite - INFO - Created vendite with id: 498
+2026-01-17 03:21:14,933 - services.vendite - INFO - Created vendite with id: 499
+2026-01-17 03:21:15,373 - services.vendite - INFO - Created vendite with id: 500
+2026-01-17 03:21:15,800 - services.vendite - INFO - Created vendite with id: 501
+2026-01-17 03:21:16,241 - services.vendite - INFO - Created vendite with id: 502
+2026-01-17 03:21:16,667 - services.vendite - INFO - Created vendite with id: 503
+2026-01-17 03:21:17,109 - services.vendite - INFO - Created vendite with id: 504
+2026-01-17 03:21:17,535 - services.vendite - INFO - Created vendite with id: 505
+2026-01-17 03:21:17,975 - services.vendite - INFO - Created vendite with id: 506
+2026-01-17 03:21:18,400 - services.vendite - INFO - Created vendite with id: 507
+2026-01-17 03:21:18,840 - services.vendite - INFO - Created vendite with id: 508
+2026-01-17 03:21:19,266 - services.vendite - INFO - Created vendite with id: 509
+2026-01-17 03:21:19,706 - services.vendite - INFO - Created vendite with id: 510
+2026-01-17 03:21:20,134 - services.vendite - INFO - Created vendite with id: 511
+2026-01-17 03:21:20,574 - services.vendite - INFO - Created vendite with id: 512
+2026-01-17 03:21:21,006 - services.vendite - INFO - Created vendite with id: 513
+2026-01-17 03:21:21,446 - services.vendite - INFO - Created vendite with id: 514
+2026-01-17 03:21:21,871 - services.vendite - INFO - Created vendite with id: 515
+2026-01-17 03:21:22,312 - services.vendite - INFO - Created vendite with id: 516
+2026-01-17 03:21:22,738 - services.vendite - INFO - Created vendite with id: 517
+2026-01-17 03:21:23,177 - services.vendite - INFO - Created vendite with id: 518
+2026-01-17 03:21:23,602 - services.vendite - INFO - Created vendite with id: 519
+2026-01-17 03:21:24,045 - services.vendite - INFO - Created vendite with id: 520
+2026-01-17 03:21:24,472 - services.vendite - INFO - Created vendite with id: 521
+2026-01-17 03:21:24,911 - services.vendite - INFO - Created vendite with id: 522
+2026-01-17 03:21:25,337 - services.vendite - INFO - Created vendite with id: 523
+2026-01-17 03:21:25,777 - services.vendite - INFO - Created vendite with id: 524
+2026-01-17 03:21:26,210 - services.vendite - INFO - Created vendite with id: 525
+2026-01-17 03:21:26,653 - services.vendite - INFO - Created vendite with id: 526
+2026-01-17 03:21:27,080 - services.vendite - INFO - Created vendite with id: 527
+2026-01-17 03:21:27,524 - services.vendite - INFO - Created vendite with id: 528
+2026-01-17 03:21:27,951 - services.vendite - INFO - Created vendite with id: 529
+2026-01-17 03:21:28,393 - services.vendite - INFO - Created vendite with id: 530
+2026-01-17 03:21:28,819 - services.vendite - INFO - Created vendite with id: 531
+2026-01-17 03:21:29,261 - services.vendite - INFO - Created vendite with id: 532
+2026-01-17 03:21:29,688 - services.vendite - INFO - Created vendite with id: 533
+2026-01-17 03:21:30,130 - services.vendite - INFO - Created vendite with id: 534
+2026-01-17 03:21:30,557 - services.vendite - INFO - Created vendite with id: 535
+2026-01-17 03:21:30,997 - services.vendite - INFO - Created vendite with id: 536
+2026-01-17 03:21:31,431 - services.vendite - INFO - Created vendite with id: 537
+2026-01-17 03:21:31,874 - services.vendite - INFO - Created vendite with id: 538
+2026-01-17 03:21:32,299 - services.vendite - INFO - Created vendite with id: 539
+2026-01-17 03:21:32,740 - services.vendite - INFO - Created vendite with id: 540
+2026-01-17 03:21:33,169 - services.vendite - INFO - Created vendite with id: 541
+2026-01-17 03:21:33,611 - services.vendite - INFO - Created vendite with id: 542
+2026-01-17 03:21:34,038 - services.vendite - INFO - Created vendite with id: 543
+2026-01-17 03:21:34,485 - services.vendite - INFO - Created vendite with id: 544
+2026-01-17 03:21:34,910 - services.vendite - INFO - Created vendite with id: 545
+2026-01-17 03:21:35,354 - services.vendite - INFO - Created vendite with id: 546
+2026-01-17 03:21:35,780 - services.vendite - INFO - Created vendite with id: 547
+2026-01-17 03:21:36,221 - services.vendite - INFO - Created vendite with id: 548
+2026-01-17 03:21:36,648 - services.vendite - INFO - Created vendite with id: 549
+2026-01-17 03:21:37,090 - services.vendite - INFO - Created vendite with id: 550
+2026-01-17 03:21:37,519 - services.vendite - INFO - Created vendite with id: 551
+2026-01-17 03:21:37,961 - services.vendite - INFO - Created vendite with id: 552
+2026-01-17 03:21:38,389 - services.vendite - INFO - Created vendite with id: 553
+2026-01-17 03:21:38,832 - services.vendite - INFO - Created vendite with id: 554
+2026-01-17 03:21:39,257 - services.vendite - INFO - Created vendite with id: 555
+2026-01-17 03:21:39,698 - services.vendite - INFO - Created vendite with id: 556
+2026-01-17 03:21:40,128 - services.vendite - INFO - Created vendite with id: 557
+2026-01-17 03:21:40,569 - services.vendite - INFO - Created vendite with id: 558
+2026-01-17 03:21:40,994 - services.vendite - INFO - Created vendite with id: 559
+2026-01-17 03:21:41,433 - services.vendite - INFO - Created vendite with id: 560
+2026-01-17 03:21:41,858 - services.vendite - INFO - Created vendite with id: 561
+2026-01-17 03:21:42,297 - services.vendite - INFO - Created vendite with id: 562
+2026-01-17 03:21:42,726 - services.vendite - INFO - Created vendite with id: 563
+2026-01-17 03:21:43,168 - services.vendite - INFO - Created vendite with id: 564
+2026-01-17 03:21:43,595 - services.vendite - INFO - Created vendite with id: 565
+2026-01-17 03:21:44,036 - services.vendite - INFO - Created vendite with id: 566
+2026-01-17 03:21:44,461 - services.vendite - INFO - Created vendite with id: 567
+2026-01-17 03:21:44,902 - services.vendite - INFO - Created vendite with id: 568
+2026-01-17 03:21:45,329 - services.vendite - INFO - Created vendite with id: 569
+2026-01-17 03:21:45,771 - services.vendite - INFO - Created vendite with id: 570
+2026-01-17 03:21:45,771 - core.database - DEBUG - [DB_OP] Database session cleanup after 49.1525s
+2026-01-17 03:21:52,273 - core.auth - DEBUG - Authentication token validated for user hash: 1fe0bfd6
+2026-01-17 03:21:52,274 - core.database - DEBUG - [DB_OP] Starting get_db session creation
+2026-01-17 03:21:52,274 - core.database - DEBUG - [DB_OP] Database session created successfully in 0.0003s
+2026-01-17 03:21:52,275 - routers.analytics - INFO - Analytics request - anno: None, mese: None, categoria: None
+2026-01-17 03:21:52,291 - core.auth - DEBUG - Authentication token validated for user hash: 1fe0bfd6
+2026-01-17 03:21:52,292 - core.database - DEBUG - [DB_OP] Starting get_db session creation
+2026-01-17 03:21:52,292 - core.database - DEBUG - [DB_OP] Database session created successfully in 0.0004s
+2026-01-17 03:21:52,293 - routers.analytics - INFO - Analytics request - anno: None, mese: None, categoria: None
+2026-01-17 03:21:52,753 - routers.analytics - INFO - Acquisti categories: ['Kit', 'Prize']
+2026-01-17 03:21:52,754 - routers.analytics - INFO - Vendite categories: ['Kit', 'Prize', 'Nendo', 'Big', 'Banco', 'Plush']
+2026-01-17 03:21:52,754 - routers.analytics - INFO - Returning 6 categories
+2026-01-17 03:21:52,809 - routers.analytics - INFO - Acquisti categories: ['Kit', 'Prize']
+2026-01-17 03:21:52,809 - routers.analytics - INFO - Vendite categories: ['Kit', 'Prize', 'Nendo', 'Big', 'Banco', 'Plush']
+2026-01-17 03:21:52,810 - routers.analytics - INFO - Returning 6 categories
+2026-01-17 03:21:52,875 - core.database - DEBUG - [DB_OP] Database session cleanup after 0.6015s
+2026-01-17 03:21:52,942 - core.database - DEBUG - [DB_OP] Database session cleanup after 0.6498s
+2026-01-17 03:22:01,972 - core.auth - DEBUG - Authentication token validated for user hash: 1fe0bfd6
+2026-01-17 03:22:01,973 - core.database - DEBUG - [DB_OP] Starting get_db session creation
+2026-01-17 03:22:01,973 - core.database - DEBUG - [DB_OP] Database session created successfully in 0.0003s
+2026-01-17 03:22:01,973 - routers.analytics - INFO - Analytics request - anno: 2025, mese: None, categoria: None
+2026-01-17 03:22:02,693 - routers.analytics - INFO - Acquisti categories: []
+2026-01-17 03:22:02,694 - routers.analytics - INFO - Vendite categories: ['Banco', 'Big', 'Kit', 'Nendo', 'Plush', 'Prize']
+2026-01-17 03:22:02,694 - routers.analytics - INFO - Returning 6 categories
+2026-01-17 03:22:02,937 - core.database - DEBUG - [DB_OP] Database session cleanup after 0.9641s
+2026-01-17 03:22:05,315 - core.auth - DEBUG - Authentication token validated for user hash: 1fe0bfd6
+2026-01-17 03:22:05,315 - core.database - DEBUG - [DB_OP] Starting get_db session creation
+2026-01-17 03:22:05,315 - core.database - DEBUG - [DB_OP] Database session created successfully in 0.0002s
+2026-01-17 03:22:05,316 - routers.analytics - INFO - Analytics request - anno: 2025, mese: 1, categoria: None
+2026-01-17 03:22:06,093 - routers.analytics - INFO - Acquisti categories: []
+2026-01-17 03:22:06,093 - routers.analytics - INFO - Vendite categories: []
+2026-01-17 03:22:06,093 - routers.analytics - INFO - Returning 0 categories
+2026-01-17 03:22:06,094 - core.database - DEBUG - [DB_OP] Database session cleanup after 0.7785s
+2026-01-17 03:22:08,910 - core.auth - DEBUG - Authentication token validated for user hash: 1fe0bfd6
+2026-01-17 03:22:08,910 - core.database - DEBUG - [DB_OP] Starting get_db session creation
+2026-01-17 03:22:08,910 - core.database - DEBUG - [DB_OP] Database session created successfully in 0.0002s
+2026-01-17 03:22:08,911 - routers.analytics - INFO - Analytics request - anno: 2025, mese: 12, categoria: None
+2026-01-17 03:22:09,628 - routers.analytics - INFO - Acquisti categories: []
+2026-01-17 03:22:09,628 - routers.analytics - INFO - Vendite categories: ['Banco', 'Big', 'Kit', 'Nendo', 'Plush', 'Prize']
+2026-01-17 03:22:09,628 - routers.analytics - INFO - Returning 6 categories
+2026-01-17 03:22:09,628 - core.database - DEBUG - [DB_OP] Database session cleanup after 0.7182s
+2026-01-17 03:22:24,551 - core.auth - DEBUG - Authentication token validated for user hash: 1fe0bfd6
+2026-01-17 03:22:24,551 - core.database - DEBUG - [DB_OP] Starting get_db session creation
+2026-01-17 03:22:24,552 - core.database - DEBUG - [DB_OP] Database session created successfully in 0.0004s
+2026-01-17 03:22:24,552 - routers.analytics - INFO - Analytics request - anno: 2025, mese: 11, categoria: None
+2026-01-17 03:22:25,068 - routers.analytics - INFO - Acquisti categories: []
+2026-01-17 03:22:25,068 - routers.analytics - INFO - Vendite categories: ['Banco', 'Big', 'Kit', 'Nendo', 'Plush', 'Prize']
+2026-01-17 03:22:25,068 - routers.analytics - INFO - Returning 6 categories
+2026-01-17 03:22:25,069 - core.database - DEBUG - [DB_OP] Database session cleanup after 0.5172s
+2026-01-17 03:22:29,734 - core.auth - DEBUG - Authentication token validated for user hash: 1fe0bfd6
+2026-01-17 03:22:29,735 - core.database - DEBUG - [DB_OP] Starting get_db session creation
+2026-01-17 03:22:29,735 - core.database - DEBUG - [DB_OP] Database session created successfully in 0.0003s
+2026-01-17 03:22:29,735 - routers.analytics - INFO - Analytics request - anno: 2025, mese: 11, categoria: Prize
+2026-01-17 03:22:30,458 - routers.analytics - INFO - Acquisti categories: []
+2026-01-17 03:22:30,458 - routers.analytics - INFO - Vendite categories: ['Prize']
+2026-01-17 03:22:30,458 - routers.analytics - INFO - Returning 1 categories
+2026-01-17 03:22:30,459 - core.database - DEBUG - [DB_OP] Database session cleanup after 0.7242s
+2026-01-17 03:22:45,795 - core.auth - DEBUG - Authentication token validated for user hash: 1fe0bfd6
+2026-01-17 03:22:45,796 - core.database - DEBUG - [DB_OP] Starting get_db session creation
+2026-01-17 03:22:45,796 - core.database - DEBUG - [DB_OP] Database session created successfully in 0.0003s
+2026-01-17 03:22:45,796 - routers.analytics - INFO - Analytics request - anno: 2026, mese: 11, categoria: Prize
+2026-01-17 03:22:46,577 - routers.analytics - INFO - Acquisti categories: []
+2026-01-17 03:22:46,577 - routers.analytics - INFO - Vendite categories: []
+2026-01-17 03:22:46,578 - routers.analytics - INFO - Returning 0 categories
+2026-01-17 03:22:46,578 - core.database - DEBUG - [DB_OP] Database session cleanup after 0.7823s
+2026-01-17 03:22:49,981 - core.auth - DEBUG - Authentication token validated for user hash: 1fe0bfd6
+2026-01-17 03:22:49,981 - core.database - DEBUG - [DB_OP] Starting get_db session creation
+2026-01-17 03:22:49,982 - core.database - DEBUG - [DB_OP] Database session created successfully in 0.0003s
+2026-01-17 03:22:49,982 - routers.analytics - INFO - Analytics request - anno: 2026, mese: 1, categoria: Prize
+2026-01-17 03:22:50,459 - routers.analytics - INFO - Acquisti categories: ['Prize']
+2026-01-17 03:22:50,460 - routers.analytics - INFO - Vendite categories: ['Prize']
+2026-01-17 03:22:50,460 - routers.analytics - INFO - Returning 1 categories
+2026-01-17 03:22:50,460 - core.database - DEBUG - [DB_OP] Database session cleanup after 0.4789s
+2026-01-17 03:22:59,339 - core.auth - DEBUG - Authentication token validated for user hash: 1fe0bfd6
+2026-01-17 03:22:59,339 - core.database - DEBUG - [DB_OP] Starting get_db session creation
+2026-01-17 03:22:59,340 - core.database - DEBUG - [DB_OP] Database session created successfully in 0.0002s
+2026-01-17 03:22:59,860 - routers.data - ERROR - Error getting vendite: 'Vendite' object has no attribute 'prezzo_unitario'
+Traceback (most recent call last):
+  File "/workspace/app/backend/routers/data.py", line 98, in get_all_vendite
+    items = [
+  File "/workspace/app/backend/routers/data.py", line 104, in <listcomp>
+    prezzo_unitario=v.prezzo_unitario or 0.0,
+AttributeError: 'Vendite' object has no attribute 'prezzo_unitario'
+2026-01-17 03:22:59,863 - core.database - ERROR - Database session error: 500: Errore nel recupero delle vendite: 'Vendite' object has no attribute 'prezzo_unitario'
+Traceback (most recent call last):
+  File "/workspace/app/backend/routers/data.py", line 98, in get_all_vendite
+    items = [
+  File "/workspace/app/backend/routers/data.py", line 104, in <listcomp>
+    prezzo_unitario=v.prezzo_unitario or 0.0,
+AttributeError: 'Vendite' object has no attribute 'prezzo_unitario'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/workspace/app/backend/core/database.py", line 534, in get_db
+    yield session
+  File "/data/.cache/python/lib/python3.10/site-packages/fastapi/routing.py", line 301, in app
+    raw_response = await run_endpoint_function(
+  File "/data/.cache/python/lib/python3.10/site-packages/fastapi/routing.py", line 212, in run_endpoint_function
+    return await dependant.call(**values)
+  File "/workspace/app/backend/routers/data.py", line 115, in get_all_vendite
+    raise HTTPException(status_code=500, detail=f"Errore nel recupero delle vendite: {str(e)}")
+fastapi.exceptions.HTTPException: 500: Errore nel recupero delle vendite: 'Vendite' object has no attribute 'prezzo_unitario'
+2026-01-17 03:22:59,884 - core.database - DEBUG - [DB_OP] Database session cleanup after 0.5451s
+2026-01-17 03:22:59,949 - core.database - ERROR - Failed to create database session: 500: Errore nel recupero delle vendite: 'Vendite' object has no attribute 'prezzo_unitario'
+Traceback (most recent call last):
+  File "/workspace/app/backend/routers/data.py", line 98, in get_all_vendite
+    items = [
+  File "/workspace/app/backend/routers/data.py", line 104, in <listcomp>
+    prezzo_unitario=v.prezzo_unitario or 0.0,
+AttributeError: 'Vendite' object has no attribute 'prezzo_unitario'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/workspace/app/backend/core/database.py", line 534, in get_db
+    yield session
+  File "/data/.cache/python/lib/python3.10/site-packages/fastapi/routing.py", line 301, in app
+    raw_response = await run_endpoint_function(
+  File "/data/.cache/python/lib/python3.10/site-packages/fastapi/routing.py", line 212, in run_endpoint_function
+    return await dependant.call(**values)
+  File "/workspace/app/backend/routers/data.py", line 115, in get_all_vendite
+    raise HTTPException(status_code=500, detail=f"Errore nel recupero delle vendite: {str(e)}")
+fastapi.exceptions.HTTPException: 500: Errore nel recupero delle vendite: 'Vendite' object has no attribute 'prezzo_unitario'
+2026-01-17 03:23:06,484 - core.auth - DEBUG - Authentication token validated for user hash: 1fe0bfd6
+2026-01-17 03:23:06,485 - core.database - DEBUG - [DB_OP] Starting get_db session creation
+2026-01-17 03:23:06,485 - core.database - DEBUG - [DB_OP] Database session created successfully in 0.0002s
+2026-01-17 03:23:06,908 - routers.data - ERROR - Error getting acquisti: 'Acquisti' object has no attribute 'fornitore'
+Traceback (most recent call last):
+  File "/workspace/app/backend/routers/data.py", line 66, in get_all_acquisti
+    items = [
+  File "/workspace/app/backend/routers/data.py", line 69, in <listcomp>
+    fornitore=a.fornitore,
+AttributeError: 'Acquisti' object has no attribute 'fornitore'. Did you mean: 'fornitore_id'?
+2026-01-17 03:23:06,910 - core.database - ERROR - Database session error: 500: Errore nel recupero degli ordini: 'Acquisti' object has no attribute 'fornitore'
+Traceback (most recent call last):
+  File "/workspace/app/backend/routers/data.py", line 66, in get_all_acquisti
+    items = [
+  File "/workspace/app/backend/routers/data.py", line 69, in <listcomp>
+    fornitore=a.fornitore,
+AttributeError: 'Acquisti' object has no attribute 'fornitore'. Did you mean: 'fornitore_id'?
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/workspace/app/backend/core/database.py", line 534, in get_db
+    yield session
+  File "/data/.cache/python/lib/python3.10/site-packages/fastapi/routing.py", line 301, in app
+    raw_response = await run_endpoint_function(
+  File "/data/.cache/python/lib/python3.10/site-packages/fastapi/routing.py", line 212, in run_endpoint_function
+    return await dependant.call(**values)
+  File "/workspace/app/backend/routers/data.py", line 84, in get_all_acquisti
+    raise HTTPException(status_code=500, detail=f"Errore nel recupero degli ordini: {str(e)}")
+fastapi.exceptions.HTTPException: 500: Errore nel recupero degli ordini: 'Acquisti' object has no attribute 'fornitore'
+2026-01-17 03:23:06,930 - core.database - DEBUG - [DB_OP] Database session cleanup after 0.4452s
+2026-01-17 03:23:06,990 - core.database - ERROR - Failed to create database session: 500: Errore nel recupero degli ordini: 'Acquisti' object has no attribute 'fornitore'
+Traceback (most recent call last):
+  File "/workspace/app/backend/routers/data.py", line 66, in get_all_acquisti
+    items = [
+  File "/workspace/app/backend/routers/data.py", line 69, in <listcomp>
+    fornitore=a.fornitore,
+AttributeError: 'Acquisti' object has no attribute 'fornitore'. Did you mean: 'fornitore_id'?
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/workspace/app/backend/core/database.py", line 534, in get_db
+    yield session
+  File "/data/.cache/python/lib/python3.10/site-packages/fastapi/routing.py", line 301, in app
+    raw_response = await run_endpoint_function(
+  File "/data/.cache/python/lib/python3.10/site-packages/fastapi/routing.py", line 212, in run_endpoint_function
+    return await dependant.call(**values)
+  File "/workspace/app/backend/routers/data.py", line 84, in get_all_acquisti
+    raise HTTPException(status_code=500, detail=f"Errore nel recupero degli ordini: {str(e)}")
+fastapi.exceptions.HTTPException: 500: Errore nel recupero degli ordini: 'Acquisti' object has no attribute 'fornitore'
+2026-01-17 03:23:12,449 - core.auth - DEBUG - Authentication token validated for user hash: 1fe0bfd6
+2026-01-17 03:23:12,449 - core.database - DEBUG - [DB_OP] Starting get_db session creation
+2026-01-17 03:23:12,449 - core.database - DEBUG - [DB_OP] Database session created successfully in 0.0003s
+2026-01-17 03:23:13,070 - routers.data - ERROR - Error getting vendite: 'Vendite' object has no attribute 'prezzo_unitario'
+Traceback (most recent call last):
+  File "/workspace/app/backend/routers/data.py", line 98, in get_all_vendite
+    items = [
+  File "/workspace/app/backend/routers/data.py", line 104, in <listcomp>
+    prezzo_unitario=v.prezzo_unitario or 0.0,
+AttributeError: 'Vendite' object has no attribute 'prezzo_unitario'
+2026-01-17 03:23:13,072 - core.database - ERROR - Database session error: 500: Errore nel recupero delle vendite: 'Vendite' object has no attribute 'prezzo_unitario'
+Traceback (most recent call last):
+  File "/workspace/app/backend/routers/data.py", line 98, in get_all_vendite
+    items = [
+  File "/workspace/app/backend/routers/data.py", line 104, in <listcomp>
+    prezzo_unitario=v.prezzo_unitario or 0.0,
+AttributeError: 'Vendite' object has no attribute 'prezzo_unitario'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/workspace/app/backend/core/database.py", line 534, in get_db
+    yield session
+  File "/data/.cache/python/lib/python3.10/site-packages/fastapi/routing.py", line 301, in app
+    raw_response = await run_endpoint_function(
+  File "/data/.cache/python/lib/python3.10/site-packages/fastapi/routing.py", line 212, in run_endpoint_function
+    return await dependant.call(**values)
+  File "/workspace/app/backend/routers/data.py", line 115, in get_all_vendite
+    raise HTTPException(status_code=500, detail=f"Errore nel recupero delle vendite: {str(e)}")
+fastapi.exceptions.HTTPException: 500: Errore nel recupero delle vendite: 'Vendite' object has no attribute 'prezzo_unitario'
+2026-01-17 03:23:13,084 - core.database - DEBUG - [DB_OP] Database session cleanup after 0.6348s
+2026-01-17 03:23:13,148 - core.database - ERROR - Failed to create database session: 500: Errore nel recupero delle vendite: 'Vendite' object has no attribute 'prezzo_unitario'
+Traceback (most recent call last):
+  File "/workspace/app/backend/routers/data.py", line 98, in get_all_vendite
+    items = [
+  File "/workspace/app/backend/routers/data.py", line 104, in <listcomp>
+    prezzo_unitario=v.prezzo_unitario or 0.0,
+AttributeError: 'Vendite' object has no attribute 'prezzo_unitario'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/workspace/app/backend/core/database.py", line 534, in get_db
+    yield session
+  File "/data/.cache/python/lib/python3.10/site-packages/fastapi/routing.py", line 301, in app
+    raw_response = await run_endpoint_function(
+  File "/data/.cache/python/lib/python3.10/site-packages/fastapi/routing.py", line 212, in run_endpoint_function
+    return await dependant.call(**values)
+  File "/workspace/app/backend/routers/data.py", line 115, in get_all_vendite
+    raise HTTPException(status_code=500, detail=f"Errore nel recupero delle vendite: {str(e)}")
+fastapi.exceptions.HTTPException: 500: Errore nel recupero delle vendite: 'Vendite' object has no attribute 'prezzo_unitario'
+2026-01-17 03:23:27,179 - core.auth - DEBUG - Authentication token validated for user hash: 1fe0bfd6
+2026-01-17 03:23:27,180 - core.database - DEBUG - [DB_OP] Starting get_db session creation
+2026-01-17 03:23:27,180 - core.database - DEBUG - [DB_OP] Database session created successfully in 0.0004s
+2026-01-17 03:23:27,542 - routers.data - ERROR - Error getting acquisti: 'Acquisti' object has no attribute 'fornitore'
+Traceback (most recent call last):
+  File "/workspace/app/backend/routers/data.py", line 66, in get_all_acquisti
+    items = [
+  File "/workspace/app/backend/routers/data.py", line 69, in <listcomp>
+    fornitore=a.fornitore,
+AttributeError: 'Acquisti' object has no attribute 'fornitore'. Did you mean: 'fornitore_id'?
+2026-01-17 03:23:27,544 - core.database - ERROR - Database session error: 500: Errore nel recupero degli ordini: 'Acquisti' object has no attribute 'fornitore'
+Traceback (most recent call last):
+  File "/workspace/app/backend/routers/data.py", line 66, in get_all_acquisti
+    items = [
+  File "/workspace/app/backend/routers/data.py", line 69, in <listcomp>
+    fornitore=a.fornitore,
+AttributeError: 'Acquisti' object has no attribute 'fornitore'. Did you mean: 'fornitore_id'?
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/workspace/app/backend/core/database.py", line 534, in get_db
+    yield session
+  File "/data/.cache/python/lib/python3.10/site-packages/fastapi/routing.py", line 301, in app
+    raw_response = await run_endpoint_function(
+  File "/data/.cache/python/lib/python3.10/site-packages/fastapi/routing.py", line 212, in run_endpoint_function
+    return await dependant.call(**values)
+  File "/workspace/app/backend/routers/data.py", line 84, in get_all_acquisti
+    raise HTTPException(status_code=500, detail=f"Errore nel recupero degli ordini: {str(e)}")
+fastapi.exceptions.HTTPException: 500: Errore nel recupero degli ordini: 'Acquisti' object has no attribute 'fornitore'
+2026-01-17 03:23:27,555 - core.database - DEBUG - [DB_OP] Database session cleanup after 0.3753s
+2026-01-17 03:23:27,616 - core.database - ERROR - Failed to create database session: 500: Errore nel recupero degli ordini: 'Acquisti' object has no attribute 'fornitore'
+Traceback (most recent call last):
+  File "/workspace/app/backend/routers/data.py", line 66, in get_all_acquisti
+    items = [
+  File "/workspace/app/backend/routers/data.py", line 69, in <listcomp>
+    fornitore=a.fornitore,
+AttributeError: 'Acquisti' object has no attribute 'fornitore'. Did you mean: 'fornitore_id'?
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/workspace/app/backend/core/database.py", line 534, in get_db
+    yield session
+  File "/data/.cache/python/lib/python3.10/site-packages/fastapi/routing.py", line 301, in app
+    raw_response = await run_endpoint_function(
+  File "/data/.cache/python/lib/python3.10/site-packages/fastapi/routing.py", line 212, in run_endpoint_function
+    return await dependant.call(**values)
+  File "/workspace/app/backend/routers/data.py", line 84, in get_all_acquisti
+    raise HTTPException(status_code=500, detail=f"Errore nel recupero degli ordini: {str(e)}")
+fastapi.exceptions.HTTPException: 500: Errore nel recupero degli ordini: 'Acquisti' object has no attribute 'fornitore'
+2026-01-17 03:23:27,620 - core.auth - DEBUG - Authentication token validated for user hash: 1fe0bfd6
+2026-01-17 03:23:27,620 - core.database - DEBUG - [DB_OP] Starting get_db session creation
+2026-01-17 03:23:27,620 - core.database - DEBUG - [DB_OP] Database session created successfully in 0.0002s
+2026-01-17 03:23:28,070 - routers.data - ERROR - Error getting vendite: 'Vendite' object has no attribute 'prezzo_unitario'
+Traceback (most recent call last):
+  File "/workspace/app/backend/routers/data.py", line 98, in get_all_vendite
+    items = [
+  File "/workspace/app/backend/routers/data.py", line 104, in <listcomp>
+    prezzo_unitario=v.prezzo_unitario or 0.0,
+AttributeError: 'Vendite' object has no attribute 'prezzo_unitario'
+2026-01-17 03:23:28,072 - core.database - ERROR - Database session error: 500: Errore nel recupero delle vendite: 'Vendite' object has no attribute 'prezzo_unitario'
+Traceback (most recent call last):
+  File "/workspace/app/backend/routers/data.py", line 98, in get_all_vendite
+    items = [
+  File "/workspace/app/backend/routers/data.py", line 104, in <listcomp>
+    prezzo_unitario=v.prezzo_unitario or 0.0,
+AttributeError: 'Vendite' object has no attribute 'prezzo_unitario'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/workspace/app/backend/core/database.py", line 534, in get_db
+    yield session
+  File "/data/.cache/python/lib/python3.10/site-packages/fastapi/routing.py", line 301, in app
+    raw_response = await run_endpoint_function(
+  File "/data/.cache/python/lib/python3.10/site-packages/fastapi/routing.py", line 212, in run_endpoint_function
+    return await dependant.call(**values)
+  File "/workspace/app/backend/routers/data.py", line 115, in get_all_vendite
+    raise HTTPException(status_code=500, detail=f"Errore nel recupero delle vendite: {str(e)}")
+fastapi.exceptions.HTTPException: 500: Errore nel recupero delle vendite: 'Vendite' object has no attribute 'prezzo_unitario'
+2026-01-17 03:23:28,073 - core.database - DEBUG - [DB_OP] Database session cleanup after 0.4533s
+2026-01-17 03:23:28,138 - core.database - ERROR - Failed to create database session: 500: Errore nel recupero delle vendite: 'Vendite' object has no attribute 'prezzo_unitario'
+Traceback (most recent call last):
+  File "/workspace/app/backend/routers/data.py", line 98, in get_all_vendite
+    items = [
+  File "/workspace/app/backend/routers/data.py", line 104, in <listcomp>
+    prezzo_unitario=v.prezzo_unitario or 0.0,
+AttributeError: 'Vendite' object has no attribute 'prezzo_unitario'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/workspace/app/backend/core/database.py", line 534, in get_db
+    yield session
+  File "/data/.cache/python/lib/python3.10/site-packages/fastapi/routing.py", line 301, in app
+    raw_response = await run_endpoint_function(
+  File "/data/.cache/python/lib/python3.10/site-packages/fastapi/routing.py", line 212, in run_endpoint_function
+    return await dependant.call(**values)
+  File "/workspace/app/backend/routers/data.py", line 115, in get_all_vendite
+    raise HTTPException(status_code=500, detail=f"Errore nel recupero delle vendite: {str(e)}")
+fastapi.exceptions.HTTPException: 500: Errore nel recupero delle vendite: 'Vendite' object has no attribute 'prezzo_unitario'
+2026-01-17 03:25:02,481 - services.database - DEBUG - [DB_OP] Starting database close
+2026-01-17 03:25:02,612 - core.database - INFO - Database connection closed and engine disposed
+2026-01-17 03:25:02,612 - services.database - INFO - Database connections closed
+2026-01-17 03:25:02,612 - services.database - DEBUG - [DB_OP] Database close completed in 0.1312s

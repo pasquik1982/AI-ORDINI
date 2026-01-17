@@ -1,0 +1,23 @@
+{
+    "title": "fornitori",
+    "type": "object",
+    "properties": {
+        "id": {
+            "type": "integer",
+            "description": "Primary key, auto-increment"
+        },
+        "nome": {
+            "type": "string",
+            "description": "Nome del fornitore"
+        },
+        "created_at": {
+            "type": "string",
+            "format": "date-time",
+            "description": "Data di creazione"
+        }
+    },
+    "required": [
+        "id",
+        "nome"
+    ]
+}

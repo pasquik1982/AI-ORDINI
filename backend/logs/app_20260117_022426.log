@@ -1,0 +1,1064 @@
+2026-01-17 02:24:26,536 - main - INFO - === Logging system initialized ===
+2026-01-17 02:24:26,536 - main - INFO - Log file: logs/app_20260117_022426.log
+2026-01-17 02:24:26,536 - main - INFO - Log level: INFO
+2026-01-17 02:24:26,536 - main - INFO - Timestamp: 20260117_022426
+2026-01-17 02:24:26,589 - main - INFO - Included router: routers.acquisti.router
+2026-01-17 02:24:27,293 - main - INFO - Included router: routers.aihub.router
+2026-01-17 02:24:27,309 - main - INFO - Included router: routers.analytics.router
+2026-01-17 02:24:27,319 - main - INFO - Included router: routers.auth.router
+2026-01-17 02:24:27,349 - main - INFO - Included router: routers.fornitori.router
+2026-01-17 02:24:27,350 - main - INFO - Included router: routers.health.router
+2026-01-17 02:24:27,364 - main - INFO - Included router: routers.settings.router
+2026-01-17 02:24:27,390 - main - INFO - Included router: routers.storage.router
+2026-01-17 02:24:27,404 - main - INFO - Included router: routers.upload.router
+2026-01-17 02:24:27,409 - main - INFO - Included router: routers.user.router
+2026-01-17 02:24:27,439 - main - INFO - Included router: routers.vendite.router
+2026-01-17 02:24:27,439 - main - INFO - === Application startup initiated ===
+2026-01-17 02:24:27,440 - services.database - DEBUG - [DB_OP] Starting database initialization
+2026-01-17 02:24:27,440 - services.database - INFO - 🔧 Starting database initialization...
+2026-01-17 02:24:27,440 - core.database - INFO - Starting database initialization...
+2026-01-17 02:24:27,440 - core.config - DEBUG - Read dynamic attribute database_url from environment variable DATABASE_URL
+2026-01-17 02:24:27,440 - core.database - INFO - Normalizing database URL for async compatibility...
+2026-01-17 02:24:27,441 - core.database - INFO - Creating async database engine...
+2026-01-17 02:24:27,441 - core.database - INFO - Using QueuePool with connection pooling for non-Lambda environment
+2026-01-17 02:24:28,576 - core.database - INFO - Database engine created successfully
+2026-01-17 02:24:28,577 - core.database - INFO - Creating async session maker...
+2026-01-17 02:24:28,577 - core.database - INFO - Async session maker created successfully
+2026-01-17 02:24:28,577 - core.database - INFO - Database connection initialized successfully
+2026-01-17 02:24:28,577 - services.database - INFO - 🔧 Database connection initialized, now creating tables if tables not exist...
+2026-01-17 02:24:28,577 - core.database - DEBUG - [DB_OP] Starting create_tables
+2026-01-17 02:24:28,577 - core.database - INFO - 🔧 Starting table creation...
+2026-01-17 02:24:30,363 - core.database - INFO - Tables initialized successfully
+2026-01-17 02:24:30,364 - core.database - DEBUG - [DB_OP] Create tables completed in 1.7867s
+2026-01-17 02:24:30,423 - services.database - INFO - 🔧 Table creation completed
+2026-01-17 02:24:30,424 - services.database - INFO - Database initialized successfully
+2026-01-17 02:24:30,424 - services.database - DEBUG - [DB_OP] Database initialization completed in 2.9841s
+2026-01-17 02:24:30,425 - services.mock_data - INFO - Processing mock data file fornitori.json for table fornitori
+2026-01-17 02:24:32,443 - services.mock_data - INFO - Table fornitori already has 3 rows; skipping mock insert
+2026-01-17 02:24:32,504 - services.database - DEBUG - [DB_OP] Starting database initialization
+2026-01-17 02:24:32,504 - services.database - INFO - 🔧 Starting database initialization...
+2026-01-17 02:24:32,504 - core.database - INFO - Starting database initialization...
+2026-01-17 02:24:32,504 - core.database - INFO - Database already initialized
+2026-01-17 02:24:32,504 - services.database - INFO - 🔧 Database connection initialized, now creating tables if tables not exist...
+2026-01-17 02:24:32,504 - core.database - DEBUG - [DB_OP] Starting create_tables
+2026-01-17 02:24:32,505 - core.database - INFO - Tables already initialized
+2026-01-17 02:24:32,505 - services.database - INFO - 🔧 Table creation completed
+2026-01-17 02:24:32,505 - services.database - INFO - Database initialized successfully
+2026-01-17 02:24:32,505 - services.database - DEBUG - [DB_OP] Database initialization completed in 0.0012s
+2026-01-17 02:24:32,505 - core.config - DEBUG - Read dynamic attribute admin_user_id from environment variable ADMIN_USER_ID
+2026-01-17 02:24:32,505 - core.config - DEBUG - Read dynamic attribute admin_user_email from environment variable ADMIN_USER_EMAIL
+2026-01-17 02:24:32,870 - services.auth - DEBUG - Admin user 476166 already exists
+2026-01-17 02:24:32,930 - main - INFO - === Application startup completed successfully ===
+2026-01-17 02:25:35,075 - core.config - DEBUG - Read dynamic attribute jwt_secret_key from environment variable JWT_SECRET_KEY
+2026-01-17 02:25:35,076 - core.config - DEBUG - Read dynamic attribute jwt_algorithm from environment variable JWT_ALGORITHM
+2026-01-17 02:25:35,097 - core.auth - DEBUG - Authentication token validated for user hash: 1fe0bfd6
+2026-01-17 02:25:35,325 - core.auth - DEBUG - Authentication token validated for user hash: 1fe0bfd6
+2026-01-17 02:25:35,325 - core.database - DEBUG - [DB_OP] Starting get_db session creation
+2026-01-17 02:25:35,326 - core.database - DEBUG - [DB_OP] Database session created successfully in 0.0003s
+2026-01-17 02:25:36,313 - core.database - DEBUG - [DB_OP] Database session cleanup after 0.9878s
+2026-01-17 02:25:49,783 - core.auth - DEBUG - Authentication token validated for user hash: 1fe0bfd6
+2026-01-17 02:26:01,952 - routers.upload - WARNING - Could not parse date: 2025-06-11 00:00:00, using current date
+2026-01-17 02:26:01,953 - routers.upload - WARNING - Could not parse date: 2026-01-15 00:00:00, using current date
+2026-01-17 02:26:01,953 - routers.upload - WARNING - Could not parse date: 2025-06-11 00:00:00, using current date
+2026-01-17 02:26:01,953 - routers.upload - WARNING - Could not parse date: 2026-01-15 00:00:00, using current date
+2026-01-17 02:26:01,954 - routers.upload - WARNING - Could not parse date: 2025-06-11 00:00:00, using current date
+2026-01-17 02:26:01,954 - routers.upload - WARNING - Could not parse date: 2026-01-15 00:00:00, using current date
+2026-01-17 02:26:01,954 - routers.upload - WARNING - Could not parse date: 2025-06-11 00:00:00, using current date
+2026-01-17 02:26:01,954 - routers.upload - WARNING - Could not parse date: 2026-01-15 00:00:00, using current date
+2026-01-17 02:26:01,954 - routers.upload - WARNING - Could not parse date: 2025-06-11 00:00:00, using current date
+2026-01-17 02:26:01,955 - routers.upload - WARNING - Could not parse date: 2026-01-15 00:00:00, using current date
+2026-01-17 02:26:01,955 - routers.upload - WARNING - Could not parse date: 2025-06-11 00:00:00, using current date
+2026-01-17 02:26:01,955 - routers.upload - WARNING - Could not parse date: 2026-01-15 00:00:00, using current date
+2026-01-17 02:26:01,955 - routers.upload - WARNING - Could not parse date: 2025-06-11 00:00:00, using current date
+2026-01-17 02:26:01,956 - routers.upload - WARNING - Could not parse date: 2026-01-15 00:00:00, using current date
+2026-01-17 02:26:01,956 - routers.upload - WARNING - Could not parse date: 2025-06-11 00:00:00, using current date
+2026-01-17 02:26:01,956 - routers.upload - WARNING - Could not parse date: 2026-01-15 00:00:00, using current date
+2026-01-17 02:26:01,956 - routers.upload - WARNING - Could not parse date: 2025-06-11 00:00:00, using current date
+2026-01-17 02:26:01,957 - routers.upload - WARNING - Could not parse date: 2026-01-15 00:00:00, using current date
+2026-01-17 02:26:01,957 - routers.upload - WARNING - Could not parse date: 2025-06-11 00:00:00, using current date
+2026-01-17 02:26:01,957 - routers.upload - WARNING - Could not parse date: 2026-01-15 00:00:00, using current date
+2026-01-17 02:26:01,957 - routers.upload - WARNING - Could not parse date: 2025-06-11 00:00:00, using current date
+2026-01-17 02:26:01,957 - routers.upload - WARNING - Could not parse date: 2026-01-15 00:00:00, using current date
+2026-01-17 02:26:01,958 - routers.upload - WARNING - Could not parse date: 2025-06-11 00:00:00, using current date
+2026-01-17 02:26:01,958 - routers.upload - WARNING - Could not parse date: 2026-01-15 00:00:00, using current date
+2026-01-17 02:26:01,958 - routers.upload - WARNING - Could not parse date: 2025-06-11 00:00:00, using current date
+2026-01-17 02:26:01,958 - routers.upload - WARNING - Could not parse date: 2026-01-15 00:00:00, using current date
+2026-01-17 02:26:01,959 - routers.upload - WARNING - Could not parse date: 2025-06-11 00:00:00, using current date
+2026-01-17 02:26:01,959 - routers.upload - WARNING - Could not parse date: 2026-01-15 00:00:00, using current date
+2026-01-17 02:26:01,959 - routers.upload - WARNING - Could not parse date: 2025-06-11 00:00:00, using current date
+2026-01-17 02:26:01,959 - routers.upload - WARNING - Could not parse date: 2026-01-15 00:00:00, using current date
+2026-01-17 02:26:01,960 - routers.upload - WARNING - Could not parse date: 2025-06-11 00:00:00, using current date
+2026-01-17 02:26:01,960 - routers.upload - WARNING - Could not parse date: 2026-01-15 00:00:00, using current date
+2026-01-17 02:26:01,960 - routers.upload - WARNING - Could not parse date: 2025-06-11 00:00:00, using current date
+2026-01-17 02:26:01,960 - routers.upload - WARNING - Could not parse date: 2026-01-15 00:00:00, using current date
+2026-01-17 02:26:01,961 - routers.upload - WARNING - Could not parse date: 2025-06-11 00:00:00, using current date
+2026-01-17 02:26:01,961 - routers.upload - WARNING - Could not parse date: 2026-01-15 00:00:00, using current date
+2026-01-17 02:26:01,961 - routers.upload - WARNING - Could not parse date: 2025-06-11 00:00:00, using current date
+2026-01-17 02:26:01,961 - routers.upload - WARNING - Could not parse date: 2026-01-15 00:00:00, using current date
+2026-01-17 02:26:01,962 - routers.upload - WARNING - Could not parse date: 2025-06-11 00:00:00, using current date
+2026-01-17 02:26:01,962 - routers.upload - WARNING - Could not parse date: 2026-01-15 00:00:00, using current date
+2026-01-17 02:26:01,962 - routers.upload - WARNING - Could not parse date: 2025-06-11 00:00:00, using current date
+2026-01-17 02:26:01,962 - routers.upload - WARNING - Could not parse date: 2026-01-15 00:00:00, using current date
+2026-01-17 02:26:01,962 - routers.upload - WARNING - Could not parse date: 2025-06-11 00:00:00, using current date
+2026-01-17 02:26:01,963 - routers.upload - WARNING - Could not parse date: 2026-01-15 00:00:00, using current date
+2026-01-17 02:26:01,963 - routers.upload - WARNING - Could not parse date: 2025-06-11 00:00:00, using current date
+2026-01-17 02:26:01,963 - routers.upload - WARNING - Could not parse date: 2026-01-15 00:00:00, using current date
+2026-01-17 02:26:01,963 - routers.upload - WARNING - Could not parse date: 2025-06-11 00:00:00, using current date
+2026-01-17 02:26:01,964 - routers.upload - WARNING - Could not parse date: 2026-01-15 00:00:00, using current date
+2026-01-17 02:26:01,964 - routers.upload - WARNING - Could not parse date: 2025-06-11 00:00:00, using current date
+2026-01-17 02:26:01,964 - routers.upload - WARNING - Could not parse date: 2026-01-15 00:00:00, using current date
+2026-01-17 02:26:01,964 - routers.upload - WARNING - Could not parse date: 2025-06-11 00:00:00, using current date
+2026-01-17 02:26:01,965 - routers.upload - WARNING - Could not parse date: 2026-01-15 00:00:00, using current date
+2026-01-17 02:26:01,965 - routers.upload - WARNING - Could not parse date: 2025-06-11 00:00:00, using current date
+2026-01-17 02:26:01,965 - routers.upload - WARNING - Could not parse date: 2026-01-15 00:00:00, using current date
+2026-01-17 02:26:01,965 - routers.upload - WARNING - Could not parse date: 2025-06-11 00:00:00, using current date
+2026-01-17 02:26:01,966 - routers.upload - WARNING - Could not parse date: 2026-01-15 00:00:00, using current date
+2026-01-17 02:26:01,966 - routers.upload - WARNING - Could not parse date: 2025-06-11 00:00:00, using current date
+2026-01-17 02:26:01,966 - routers.upload - WARNING - Could not parse date: 2026-01-15 00:00:00, using current date
+2026-01-17 02:26:01,966 - routers.upload - WARNING - Could not parse date: 2025-06-11 00:00:00, using current date
+2026-01-17 02:26:01,967 - routers.upload - WARNING - Could not parse date: 2026-01-15 00:00:00, using current date
+2026-01-17 02:26:01,967 - routers.upload - WARNING - Could not parse date: 2025-06-11 00:00:00, using current date
+2026-01-17 02:26:01,967 - routers.upload - WARNING - Could not parse date: 2026-01-15 00:00:00, using current date
+2026-01-17 02:26:01,967 - routers.upload - WARNING - Could not parse date: 2025-06-11 00:00:00, using current date
+2026-01-17 02:26:01,968 - routers.upload - WARNING - Could not parse date: 2026-01-15 00:00:00, using current date
+2026-01-17 02:26:01,968 - routers.upload - WARNING - Could not parse date: 2025-06-11 00:00:00, using current date
+2026-01-17 02:26:01,968 - routers.upload - WARNING - Could not parse date: 2026-01-15 00:00:00, using current date
+2026-01-17 02:26:01,968 - routers.upload - WARNING - Could not parse date: 2025-06-11 00:00:00, using current date
+2026-01-17 02:26:01,969 - routers.upload - WARNING - Could not parse date: 2026-01-15 00:00:00, using current date
+2026-01-17 02:26:01,969 - routers.upload - WARNING - Could not parse date: 2025-06-11 00:00:00, using current date
+2026-01-17 02:26:01,969 - routers.upload - WARNING - Could not parse date: 2026-01-15 00:00:00, using current date
+2026-01-17 02:26:01,969 - routers.upload - WARNING - Could not parse date: 2025-06-11 00:00:00, using current date
+2026-01-17 02:26:01,970 - routers.upload - WARNING - Could not parse date: 2026-01-15 00:00:00, using current date
+2026-01-17 02:26:01,970 - routers.upload - WARNING - Could not parse date: 2025-06-11 00:00:00, using current date
+2026-01-17 02:26:01,970 - routers.upload - WARNING - Could not parse date: 2026-01-15 00:00:00, using current date
+2026-01-17 02:26:01,970 - routers.upload - WARNING - Could not parse date: 2025-06-11 00:00:00, using current date
+2026-01-17 02:26:01,970 - routers.upload - WARNING - Could not parse date: 2026-01-15 00:00:00, using current date
+2026-01-17 02:26:01,971 - routers.upload - WARNING - Could not parse date: 2025-06-11 00:00:00, using current date
+2026-01-17 02:26:01,971 - routers.upload - WARNING - Could not parse date: 2026-01-15 00:00:00, using current date
+2026-01-17 02:26:01,971 - routers.upload - WARNING - Could not parse date: 2025-06-11 00:00:00, using current date
+2026-01-17 02:26:01,971 - routers.upload - WARNING - Could not parse date: 2026-01-15 00:00:00, using current date
+2026-01-17 02:26:01,972 - routers.upload - WARNING - Could not parse date: 2025-06-11 00:00:00, using current date
+2026-01-17 02:26:01,972 - routers.upload - WARNING - Could not parse date: 2026-01-15 00:00:00, using current date
+2026-01-17 02:26:01,972 - routers.upload - WARNING - Could not parse date: 2025-06-11 00:00:00, using current date
+2026-01-17 02:26:01,972 - routers.upload - WARNING - Could not parse date: 2026-01-15 00:00:00, using current date
+2026-01-17 02:26:01,972 - routers.upload - WARNING - Could not parse date: 2025-06-11 00:00:00, using current date
+2026-01-17 02:26:01,973 - routers.upload - WARNING - Could not parse date: 2026-01-15 00:00:00, using current date
+2026-01-17 02:26:01,973 - routers.upload - WARNING - Could not parse date: 2025-06-11 00:00:00, using current date
+2026-01-17 02:26:01,973 - routers.upload - WARNING - Could not parse date: 2026-01-15 00:00:00, using current date
+2026-01-17 02:26:01,973 - routers.upload - WARNING - Could not parse date: 2025-06-11 00:00:00, using current date
+2026-01-17 02:26:01,974 - routers.upload - WARNING - Could not parse date: 2026-01-15 00:00:00, using current date
+2026-01-17 02:26:01,974 - routers.upload - WARNING - Could not parse date: 2025-06-11 00:00:00, using current date
+2026-01-17 02:26:01,974 - routers.upload - WARNING - Could not parse date: 2026-01-15 00:00:00, using current date
+2026-01-17 02:26:01,974 - routers.upload - WARNING - Could not parse date: 2025-06-11 00:00:00, using current date
+2026-01-17 02:26:01,974 - routers.upload - WARNING - Could not parse date: 2026-01-15 00:00:00, using current date
+2026-01-17 02:26:01,975 - routers.upload - WARNING - Could not parse date: 2025-06-11 00:00:00, using current date
+2026-01-17 02:26:01,975 - routers.upload - WARNING - Could not parse date: 2026-01-15 00:00:00, using current date
+2026-01-17 02:26:01,975 - routers.upload - WARNING - Could not parse date: 2025-06-11 00:00:00, using current date
+2026-01-17 02:26:01,975 - routers.upload - WARNING - Could not parse date: 2026-01-15 00:00:00, using current date
+2026-01-17 02:26:01,976 - routers.upload - WARNING - Could not parse date: 2025-06-11 00:00:00, using current date
+2026-01-17 02:26:01,976 - routers.upload - WARNING - Could not parse date: 2026-01-15 00:00:00, using current date
+2026-01-17 02:26:01,976 - routers.upload - WARNING - Could not parse date: 2025-06-11 00:00:00, using current date
+2026-01-17 02:26:01,976 - routers.upload - WARNING - Could not parse date: 2026-01-15 00:00:00, using current date
+2026-01-17 02:26:01,977 - routers.upload - WARNING - Could not parse date: 2025-06-11 00:00:00, using current date
+2026-01-17 02:26:01,977 - routers.upload - WARNING - Could not parse date: 2026-01-15 00:00:00, using current date
+2026-01-17 02:26:01,977 - routers.upload - WARNING - Could not parse date: 2025-06-11 00:00:00, using current date
+2026-01-17 02:26:01,977 - routers.upload - WARNING - Could not parse date: 2026-01-15 00:00:00, using current date
+2026-01-17 02:26:01,977 - routers.upload - WARNING - Could not parse date: 2025-06-11 00:00:00, using current date
+2026-01-17 02:26:01,978 - routers.upload - WARNING - Could not parse date: 2026-01-15 00:00:00, using current date
+2026-01-17 02:26:01,978 - routers.upload - WARNING - Could not parse date: 2025-06-11 00:00:00, using current date
+2026-01-17 02:26:01,978 - routers.upload - WARNING - Could not parse date: 2026-01-15 00:00:00, using current date
+2026-01-17 02:26:01,978 - routers.upload - WARNING - Could not parse date: 2025-06-11 00:00:00, using current date
+2026-01-17 02:26:01,979 - routers.upload - WARNING - Could not parse date: 2026-01-15 00:00:00, using current date
+2026-01-17 02:26:01,979 - routers.upload - WARNING - Could not parse date: 2025-06-11 00:00:00, using current date
+2026-01-17 02:26:01,979 - routers.upload - WARNING - Could not parse date: 2026-01-15 00:00:00, using current date
+2026-01-17 02:26:01,979 - routers.upload - WARNING - Could not parse date: 2025-06-11 00:00:00, using current date
+2026-01-17 02:26:01,980 - routers.upload - WARNING - Could not parse date: 2026-01-15 00:00:00, using current date
+2026-01-17 02:26:01,980 - routers.upload - WARNING - Could not parse date: 2025-06-11 00:00:00, using current date
+2026-01-17 02:26:01,980 - routers.upload - WARNING - Could not parse date: 2026-01-15 00:00:00, using current date
+2026-01-17 02:26:01,980 - routers.upload - WARNING - Could not parse date: 2025-06-11 00:00:00, using current date
+2026-01-17 02:26:01,980 - routers.upload - WARNING - Could not parse date: 2026-01-15 00:00:00, using current date
+2026-01-17 02:26:01,981 - routers.upload - WARNING - Could not parse date: 2025-06-11 00:00:00, using current date
+2026-01-17 02:26:01,981 - routers.upload - WARNING - Could not parse date: 2026-01-15 00:00:00, using current date
+2026-01-17 02:26:01,981 - routers.upload - WARNING - Could not parse date: 2025-06-11 00:00:00, using current date
+2026-01-17 02:26:01,981 - routers.upload - WARNING - Could not parse date: 2026-01-15 00:00:00, using current date
+2026-01-17 02:26:01,982 - routers.upload - WARNING - Could not parse date: 2025-06-11 00:00:00, using current date
+2026-01-17 02:26:01,982 - routers.upload - WARNING - Could not parse date: 2026-01-15 00:00:00, using current date
+2026-01-17 02:26:01,982 - routers.upload - WARNING - Could not parse date: 2025-06-11 00:00:00, using current date
+2026-01-17 02:26:01,982 - routers.upload - WARNING - Could not parse date: 2026-01-15 00:00:00, using current date
+2026-01-17 02:26:01,983 - routers.upload - WARNING - Could not parse date: 2025-06-11 00:00:00, using current date
+2026-01-17 02:26:01,983 - routers.upload - WARNING - Could not parse date: 2026-01-15 00:00:00, using current date
+2026-01-17 02:26:01,983 - routers.upload - WARNING - Could not parse date: 2025-06-11 00:00:00, using current date
+2026-01-17 02:26:01,983 - routers.upload - WARNING - Could not parse date: 2026-01-15 00:00:00, using current date
+2026-01-17 02:26:01,984 - routers.upload - WARNING - Could not parse date: 2025-06-11 00:00:00, using current date
+2026-01-17 02:26:01,984 - routers.upload - WARNING - Could not parse date: 2026-01-15 00:00:00, using current date
+2026-01-17 02:26:01,984 - routers.upload - WARNING - Could not parse date: 2025-06-11 00:00:00, using current date
+2026-01-17 02:26:01,984 - routers.upload - WARNING - Could not parse date: 2026-01-15 00:00:00, using current date
+2026-01-17 02:26:01,984 - routers.upload - WARNING - Could not parse date: 2025-06-11 00:00:00, using current date
+2026-01-17 02:26:01,985 - routers.upload - WARNING - Could not parse date: 2026-01-15 00:00:00, using current date
+2026-01-17 02:26:01,985 - routers.upload - WARNING - Could not parse date: 2025-06-11 00:00:00, using current date
+2026-01-17 02:26:01,985 - routers.upload - WARNING - Could not parse date: 2026-01-15 00:00:00, using current date
+2026-01-17 02:26:01,985 - routers.upload - WARNING - Could not parse date: 2025-06-11 00:00:00, using current date
+2026-01-17 02:26:01,985 - routers.upload - WARNING - Could not parse date: 2026-01-15 00:00:00, using current date
+2026-01-17 02:26:01,986 - routers.upload - WARNING - Could not parse date: 2025-06-11 00:00:00, using current date
+2026-01-17 02:26:01,986 - routers.upload - WARNING - Could not parse date: 2026-01-15 00:00:00, using current date
+2026-01-17 02:26:01,986 - routers.upload - WARNING - Could not parse date: 2025-06-11 00:00:00, using current date
+2026-01-17 02:26:01,986 - routers.upload - WARNING - Could not parse date: 2026-01-15 00:00:00, using current date
+2026-01-17 02:26:02,041 - core.auth - DEBUG - Authentication token validated for user hash: 1fe0bfd6
+2026-01-17 02:26:02,079 - routers.upload - WARNING - Could not parse date: 2025-06-11 00:00:00, using current date
+2026-01-17 02:26:02,079 - routers.upload - WARNING - Could not parse date: 2026-01-15 00:00:00, using current date
+2026-01-17 02:26:02,079 - routers.upload - WARNING - Could not parse date: 2025-06-11 00:00:00, using current date
+2026-01-17 02:26:02,080 - routers.upload - WARNING - Could not parse date: 2026-01-15 00:00:00, using current date
+2026-01-17 02:26:02,080 - routers.upload - WARNING - Could not parse date: 2025-06-11 00:00:00, using current date
+2026-01-17 02:26:02,080 - routers.upload - WARNING - Could not parse date: 2026-01-15 00:00:00, using current date
+2026-01-17 02:26:02,081 - routers.upload - WARNING - Could not parse date: 2025-06-11 00:00:00, using current date
+2026-01-17 02:26:02,081 - routers.upload - WARNING - Could not parse date: 2026-01-15 00:00:00, using current date
+2026-01-17 02:26:02,082 - routers.upload - WARNING - Could not parse date: 2025-06-11 00:00:00, using current date
+2026-01-17 02:26:02,083 - routers.upload - WARNING - Could not parse date: 2026-01-15 00:00:00, using current date
+2026-01-17 02:26:02,083 - routers.upload - WARNING - Could not parse date: 2025-06-11 00:00:00, using current date
+2026-01-17 02:26:02,083 - routers.upload - WARNING - Could not parse date: 2026-01-15 00:00:00, using current date
+2026-01-17 02:26:02,083 - routers.upload - WARNING - Could not parse date: 2025-06-11 00:00:00, using current date
+2026-01-17 02:26:02,084 - routers.upload - WARNING - Could not parse date: 2026-01-15 00:00:00, using current date
+2026-01-17 02:26:02,084 - routers.upload - WARNING - Could not parse date: 2025-06-11 00:00:00, using current date
+2026-01-17 02:26:02,084 - routers.upload - WARNING - Could not parse date: 2026-01-15 00:00:00, using current date
+2026-01-17 02:26:02,084 - routers.upload - WARNING - Could not parse date: 2025-06-11 00:00:00, using current date
+2026-01-17 02:26:02,085 - routers.upload - WARNING - Could not parse date: 2026-01-15 00:00:00, using current date
+2026-01-17 02:26:02,085 - routers.upload - WARNING - Could not parse date: 2025-06-11 00:00:00, using current date
+2026-01-17 02:26:02,086 - routers.upload - WARNING - Could not parse date: 2026-01-15 00:00:00, using current date
+2026-01-17 02:26:02,087 - routers.upload - WARNING - Could not parse date: 2025-06-11 00:00:00, using current date
+2026-01-17 02:26:02,087 - routers.upload - WARNING - Could not parse date: 2026-01-15 00:00:00, using current date
+2026-01-17 02:26:02,087 - routers.upload - WARNING - Could not parse date: 2025-06-11 00:00:00, using current date
+2026-01-17 02:26:02,087 - routers.upload - WARNING - Could not parse date: 2026-01-15 00:00:00, using current date
+2026-01-17 02:26:02,088 - routers.upload - WARNING - Could not parse date: 2025-06-11 00:00:00, using current date
+2026-01-17 02:26:02,088 - routers.upload - WARNING - Could not parse date: 2026-01-15 00:00:00, using current date
+2026-01-17 02:26:02,088 - routers.upload - WARNING - Could not parse date: 2025-06-11 00:00:00, using current date
+2026-01-17 02:26:02,088 - routers.upload - WARNING - Could not parse date: 2026-01-15 00:00:00, using current date
+2026-01-17 02:26:02,089 - routers.upload - WARNING - Could not parse date: 2025-06-11 00:00:00, using current date
+2026-01-17 02:26:02,089 - routers.upload - WARNING - Could not parse date: 2026-01-15 00:00:00, using current date
+2026-01-17 02:26:02,089 - routers.upload - WARNING - Could not parse date: 2025-06-11 00:00:00, using current date
+2026-01-17 02:26:02,089 - routers.upload - WARNING - Could not parse date: 2026-01-15 00:00:00, using current date
+2026-01-17 02:26:02,089 - routers.upload - WARNING - Could not parse date: 2025-06-11 00:00:00, using current date
+2026-01-17 02:26:02,090 - routers.upload - WARNING - Could not parse date: 2026-01-15 00:00:00, using current date
+2026-01-17 02:26:02,090 - routers.upload - WARNING - Could not parse date: 2025-06-11 00:00:00, using current date
+2026-01-17 02:26:02,090 - routers.upload - WARNING - Could not parse date: 2026-01-15 00:00:00, using current date
+2026-01-17 02:26:02,090 - routers.upload - WARNING - Could not parse date: 2025-06-11 00:00:00, using current date
+2026-01-17 02:26:02,091 - routers.upload - WARNING - Could not parse date: 2026-01-15 00:00:00, using current date
+2026-01-17 02:26:02,091 - routers.upload - WARNING - Could not parse date: 2025-06-11 00:00:00, using current date
+2026-01-17 02:26:02,091 - routers.upload - WARNING - Could not parse date: 2026-01-15 00:00:00, using current date
+2026-01-17 02:26:02,091 - routers.upload - WARNING - Could not parse date: 2025-06-11 00:00:00, using current date
+2026-01-17 02:26:02,092 - routers.upload - WARNING - Could not parse date: 2026-01-15 00:00:00, using current date
+2026-01-17 02:26:02,092 - routers.upload - WARNING - Could not parse date: 2025-06-11 00:00:00, using current date
+2026-01-17 02:26:02,092 - routers.upload - WARNING - Could not parse date: 2026-01-15 00:00:00, using current date
+2026-01-17 02:26:02,092 - routers.upload - WARNING - Could not parse date: 2025-06-11 00:00:00, using current date
+2026-01-17 02:26:02,093 - routers.upload - WARNING - Could not parse date: 2026-01-15 00:00:00, using current date
+2026-01-17 02:26:02,093 - routers.upload - WARNING - Could not parse date: 2025-06-11 00:00:00, using current date
+2026-01-17 02:26:02,093 - routers.upload - WARNING - Could not parse date: 2026-01-15 00:00:00, using current date
+2026-01-17 02:26:02,093 - routers.upload - WARNING - Could not parse date: 2025-06-11 00:00:00, using current date
+2026-01-17 02:26:02,093 - routers.upload - WARNING - Could not parse date: 2026-01-15 00:00:00, using current date
+2026-01-17 02:26:02,094 - routers.upload - WARNING - Could not parse date: 2025-06-11 00:00:00, using current date
+2026-01-17 02:26:02,094 - routers.upload - WARNING - Could not parse date: 2026-01-15 00:00:00, using current date
+2026-01-17 02:26:02,094 - routers.upload - WARNING - Could not parse date: 2025-06-11 00:00:00, using current date
+2026-01-17 02:26:02,095 - routers.upload - WARNING - Could not parse date: 2026-01-15 00:00:00, using current date
+2026-01-17 02:26:02,095 - routers.upload - WARNING - Could not parse date: 2025-06-11 00:00:00, using current date
+2026-01-17 02:26:02,095 - routers.upload - WARNING - Could not parse date: 2026-01-15 00:00:00, using current date
+2026-01-17 02:26:02,096 - routers.upload - WARNING - Could not parse date: 2025-06-11 00:00:00, using current date
+2026-01-17 02:26:02,096 - routers.upload - WARNING - Could not parse date: 2026-01-15 00:00:00, using current date
+2026-01-17 02:26:02,097 - routers.upload - WARNING - Could not parse date: 2025-06-11 00:00:00, using current date
+2026-01-17 02:26:02,097 - routers.upload - WARNING - Could not parse date: 2026-01-15 00:00:00, using current date
+2026-01-17 02:26:02,097 - routers.upload - WARNING - Could not parse date: 2025-06-11 00:00:00, using current date
+2026-01-17 02:26:02,097 - routers.upload - WARNING - Could not parse date: 2026-01-15 00:00:00, using current date
+2026-01-17 02:26:02,098 - routers.upload - WARNING - Could not parse date: 2025-06-11 00:00:00, using current date
+2026-01-17 02:26:02,098 - routers.upload - WARNING - Could not parse date: 2026-01-15 00:00:00, using current date
+2026-01-17 02:26:02,098 - routers.upload - WARNING - Could not parse date: 2025-06-11 00:00:00, using current date
+2026-01-17 02:26:02,099 - routers.upload - WARNING - Could not parse date: 2026-01-15 00:00:00, using current date
+2026-01-17 02:26:02,099 - routers.upload - WARNING - Could not parse date: 2025-06-11 00:00:00, using current date
+2026-01-17 02:26:02,099 - routers.upload - WARNING - Could not parse date: 2026-01-15 00:00:00, using current date
+2026-01-17 02:26:02,100 - routers.upload - WARNING - Could not parse date: 2025-06-11 00:00:00, using current date
+2026-01-17 02:26:02,100 - routers.upload - WARNING - Could not parse date: 2026-01-15 00:00:00, using current date
+2026-01-17 02:26:02,100 - routers.upload - WARNING - Could not parse date: 2025-06-11 00:00:00, using current date
+2026-01-17 02:26:02,101 - routers.upload - WARNING - Could not parse date: 2026-01-15 00:00:00, using current date
+2026-01-17 02:26:02,101 - routers.upload - WARNING - Could not parse date: 2025-06-11 00:00:00, using current date
+2026-01-17 02:26:02,101 - routers.upload - WARNING - Could not parse date: 2026-01-15 00:00:00, using current date
+2026-01-17 02:26:02,101 - routers.upload - WARNING - Could not parse date: 2025-06-11 00:00:00, using current date
+2026-01-17 02:26:02,102 - routers.upload - WARNING - Could not parse date: 2026-01-15 00:00:00, using current date
+2026-01-17 02:26:02,102 - routers.upload - WARNING - Could not parse date: 2025-06-11 00:00:00, using current date
+2026-01-17 02:26:02,102 - routers.upload - WARNING - Could not parse date: 2026-01-15 00:00:00, using current date
+2026-01-17 02:26:02,102 - routers.upload - WARNING - Could not parse date: 2025-06-11 00:00:00, using current date
+2026-01-17 02:26:02,103 - routers.upload - WARNING - Could not parse date: 2026-01-15 00:00:00, using current date
+2026-01-17 02:26:02,103 - routers.upload - WARNING - Could not parse date: 2025-06-11 00:00:00, using current date
+2026-01-17 02:26:02,103 - routers.upload - WARNING - Could not parse date: 2026-01-15 00:00:00, using current date
+2026-01-17 02:26:02,104 - routers.upload - WARNING - Could not parse date: 2025-06-11 00:00:00, using current date
+2026-01-17 02:26:02,104 - routers.upload - WARNING - Could not parse date: 2026-01-15 00:00:00, using current date
+2026-01-17 02:26:02,104 - routers.upload - WARNING - Could not parse date: 2025-06-11 00:00:00, using current date
+2026-01-17 02:26:02,104 - routers.upload - WARNING - Could not parse date: 2026-01-15 00:00:00, using current date
+2026-01-17 02:26:02,105 - routers.upload - WARNING - Could not parse date: 2025-06-11 00:00:00, using current date
+2026-01-17 02:26:02,105 - routers.upload - WARNING - Could not parse date: 2026-01-15 00:00:00, using current date
+2026-01-17 02:26:02,105 - routers.upload - WARNING - Could not parse date: 2025-06-11 00:00:00, using current date
+2026-01-17 02:26:02,106 - routers.upload - WARNING - Could not parse date: 2026-01-15 00:00:00, using current date
+2026-01-17 02:26:02,106 - routers.upload - WARNING - Could not parse date: 2025-06-11 00:00:00, using current date
+2026-01-17 02:26:02,106 - routers.upload - WARNING - Could not parse date: 2026-01-15 00:00:00, using current date
+2026-01-17 02:26:02,106 - routers.upload - WARNING - Could not parse date: 2025-06-11 00:00:00, using current date
+2026-01-17 02:26:02,107 - routers.upload - WARNING - Could not parse date: 2026-01-15 00:00:00, using current date
+2026-01-17 02:26:02,107 - routers.upload - WARNING - Could not parse date: 2025-06-11 00:00:00, using current date
+2026-01-17 02:26:02,107 - routers.upload - WARNING - Could not parse date: 2026-01-15 00:00:00, using current date
+2026-01-17 02:26:02,108 - routers.upload - WARNING - Could not parse date: 2025-06-11 00:00:00, using current date
+2026-01-17 02:26:02,108 - routers.upload - WARNING - Could not parse date: 2026-01-15 00:00:00, using current date
+2026-01-17 02:26:02,108 - routers.upload - WARNING - Could not parse date: 2025-06-11 00:00:00, using current date
+2026-01-17 02:26:02,108 - routers.upload - WARNING - Could not parse date: 2026-01-15 00:00:00, using current date
+2026-01-17 02:26:02,109 - routers.upload - WARNING - Could not parse date: 2025-06-11 00:00:00, using current date
+2026-01-17 02:26:02,109 - routers.upload - WARNING - Could not parse date: 2026-01-15 00:00:00, using current date
+2026-01-17 02:26:02,109 - routers.upload - WARNING - Could not parse date: 2025-06-11 00:00:00, using current date
+2026-01-17 02:26:02,110 - routers.upload - WARNING - Could not parse date: 2026-01-15 00:00:00, using current date
+2026-01-17 02:26:02,110 - routers.upload - WARNING - Could not parse date: 2025-06-11 00:00:00, using current date
+2026-01-17 02:26:02,110 - routers.upload - WARNING - Could not parse date: 2026-01-15 00:00:00, using current date
+2026-01-17 02:26:02,110 - routers.upload - WARNING - Could not parse date: 2025-06-11 00:00:00, using current date
+2026-01-17 02:26:02,111 - routers.upload - WARNING - Could not parse date: 2026-01-15 00:00:00, using current date
+2026-01-17 02:26:02,111 - routers.upload - WARNING - Could not parse date: 2025-06-11 00:00:00, using current date
+2026-01-17 02:26:02,111 - routers.upload - WARNING - Could not parse date: 2026-01-15 00:00:00, using current date
+2026-01-17 02:26:02,112 - routers.upload - WARNING - Could not parse date: 2025-06-11 00:00:00, using current date
+2026-01-17 02:26:02,112 - routers.upload - WARNING - Could not parse date: 2026-01-15 00:00:00, using current date
+2026-01-17 02:26:02,112 - routers.upload - WARNING - Could not parse date: 2025-06-11 00:00:00, using current date
+2026-01-17 02:26:02,112 - routers.upload - WARNING - Could not parse date: 2026-01-15 00:00:00, using current date
+2026-01-17 02:26:02,113 - routers.upload - WARNING - Could not parse date: 2025-06-11 00:00:00, using current date
+2026-01-17 02:26:02,113 - routers.upload - WARNING - Could not parse date: 2026-01-15 00:00:00, using current date
+2026-01-17 02:26:02,113 - routers.upload - WARNING - Could not parse date: 2025-06-11 00:00:00, using current date
+2026-01-17 02:26:02,113 - routers.upload - WARNING - Could not parse date: 2026-01-15 00:00:00, using current date
+2026-01-17 02:26:02,113 - routers.upload - WARNING - Could not parse date: 2025-06-11 00:00:00, using current date
+2026-01-17 02:26:02,114 - routers.upload - WARNING - Could not parse date: 2026-01-15 00:00:00, using current date
+2026-01-17 02:26:02,114 - routers.upload - WARNING - Could not parse date: 2025-06-11 00:00:00, using current date
+2026-01-17 02:26:02,114 - routers.upload - WARNING - Could not parse date: 2026-01-15 00:00:00, using current date
+2026-01-17 02:26:02,114 - routers.upload - WARNING - Could not parse date: 2025-06-11 00:00:00, using current date
+2026-01-17 02:26:02,115 - routers.upload - WARNING - Could not parse date: 2026-01-15 00:00:00, using current date
+2026-01-17 02:26:02,115 - routers.upload - WARNING - Could not parse date: 2025-06-11 00:00:00, using current date
+2026-01-17 02:26:02,115 - routers.upload - WARNING - Could not parse date: 2026-01-15 00:00:00, using current date
+2026-01-17 02:26:02,115 - routers.upload - WARNING - Could not parse date: 2025-06-11 00:00:00, using current date
+2026-01-17 02:26:02,115 - routers.upload - WARNING - Could not parse date: 2026-01-15 00:00:00, using current date
+2026-01-17 02:26:02,116 - routers.upload - WARNING - Could not parse date: 2025-06-11 00:00:00, using current date
+2026-01-17 02:26:02,116 - routers.upload - WARNING - Could not parse date: 2026-01-15 00:00:00, using current date
+2026-01-17 02:26:02,116 - routers.upload - WARNING - Could not parse date: 2025-06-11 00:00:00, using current date
+2026-01-17 02:26:02,116 - routers.upload - WARNING - Could not parse date: 2026-01-15 00:00:00, using current date
+2026-01-17 02:26:02,117 - routers.upload - WARNING - Could not parse date: 2025-06-11 00:00:00, using current date
+2026-01-17 02:26:02,117 - routers.upload - WARNING - Could not parse date: 2026-01-15 00:00:00, using current date
+2026-01-17 02:26:02,117 - routers.upload - WARNING - Could not parse date: 2025-06-11 00:00:00, using current date
+2026-01-17 02:26:02,117 - routers.upload - WARNING - Could not parse date: 2026-01-15 00:00:00, using current date
+2026-01-17 02:26:02,117 - routers.upload - WARNING - Could not parse date: 2025-06-11 00:00:00, using current date
+2026-01-17 02:26:02,118 - routers.upload - WARNING - Could not parse date: 2026-01-15 00:00:00, using current date
+2026-01-17 02:26:02,118 - routers.upload - WARNING - Could not parse date: 2025-06-11 00:00:00, using current date
+2026-01-17 02:26:02,118 - routers.upload - WARNING - Could not parse date: 2026-01-15 00:00:00, using current date
+2026-01-17 02:26:02,118 - routers.upload - WARNING - Could not parse date: 2025-06-11 00:00:00, using current date
+2026-01-17 02:26:02,118 - routers.upload - WARNING - Could not parse date: 2026-01-15 00:00:00, using current date
+2026-01-17 02:26:02,119 - routers.upload - WARNING - Could not parse date: 2025-06-11 00:00:00, using current date
+2026-01-17 02:26:02,119 - routers.upload - WARNING - Could not parse date: 2026-01-15 00:00:00, using current date
+2026-01-17 02:26:02,119 - routers.upload - WARNING - Could not parse date: 2025-06-11 00:00:00, using current date
+2026-01-17 02:26:02,120 - routers.upload - WARNING - Could not parse date: 2026-01-15 00:00:00, using current date
+2026-01-17 02:26:02,270 - core.auth - DEBUG - Authentication token validated for user hash: 1fe0bfd6
+2026-01-17 02:26:02,307 - routers.upload - WARNING - Could not parse date: 2025-06-11 00:00:00, using current date
+2026-01-17 02:26:02,307 - routers.upload - WARNING - Could not parse date: 2026-01-15 00:00:00, using current date
+2026-01-17 02:26:02,308 - routers.upload - WARNING - Could not parse date: 2025-06-11 00:00:00, using current date
+2026-01-17 02:26:02,308 - routers.upload - WARNING - Could not parse date: 2026-01-15 00:00:00, using current date
+2026-01-17 02:26:02,308 - routers.upload - WARNING - Could not parse date: 2025-06-11 00:00:00, using current date
+2026-01-17 02:26:02,308 - routers.upload - WARNING - Could not parse date: 2026-01-15 00:00:00, using current date
+2026-01-17 02:26:02,309 - routers.upload - WARNING - Could not parse date: 2025-06-11 00:00:00, using current date
+2026-01-17 02:26:02,309 - routers.upload - WARNING - Could not parse date: 2026-01-15 00:00:00, using current date
+2026-01-17 02:26:02,309 - routers.upload - WARNING - Could not parse date: 2025-06-11 00:00:00, using current date
+2026-01-17 02:26:02,309 - routers.upload - WARNING - Could not parse date: 2026-01-15 00:00:00, using current date
+2026-01-17 02:26:02,310 - routers.upload - WARNING - Could not parse date: 2025-06-11 00:00:00, using current date
+2026-01-17 02:26:02,310 - routers.upload - WARNING - Could not parse date: 2026-01-15 00:00:00, using current date
+2026-01-17 02:26:02,310 - routers.upload - WARNING - Could not parse date: 2025-06-11 00:00:00, using current date
+2026-01-17 02:26:02,310 - routers.upload - WARNING - Could not parse date: 2026-01-15 00:00:00, using current date
+2026-01-17 02:26:02,310 - routers.upload - WARNING - Could not parse date: 2025-06-11 00:00:00, using current date
+2026-01-17 02:26:02,311 - routers.upload - WARNING - Could not parse date: 2026-01-15 00:00:00, using current date
+2026-01-17 02:26:02,311 - routers.upload - WARNING - Could not parse date: 2025-06-11 00:00:00, using current date
+2026-01-17 02:26:02,311 - routers.upload - WARNING - Could not parse date: 2026-01-15 00:00:00, using current date
+2026-01-17 02:26:02,311 - routers.upload - WARNING - Could not parse date: 2025-06-11 00:00:00, using current date
+2026-01-17 02:26:02,312 - routers.upload - WARNING - Could not parse date: 2026-01-15 00:00:00, using current date
+2026-01-17 02:26:02,312 - routers.upload - WARNING - Could not parse date: 2025-06-11 00:00:00, using current date
+2026-01-17 02:26:02,312 - routers.upload - WARNING - Could not parse date: 2026-01-15 00:00:00, using current date
+2026-01-17 02:26:02,312 - routers.upload - WARNING - Could not parse date: 2025-06-11 00:00:00, using current date
+2026-01-17 02:26:02,313 - routers.upload - WARNING - Could not parse date: 2026-01-15 00:00:00, using current date
+2026-01-17 02:26:02,313 - routers.upload - WARNING - Could not parse date: 2025-06-11 00:00:00, using current date
+2026-01-17 02:26:02,313 - routers.upload - WARNING - Could not parse date: 2026-01-15 00:00:00, using current date
+2026-01-17 02:26:02,313 - routers.upload - WARNING - Could not parse date: 2025-06-11 00:00:00, using current date
+2026-01-17 02:26:02,313 - routers.upload - WARNING - Could not parse date: 2026-01-15 00:00:00, using current date
+2026-01-17 02:26:02,314 - routers.upload - WARNING - Could not parse date: 2025-06-11 00:00:00, using current date
+2026-01-17 02:26:02,314 - routers.upload - WARNING - Could not parse date: 2026-01-15 00:00:00, using current date
+2026-01-17 02:26:02,314 - routers.upload - WARNING - Could not parse date: 2025-06-11 00:00:00, using current date
+2026-01-17 02:26:02,314 - routers.upload - WARNING - Could not parse date: 2026-01-15 00:00:00, using current date
+2026-01-17 02:26:02,315 - routers.upload - WARNING - Could not parse date: 2025-06-11 00:00:00, using current date
+2026-01-17 02:26:02,315 - routers.upload - WARNING - Could not parse date: 2026-01-15 00:00:00, using current date
+2026-01-17 02:26:02,315 - routers.upload - WARNING - Could not parse date: 2025-06-11 00:00:00, using current date
+2026-01-17 02:26:02,315 - routers.upload - WARNING - Could not parse date: 2026-01-15 00:00:00, using current date
+2026-01-17 02:26:02,315 - routers.upload - WARNING - Could not parse date: 2025-06-11 00:00:00, using current date
+2026-01-17 02:26:02,316 - routers.upload - WARNING - Could not parse date: 2026-01-15 00:00:00, using current date
+2026-01-17 02:26:02,316 - routers.upload - WARNING - Could not parse date: 2025-06-11 00:00:00, using current date
+2026-01-17 02:26:02,316 - routers.upload - WARNING - Could not parse date: 2026-01-15 00:00:00, using current date
+2026-01-17 02:26:02,316 - routers.upload - WARNING - Could not parse date: 2025-06-11 00:00:00, using current date
+2026-01-17 02:26:02,317 - routers.upload - WARNING - Could not parse date: 2026-01-15 00:00:00, using current date
+2026-01-17 02:26:02,317 - routers.upload - WARNING - Could not parse date: 2025-06-11 00:00:00, using current date
+2026-01-17 02:26:02,317 - routers.upload - WARNING - Could not parse date: 2026-01-15 00:00:00, using current date
+2026-01-17 02:26:02,317 - routers.upload - WARNING - Could not parse date: 2025-06-11 00:00:00, using current date
+2026-01-17 02:26:02,317 - routers.upload - WARNING - Could not parse date: 2026-01-15 00:00:00, using current date
+2026-01-17 02:26:02,318 - routers.upload - WARNING - Could not parse date: 2025-06-11 00:00:00, using current date
+2026-01-17 02:26:02,318 - routers.upload - WARNING - Could not parse date: 2026-01-15 00:00:00, using current date
+2026-01-17 02:26:02,318 - routers.upload - WARNING - Could not parse date: 2025-06-11 00:00:00, using current date
+2026-01-17 02:26:02,318 - routers.upload - WARNING - Could not parse date: 2026-01-15 00:00:00, using current date
+2026-01-17 02:26:02,318 - routers.upload - WARNING - Could not parse date: 2025-06-11 00:00:00, using current date
+2026-01-17 02:26:02,319 - routers.upload - WARNING - Could not parse date: 2026-01-15 00:00:00, using current date
+2026-01-17 02:26:02,319 - routers.upload - WARNING - Could not parse date: 2025-06-11 00:00:00, using current date
+2026-01-17 02:26:02,319 - routers.upload - WARNING - Could not parse date: 2026-01-15 00:00:00, using current date
+2026-01-17 02:26:02,320 - routers.upload - WARNING - Could not parse date: 2025-06-11 00:00:00, using current date
+2026-01-17 02:26:02,320 - routers.upload - WARNING - Could not parse date: 2026-01-15 00:00:00, using current date
+2026-01-17 02:26:02,320 - routers.upload - WARNING - Could not parse date: 2025-06-11 00:00:00, using current date
+2026-01-17 02:26:02,320 - routers.upload - WARNING - Could not parse date: 2026-01-15 00:00:00, using current date
+2026-01-17 02:26:02,320 - routers.upload - WARNING - Could not parse date: 2025-06-11 00:00:00, using current date
+2026-01-17 02:26:02,321 - routers.upload - WARNING - Could not parse date: 2026-01-15 00:00:00, using current date
+2026-01-17 02:26:02,321 - routers.upload - WARNING - Could not parse date: 2025-06-11 00:00:00, using current date
+2026-01-17 02:26:02,321 - routers.upload - WARNING - Could not parse date: 2026-01-15 00:00:00, using current date
+2026-01-17 02:26:02,321 - routers.upload - WARNING - Could not parse date: 2025-06-11 00:00:00, using current date
+2026-01-17 02:26:02,321 - routers.upload - WARNING - Could not parse date: 2026-01-15 00:00:00, using current date
+2026-01-17 02:26:02,322 - routers.upload - WARNING - Could not parse date: 2025-06-11 00:00:00, using current date
+2026-01-17 02:26:02,322 - routers.upload - WARNING - Could not parse date: 2026-01-15 00:00:00, using current date
+2026-01-17 02:26:02,322 - routers.upload - WARNING - Could not parse date: 2025-06-11 00:00:00, using current date
+2026-01-17 02:26:02,322 - routers.upload - WARNING - Could not parse date: 2026-01-15 00:00:00, using current date
+2026-01-17 02:26:02,323 - routers.upload - WARNING - Could not parse date: 2025-06-11 00:00:00, using current date
+2026-01-17 02:26:02,323 - routers.upload - WARNING - Could not parse date: 2026-01-15 00:00:00, using current date
+2026-01-17 02:26:02,323 - routers.upload - WARNING - Could not parse date: 2025-06-11 00:00:00, using current date
+2026-01-17 02:26:02,323 - routers.upload - WARNING - Could not parse date: 2026-01-15 00:00:00, using current date
+2026-01-17 02:26:02,324 - routers.upload - WARNING - Could not parse date: 2025-06-11 00:00:00, using current date
+2026-01-17 02:26:02,324 - routers.upload - WARNING - Could not parse date: 2026-01-15 00:00:00, using current date
+2026-01-17 02:26:02,324 - routers.upload - WARNING - Could not parse date: 2025-06-11 00:00:00, using current date
+2026-01-17 02:26:02,324 - routers.upload - WARNING - Could not parse date: 2026-01-15 00:00:00, using current date
+2026-01-17 02:26:02,324 - routers.upload - WARNING - Could not parse date: 2025-06-11 00:00:00, using current date
+2026-01-17 02:26:02,325 - routers.upload - WARNING - Could not parse date: 2026-01-15 00:00:00, using current date
+2026-01-17 02:26:02,325 - routers.upload - WARNING - Could not parse date: 2025-06-11 00:00:00, using current date
+2026-01-17 02:26:02,325 - routers.upload - WARNING - Could not parse date: 2026-01-15 00:00:00, using current date
+2026-01-17 02:26:02,325 - routers.upload - WARNING - Could not parse date: 2025-06-11 00:00:00, using current date
+2026-01-17 02:26:02,326 - routers.upload - WARNING - Could not parse date: 2026-01-15 00:00:00, using current date
+2026-01-17 02:26:02,326 - routers.upload - WARNING - Could not parse date: 2025-06-11 00:00:00, using current date
+2026-01-17 02:26:02,326 - routers.upload - WARNING - Could not parse date: 2026-01-15 00:00:00, using current date
+2026-01-17 02:26:02,326 - routers.upload - WARNING - Could not parse date: 2025-06-11 00:00:00, using current date
+2026-01-17 02:26:02,326 - routers.upload - WARNING - Could not parse date: 2026-01-15 00:00:00, using current date
+2026-01-17 02:26:02,327 - routers.upload - WARNING - Could not parse date: 2025-06-11 00:00:00, using current date
+2026-01-17 02:26:02,327 - routers.upload - WARNING - Could not parse date: 2026-01-15 00:00:00, using current date
+2026-01-17 02:26:02,327 - routers.upload - WARNING - Could not parse date: 2025-06-11 00:00:00, using current date
+2026-01-17 02:26:02,327 - routers.upload - WARNING - Could not parse date: 2026-01-15 00:00:00, using current date
+2026-01-17 02:26:02,328 - routers.upload - WARNING - Could not parse date: 2025-06-11 00:00:00, using current date
+2026-01-17 02:26:02,328 - routers.upload - WARNING - Could not parse date: 2026-01-15 00:00:00, using current date
+2026-01-17 02:26:02,328 - routers.upload - WARNING - Could not parse date: 2025-06-11 00:00:00, using current date
+2026-01-17 02:26:02,328 - routers.upload - WARNING - Could not parse date: 2026-01-15 00:00:00, using current date
+2026-01-17 02:26:02,329 - routers.upload - WARNING - Could not parse date: 2025-06-11 00:00:00, using current date
+2026-01-17 02:26:02,329 - routers.upload - WARNING - Could not parse date: 2026-01-15 00:00:00, using current date
+2026-01-17 02:26:02,329 - routers.upload - WARNING - Could not parse date: 2025-06-11 00:00:00, using current date
+2026-01-17 02:26:02,329 - routers.upload - WARNING - Could not parse date: 2026-01-15 00:00:00, using current date
+2026-01-17 02:26:02,329 - routers.upload - WARNING - Could not parse date: 2025-06-11 00:00:00, using current date
+2026-01-17 02:26:02,330 - routers.upload - WARNING - Could not parse date: 2026-01-15 00:00:00, using current date
+2026-01-17 02:26:02,330 - routers.upload - WARNING - Could not parse date: 2025-06-11 00:00:00, using current date
+2026-01-17 02:26:02,330 - routers.upload - WARNING - Could not parse date: 2026-01-15 00:00:00, using current date
+2026-01-17 02:26:02,330 - routers.upload - WARNING - Could not parse date: 2025-06-11 00:00:00, using current date
+2026-01-17 02:26:02,330 - routers.upload - WARNING - Could not parse date: 2026-01-15 00:00:00, using current date
+2026-01-17 02:26:02,331 - routers.upload - WARNING - Could not parse date: 2025-06-11 00:00:00, using current date
+2026-01-17 02:26:02,331 - routers.upload - WARNING - Could not parse date: 2026-01-15 00:00:00, using current date
+2026-01-17 02:26:02,331 - routers.upload - WARNING - Could not parse date: 2025-06-11 00:00:00, using current date
+2026-01-17 02:26:02,331 - routers.upload - WARNING - Could not parse date: 2026-01-15 00:00:00, using current date
+2026-01-17 02:26:02,332 - routers.upload - WARNING - Could not parse date: 2025-06-11 00:00:00, using current date
+2026-01-17 02:26:02,332 - routers.upload - WARNING - Could not parse date: 2026-01-15 00:00:00, using current date
+2026-01-17 02:26:02,332 - routers.upload - WARNING - Could not parse date: 2025-06-11 00:00:00, using current date
+2026-01-17 02:26:02,332 - routers.upload - WARNING - Could not parse date: 2026-01-15 00:00:00, using current date
+2026-01-17 02:26:02,332 - routers.upload - WARNING - Could not parse date: 2025-06-11 00:00:00, using current date
+2026-01-17 02:26:02,333 - routers.upload - WARNING - Could not parse date: 2026-01-15 00:00:00, using current date
+2026-01-17 02:26:02,333 - routers.upload - WARNING - Could not parse date: 2025-06-11 00:00:00, using current date
+2026-01-17 02:26:02,333 - routers.upload - WARNING - Could not parse date: 2026-01-15 00:00:00, using current date
+2026-01-17 02:26:02,333 - routers.upload - WARNING - Could not parse date: 2025-06-11 00:00:00, using current date
+2026-01-17 02:26:02,334 - routers.upload - WARNING - Could not parse date: 2026-01-15 00:00:00, using current date
+2026-01-17 02:26:02,334 - routers.upload - WARNING - Could not parse date: 2025-06-11 00:00:00, using current date
+2026-01-17 02:26:02,334 - routers.upload - WARNING - Could not parse date: 2026-01-15 00:00:00, using current date
+2026-01-17 02:26:02,334 - routers.upload - WARNING - Could not parse date: 2025-06-11 00:00:00, using current date
+2026-01-17 02:26:02,334 - routers.upload - WARNING - Could not parse date: 2026-01-15 00:00:00, using current date
+2026-01-17 02:26:02,335 - routers.upload - WARNING - Could not parse date: 2025-06-11 00:00:00, using current date
+2026-01-17 02:26:02,335 - routers.upload - WARNING - Could not parse date: 2026-01-15 00:00:00, using current date
+2026-01-17 02:26:02,335 - routers.upload - WARNING - Could not parse date: 2025-06-11 00:00:00, using current date
+2026-01-17 02:26:02,335 - routers.upload - WARNING - Could not parse date: 2026-01-15 00:00:00, using current date
+2026-01-17 02:26:02,336 - routers.upload - WARNING - Could not parse date: 2025-06-11 00:00:00, using current date
+2026-01-17 02:26:02,336 - routers.upload - WARNING - Could not parse date: 2026-01-15 00:00:00, using current date
+2026-01-17 02:26:02,336 - routers.upload - WARNING - Could not parse date: 2025-06-11 00:00:00, using current date
+2026-01-17 02:26:02,336 - routers.upload - WARNING - Could not parse date: 2026-01-15 00:00:00, using current date
+2026-01-17 02:26:02,337 - routers.upload - WARNING - Could not parse date: 2025-06-11 00:00:00, using current date
+2026-01-17 02:26:02,337 - routers.upload - WARNING - Could not parse date: 2026-01-15 00:00:00, using current date
+2026-01-17 02:26:02,337 - routers.upload - WARNING - Could not parse date: 2025-06-11 00:00:00, using current date
+2026-01-17 02:26:02,337 - routers.upload - WARNING - Could not parse date: 2026-01-15 00:00:00, using current date
+2026-01-17 02:26:02,337 - routers.upload - WARNING - Could not parse date: 2025-06-11 00:00:00, using current date
+2026-01-17 02:26:02,338 - routers.upload - WARNING - Could not parse date: 2026-01-15 00:00:00, using current date
+2026-01-17 02:26:02,338 - routers.upload - WARNING - Could not parse date: 2025-06-11 00:00:00, using current date
+2026-01-17 02:26:02,338 - routers.upload - WARNING - Could not parse date: 2026-01-15 00:00:00, using current date
+2026-01-17 02:26:02,338 - routers.upload - WARNING - Could not parse date: 2025-06-11 00:00:00, using current date
+2026-01-17 02:26:02,339 - routers.upload - WARNING - Could not parse date: 2026-01-15 00:00:00, using current date
+2026-01-17 02:26:02,339 - routers.upload - WARNING - Could not parse date: 2025-06-11 00:00:00, using current date
+2026-01-17 02:26:02,339 - routers.upload - WARNING - Could not parse date: 2026-01-15 00:00:00, using current date
+2026-01-17 02:26:02,340 - routers.upload - WARNING - Could not parse date: 2025-06-11 00:00:00, using current date
+2026-01-17 02:26:02,340 - routers.upload - WARNING - Could not parse date: 2026-01-15 00:00:00, using current date
+2026-01-17 02:26:02,340 - routers.upload - WARNING - Could not parse date: 2025-06-11 00:00:00, using current date
+2026-01-17 02:26:02,341 - routers.upload - WARNING - Could not parse date: 2026-01-15 00:00:00, using current date
+2026-01-17 02:26:11,846 - core.auth - DEBUG - Authentication token validated for user hash: 1fe0bfd6
+2026-01-17 02:26:11,847 - core.database - DEBUG - [DB_OP] Starting get_db session creation
+2026-01-17 02:26:11,847 - core.database - DEBUG - [DB_OP] Database session created successfully in 0.0003s
+2026-01-17 02:26:12,752 - services.fornitori - INFO - Created fornitori with id: 4
+2026-01-17 02:26:12,875 - services.acquisti - ERROR - Error creating acquisti: (sqlalchemy.dialects.postgresql.asyncpg.Error) <class 'asyncpg.exceptions.DataError'>: invalid input for query argument $2: '2026-01-17 02:26:02' (expected a datetime.date or datetime.datetime instance, got 'str')
+[SQL: INSERT INTO acquisti (fornitore_id, data_ordine, data_consegna, categoria_prodotto, quantita, prezzo_totale, user_id, created_at) VALUES ($1::INTEGER, $2::TIMESTAMP WITH TIME ZONE, $3::TIMESTAMP WITH TIME ZONE, $4::VARCHAR, $5::FLOAT, $6::FLOAT, $7::VARCHAR, $8::TIMESTAMP WITH TIME ZONE) RETURNING acquisti.id]
+[parameters: (4, '2026-01-17 02:26:02', '2026-01-17 02:26:02', 'Prize', 20.0, 320.6, '476166', datetime.datetime(2026, 1, 17, 2, 26, 12, 753089))]
+(Background on this error at: https://sqlalche.me/e/20/dbapi)
+2026-01-17 02:26:12,875 - routers.upload - ERROR - Error importing supplier data: (sqlalchemy.dialects.postgresql.asyncpg.Error) <class 'asyncpg.exceptions.DataError'>: invalid input for query argument $2: '2026-01-17 02:26:02' (expected a datetime.date or datetime.datetime instance, got 'str')
+[SQL: INSERT INTO acquisti (fornitore_id, data_ordine, data_consegna, categoria_prodotto, quantita, prezzo_totale, user_id, created_at) VALUES ($1::INTEGER, $2::TIMESTAMP WITH TIME ZONE, $3::TIMESTAMP WITH TIME ZONE, $4::VARCHAR, $5::FLOAT, $6::FLOAT, $7::VARCHAR, $8::TIMESTAMP WITH TIME ZONE) RETURNING acquisti.id]
+[parameters: (4, '2026-01-17 02:26:02', '2026-01-17 02:26:02', 'Prize', 20.0, 320.6, '476166', datetime.datetime(2026, 1, 17, 2, 26, 12, 753089))]
+(Background on this error at: https://sqlalche.me/e/20/dbapi)
+2026-01-17 02:26:12,875 - core.database - ERROR - Database session error: 500: Error importing data: (sqlalchemy.dialects.postgresql.asyncpg.Error) <class 'asyncpg.exceptions.DataError'>: invalid input for query argument $2: '2026-01-17 02:26:02' (expected a datetime.date or datetime.datetime instance, got 'str')
+[SQL: INSERT INTO acquisti (fornitore_id, data_ordine, data_consegna, categoria_prodotto, quantita, prezzo_totale, user_id, created_at) VALUES ($1::INTEGER, $2::TIMESTAMP WITH TIME ZONE, $3::TIMESTAMP WITH TIME ZONE, $4::VARCHAR, $5::FLOAT, $6::FLOAT, $7::VARCHAR, $8::TIMESTAMP WITH TIME ZONE) RETURNING acquisti.id]
+[parameters: (4, '2026-01-17 02:26:02', '2026-01-17 02:26:02', 'Prize', 20.0, 320.6, '476166', datetime.datetime(2026, 1, 17, 2, 26, 12, 753089))]
+(Background on this error at: https://sqlalche.me/e/20/dbapi)
+Traceback (most recent call last):
+  File "asyncpg/protocol/prepared_stmt.pyx", line 175, in asyncpg.protocol.protocol.PreparedStatementState._encode_bind_msg
+  File "asyncpg/protocol/codecs/base.pyx", line 227, in asyncpg.protocol.protocol.Codec.encode
+  File "asyncpg/protocol/codecs/base.pyx", line 129, in asyncpg.protocol.protocol.Codec.encode_scalar
+  File "asyncpg/pgproto/./codecs/datetime.pyx", line 208, in asyncpg.pgproto.pgproto.timestamptz_encode
+TypeError: expected a datetime.date or datetime.datetime instance, got 'str'
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/data/.cache/python/lib/python3.10/site-packages/sqlalchemy/dialects/postgresql/asyncpg.py", line 534, in _prepare_and_execute
+    self._rows = deque(await prepared_stmt.fetch(*parameters))
+  File "/data/.cache/python/lib/python3.10/site-packages/asyncpg/prepared_stmt.py", line 176, in fetch
+    data = await self.__bind_execute(args, 0, timeout)
+  File "/data/.cache/python/lib/python3.10/site-packages/asyncpg/prepared_stmt.py", line 267, in __bind_execute
+    data, status, _ = await self.__do_execute(
+  File "/data/.cache/python/lib/python3.10/site-packages/asyncpg/prepared_stmt.py", line 256, in __do_execute
+    return await executor(protocol)
+  File "asyncpg/protocol/protocol.pyx", line 185, in bind_execute
+  File "asyncpg/protocol/prepared_stmt.pyx", line 204, in asyncpg.protocol.protocol.PreparedStatementState._encode_bind_msg
+asyncpg.exceptions.DataError: invalid input for query argument $2: '2026-01-17 02:26:02' (expected a datetime.date or datetime.datetime instance, got 'str')
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/data/.cache/python/lib/python3.10/site-packages/sqlalchemy/engine/base.py", line 1967, in _exec_single_context
+    self.dialect.do_execute(
+  File "/data/.cache/python/lib/python3.10/site-packages/sqlalchemy/engine/default.py", line 941, in do_execute
+    cursor.execute(statement, parameters)
+  File "/data/.cache/python/lib/python3.10/site-packages/sqlalchemy/dialects/postgresql/asyncpg.py", line 568, in execute
+    self._adapt_connection.await_(
+  File "/data/.cache/python/lib/python3.10/site-packages/sqlalchemy/util/_concurrency_py3k.py", line 132, in await_only
+    return current.parent.switch(awaitable)  # type: ignore[no-any-return,attr-defined] # noqa: E501
+  File "/data/.cache/python/lib/python3.10/site-packages/sqlalchemy/util/_concurrency_py3k.py", line 196, in greenlet_spawn
+    value = await result
+  File "/data/.cache/python/lib/python3.10/site-packages/sqlalchemy/dialects/postgresql/asyncpg.py", line 546, in _prepare_and_execute
+    self._handle_exception(error)
+  File "/data/.cache/python/lib/python3.10/site-packages/sqlalchemy/dialects/postgresql/asyncpg.py", line 497, in _handle_exception
+    self._adapt_connection._handle_exception(error)
+  File "/data/.cache/python/lib/python3.10/site-packages/sqlalchemy/dialects/postgresql/asyncpg.py", line 780, in _handle_exception
+    raise translated_error from error
+sqlalchemy.dialects.postgresql.asyncpg.AsyncAdapt_asyncpg_dbapi.Error: <class 'asyncpg.exceptions.DataError'>: invalid input for query argument $2: '2026-01-17 02:26:02' (expected a datetime.date or datetime.datetime instance, got 'str')
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/workspace/app/backend/routers/upload.py", line 237, in import_supplier_data
+    await acquisti_service.create({
+  File "/workspace/app/backend/services/acquisti.py", line 26, in create
+    await self.db.commit()
+  File "/data/.cache/python/lib/python3.10/site-packages/sqlalchemy/ext/asyncio/session.py", line 1009, in commit
+    await greenlet_spawn(self.sync_session.commit)
+  File "/data/.cache/python/lib/python3.10/site-packages/sqlalchemy/util/_concurrency_py3k.py", line 203, in greenlet_spawn
+    result = context.switch(value)
+  File "/data/.cache/python/lib/python3.10/site-packages/sqlalchemy/orm/session.py", line 2028, in commit
+    trans.commit(_to_root=True)
+  File "<string>", line 2, in commit
+  File "/data/.cache/python/lib/python3.10/site-packages/sqlalchemy/orm/state_changes.py", line 139, in _go
+    ret_value = fn(self, *arg, **kw)
+  File "/data/.cache/python/lib/python3.10/site-packages/sqlalchemy/orm/session.py", line 1313, in commit
+    self._prepare_impl()
+  File "<string>", line 2, in _prepare_impl
+  File "/data/.cache/python/lib/python3.10/site-packages/sqlalchemy/orm/state_changes.py", line 139, in _go
+    ret_value = fn(self, *arg, **kw)
+  File "/data/.cache/python/lib/python3.10/site-packages/sqlalchemy/orm/session.py", line 1288, in _prepare_impl
+    self.session.flush()
+  File "/data/.cache/python/lib/python3.10/site-packages/sqlalchemy/orm/session.py", line 4352, in flush
+    self._flush(objects)
+  File "/data/.cache/python/lib/python3.10/site-packages/sqlalchemy/orm/session.py", line 4487, in _flush
+    with util.safe_reraise():
+  File "/data/.cache/python/lib/python3.10/site-packages/sqlalchemy/util/langhelpers.py", line 146, in __exit__
+    raise exc_value.with_traceback(exc_tb)
+  File "/data/.cache/python/lib/python3.10/site-packages/sqlalchemy/orm/session.py", line 4448, in _flush
+    flush_context.execute()
+  File "/data/.cache/python/lib/python3.10/site-packages/sqlalchemy/orm/unitofwork.py", line 466, in execute
+    rec.execute(self)
+  File "/data/.cache/python/lib/python3.10/site-packages/sqlalchemy/orm/unitofwork.py", line 642, in execute
+    util.preloaded.orm_persistence.save_obj(
+  File "/data/.cache/python/lib/python3.10/site-packages/sqlalchemy/orm/persistence.py", line 93, in save_obj
+    _emit_insert_statements(
+  File "/data/.cache/python/lib/python3.10/site-packages/sqlalchemy/orm/persistence.py", line 1233, in _emit_insert_statements
+    result = connection.execute(
+  File "/data/.cache/python/lib/python3.10/site-packages/sqlalchemy/engine/base.py", line 1418, in execute
+    return meth(
+  File "/data/.cache/python/lib/python3.10/site-packages/sqlalchemy/sql/elements.py", line 515, in _execute_on_connection
+    return connection._execute_clauseelement(
+  File "/data/.cache/python/lib/python3.10/site-packages/sqlalchemy/engine/base.py", line 1640, in _execute_clauseelement
+    ret = self._execute_context(
+  File "/data/.cache/python/lib/python3.10/site-packages/sqlalchemy/engine/base.py", line 1846, in _execute_context
+    return self._exec_single_context(
+  File "/data/.cache/python/lib/python3.10/site-packages/sqlalchemy/engine/base.py", line 1986, in _exec_single_context
+    self._handle_dbapi_exception(
+  File "/data/.cache/python/lib/python3.10/site-packages/sqlalchemy/engine/base.py", line 2355, in _handle_dbapi_exception
+    raise sqlalchemy_exception.with_traceback(exc_info[2]) from e
+  File "/data/.cache/python/lib/python3.10/site-packages/sqlalchemy/engine/base.py", line 1967, in _exec_single_context
+    self.dialect.do_execute(
+  File "/data/.cache/python/lib/python3.10/site-packages/sqlalchemy/engine/default.py", line 941, in do_execute
+    cursor.execute(statement, parameters)
+  File "/data/.cache/python/lib/python3.10/site-packages/sqlalchemy/dialects/postgresql/asyncpg.py", line 568, in execute
+    self._adapt_connection.await_(
+  File "/data/.cache/python/lib/python3.10/site-packages/sqlalchemy/util/_concurrency_py3k.py", line 132, in await_only
+    return current.parent.switch(awaitable)  # type: ignore[no-any-return,attr-defined] # noqa: E501
+  File "/data/.cache/python/lib/python3.10/site-packages/sqlalchemy/util/_concurrency_py3k.py", line 196, in greenlet_spawn
+    value = await result
+  File "/data/.cache/python/lib/python3.10/site-packages/sqlalchemy/dialects/postgresql/asyncpg.py", line 546, in _prepare_and_execute
+    self._handle_exception(error)
+  File "/data/.cache/python/lib/python3.10/site-packages/sqlalchemy/dialects/postgresql/asyncpg.py", line 497, in _handle_exception
+    self._adapt_connection._handle_exception(error)
+  File "/data/.cache/python/lib/python3.10/site-packages/sqlalchemy/dialects/postgresql/asyncpg.py", line 780, in _handle_exception
+    raise translated_error from error
+sqlalchemy.exc.DBAPIError: (sqlalchemy.dialects.postgresql.asyncpg.Error) <class 'asyncpg.exceptions.DataError'>: invalid input for query argument $2: '2026-01-17 02:26:02' (expected a datetime.date or datetime.datetime instance, got 'str')
+[SQL: INSERT INTO acquisti (fornitore_id, data_ordine, data_consegna, categoria_prodotto, quantita, prezzo_totale, user_id, created_at) VALUES ($1::INTEGER, $2::TIMESTAMP WITH TIME ZONE, $3::TIMESTAMP WITH TIME ZONE, $4::VARCHAR, $5::FLOAT, $6::FLOAT, $7::VARCHAR, $8::TIMESTAMP WITH TIME ZONE) RETURNING acquisti.id]
+[parameters: (4, '2026-01-17 02:26:02', '2026-01-17 02:26:02', 'Prize', 20.0, 320.6, '476166', datetime.datetime(2026, 1, 17, 2, 26, 12, 753089))]
+(Background on this error at: https://sqlalche.me/e/20/dbapi)
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/workspace/app/backend/core/database.py", line 534, in get_db
+    yield session
+  File "/data/.cache/python/lib/python3.10/site-packages/fastapi/routing.py", line 301, in app
+    raw_response = await run_endpoint_function(
+  File "/data/.cache/python/lib/python3.10/site-packages/fastapi/routing.py", line 212, in run_endpoint_function
+    return await dependant.call(**values)
+  File "/workspace/app/backend/routers/upload.py", line 257, in import_supplier_data
+    raise HTTPException(status_code=500, detail=f"Error importing data: {str(e)}")
+fastapi.exceptions.HTTPException: 500: Error importing data: (sqlalchemy.dialects.postgresql.asyncpg.Error) <class 'asyncpg.exceptions.DataError'>: invalid input for query argument $2: '2026-01-17 02:26:02' (expected a datetime.date or datetime.datetime instance, got 'str')
+[SQL: INSERT INTO acquisti (fornitore_id, data_ordine, data_consegna, categoria_prodotto, quantita, prezzo_totale, user_id, created_at) VALUES ($1::INTEGER, $2::TIMESTAMP WITH TIME ZONE, $3::TIMESTAMP WITH TIME ZONE, $4::VARCHAR, $5::FLOAT, $6::FLOAT, $7::VARCHAR, $8::TIMESTAMP WITH TIME ZONE) RETURNING acquisti.id]
+[parameters: (4, '2026-01-17 02:26:02', '2026-01-17 02:26:02', 'Prize', 20.0, 320.6, '476166', datetime.datetime(2026, 1, 17, 2, 26, 12, 753089))]
+(Background on this error at: https://sqlalche.me/e/20/dbapi)
+2026-01-17 02:26:12,906 - core.database - DEBUG - [DB_OP] Database session cleanup after 1.0592s
+2026-01-17 02:26:12,906 - core.database - ERROR - Failed to create database session: 500: Error importing data: (sqlalchemy.dialects.postgresql.asyncpg.Error) <class 'asyncpg.exceptions.DataError'>: invalid input for query argument $2: '2026-01-17 02:26:02' (expected a datetime.date or datetime.datetime instance, got 'str')
+[SQL: INSERT INTO acquisti (fornitore_id, data_ordine, data_consegna, categoria_prodotto, quantita, prezzo_totale, user_id, created_at) VALUES ($1::INTEGER, $2::TIMESTAMP WITH TIME ZONE, $3::TIMESTAMP WITH TIME ZONE, $4::VARCHAR, $5::FLOAT, $6::FLOAT, $7::VARCHAR, $8::TIMESTAMP WITH TIME ZONE) RETURNING acquisti.id]
+[parameters: (4, '2026-01-17 02:26:02', '2026-01-17 02:26:02', 'Prize', 20.0, 320.6, '476166', datetime.datetime(2026, 1, 17, 2, 26, 12, 753089))]
+(Background on this error at: https://sqlalche.me/e/20/dbapi)
+Traceback (most recent call last):
+  File "asyncpg/protocol/prepared_stmt.pyx", line 175, in asyncpg.protocol.protocol.PreparedStatementState._encode_bind_msg
+  File "asyncpg/protocol/codecs/base.pyx", line 227, in asyncpg.protocol.protocol.Codec.encode
+  File "asyncpg/protocol/codecs/base.pyx", line 129, in asyncpg.protocol.protocol.Codec.encode_scalar
+  File "asyncpg/pgproto/./codecs/datetime.pyx", line 208, in asyncpg.pgproto.pgproto.timestamptz_encode
+TypeError: expected a datetime.date or datetime.datetime instance, got 'str'
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/data/.cache/python/lib/python3.10/site-packages/sqlalchemy/dialects/postgresql/asyncpg.py", line 534, in _prepare_and_execute
+    self._rows = deque(await prepared_stmt.fetch(*parameters))
+  File "/data/.cache/python/lib/python3.10/site-packages/asyncpg/prepared_stmt.py", line 176, in fetch
+    data = await self.__bind_execute(args, 0, timeout)
+  File "/data/.cache/python/lib/python3.10/site-packages/asyncpg/prepared_stmt.py", line 267, in __bind_execute
+    data, status, _ = await self.__do_execute(
+  File "/data/.cache/python/lib/python3.10/site-packages/asyncpg/prepared_stmt.py", line 256, in __do_execute
+    return await executor(protocol)
+  File "asyncpg/protocol/protocol.pyx", line 185, in bind_execute
+  File "asyncpg/protocol/prepared_stmt.pyx", line 204, in asyncpg.protocol.protocol.PreparedStatementState._encode_bind_msg
+asyncpg.exceptions.DataError: invalid input for query argument $2: '2026-01-17 02:26:02' (expected a datetime.date or datetime.datetime instance, got 'str')
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/data/.cache/python/lib/python3.10/site-packages/sqlalchemy/engine/base.py", line 1967, in _exec_single_context
+    self.dialect.do_execute(
+  File "/data/.cache/python/lib/python3.10/site-packages/sqlalchemy/engine/default.py", line 941, in do_execute
+    cursor.execute(statement, parameters)
+  File "/data/.cache/python/lib/python3.10/site-packages/sqlalchemy/dialects/postgresql/asyncpg.py", line 568, in execute
+    self._adapt_connection.await_(
+  File "/data/.cache/python/lib/python3.10/site-packages/sqlalchemy/util/_concurrency_py3k.py", line 132, in await_only
+    return current.parent.switch(awaitable)  # type: ignore[no-any-return,attr-defined] # noqa: E501
+  File "/data/.cache/python/lib/python3.10/site-packages/sqlalchemy/util/_concurrency_py3k.py", line 196, in greenlet_spawn
+    value = await result
+  File "/data/.cache/python/lib/python3.10/site-packages/sqlalchemy/dialects/postgresql/asyncpg.py", line 546, in _prepare_and_execute
+    self._handle_exception(error)
+  File "/data/.cache/python/lib/python3.10/site-packages/sqlalchemy/dialects/postgresql/asyncpg.py", line 497, in _handle_exception
+    self._adapt_connection._handle_exception(error)
+  File "/data/.cache/python/lib/python3.10/site-packages/sqlalchemy/dialects/postgresql/asyncpg.py", line 780, in _handle_exception
+    raise translated_error from error
+sqlalchemy.dialects.postgresql.asyncpg.AsyncAdapt_asyncpg_dbapi.Error: <class 'asyncpg.exceptions.DataError'>: invalid input for query argument $2: '2026-01-17 02:26:02' (expected a datetime.date or datetime.datetime instance, got 'str')
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/workspace/app/backend/routers/upload.py", line 237, in import_supplier_data
+    await acquisti_service.create({
+  File "/workspace/app/backend/services/acquisti.py", line 26, in create
+    await self.db.commit()
+  File "/data/.cache/python/lib/python3.10/site-packages/sqlalchemy/ext/asyncio/session.py", line 1009, in commit
+    await greenlet_spawn(self.sync_session.commit)
+  File "/data/.cache/python/lib/python3.10/site-packages/sqlalchemy/util/_concurrency_py3k.py", line 203, in greenlet_spawn
+    result = context.switch(value)
+  File "/data/.cache/python/lib/python3.10/site-packages/sqlalchemy/orm/session.py", line 2028, in commit
+    trans.commit(_to_root=True)
+  File "<string>", line 2, in commit
+  File "/data/.cache/python/lib/python3.10/site-packages/sqlalchemy/orm/state_changes.py", line 139, in _go
+    ret_value = fn(self, *arg, **kw)
+  File "/data/.cache/python/lib/python3.10/site-packages/sqlalchemy/orm/session.py", line 1313, in commit
+    self._prepare_impl()
+  File "<string>", line 2, in _prepare_impl
+  File "/data/.cache/python/lib/python3.10/site-packages/sqlalchemy/orm/state_changes.py", line 139, in _go
+    ret_value = fn(self, *arg, **kw)
+  File "/data/.cache/python/lib/python3.10/site-packages/sqlalchemy/orm/session.py", line 1288, in _prepare_impl
+    self.session.flush()
+  File "/data/.cache/python/lib/python3.10/site-packages/sqlalchemy/orm/session.py", line 4352, in flush
+    self._flush(objects)
+  File "/data/.cache/python/lib/python3.10/site-packages/sqlalchemy/orm/session.py", line 4487, in _flush
+    with util.safe_reraise():
+  File "/data/.cache/python/lib/python3.10/site-packages/sqlalchemy/util/langhelpers.py", line 146, in __exit__
+    raise exc_value.with_traceback(exc_tb)
+  File "/data/.cache/python/lib/python3.10/site-packages/sqlalchemy/orm/session.py", line 4448, in _flush
+    flush_context.execute()
+  File "/data/.cache/python/lib/python3.10/site-packages/sqlalchemy/orm/unitofwork.py", line 466, in execute
+    rec.execute(self)
+  File "/data/.cache/python/lib/python3.10/site-packages/sqlalchemy/orm/unitofwork.py", line 642, in execute
+    util.preloaded.orm_persistence.save_obj(
+  File "/data/.cache/python/lib/python3.10/site-packages/sqlalchemy/orm/persistence.py", line 93, in save_obj
+    _emit_insert_statements(
+  File "/data/.cache/python/lib/python3.10/site-packages/sqlalchemy/orm/persistence.py", line 1233, in _emit_insert_statements
+    result = connection.execute(
+  File "/data/.cache/python/lib/python3.10/site-packages/sqlalchemy/engine/base.py", line 1418, in execute
+    return meth(
+  File "/data/.cache/python/lib/python3.10/site-packages/sqlalchemy/sql/elements.py", line 515, in _execute_on_connection
+    return connection._execute_clauseelement(
+  File "/data/.cache/python/lib/python3.10/site-packages/sqlalchemy/engine/base.py", line 1640, in _execute_clauseelement
+    ret = self._execute_context(
+  File "/data/.cache/python/lib/python3.10/site-packages/sqlalchemy/engine/base.py", line 1846, in _execute_context
+    return self._exec_single_context(
+  File "/data/.cache/python/lib/python3.10/site-packages/sqlalchemy/engine/base.py", line 1986, in _exec_single_context
+    self._handle_dbapi_exception(
+  File "/data/.cache/python/lib/python3.10/site-packages/sqlalchemy/engine/base.py", line 2355, in _handle_dbapi_exception
+    raise sqlalchemy_exception.with_traceback(exc_info[2]) from e
+  File "/data/.cache/python/lib/python3.10/site-packages/sqlalchemy/engine/base.py", line 1967, in _exec_single_context
+    self.dialect.do_execute(
+  File "/data/.cache/python/lib/python3.10/site-packages/sqlalchemy/engine/default.py", line 941, in do_execute
+    cursor.execute(statement, parameters)
+  File "/data/.cache/python/lib/python3.10/site-packages/sqlalchemy/dialects/postgresql/asyncpg.py", line 568, in execute
+    self._adapt_connection.await_(
+  File "/data/.cache/python/lib/python3.10/site-packages/sqlalchemy/util/_concurrency_py3k.py", line 132, in await_only
+    return current.parent.switch(awaitable)  # type: ignore[no-any-return,attr-defined] # noqa: E501
+  File "/data/.cache/python/lib/python3.10/site-packages/sqlalchemy/util/_concurrency_py3k.py", line 196, in greenlet_spawn
+    value = await result
+  File "/data/.cache/python/lib/python3.10/site-packages/sqlalchemy/dialects/postgresql/asyncpg.py", line 546, in _prepare_and_execute
+    self._handle_exception(error)
+  File "/data/.cache/python/lib/python3.10/site-packages/sqlalchemy/dialects/postgresql/asyncpg.py", line 497, in _handle_exception
+    self._adapt_connection._handle_exception(error)
+  File "/data/.cache/python/lib/python3.10/site-packages/sqlalchemy/dialects/postgresql/asyncpg.py", line 780, in _handle_exception
+    raise translated_error from error
+sqlalchemy.exc.DBAPIError: (sqlalchemy.dialects.postgresql.asyncpg.Error) <class 'asyncpg.exceptions.DataError'>: invalid input for query argument $2: '2026-01-17 02:26:02' (expected a datetime.date or datetime.datetime instance, got 'str')
+[SQL: INSERT INTO acquisti (fornitore_id, data_ordine, data_consegna, categoria_prodotto, quantita, prezzo_totale, user_id, created_at) VALUES ($1::INTEGER, $2::TIMESTAMP WITH TIME ZONE, $3::TIMESTAMP WITH TIME ZONE, $4::VARCHAR, $5::FLOAT, $6::FLOAT, $7::VARCHAR, $8::TIMESTAMP WITH TIME ZONE) RETURNING acquisti.id]
+[parameters: (4, '2026-01-17 02:26:02', '2026-01-17 02:26:02', 'Prize', 20.0, 320.6, '476166', datetime.datetime(2026, 1, 17, 2, 26, 12, 753089))]
+(Background on this error at: https://sqlalche.me/e/20/dbapi)
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/workspace/app/backend/core/database.py", line 534, in get_db
+    yield session
+  File "/data/.cache/python/lib/python3.10/site-packages/fastapi/routing.py", line 301, in app
+    raw_response = await run_endpoint_function(
+  File "/data/.cache/python/lib/python3.10/site-packages/fastapi/routing.py", line 212, in run_endpoint_function
+    return await dependant.call(**values)
+  File "/workspace/app/backend/routers/upload.py", line 257, in import_supplier_data
+    raise HTTPException(status_code=500, detail=f"Error importing data: {str(e)}")
+fastapi.exceptions.HTTPException: 500: Error importing data: (sqlalchemy.dialects.postgresql.asyncpg.Error) <class 'asyncpg.exceptions.DataError'>: invalid input for query argument $2: '2026-01-17 02:26:02' (expected a datetime.date or datetime.datetime instance, got 'str')
+[SQL: INSERT INTO acquisti (fornitore_id, data_ordine, data_consegna, categoria_prodotto, quantita, prezzo_totale, user_id, created_at) VALUES ($1::INTEGER, $2::TIMESTAMP WITH TIME ZONE, $3::TIMESTAMP WITH TIME ZONE, $4::VARCHAR, $5::FLOAT, $6::FLOAT, $7::VARCHAR, $8::TIMESTAMP WITH TIME ZONE) RETURNING acquisti.id]
+[parameters: (4, '2026-01-17 02:26:02', '2026-01-17 02:26:02', 'Prize', 20.0, 320.6, '476166', datetime.datetime(2026, 1, 17, 2, 26, 12, 753089))]
+(Background on this error at: https://sqlalche.me/e/20/dbapi)
+2026-01-17 02:26:29,179 - core.auth - DEBUG - Authentication token validated for user hash: 1fe0bfd6
+2026-01-17 02:26:29,179 - core.database - DEBUG - [DB_OP] Starting get_db session creation
+2026-01-17 02:26:29,180 - core.database - DEBUG - [DB_OP] Database session created successfully in 0.0003s
+2026-01-17 02:26:29,540 - services.acquisti - ERROR - Error creating acquisti: (sqlalchemy.dialects.postgresql.asyncpg.Error) <class 'asyncpg.exceptions.DataError'>: invalid input for query argument $2: '2026-01-17 02:26:02' (expected a datetime.date or datetime.datetime instance, got 'str')
+[SQL: INSERT INTO acquisti (fornitore_id, data_ordine, data_consegna, categoria_prodotto, quantita, prezzo_totale, user_id, created_at) VALUES ($1::INTEGER, $2::TIMESTAMP WITH TIME ZONE, $3::TIMESTAMP WITH TIME ZONE, $4::VARCHAR, $5::FLOAT, $6::FLOAT, $7::VARCHAR, $8::TIMESTAMP WITH TIME ZONE) RETURNING acquisti.id]
+[parameters: (4, '2026-01-17 02:26:02', '2026-01-17 02:26:02', 'Prize', 20.0, 320.6, '476166', datetime.datetime(2026, 1, 17, 2, 26, 29, 479006))]
+(Background on this error at: https://sqlalche.me/e/20/dbapi)
+2026-01-17 02:26:29,540 - routers.upload - ERROR - Error importing supplier data: (sqlalchemy.dialects.postgresql.asyncpg.Error) <class 'asyncpg.exceptions.DataError'>: invalid input for query argument $2: '2026-01-17 02:26:02' (expected a datetime.date or datetime.datetime instance, got 'str')
+[SQL: INSERT INTO acquisti (fornitore_id, data_ordine, data_consegna, categoria_prodotto, quantita, prezzo_totale, user_id, created_at) VALUES ($1::INTEGER, $2::TIMESTAMP WITH TIME ZONE, $3::TIMESTAMP WITH TIME ZONE, $4::VARCHAR, $5::FLOAT, $6::FLOAT, $7::VARCHAR, $8::TIMESTAMP WITH TIME ZONE) RETURNING acquisti.id]
+[parameters: (4, '2026-01-17 02:26:02', '2026-01-17 02:26:02', 'Prize', 20.0, 320.6, '476166', datetime.datetime(2026, 1, 17, 2, 26, 29, 479006))]
+(Background on this error at: https://sqlalche.me/e/20/dbapi)
+2026-01-17 02:26:29,541 - core.database - ERROR - Database session error: 500: Error importing data: (sqlalchemy.dialects.postgresql.asyncpg.Error) <class 'asyncpg.exceptions.DataError'>: invalid input for query argument $2: '2026-01-17 02:26:02' (expected a datetime.date or datetime.datetime instance, got 'str')
+[SQL: INSERT INTO acquisti (fornitore_id, data_ordine, data_consegna, categoria_prodotto, quantita, prezzo_totale, user_id, created_at) VALUES ($1::INTEGER, $2::TIMESTAMP WITH TIME ZONE, $3::TIMESTAMP WITH TIME ZONE, $4::VARCHAR, $5::FLOAT, $6::FLOAT, $7::VARCHAR, $8::TIMESTAMP WITH TIME ZONE) RETURNING acquisti.id]
+[parameters: (4, '2026-01-17 02:26:02', '2026-01-17 02:26:02', 'Prize', 20.0, 320.6, '476166', datetime.datetime(2026, 1, 17, 2, 26, 29, 479006))]
+(Background on this error at: https://sqlalche.me/e/20/dbapi)
+Traceback (most recent call last):
+  File "asyncpg/protocol/prepared_stmt.pyx", line 175, in asyncpg.protocol.protocol.PreparedStatementState._encode_bind_msg
+  File "asyncpg/protocol/codecs/base.pyx", line 227, in asyncpg.protocol.protocol.Codec.encode
+  File "asyncpg/protocol/codecs/base.pyx", line 129, in asyncpg.protocol.protocol.Codec.encode_scalar
+  File "asyncpg/pgproto/./codecs/datetime.pyx", line 208, in asyncpg.pgproto.pgproto.timestamptz_encode
+TypeError: expected a datetime.date or datetime.datetime instance, got 'str'
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/data/.cache/python/lib/python3.10/site-packages/sqlalchemy/dialects/postgresql/asyncpg.py", line 534, in _prepare_and_execute
+    self._rows = deque(await prepared_stmt.fetch(*parameters))
+  File "/data/.cache/python/lib/python3.10/site-packages/asyncpg/prepared_stmt.py", line 176, in fetch
+    data = await self.__bind_execute(args, 0, timeout)
+  File "/data/.cache/python/lib/python3.10/site-packages/asyncpg/prepared_stmt.py", line 267, in __bind_execute
+    data, status, _ = await self.__do_execute(
+  File "/data/.cache/python/lib/python3.10/site-packages/asyncpg/prepared_stmt.py", line 256, in __do_execute
+    return await executor(protocol)
+  File "asyncpg/protocol/protocol.pyx", line 185, in bind_execute
+  File "asyncpg/protocol/prepared_stmt.pyx", line 204, in asyncpg.protocol.protocol.PreparedStatementState._encode_bind_msg
+asyncpg.exceptions.DataError: invalid input for query argument $2: '2026-01-17 02:26:02' (expected a datetime.date or datetime.datetime instance, got 'str')
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/data/.cache/python/lib/python3.10/site-packages/sqlalchemy/engine/base.py", line 1967, in _exec_single_context
+    self.dialect.do_execute(
+  File "/data/.cache/python/lib/python3.10/site-packages/sqlalchemy/engine/default.py", line 941, in do_execute
+    cursor.execute(statement, parameters)
+  File "/data/.cache/python/lib/python3.10/site-packages/sqlalchemy/dialects/postgresql/asyncpg.py", line 568, in execute
+    self._adapt_connection.await_(
+  File "/data/.cache/python/lib/python3.10/site-packages/sqlalchemy/util/_concurrency_py3k.py", line 132, in await_only
+    return current.parent.switch(awaitable)  # type: ignore[no-any-return,attr-defined] # noqa: E501
+  File "/data/.cache/python/lib/python3.10/site-packages/sqlalchemy/util/_concurrency_py3k.py", line 196, in greenlet_spawn
+    value = await result
+  File "/data/.cache/python/lib/python3.10/site-packages/sqlalchemy/dialects/postgresql/asyncpg.py", line 546, in _prepare_and_execute
+    self._handle_exception(error)
+  File "/data/.cache/python/lib/python3.10/site-packages/sqlalchemy/dialects/postgresql/asyncpg.py", line 497, in _handle_exception
+    self._adapt_connection._handle_exception(error)
+  File "/data/.cache/python/lib/python3.10/site-packages/sqlalchemy/dialects/postgresql/asyncpg.py", line 780, in _handle_exception
+    raise translated_error from error
+sqlalchemy.dialects.postgresql.asyncpg.AsyncAdapt_asyncpg_dbapi.Error: <class 'asyncpg.exceptions.DataError'>: invalid input for query argument $2: '2026-01-17 02:26:02' (expected a datetime.date or datetime.datetime instance, got 'str')
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/workspace/app/backend/routers/upload.py", line 237, in import_supplier_data
+    await acquisti_service.create({
+  File "/workspace/app/backend/services/acquisti.py", line 26, in create
+    await self.db.commit()
+  File "/data/.cache/python/lib/python3.10/site-packages/sqlalchemy/ext/asyncio/session.py", line 1009, in commit
+    await greenlet_spawn(self.sync_session.commit)
+  File "/data/.cache/python/lib/python3.10/site-packages/sqlalchemy/util/_concurrency_py3k.py", line 203, in greenlet_spawn
+    result = context.switch(value)
+  File "/data/.cache/python/lib/python3.10/site-packages/sqlalchemy/orm/session.py", line 2028, in commit
+    trans.commit(_to_root=True)
+  File "<string>", line 2, in commit
+  File "/data/.cache/python/lib/python3.10/site-packages/sqlalchemy/orm/state_changes.py", line 139, in _go
+    ret_value = fn(self, *arg, **kw)
+  File "/data/.cache/python/lib/python3.10/site-packages/sqlalchemy/orm/session.py", line 1313, in commit
+    self._prepare_impl()
+  File "<string>", line 2, in _prepare_impl
+  File "/data/.cache/python/lib/python3.10/site-packages/sqlalchemy/orm/state_changes.py", line 139, in _go
+    ret_value = fn(self, *arg, **kw)
+  File "/data/.cache/python/lib/python3.10/site-packages/sqlalchemy/orm/session.py", line 1288, in _prepare_impl
+    self.session.flush()
+  File "/data/.cache/python/lib/python3.10/site-packages/sqlalchemy/orm/session.py", line 4352, in flush
+    self._flush(objects)
+  File "/data/.cache/python/lib/python3.10/site-packages/sqlalchemy/orm/session.py", line 4487, in _flush
+    with util.safe_reraise():
+  File "/data/.cache/python/lib/python3.10/site-packages/sqlalchemy/util/langhelpers.py", line 146, in __exit__
+    raise exc_value.with_traceback(exc_tb)
+  File "/data/.cache/python/lib/python3.10/site-packages/sqlalchemy/orm/session.py", line 4448, in _flush
+    flush_context.execute()
+  File "/data/.cache/python/lib/python3.10/site-packages/sqlalchemy/orm/unitofwork.py", line 466, in execute
+    rec.execute(self)
+  File "/data/.cache/python/lib/python3.10/site-packages/sqlalchemy/orm/unitofwork.py", line 642, in execute
+    util.preloaded.orm_persistence.save_obj(
+  File "/data/.cache/python/lib/python3.10/site-packages/sqlalchemy/orm/persistence.py", line 93, in save_obj
+    _emit_insert_statements(
+  File "/data/.cache/python/lib/python3.10/site-packages/sqlalchemy/orm/persistence.py", line 1233, in _emit_insert_statements
+    result = connection.execute(
+  File "/data/.cache/python/lib/python3.10/site-packages/sqlalchemy/engine/base.py", line 1418, in execute
+    return meth(
+  File "/data/.cache/python/lib/python3.10/site-packages/sqlalchemy/sql/elements.py", line 515, in _execute_on_connection
+    return connection._execute_clauseelement(
+  File "/data/.cache/python/lib/python3.10/site-packages/sqlalchemy/engine/base.py", line 1640, in _execute_clauseelement
+    ret = self._execute_context(
+  File "/data/.cache/python/lib/python3.10/site-packages/sqlalchemy/engine/base.py", line 1846, in _execute_context
+    return self._exec_single_context(
+  File "/data/.cache/python/lib/python3.10/site-packages/sqlalchemy/engine/base.py", line 1986, in _exec_single_context
+    self._handle_dbapi_exception(
+  File "/data/.cache/python/lib/python3.10/site-packages/sqlalchemy/engine/base.py", line 2355, in _handle_dbapi_exception
+    raise sqlalchemy_exception.with_traceback(exc_info[2]) from e
+  File "/data/.cache/python/lib/python3.10/site-packages/sqlalchemy/engine/base.py", line 1967, in _exec_single_context
+    self.dialect.do_execute(
+  File "/data/.cache/python/lib/python3.10/site-packages/sqlalchemy/engine/default.py", line 941, in do_execute
+    cursor.execute(statement, parameters)
+  File "/data/.cache/python/lib/python3.10/site-packages/sqlalchemy/dialects/postgresql/asyncpg.py", line 568, in execute
+    self._adapt_connection.await_(
+  File "/data/.cache/python/lib/python3.10/site-packages/sqlalchemy/util/_concurrency_py3k.py", line 132, in await_only
+    return current.parent.switch(awaitable)  # type: ignore[no-any-return,attr-defined] # noqa: E501
+  File "/data/.cache/python/lib/python3.10/site-packages/sqlalchemy/util/_concurrency_py3k.py", line 196, in greenlet_spawn
+    value = await result
+  File "/data/.cache/python/lib/python3.10/site-packages/sqlalchemy/dialects/postgresql/asyncpg.py", line 546, in _prepare_and_execute
+    self._handle_exception(error)
+  File "/data/.cache/python/lib/python3.10/site-packages/sqlalchemy/dialects/postgresql/asyncpg.py", line 497, in _handle_exception
+    self._adapt_connection._handle_exception(error)
+  File "/data/.cache/python/lib/python3.10/site-packages/sqlalchemy/dialects/postgresql/asyncpg.py", line 780, in _handle_exception
+    raise translated_error from error
+sqlalchemy.exc.DBAPIError: (sqlalchemy.dialects.postgresql.asyncpg.Error) <class 'asyncpg.exceptions.DataError'>: invalid input for query argument $2: '2026-01-17 02:26:02' (expected a datetime.date or datetime.datetime instance, got 'str')
+[SQL: INSERT INTO acquisti (fornitore_id, data_ordine, data_consegna, categoria_prodotto, quantita, prezzo_totale, user_id, created_at) VALUES ($1::INTEGER, $2::TIMESTAMP WITH TIME ZONE, $3::TIMESTAMP WITH TIME ZONE, $4::VARCHAR, $5::FLOAT, $6::FLOAT, $7::VARCHAR, $8::TIMESTAMP WITH TIME ZONE) RETURNING acquisti.id]
+[parameters: (4, '2026-01-17 02:26:02', '2026-01-17 02:26:02', 'Prize', 20.0, 320.6, '476166', datetime.datetime(2026, 1, 17, 2, 26, 29, 479006))]
+(Background on this error at: https://sqlalche.me/e/20/dbapi)
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/workspace/app/backend/core/database.py", line 534, in get_db
+    yield session
+  File "/data/.cache/python/lib/python3.10/site-packages/fastapi/routing.py", line 301, in app
+    raw_response = await run_endpoint_function(
+  File "/data/.cache/python/lib/python3.10/site-packages/fastapi/routing.py", line 212, in run_endpoint_function
+    return await dependant.call(**values)
+  File "/workspace/app/backend/routers/upload.py", line 257, in import_supplier_data
+    raise HTTPException(status_code=500, detail=f"Error importing data: {str(e)}")
+fastapi.exceptions.HTTPException: 500: Error importing data: (sqlalchemy.dialects.postgresql.asyncpg.Error) <class 'asyncpg.exceptions.DataError'>: invalid input for query argument $2: '2026-01-17 02:26:02' (expected a datetime.date or datetime.datetime instance, got 'str')
+[SQL: INSERT INTO acquisti (fornitore_id, data_ordine, data_consegna, categoria_prodotto, quantita, prezzo_totale, user_id, created_at) VALUES ($1::INTEGER, $2::TIMESTAMP WITH TIME ZONE, $3::TIMESTAMP WITH TIME ZONE, $4::VARCHAR, $5::FLOAT, $6::FLOAT, $7::VARCHAR, $8::TIMESTAMP WITH TIME ZONE) RETURNING acquisti.id]
+[parameters: (4, '2026-01-17 02:26:02', '2026-01-17 02:26:02', 'Prize', 20.0, 320.6, '476166', datetime.datetime(2026, 1, 17, 2, 26, 29, 479006))]
+(Background on this error at: https://sqlalche.me/e/20/dbapi)
+2026-01-17 02:26:29,562 - core.database - DEBUG - [DB_OP] Database session cleanup after 0.3828s
+2026-01-17 02:26:29,563 - core.database - ERROR - Failed to create database session: 500: Error importing data: (sqlalchemy.dialects.postgresql.asyncpg.Error) <class 'asyncpg.exceptions.DataError'>: invalid input for query argument $2: '2026-01-17 02:26:02' (expected a datetime.date or datetime.datetime instance, got 'str')
+[SQL: INSERT INTO acquisti (fornitore_id, data_ordine, data_consegna, categoria_prodotto, quantita, prezzo_totale, user_id, created_at) VALUES ($1::INTEGER, $2::TIMESTAMP WITH TIME ZONE, $3::TIMESTAMP WITH TIME ZONE, $4::VARCHAR, $5::FLOAT, $6::FLOAT, $7::VARCHAR, $8::TIMESTAMP WITH TIME ZONE) RETURNING acquisti.id]
+[parameters: (4, '2026-01-17 02:26:02', '2026-01-17 02:26:02', 'Prize', 20.0, 320.6, '476166', datetime.datetime(2026, 1, 17, 2, 26, 29, 479006))]
+(Background on this error at: https://sqlalche.me/e/20/dbapi)
+Traceback (most recent call last):
+  File "asyncpg/protocol/prepared_stmt.pyx", line 175, in asyncpg.protocol.protocol.PreparedStatementState._encode_bind_msg
+  File "asyncpg/protocol/codecs/base.pyx", line 227, in asyncpg.protocol.protocol.Codec.encode
+  File "asyncpg/protocol/codecs/base.pyx", line 129, in asyncpg.protocol.protocol.Codec.encode_scalar
+  File "asyncpg/pgproto/./codecs/datetime.pyx", line 208, in asyncpg.pgproto.pgproto.timestamptz_encode
+TypeError: expected a datetime.date or datetime.datetime instance, got 'str'
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/data/.cache/python/lib/python3.10/site-packages/sqlalchemy/dialects/postgresql/asyncpg.py", line 534, in _prepare_and_execute
+    self._rows = deque(await prepared_stmt.fetch(*parameters))
+  File "/data/.cache/python/lib/python3.10/site-packages/asyncpg/prepared_stmt.py", line 176, in fetch
+    data = await self.__bind_execute(args, 0, timeout)
+  File "/data/.cache/python/lib/python3.10/site-packages/asyncpg/prepared_stmt.py", line 267, in __bind_execute
+    data, status, _ = await self.__do_execute(
+  File "/data/.cache/python/lib/python3.10/site-packages/asyncpg/prepared_stmt.py", line 256, in __do_execute
+    return await executor(protocol)
+  File "asyncpg/protocol/protocol.pyx", line 185, in bind_execute
+  File "asyncpg/protocol/prepared_stmt.pyx", line 204, in asyncpg.protocol.protocol.PreparedStatementState._encode_bind_msg
+asyncpg.exceptions.DataError: invalid input for query argument $2: '2026-01-17 02:26:02' (expected a datetime.date or datetime.datetime instance, got 'str')
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/data/.cache/python/lib/python3.10/site-packages/sqlalchemy/engine/base.py", line 1967, in _exec_single_context
+    self.dialect.do_execute(
+  File "/data/.cache/python/lib/python3.10/site-packages/sqlalchemy/engine/default.py", line 941, in do_execute
+    cursor.execute(statement, parameters)
+  File "/data/.cache/python/lib/python3.10/site-packages/sqlalchemy/dialects/postgresql/asyncpg.py", line 568, in execute
+    self._adapt_connection.await_(
+  File "/data/.cache/python/lib/python3.10/site-packages/sqlalchemy/util/_concurrency_py3k.py", line 132, in await_only
+    return current.parent.switch(awaitable)  # type: ignore[no-any-return,attr-defined] # noqa: E501
+  File "/data/.cache/python/lib/python3.10/site-packages/sqlalchemy/util/_concurrency_py3k.py", line 196, in greenlet_spawn
+    value = await result
+  File "/data/.cache/python/lib/python3.10/site-packages/sqlalchemy/dialects/postgresql/asyncpg.py", line 546, in _prepare_and_execute
+    self._handle_exception(error)
+  File "/data/.cache/python/lib/python3.10/site-packages/sqlalchemy/dialects/postgresql/asyncpg.py", line 497, in _handle_exception
+    self._adapt_connection._handle_exception(error)
+  File "/data/.cache/python/lib/python3.10/site-packages/sqlalchemy/dialects/postgresql/asyncpg.py", line 780, in _handle_exception
+    raise translated_error from error
+sqlalchemy.dialects.postgresql.asyncpg.AsyncAdapt_asyncpg_dbapi.Error: <class 'asyncpg.exceptions.DataError'>: invalid input for query argument $2: '2026-01-17 02:26:02' (expected a datetime.date or datetime.datetime instance, got 'str')
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/workspace/app/backend/routers/upload.py", line 237, in import_supplier_data
+    await acquisti_service.create({
+  File "/workspace/app/backend/services/acquisti.py", line 26, in create
+    await self.db.commit()
+  File "/data/.cache/python/lib/python3.10/site-packages/sqlalchemy/ext/asyncio/session.py", line 1009, in commit
+    await greenlet_spawn(self.sync_session.commit)
+  File "/data/.cache/python/lib/python3.10/site-packages/sqlalchemy/util/_concurrency_py3k.py", line 203, in greenlet_spawn
+    result = context.switch(value)
+  File "/data/.cache/python/lib/python3.10/site-packages/sqlalchemy/orm/session.py", line 2028, in commit
+    trans.commit(_to_root=True)
+  File "<string>", line 2, in commit
+  File "/data/.cache/python/lib/python3.10/site-packages/sqlalchemy/orm/state_changes.py", line 139, in _go
+    ret_value = fn(self, *arg, **kw)
+  File "/data/.cache/python/lib/python3.10/site-packages/sqlalchemy/orm/session.py", line 1313, in commit
+    self._prepare_impl()
+  File "<string>", line 2, in _prepare_impl
+  File "/data/.cache/python/lib/python3.10/site-packages/sqlalchemy/orm/state_changes.py", line 139, in _go
+    ret_value = fn(self, *arg, **kw)
+  File "/data/.cache/python/lib/python3.10/site-packages/sqlalchemy/orm/session.py", line 1288, in _prepare_impl
+    self.session.flush()
+  File "/data/.cache/python/lib/python3.10/site-packages/sqlalchemy/orm/session.py", line 4352, in flush
+    self._flush(objects)
+  File "/data/.cache/python/lib/python3.10/site-packages/sqlalchemy/orm/session.py", line 4487, in _flush
+    with util.safe_reraise():
+  File "/data/.cache/python/lib/python3.10/site-packages/sqlalchemy/util/langhelpers.py", line 146, in __exit__
+    raise exc_value.with_traceback(exc_tb)
+  File "/data/.cache/python/lib/python3.10/site-packages/sqlalchemy/orm/session.py", line 4448, in _flush
+    flush_context.execute()
+  File "/data/.cache/python/lib/python3.10/site-packages/sqlalchemy/orm/unitofwork.py", line 466, in execute
+    rec.execute(self)
+  File "/data/.cache/python/lib/python3.10/site-packages/sqlalchemy/orm/unitofwork.py", line 642, in execute
+    util.preloaded.orm_persistence.save_obj(
+  File "/data/.cache/python/lib/python3.10/site-packages/sqlalchemy/orm/persistence.py", line 93, in save_obj
+    _emit_insert_statements(
+  File "/data/.cache/python/lib/python3.10/site-packages/sqlalchemy/orm/persistence.py", line 1233, in _emit_insert_statements
+    result = connection.execute(
+  File "/data/.cache/python/lib/python3.10/site-packages/sqlalchemy/engine/base.py", line 1418, in execute
+    return meth(
+  File "/data/.cache/python/lib/python3.10/site-packages/sqlalchemy/sql/elements.py", line 515, in _execute_on_connection
+    return connection._execute_clauseelement(
+  File "/data/.cache/python/lib/python3.10/site-packages/sqlalchemy/engine/base.py", line 1640, in _execute_clauseelement
+    ret = self._execute_context(
+  File "/data/.cache/python/lib/python3.10/site-packages/sqlalchemy/engine/base.py", line 1846, in _execute_context
+    return self._exec_single_context(
+  File "/data/.cache/python/lib/python3.10/site-packages/sqlalchemy/engine/base.py", line 1986, in _exec_single_context
+    self._handle_dbapi_exception(
+  File "/data/.cache/python/lib/python3.10/site-packages/sqlalchemy/engine/base.py", line 2355, in _handle_dbapi_exception
+    raise sqlalchemy_exception.with_traceback(exc_info[2]) from e
+  File "/data/.cache/python/lib/python3.10/site-packages/sqlalchemy/engine/base.py", line 1967, in _exec_single_context
+    self.dialect.do_execute(
+  File "/data/.cache/python/lib/python3.10/site-packages/sqlalchemy/engine/default.py", line 941, in do_execute
+    cursor.execute(statement, parameters)
+  File "/data/.cache/python/lib/python3.10/site-packages/sqlalchemy/dialects/postgresql/asyncpg.py", line 568, in execute
+    self._adapt_connection.await_(
+  File "/data/.cache/python/lib/python3.10/site-packages/sqlalchemy/util/_concurrency_py3k.py", line 132, in await_only
+    return current.parent.switch(awaitable)  # type: ignore[no-any-return,attr-defined] # noqa: E501
+  File "/data/.cache/python/lib/python3.10/site-packages/sqlalchemy/util/_concurrency_py3k.py", line 196, in greenlet_spawn
+    value = await result
+  File "/data/.cache/python/lib/python3.10/site-packages/sqlalchemy/dialects/postgresql/asyncpg.py", line 546, in _prepare_and_execute
+    self._handle_exception(error)
+  File "/data/.cache/python/lib/python3.10/site-packages/sqlalchemy/dialects/postgresql/asyncpg.py", line 497, in _handle_exception
+    self._adapt_connection._handle_exception(error)
+  File "/data/.cache/python/lib/python3.10/site-packages/sqlalchemy/dialects/postgresql/asyncpg.py", line 780, in _handle_exception
+    raise translated_error from error
+sqlalchemy.exc.DBAPIError: (sqlalchemy.dialects.postgresql.asyncpg.Error) <class 'asyncpg.exceptions.DataError'>: invalid input for query argument $2: '2026-01-17 02:26:02' (expected a datetime.date or datetime.datetime instance, got 'str')
+[SQL: INSERT INTO acquisti (fornitore_id, data_ordine, data_consegna, categoria_prodotto, quantita, prezzo_totale, user_id, created_at) VALUES ($1::INTEGER, $2::TIMESTAMP WITH TIME ZONE, $3::TIMESTAMP WITH TIME ZONE, $4::VARCHAR, $5::FLOAT, $6::FLOAT, $7::VARCHAR, $8::TIMESTAMP WITH TIME ZONE) RETURNING acquisti.id]
+[parameters: (4, '2026-01-17 02:26:02', '2026-01-17 02:26:02', 'Prize', 20.0, 320.6, '476166', datetime.datetime(2026, 1, 17, 2, 26, 29, 479006))]
+(Background on this error at: https://sqlalche.me/e/20/dbapi)
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/workspace/app/backend/core/database.py", line 534, in get_db
+    yield session
+  File "/data/.cache/python/lib/python3.10/site-packages/fastapi/routing.py", line 301, in app
+    raw_response = await run_endpoint_function(
+  File "/data/.cache/python/lib/python3.10/site-packages/fastapi/routing.py", line 212, in run_endpoint_function
+    return await dependant.call(**values)
+  File "/workspace/app/backend/routers/upload.py", line 257, in import_supplier_data
+    raise HTTPException(status_code=500, detail=f"Error importing data: {str(e)}")
+fastapi.exceptions.HTTPException: 500: Error importing data: (sqlalchemy.dialects.postgresql.asyncpg.Error) <class 'asyncpg.exceptions.DataError'>: invalid input for query argument $2: '2026-01-17 02:26:02' (expected a datetime.date or datetime.datetime instance, got 'str')
+[SQL: INSERT INTO acquisti (fornitore_id, data_ordine, data_consegna, categoria_prodotto, quantita, prezzo_totale, user_id, created_at) VALUES ($1::INTEGER, $2::TIMESTAMP WITH TIME ZONE, $3::TIMESTAMP WITH TIME ZONE, $4::VARCHAR, $5::FLOAT, $6::FLOAT, $7::VARCHAR, $8::TIMESTAMP WITH TIME ZONE) RETURNING acquisti.id]
+[parameters: (4, '2026-01-17 02:26:02', '2026-01-17 02:26:02', 'Prize', 20.0, 320.6, '476166', datetime.datetime(2026, 1, 17, 2, 26, 29, 479006))]
+(Background on this error at: https://sqlalche.me/e/20/dbapi)
+2026-01-17 02:28:42,931 - services.database - DEBUG - [DB_OP] Starting database close
+2026-01-17 02:28:42,993 - core.database - INFO - Database connection closed and engine disposed
+2026-01-17 02:28:42,994 - services.database - INFO - Database connections closed
+2026-01-17 02:28:42,994 - services.database - DEBUG - [DB_OP] Database close completed in 0.0631s

@@ -1,0 +1,105 @@
+2026-01-17 02:19:07,613 - main - INFO - === Logging system initialized ===
+2026-01-17 02:19:07,613 - main - INFO - Log file: logs/app_20260117_021907.log
+2026-01-17 02:19:07,613 - main - INFO - Log level: INFO
+2026-01-17 02:19:07,613 - main - INFO - Timestamp: 20260117_021907
+2026-01-17 02:19:07,630 - main - INFO - === Logging system initialized ===
+2026-01-17 02:19:07,630 - main - INFO - Log file: logs/app_20260117_021907.log
+2026-01-17 02:19:07,630 - main - INFO - Log level: INFO
+2026-01-17 02:19:07,631 - main - INFO - Timestamp: 20260117_021907
+2026-01-17 02:19:22,874 - main - INFO - Included router: routers.aihub.router
+2026-01-17 02:19:22,897 - main - INFO - Included router: routers.aihub.router
+2026-01-17 02:19:23,111 - main - INFO - Included router: routers.auth.router
+2026-01-17 02:19:23,112 - main - INFO - Included router: routers.auth.router
+2026-01-17 02:19:23,163 - main - INFO - Included router: routers.health.router
+2026-01-17 02:19:23,164 - main - INFO - Included router: routers.health.router
+2026-01-17 02:19:23,207 - main - INFO - Included router: routers.settings.router
+2026-01-17 02:19:23,210 - main - INFO - Included router: routers.settings.router
+2026-01-17 02:19:23,339 - main - INFO - Included router: routers.storage.router
+2026-01-17 02:19:23,354 - main - INFO - Included router: routers.storage.router
+2026-01-17 02:19:23,410 - main - INFO - Included router: routers.user.router
+2026-01-17 02:19:23,410 - main - INFO - Included router: routers.user.router
+2026-01-17 02:19:23,411 - main - INFO - === Application startup initiated ===
+2026-01-17 02:19:23,411 - services.database - DEBUG - [DB_OP] Starting database initialization
+2026-01-17 02:19:23,411 - services.database - INFO - 🔧 Starting database initialization...
+2026-01-17 02:19:23,411 - core.database - INFO - Starting database initialization...
+2026-01-17 02:19:23,411 - core.config - DEBUG - Read dynamic attribute database_url from environment variable DATABASE_URL
+2026-01-17 02:19:23,411 - core.database - INFO - Normalizing database URL for async compatibility...
+2026-01-17 02:19:23,412 - main - INFO - === Application startup initiated ===
+2026-01-17 02:19:23,412 - services.database - DEBUG - [DB_OP] Starting database initialization
+2026-01-17 02:19:23,412 - services.database - INFO - 🔧 Starting database initialization...
+2026-01-17 02:19:23,412 - core.database - INFO - Starting database initialization...
+2026-01-17 02:19:23,412 - core.config - DEBUG - Read dynamic attribute database_url from environment variable DATABASE_URL
+2026-01-17 02:19:23,412 - core.database - INFO - Creating async database engine...
+2026-01-17 02:19:23,412 - core.database - INFO - Normalizing database URL for async compatibility...
+2026-01-17 02:19:23,412 - core.database - INFO - Using QueuePool with connection pooling for non-Lambda environment
+2026-01-17 02:19:23,413 - core.database - INFO - Creating async database engine...
+2026-01-17 02:19:23,413 - core.database - INFO - Using QueuePool with connection pooling for non-Lambda environment
+2026-01-17 02:19:24,054 - core.database - INFO - Database engine created successfully
+2026-01-17 02:19:24,054 - core.database - INFO - Creating async session maker...
+2026-01-17 02:19:24,054 - core.database - INFO - Async session maker created successfully
+2026-01-17 02:19:24,054 - core.database - INFO - Database connection initialized successfully
+2026-01-17 02:19:24,055 - services.database - INFO - 🔧 Database connection initialized, now creating tables if tables not exist...
+2026-01-17 02:19:24,055 - core.database - DEBUG - [DB_OP] Starting create_tables
+2026-01-17 02:19:24,055 - core.database - INFO - 🔧 Starting table creation...
+2026-01-17 02:19:24,055 - core.database - INFO - Database engine created successfully
+2026-01-17 02:19:24,055 - core.database - INFO - Creating async session maker...
+2026-01-17 02:19:24,055 - core.database - INFO - Async session maker created successfully
+2026-01-17 02:19:24,055 - core.database - INFO - Database connection initialized successfully
+2026-01-17 02:19:24,055 - services.database - INFO - 🔧 Database connection initialized, now creating tables if tables not exist...
+2026-01-17 02:19:24,055 - core.database - DEBUG - [DB_OP] Starting create_tables
+2026-01-17 02:19:24,055 - core.database - INFO - 🔧 Starting table creation...
+2026-01-17 02:19:25,911 - core.database - INFO - Tables initialized successfully
+2026-01-17 02:19:25,911 - core.database - DEBUG - [DB_OP] Create tables completed in 1.8567s
+2026-01-17 02:19:25,973 - services.database - INFO - 🔧 Table creation completed
+2026-01-17 02:19:25,973 - services.database - INFO - Database initialized successfully
+2026-01-17 02:19:25,973 - services.database - DEBUG - [DB_OP] Database initialization completed in 2.5623s
+2026-01-17 02:19:25,975 - services.mock_data - INFO - Processing mock data file fornitori.json for table fornitori
+2026-01-17 02:19:26,039 - core.database - ERROR - Failed to create tables: (sqlalchemy.dialects.postgresql.asyncpg.IntegrityError) <class 'asyncpg.exceptions.UniqueViolationError'>: duplicate key value violates unique constraint "pg_type_typname_nsp_index"
+DETAIL:  Key (typname, typnamespace)=(users, 2200) already exists.
+[SQL: 
+CREATE TABLE users (
+	id VARCHAR(255) NOT NULL, 
+	email VARCHAR(255) NOT NULL, 
+	name VARCHAR(255), 
+	role VARCHAR(50) NOT NULL, 
+	created_at TIMESTAMP WITH TIME ZONE DEFAULT now(), 
+	last_login TIMESTAMP WITH TIME ZONE, 
+	PRIMARY KEY (id)
+)
+
+]
+(Background on this error at: https://sqlalche.me/e/20/gkpj)
+2026-01-17 02:19:26,040 - services.database - ERROR - Failed to initialize database: (sqlalchemy.dialects.postgresql.asyncpg.IntegrityError) <class 'asyncpg.exceptions.UniqueViolationError'>: duplicate key value violates unique constraint "pg_type_typname_nsp_index"
+DETAIL:  Key (typname, typnamespace)=(users, 2200) already exists.
+[SQL: 
+CREATE TABLE users (
+	id VARCHAR(255) NOT NULL, 
+	email VARCHAR(255) NOT NULL, 
+	name VARCHAR(255), 
+	role VARCHAR(50) NOT NULL, 
+	created_at TIMESTAMP WITH TIME ZONE DEFAULT now(), 
+	last_login TIMESTAMP WITH TIME ZONE, 
+	PRIMARY KEY (id)
+)
+
+]
+(Background on this error at: https://sqlalche.me/e/20/gkpj)
+2026-01-17 02:19:27,949 - services.mock_data - INFO - Table fornitori already has 3 rows; skipping mock insert
+2026-01-17 02:19:28,009 - services.database - DEBUG - [DB_OP] Starting database initialization
+2026-01-17 02:19:28,010 - services.database - INFO - 🔧 Starting database initialization...
+2026-01-17 02:19:28,010 - core.database - INFO - Starting database initialization...
+2026-01-17 02:19:28,010 - core.database - INFO - Database already initialized
+2026-01-17 02:19:28,010 - services.database - INFO - 🔧 Database connection initialized, now creating tables if tables not exist...
+2026-01-17 02:19:28,010 - core.database - DEBUG - [DB_OP] Starting create_tables
+2026-01-17 02:19:28,010 - core.database - INFO - Tables already initialized
+2026-01-17 02:19:28,010 - services.database - INFO - 🔧 Table creation completed
+2026-01-17 02:19:28,010 - services.database - INFO - Database initialized successfully
+2026-01-17 02:19:28,010 - services.database - DEBUG - [DB_OP] Database initialization completed in 0.0012s
+2026-01-17 02:19:28,011 - core.config - DEBUG - Read dynamic attribute admin_user_id from environment variable ADMIN_USER_ID
+2026-01-17 02:19:28,011 - core.config - DEBUG - Read dynamic attribute admin_user_email from environment variable ADMIN_USER_EMAIL
+2026-01-17 02:19:28,559 - services.auth - DEBUG - Created admin user: 476166 with email: machebar2010@gmail.com
+2026-01-17 02:19:28,559 - main - INFO - === Application startup completed successfully ===
+2026-01-17 02:19:57,456 - services.database - DEBUG - [DB_OP] Starting database close
+2026-01-17 02:19:57,521 - core.database - INFO - Database connection closed and engine disposed
+2026-01-17 02:19:57,521 - services.database - INFO - Database connections closed
+2026-01-17 02:19:57,521 - services.database - DEBUG - [DB_OP] Database close completed in 0.0649s

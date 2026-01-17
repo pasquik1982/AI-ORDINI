@@ -1,0 +1,48 @@
+{
+    "title": "vendite",
+    "type": "object",
+    "properties": {
+        "id": {
+            "type": "integer",
+            "description": "Primary key, auto-increment"
+        },
+        "data": {
+            "type": "string",
+            "format": "date-time",
+            "description": "Data della vendita"
+        },
+        "canale_vendita": {
+            "type": "string",
+            "description": "Canale di vendita"
+        },
+        "categoria_prodotto": {
+            "type": "string",
+            "description": "Categoria del prodotto"
+        },
+        "quantita": {
+            "type": "number",
+            "description": "Quantità venduta"
+        },
+        "prezzo_totale": {
+            "type": "number",
+            "description": "Prezzo totale (opzionale)"
+        },
+        "user_id": {
+            "type": "string",
+            "description": "User ID"
+        },
+        "created_at": {
+            "type": "string",
+            "format": "date-time",
+            "description": "Data di creazione record"
+        }
+    },
+    "required": [
+        "id",
+        "data",
+        "canale_vendita",
+        "categoria_prodotto",
+        "quantita",
+        "user_id"
+    ]
+}

@@ -1,0 +1,874 @@
+2026-01-17 03:33:38,124 - main - INFO - === Logging system initialized ===
+2026-01-17 03:33:38,124 - main - INFO - Log file: logs/app_20260117_033338.log
+2026-01-17 03:33:38,124 - main - INFO - Log level: INFO
+2026-01-17 03:33:38,124 - main - INFO - Timestamp: 20260117_033338
+2026-01-17 03:33:38,170 - main - INFO - Included router: routers.acquisti.router
+2026-01-17 03:33:38,718 - main - INFO - Included router: routers.aihub.router
+2026-01-17 03:33:38,732 - main - INFO - Included router: routers.analytics.router
+2026-01-17 03:33:38,743 - main - INFO - Included router: routers.auth.router
+2026-01-17 03:33:38,763 - main - INFO - Included router: routers.data.router
+2026-01-17 03:33:38,803 - main - INFO - Included router: routers.fornitori.router
+2026-01-17 03:33:38,805 - main - INFO - Included router: routers.health.router
+2026-01-17 03:33:38,905 - main - INFO - Included router: routers.settings.router
+2026-01-17 03:33:38,932 - main - INFO - Included router: routers.storage.router
+2026-01-17 03:33:38,949 - main - INFO - Included router: routers.upload.router
+2026-01-17 03:33:38,957 - main - INFO - Included router: routers.user.router
+2026-01-17 03:33:38,988 - main - INFO - Included router: routers.vendite.router
+2026-01-17 03:33:38,990 - main - INFO - === Application startup initiated ===
+2026-01-17 03:33:38,990 - services.database - DEBUG - [DB_OP] Starting database initialization
+2026-01-17 03:33:38,990 - services.database - INFO - 🔧 Starting database initialization...
+2026-01-17 03:33:38,990 - core.database - INFO - Starting database initialization...
+2026-01-17 03:33:38,990 - core.config - DEBUG - Read dynamic attribute database_url from environment variable DATABASE_URL
+2026-01-17 03:33:38,990 - core.database - INFO - Normalizing database URL for async compatibility...
+2026-01-17 03:33:38,991 - core.database - INFO - Creating async database engine...
+2026-01-17 03:33:38,991 - core.database - INFO - Using QueuePool with connection pooling for non-Lambda environment
+2026-01-17 03:33:39,068 - core.database - INFO - Database engine created successfully
+2026-01-17 03:33:39,068 - core.database - INFO - Creating async session maker...
+2026-01-17 03:33:39,068 - core.database - INFO - Async session maker created successfully
+2026-01-17 03:33:39,068 - core.database - INFO - Database connection initialized successfully
+2026-01-17 03:33:39,068 - services.database - INFO - 🔧 Database connection initialized, now creating tables if tables not exist...
+2026-01-17 03:33:39,069 - core.database - DEBUG - [DB_OP] Starting create_tables
+2026-01-17 03:33:39,069 - core.database - INFO - 🔧 Starting table creation...
+2026-01-17 03:33:40,914 - core.database - INFO - Tables initialized successfully
+2026-01-17 03:33:40,915 - core.database - DEBUG - [DB_OP] Create tables completed in 1.8461s
+2026-01-17 03:33:40,977 - services.database - INFO - 🔧 Table creation completed
+2026-01-17 03:33:40,977 - services.database - INFO - Database initialized successfully
+2026-01-17 03:33:40,977 - services.database - DEBUG - [DB_OP] Database initialization completed in 1.9875s
+2026-01-17 03:33:40,979 - services.mock_data - INFO - Processing mock data file fornitori.json for table fornitori
+2026-01-17 03:33:43,077 - services.mock_data - INFO - Table fornitori already has 5 rows; skipping mock insert
+2026-01-17 03:33:43,139 - services.database - DEBUG - [DB_OP] Starting database initialization
+2026-01-17 03:33:43,139 - services.database - INFO - 🔧 Starting database initialization...
+2026-01-17 03:33:43,139 - core.database - INFO - Starting database initialization...
+2026-01-17 03:33:43,140 - core.database - INFO - Database already initialized
+2026-01-17 03:33:43,140 - services.database - INFO - 🔧 Database connection initialized, now creating tables if tables not exist...
+2026-01-17 03:33:43,140 - core.database - DEBUG - [DB_OP] Starting create_tables
+2026-01-17 03:33:43,140 - core.database - INFO - Tables already initialized
+2026-01-17 03:33:43,140 - services.database - INFO - 🔧 Table creation completed
+2026-01-17 03:33:43,140 - services.database - INFO - Database initialized successfully
+2026-01-17 03:33:43,140 - services.database - DEBUG - [DB_OP] Database initialization completed in 0.0013s
+2026-01-17 03:33:43,140 - core.config - DEBUG - Read dynamic attribute admin_user_id from environment variable ADMIN_USER_ID
+2026-01-17 03:33:43,140 - core.config - DEBUG - Read dynamic attribute admin_user_email from environment variable ADMIN_USER_EMAIL
+2026-01-17 03:33:43,516 - services.auth - DEBUG - Admin user 476166 already exists
+2026-01-17 03:33:43,578 - main - INFO - === Application startup completed successfully ===
+2026-01-17 03:33:49,267 - core.config - DEBUG - Read dynamic attribute jwt_secret_key from environment variable JWT_SECRET_KEY
+2026-01-17 03:33:49,268 - core.config - DEBUG - Read dynamic attribute jwt_algorithm from environment variable JWT_ALGORITHM
+2026-01-17 03:33:49,294 - core.auth - DEBUG - Authentication token validated for user hash: 1fe0bfd6
+2026-01-17 03:33:49,518 - core.auth - DEBUG - Authentication token validated for user hash: 1fe0bfd6
+2026-01-17 03:33:49,519 - core.database - DEBUG - [DB_OP] Starting get_db session creation
+2026-01-17 03:33:49,519 - core.database - DEBUG - [DB_OP] Database session created successfully in 0.0003s
+2026-01-17 03:33:49,519 - routers.analytics - INFO - Analytics request - anno: None, mese: None, categoria: None
+2026-01-17 03:33:49,533 - core.auth - DEBUG - Authentication token validated for user hash: 1fe0bfd6
+2026-01-17 03:33:49,533 - core.database - DEBUG - [DB_OP] Starting get_db session creation
+2026-01-17 03:33:49,533 - core.database - DEBUG - [DB_OP] Database session created successfully in 0.0004s
+2026-01-17 03:33:49,534 - routers.analytics - INFO - Analytics request - anno: None, mese: None, categoria: None
+2026-01-17 03:33:50,271 - routers.analytics - INFO - Acquisti categories: ['Kit', 'Prize']
+2026-01-17 03:33:50,271 - routers.analytics - INFO - Vendite categories: ['Kit', 'Prize', 'Nendo', 'Big', 'Banco', 'Plush']
+2026-01-17 03:33:50,272 - routers.analytics - INFO - Returning 6 categories
+2026-01-17 03:33:50,523 - core.database - DEBUG - [DB_OP] Database session cleanup after 1.0044s
+2026-01-17 03:33:50,834 - routers.analytics - INFO - Acquisti categories: ['Kit', 'Prize']
+2026-01-17 03:33:50,834 - routers.analytics - INFO - Vendite categories: ['Kit', 'Prize', 'Nendo', 'Big', 'Banco', 'Plush']
+2026-01-17 03:33:50,834 - routers.analytics - INFO - Returning 6 categories
+2026-01-17 03:33:51,078 - core.database - DEBUG - [DB_OP] Database session cleanup after 1.5451s
+2026-01-17 03:33:54,533 - core.auth - DEBUG - Authentication token validated for user hash: 1fe0bfd6
+2026-01-17 03:33:54,534 - core.database - DEBUG - [DB_OP] Starting get_db session creation
+2026-01-17 03:33:54,534 - core.database - DEBUG - [DB_OP] Database session created successfully in 0.0003s
+2026-01-17 03:33:54,979 - core.database - DEBUG - [DB_OP] Database session cleanup after 0.4457s
+2026-01-17 03:33:55,597 - core.auth - DEBUG - Authentication token validated for user hash: 1fe0bfd6
+2026-01-17 03:33:55,598 - core.database - DEBUG - [DB_OP] Starting get_db session creation
+2026-01-17 03:33:55,598 - core.database - DEBUG - [DB_OP] Database session created successfully in 0.0003s
+2026-01-17 03:33:56,019 - core.database - DEBUG - [DB_OP] Database session cleanup after 0.4210s
+2026-01-17 03:34:05,788 - core.auth - DEBUG - Authentication token validated for user hash: 1fe0bfd6
+2026-01-17 03:34:05,789 - core.database - DEBUG - [DB_OP] Starting get_db session creation
+2026-01-17 03:34:05,789 - core.database - DEBUG - [DB_OP] Database session created successfully in 0.0002s
+2026-01-17 03:34:06,361 - routers.data - INFO - User 476166 deleted 219 orders
+2026-01-17 03:34:06,361 - core.database - DEBUG - [DB_OP] Database session cleanup after 0.5726s
+2026-01-17 03:34:06,576 - core.auth - DEBUG - Authentication token validated for user hash: 1fe0bfd6
+2026-01-17 03:34:06,576 - core.database - DEBUG - [DB_OP] Starting get_db session creation
+2026-01-17 03:34:06,576 - core.database - DEBUG - [DB_OP] Database session created successfully in 0.0002s
+2026-01-17 03:34:06,951 - core.database - DEBUG - [DB_OP] Database session cleanup after 0.3749s
+2026-01-17 03:34:07,214 - core.auth - DEBUG - Authentication token validated for user hash: 1fe0bfd6
+2026-01-17 03:34:07,214 - core.database - DEBUG - [DB_OP] Starting get_db session creation
+2026-01-17 03:34:07,214 - core.database - DEBUG - [DB_OP] Database session created successfully in 0.0002s
+2026-01-17 03:34:07,587 - core.database - DEBUG - [DB_OP] Database session cleanup after 0.3729s
+2026-01-17 03:34:10,622 - core.auth - DEBUG - Authentication token validated for user hash: 1fe0bfd6
+2026-01-17 03:34:10,623 - core.database - DEBUG - [DB_OP] Starting get_db session creation
+2026-01-17 03:34:10,623 - core.database - DEBUG - [DB_OP] Database session created successfully in 0.0003s
+2026-01-17 03:34:11,139 - core.database - DEBUG - [DB_OP] Database session cleanup after 0.5164s
+2026-01-17 03:34:11,761 - core.auth - DEBUG - Authentication token validated for user hash: 1fe0bfd6
+2026-01-17 03:34:11,761 - core.database - DEBUG - [DB_OP] Starting get_db session creation
+2026-01-17 03:34:11,761 - core.database - DEBUG - [DB_OP] Database session created successfully in 0.0002s
+2026-01-17 03:34:12,196 - core.database - DEBUG - [DB_OP] Database session cleanup after 0.4348s
+2026-01-17 03:34:23,807 - core.auth - DEBUG - Authentication token validated for user hash: 1fe0bfd6
+2026-01-17 03:34:23,808 - core.database - DEBUG - [DB_OP] Starting get_db session creation
+2026-01-17 03:34:23,808 - core.database - DEBUG - [DB_OP] Database session created successfully in 0.0006s
+2026-01-17 03:34:24,373 - routers.data - INFO - User 476166 deleted 570 sales
+2026-01-17 03:34:24,373 - core.database - DEBUG - [DB_OP] Database session cleanup after 0.5657s
+2026-01-17 03:34:24,589 - core.auth - DEBUG - Authentication token validated for user hash: 1fe0bfd6
+2026-01-17 03:34:24,590 - core.database - DEBUG - [DB_OP] Starting get_db session creation
+2026-01-17 03:34:24,590 - core.database - DEBUG - [DB_OP] Database session created successfully in 0.0005s
+2026-01-17 03:34:24,963 - core.database - DEBUG - [DB_OP] Database session cleanup after 0.3733s
+2026-01-17 03:34:25,250 - core.auth - DEBUG - Authentication token validated for user hash: 1fe0bfd6
+2026-01-17 03:34:25,250 - core.database - DEBUG - [DB_OP] Starting get_db session creation
+2026-01-17 03:34:25,250 - core.database - DEBUG - [DB_OP] Database session created successfully in 0.0002s
+2026-01-17 03:34:25,622 - core.database - DEBUG - [DB_OP] Database session cleanup after 0.3714s
+2026-01-17 03:34:34,473 - core.auth - DEBUG - Authentication token validated for user hash: 1fe0bfd6
+2026-01-17 03:34:35,129 - routers.upload - INFO - Column mapping: {'quantita': 3, 'prezzo': 9, 'fornitore': 11, 'categoria': 12}
+2026-01-17 03:34:35,133 - routers.upload - WARNING - Could not parse date string: 4983164895490
+2026-01-17 03:34:35,134 - routers.upload - WARNING - Could not parse date value: 4983164895490, type: <class 'str'>
+2026-01-17 03:34:35,134 - routers.upload - WARNING - Row 2: Missing or invalid data_consegna, skipping
+2026-01-17 03:34:35,134 - routers.upload - WARNING - Could not parse date string: 4983164895506
+2026-01-17 03:34:35,134 - routers.upload - WARNING - Could not parse date value: 4983164895506, type: <class 'str'>
+2026-01-17 03:34:35,134 - routers.upload - WARNING - Row 3: Missing or invalid data_consegna, skipping
+2026-01-17 03:34:35,134 - routers.upload - WARNING - Could not parse date string: 4983164895513
+2026-01-17 03:34:35,134 - routers.upload - WARNING - Could not parse date value: 4983164895513, type: <class 'str'>
+2026-01-17 03:34:35,135 - routers.upload - WARNING - Row 4: Missing or invalid data_consegna, skipping
+2026-01-17 03:34:35,135 - routers.upload - WARNING - Could not parse date string: 4983164895544
+2026-01-17 03:34:35,135 - routers.upload - WARNING - Could not parse date value: 4983164895544, type: <class 'str'>
+2026-01-17 03:34:35,135 - routers.upload - WARNING - Row 5: Missing or invalid data_consegna, skipping
+2026-01-17 03:34:35,135 - routers.upload - WARNING - Could not parse date string: 4983164895599
+2026-01-17 03:34:35,135 - routers.upload - WARNING - Could not parse date value: 4983164895599, type: <class 'str'>
+2026-01-17 03:34:35,135 - routers.upload - WARNING - Row 6: Missing or invalid data_consegna, skipping
+2026-01-17 03:34:35,136 - routers.upload - WARNING - Could not parse date string: 4983164895674
+2026-01-17 03:34:35,136 - routers.upload - WARNING - Could not parse date value: 4983164895674, type: <class 'str'>
+2026-01-17 03:34:35,136 - routers.upload - WARNING - Row 7: Missing or invalid data_consegna, skipping
+2026-01-17 03:34:35,136 - routers.upload - WARNING - Could not parse date string: 4983164895452
+2026-01-17 03:34:35,136 - routers.upload - WARNING - Could not parse date value: 4983164895452, type: <class 'str'>
+2026-01-17 03:34:35,136 - routers.upload - WARNING - Row 8: Missing or invalid data_consegna, skipping
+2026-01-17 03:34:35,137 - routers.upload - WARNING - Could not parse date string: 4983164895230
+2026-01-17 03:34:35,137 - routers.upload - WARNING - Could not parse date value: 4983164895230, type: <class 'str'>
+2026-01-17 03:34:35,137 - routers.upload - WARNING - Row 9: Missing or invalid data_consegna, skipping
+2026-01-17 03:34:35,137 - routers.upload - WARNING - Could not parse date string: 4983164895247
+2026-01-17 03:34:35,137 - routers.upload - WARNING - Could not parse date value: 4983164895247, type: <class 'str'>
+2026-01-17 03:34:35,137 - routers.upload - WARNING - Row 10: Missing or invalid data_consegna, skipping
+2026-01-17 03:34:35,137 - routers.upload - WARNING - Could not parse date string: 4983164895353
+2026-01-17 03:34:35,138 - routers.upload - WARNING - Could not parse date value: 4983164895353, type: <class 'str'>
+2026-01-17 03:34:35,138 - routers.upload - WARNING - Row 11: Missing or invalid data_consegna, skipping
+2026-01-17 03:34:35,138 - routers.upload - WARNING - Could not parse date string: 4983164895438
+2026-01-17 03:34:35,138 - routers.upload - WARNING - Could not parse date value: 4983164895438, type: <class 'str'>
+2026-01-17 03:34:35,138 - routers.upload - WARNING - Row 12: Missing or invalid data_consegna, skipping
+2026-01-17 03:34:35,138 - routers.upload - WARNING - Could not parse date string: 4983164895445
+2026-01-17 03:34:35,138 - routers.upload - WARNING - Could not parse date value: 4983164895445, type: <class 'str'>
+2026-01-17 03:34:35,138 - routers.upload - WARNING - Row 13: Missing or invalid data_consegna, skipping
+2026-01-17 03:34:35,139 - routers.upload - WARNING - Could not parse date string: 4983164895780
+2026-01-17 03:34:35,139 - routers.upload - WARNING - Could not parse date value: 4983164895780, type: <class 'str'>
+2026-01-17 03:34:35,139 - routers.upload - WARNING - Row 14: Missing or invalid data_consegna, skipping
+2026-01-17 03:34:35,193 - routers.upload - INFO - Parsed 0 supplier rows
+2026-01-17 03:34:38,986 - core.auth - DEBUG - Authentication token validated for user hash: 1fe0bfd6
+2026-01-17 03:34:39,033 - routers.upload - INFO - Column mapping: {'quantita': 3, 'prezzo': 9, 'fornitore': 11, 'categoria': 12}
+2026-01-17 03:34:39,034 - routers.upload - WARNING - Could not parse date string: 4983164895490
+2026-01-17 03:34:39,034 - routers.upload - WARNING - Could not parse date value: 4983164895490, type: <class 'str'>
+2026-01-17 03:34:39,034 - routers.upload - WARNING - Row 2: Missing or invalid data_consegna, skipping
+2026-01-17 03:34:39,034 - routers.upload - WARNING - Could not parse date string: 4983164895506
+2026-01-17 03:34:39,034 - routers.upload - WARNING - Could not parse date value: 4983164895506, type: <class 'str'>
+2026-01-17 03:34:39,034 - routers.upload - WARNING - Row 3: Missing or invalid data_consegna, skipping
+2026-01-17 03:34:39,035 - routers.upload - WARNING - Could not parse date string: 4983164895513
+2026-01-17 03:34:39,035 - routers.upload - WARNING - Could not parse date value: 4983164895513, type: <class 'str'>
+2026-01-17 03:34:39,035 - routers.upload - WARNING - Row 4: Missing or invalid data_consegna, skipping
+2026-01-17 03:34:39,035 - routers.upload - WARNING - Could not parse date string: 4983164895544
+2026-01-17 03:34:39,035 - routers.upload - WARNING - Could not parse date value: 4983164895544, type: <class 'str'>
+2026-01-17 03:34:39,036 - routers.upload - WARNING - Row 5: Missing or invalid data_consegna, skipping
+2026-01-17 03:34:39,036 - routers.upload - WARNING - Could not parse date string: 4983164895599
+2026-01-17 03:34:39,036 - routers.upload - WARNING - Could not parse date value: 4983164895599, type: <class 'str'>
+2026-01-17 03:34:39,036 - routers.upload - WARNING - Row 6: Missing or invalid data_consegna, skipping
+2026-01-17 03:34:39,036 - routers.upload - WARNING - Could not parse date string: 4983164895674
+2026-01-17 03:34:39,036 - routers.upload - WARNING - Could not parse date value: 4983164895674, type: <class 'str'>
+2026-01-17 03:34:39,036 - routers.upload - WARNING - Row 7: Missing or invalid data_consegna, skipping
+2026-01-17 03:34:39,037 - routers.upload - WARNING - Could not parse date string: 4983164895452
+2026-01-17 03:34:39,037 - routers.upload - WARNING - Could not parse date value: 4983164895452, type: <class 'str'>
+2026-01-17 03:34:39,037 - routers.upload - WARNING - Row 8: Missing or invalid data_consegna, skipping
+2026-01-17 03:34:39,037 - routers.upload - WARNING - Could not parse date string: 4983164895230
+2026-01-17 03:34:39,037 - routers.upload - WARNING - Could not parse date value: 4983164895230, type: <class 'str'>
+2026-01-17 03:34:39,037 - routers.upload - WARNING - Row 9: Missing or invalid data_consegna, skipping
+2026-01-17 03:34:39,038 - routers.upload - WARNING - Could not parse date string: 4983164895247
+2026-01-17 03:34:39,038 - routers.upload - WARNING - Could not parse date value: 4983164895247, type: <class 'str'>
+2026-01-17 03:34:39,038 - routers.upload - WARNING - Row 10: Missing or invalid data_consegna, skipping
+2026-01-17 03:34:39,038 - routers.upload - WARNING - Could not parse date string: 4983164895353
+2026-01-17 03:34:39,038 - routers.upload - WARNING - Could not parse date value: 4983164895353, type: <class 'str'>
+2026-01-17 03:34:39,038 - routers.upload - WARNING - Row 11: Missing or invalid data_consegna, skipping
+2026-01-17 03:34:39,038 - routers.upload - WARNING - Could not parse date string: 4983164895438
+2026-01-17 03:34:39,038 - routers.upload - WARNING - Could not parse date value: 4983164895438, type: <class 'str'>
+2026-01-17 03:34:39,039 - routers.upload - WARNING - Row 12: Missing or invalid data_consegna, skipping
+2026-01-17 03:34:39,039 - routers.upload - WARNING - Could not parse date string: 4983164895445
+2026-01-17 03:34:39,039 - routers.upload - WARNING - Could not parse date value: 4983164895445, type: <class 'str'>
+2026-01-17 03:34:39,039 - routers.upload - WARNING - Row 13: Missing or invalid data_consegna, skipping
+2026-01-17 03:34:39,039 - routers.upload - WARNING - Could not parse date string: 4983164895780
+2026-01-17 03:34:39,039 - routers.upload - WARNING - Could not parse date value: 4983164895780, type: <class 'str'>
+2026-01-17 03:34:39,039 - routers.upload - WARNING - Row 14: Missing or invalid data_consegna, skipping
+2026-01-17 03:34:39,235 - routers.upload - INFO - Parsed 0 supplier rows
+2026-01-17 03:34:48,231 - core.auth - DEBUG - Authentication token validated for user hash: 1fe0bfd6
+2026-01-17 03:34:48,271 - routers.upload - INFO - Column mapping: {'fornitore': 0, 'data_ordine': 1, 'data_consegna': 2, 'categoria': 3, 'quantita': 4, 'prezzo': 5}
+2026-01-17 03:34:48,325 - routers.upload - INFO - Parsed 73 supplier rows
+2026-01-17 03:34:49,736 - core.auth - DEBUG - Authentication token validated for user hash: 1fe0bfd6
+2026-01-17 03:34:49,737 - core.database - DEBUG - [DB_OP] Starting get_db session creation
+2026-01-17 03:34:49,737 - core.database - DEBUG - [DB_OP] Database session created successfully in 0.0002s
+2026-01-17 03:34:50,675 - services.acquisti - INFO - Created acquisti with id: 220
+2026-01-17 03:34:51,361 - services.acquisti - INFO - Created acquisti with id: 221
+2026-01-17 03:34:51,860 - services.acquisti - INFO - Created acquisti with id: 222
+2026-01-17 03:34:52,357 - services.acquisti - INFO - Created acquisti with id: 223
+2026-01-17 03:34:52,857 - services.acquisti - INFO - Created acquisti with id: 224
+2026-01-17 03:34:53,357 - services.acquisti - INFO - Created acquisti with id: 225
+2026-01-17 03:34:53,864 - services.acquisti - INFO - Created acquisti with id: 226
+2026-01-17 03:34:54,362 - services.acquisti - INFO - Created acquisti with id: 227
+2026-01-17 03:34:54,861 - services.acquisti - INFO - Created acquisti with id: 228
+2026-01-17 03:34:55,362 - services.acquisti - INFO - Created acquisti with id: 229
+2026-01-17 03:34:55,858 - services.acquisti - INFO - Created acquisti with id: 230
+2026-01-17 03:34:56,358 - services.acquisti - INFO - Created acquisti with id: 231
+2026-01-17 03:34:56,862 - services.acquisti - INFO - Created acquisti with id: 232
+2026-01-17 03:34:57,363 - services.acquisti - INFO - Created acquisti with id: 233
+2026-01-17 03:34:57,863 - services.acquisti - INFO - Created acquisti with id: 234
+2026-01-17 03:34:58,362 - services.acquisti - INFO - Created acquisti with id: 235
+2026-01-17 03:34:58,860 - services.acquisti - INFO - Created acquisti with id: 236
+2026-01-17 03:34:59,358 - services.acquisti - INFO - Created acquisti with id: 237
+2026-01-17 03:34:59,858 - services.acquisti - INFO - Created acquisti with id: 238
+2026-01-17 03:35:00,357 - services.acquisti - INFO - Created acquisti with id: 239
+2026-01-17 03:35:00,855 - services.acquisti - INFO - Created acquisti with id: 240
+2026-01-17 03:35:01,353 - services.acquisti - INFO - Created acquisti with id: 241
+2026-01-17 03:35:01,862 - services.acquisti - INFO - Created acquisti with id: 242
+2026-01-17 03:35:02,361 - services.acquisti - INFO - Created acquisti with id: 243
+2026-01-17 03:35:02,859 - services.acquisti - INFO - Created acquisti with id: 244
+2026-01-17 03:35:03,365 - services.acquisti - INFO - Created acquisti with id: 245
+2026-01-17 03:35:03,863 - services.acquisti - INFO - Created acquisti with id: 246
+2026-01-17 03:35:04,361 - services.acquisti - INFO - Created acquisti with id: 247
+2026-01-17 03:35:04,860 - services.acquisti - INFO - Created acquisti with id: 248
+2026-01-17 03:35:05,359 - services.acquisti - INFO - Created acquisti with id: 249
+2026-01-17 03:35:05,856 - services.acquisti - INFO - Created acquisti with id: 250
+2026-01-17 03:35:06,357 - services.acquisti - INFO - Created acquisti with id: 251
+2026-01-17 03:35:06,856 - services.acquisti - INFO - Created acquisti with id: 252
+2026-01-17 03:35:07,355 - services.acquisti - INFO - Created acquisti with id: 253
+2026-01-17 03:35:07,851 - services.acquisti - INFO - Created acquisti with id: 254
+2026-01-17 03:35:08,351 - services.acquisti - INFO - Created acquisti with id: 255
+2026-01-17 03:35:08,848 - services.acquisti - INFO - Created acquisti with id: 256
+2026-01-17 03:35:09,344 - services.acquisti - INFO - Created acquisti with id: 257
+2026-01-17 03:35:09,844 - services.acquisti - INFO - Created acquisti with id: 258
+2026-01-17 03:35:10,340 - services.acquisti - INFO - Created acquisti with id: 259
+2026-01-17 03:35:10,836 - services.acquisti - INFO - Created acquisti with id: 260
+2026-01-17 03:35:11,336 - services.acquisti - INFO - Created acquisti with id: 261
+2026-01-17 03:35:11,836 - services.acquisti - INFO - Created acquisti with id: 262
+2026-01-17 03:35:12,337 - services.acquisti - INFO - Created acquisti with id: 263
+2026-01-17 03:35:12,836 - services.acquisti - INFO - Created acquisti with id: 264
+2026-01-17 03:35:13,336 - services.acquisti - INFO - Created acquisti with id: 265
+2026-01-17 03:35:13,836 - services.acquisti - INFO - Created acquisti with id: 266
+2026-01-17 03:35:14,334 - services.acquisti - INFO - Created acquisti with id: 267
+2026-01-17 03:35:14,832 - services.acquisti - INFO - Created acquisti with id: 268
+2026-01-17 03:35:15,331 - services.acquisti - INFO - Created acquisti with id: 269
+2026-01-17 03:35:15,833 - services.acquisti - INFO - Created acquisti with id: 270
+2026-01-17 03:35:16,334 - services.acquisti - INFO - Created acquisti with id: 271
+2026-01-17 03:35:16,834 - services.acquisti - INFO - Created acquisti with id: 272
+2026-01-17 03:35:17,335 - services.acquisti - INFO - Created acquisti with id: 273
+2026-01-17 03:35:17,837 - services.acquisti - INFO - Created acquisti with id: 274
+2026-01-17 03:35:18,335 - services.acquisti - INFO - Created acquisti with id: 275
+2026-01-17 03:35:18,835 - services.acquisti - INFO - Created acquisti with id: 276
+2026-01-17 03:35:19,334 - services.acquisti - INFO - Created acquisti with id: 277
+2026-01-17 03:35:19,832 - services.acquisti - INFO - Created acquisti with id: 278
+2026-01-17 03:35:20,330 - services.acquisti - INFO - Created acquisti with id: 279
+2026-01-17 03:35:20,831 - services.acquisti - INFO - Created acquisti with id: 280
+2026-01-17 03:35:21,330 - services.acquisti - INFO - Created acquisti with id: 281
+2026-01-17 03:35:21,831 - services.acquisti - INFO - Created acquisti with id: 282
+2026-01-17 03:35:22,331 - services.acquisti - INFO - Created acquisti with id: 283
+2026-01-17 03:35:22,828 - services.acquisti - INFO - Created acquisti with id: 284
+2026-01-17 03:35:23,325 - services.acquisti - INFO - Created acquisti with id: 285
+2026-01-17 03:35:23,830 - services.acquisti - INFO - Created acquisti with id: 286
+2026-01-17 03:35:24,325 - services.acquisti - INFO - Created acquisti with id: 287
+2026-01-17 03:35:24,822 - services.acquisti - INFO - Created acquisti with id: 288
+2026-01-17 03:35:25,320 - services.acquisti - INFO - Created acquisti with id: 289
+2026-01-17 03:35:25,819 - services.acquisti - INFO - Created acquisti with id: 290
+2026-01-17 03:35:26,317 - services.acquisti - INFO - Created acquisti with id: 291
+2026-01-17 03:35:26,815 - services.acquisti - INFO - Created acquisti with id: 292
+2026-01-17 03:35:26,816 - core.database - DEBUG - [DB_OP] Database session cleanup after 37.0791s
+2026-01-17 03:35:40,527 - core.auth - DEBUG - Authentication token validated for user hash: 1fe0bfd6
+2026-01-17 03:35:40,528 - core.database - DEBUG - [DB_OP] Starting get_db session creation
+2026-01-17 03:35:40,528 - core.database - DEBUG - [DB_OP] Database session created successfully in 0.0004s
+2026-01-17 03:35:40,529 - routers.analytics - INFO - Analytics request - anno: None, mese: None, categoria: None
+2026-01-17 03:35:40,542 - core.auth - DEBUG - Authentication token validated for user hash: 1fe0bfd6
+2026-01-17 03:35:40,542 - core.database - DEBUG - [DB_OP] Starting get_db session creation
+2026-01-17 03:35:40,543 - core.database - DEBUG - [DB_OP] Database session created successfully in 0.0004s
+2026-01-17 03:35:40,543 - routers.analytics - INFO - Analytics request - anno: None, mese: None, categoria: None
+2026-01-17 03:35:41,026 - routers.analytics - INFO - Acquisti categories: ['Prize', 'Kit']
+2026-01-17 03:35:41,027 - routers.analytics - INFO - Vendite categories: []
+2026-01-17 03:35:41,027 - routers.analytics - INFO - Returning 2 categories
+2026-01-17 03:35:41,038 - routers.analytics - INFO - Acquisti categories: ['Prize', 'Kit']
+2026-01-17 03:35:41,039 - routers.analytics - INFO - Vendite categories: []
+2026-01-17 03:35:41,039 - routers.analytics - INFO - Returning 2 categories
+2026-01-17 03:35:41,154 - core.database - DEBUG - [DB_OP] Database session cleanup after 0.6258s
+2026-01-17 03:35:41,164 - core.database - DEBUG - [DB_OP] Database session cleanup after 0.6219s
+2026-01-17 03:35:45,265 - core.auth - DEBUG - Authentication token validated for user hash: 1fe0bfd6
+2026-01-17 03:35:45,265 - core.database - DEBUG - [DB_OP] Starting get_db session creation
+2026-01-17 03:35:45,266 - core.database - DEBUG - [DB_OP] Database session created successfully in 0.0002s
+2026-01-17 03:35:45,266 - routers.analytics - INFO - Analytics request - anno: None, mese: 11, categoria: None
+2026-01-17 03:35:46,016 - routers.analytics - INFO - Acquisti categories: ['Kit', 'Prize']
+2026-01-17 03:35:46,017 - routers.analytics - INFO - Vendite categories: []
+2026-01-17 03:35:46,017 - routers.analytics - INFO - Returning 2 categories
+2026-01-17 03:35:46,017 - core.database - DEBUG - [DB_OP] Database session cleanup after 0.7517s
+2026-01-17 03:35:49,529 - core.auth - DEBUG - Authentication token validated for user hash: 1fe0bfd6
+2026-01-17 03:35:49,529 - core.database - DEBUG - [DB_OP] Starting get_db session creation
+2026-01-17 03:35:49,529 - core.database - DEBUG - [DB_OP] Database session created successfully in 0.0002s
+2026-01-17 03:35:49,530 - routers.analytics - INFO - Analytics request - anno: 2025, mese: 11, categoria: None
+2026-01-17 03:35:50,278 - routers.analytics - INFO - Acquisti categories: ['Kit', 'Prize']
+2026-01-17 03:35:50,278 - routers.analytics - INFO - Vendite categories: []
+2026-01-17 03:35:50,278 - routers.analytics - INFO - Returning 2 categories
+2026-01-17 03:35:50,278 - core.database - DEBUG - [DB_OP] Database session cleanup after 0.7490s
+2026-01-17 03:35:53,758 - core.auth - DEBUG - Authentication token validated for user hash: 1fe0bfd6
+2026-01-17 03:35:53,758 - core.database - DEBUG - [DB_OP] Starting get_db session creation
+2026-01-17 03:35:53,759 - core.database - DEBUG - [DB_OP] Database session created successfully in 0.0002s
+2026-01-17 03:35:53,759 - routers.analytics - INFO - Analytics request - anno: 2025, mese: 10, categoria: None
+2026-01-17 03:35:54,505 - routers.analytics - INFO - Acquisti categories: []
+2026-01-17 03:35:54,506 - routers.analytics - INFO - Vendite categories: []
+2026-01-17 03:35:54,506 - routers.analytics - INFO - Returning 0 categories
+2026-01-17 03:35:54,506 - core.database - DEBUG - [DB_OP] Database session cleanup after 0.7481s
+2026-01-17 03:35:56,769 - core.auth - DEBUG - Authentication token validated for user hash: 1fe0bfd6
+2026-01-17 03:35:56,770 - core.database - DEBUG - [DB_OP] Starting get_db session creation
+2026-01-17 03:35:56,770 - core.database - DEBUG - [DB_OP] Database session created successfully in 0.0002s
+2026-01-17 03:35:56,770 - routers.analytics - INFO - Analytics request - anno: None, mese: 10, categoria: None
+2026-01-17 03:35:57,518 - routers.analytics - INFO - Acquisti categories: []
+2026-01-17 03:35:57,518 - routers.analytics - INFO - Vendite categories: []
+2026-01-17 03:35:57,518 - routers.analytics - INFO - Returning 0 categories
+2026-01-17 03:35:57,518 - core.database - DEBUG - [DB_OP] Database session cleanup after 0.7489s
+2026-01-17 03:35:58,780 - core.auth - DEBUG - Authentication token validated for user hash: 1fe0bfd6
+2026-01-17 03:35:58,780 - core.database - DEBUG - [DB_OP] Starting get_db session creation
+2026-01-17 03:35:58,781 - core.database - DEBUG - [DB_OP] Database session created successfully in 0.0003s
+2026-01-17 03:35:58,781 - routers.analytics - INFO - Analytics request - anno: None, mese: None, categoria: None
+2026-01-17 03:35:59,280 - routers.analytics - INFO - Acquisti categories: ['Prize', 'Kit']
+2026-01-17 03:35:59,280 - routers.analytics - INFO - Vendite categories: []
+2026-01-17 03:35:59,280 - routers.analytics - INFO - Returning 2 categories
+2026-01-17 03:35:59,405 - core.database - DEBUG - [DB_OP] Database session cleanup after 0.6249s
+2026-01-17 03:36:05,566 - core.auth - DEBUG - Authentication token validated for user hash: 1fe0bfd6
+2026-01-17 03:36:05,583 - routers.upload - INFO - Processing sheet: TOT
+2026-01-17 03:36:05,584 - routers.upload - INFO - Found categories: [(1, 'Data Ordine'), (2, 'Data Consegna'), (3, 'Categoria'), (4, 'Quantità'), (5, 'Prezzo Totale')]
+2026-01-17 03:36:05,584 - routers.upload - WARNING - Row 2: No valid date found in column H, skipping row
+2026-01-17 03:36:05,584 - routers.upload - WARNING - Row 3: No valid date found in column H, skipping row
+2026-01-17 03:36:05,584 - routers.upload - WARNING - Row 4: No valid date found in column H, skipping row
+2026-01-17 03:36:05,584 - routers.upload - WARNING - Row 5: No valid date found in column H, skipping row
+2026-01-17 03:36:05,585 - routers.upload - WARNING - Row 6: No valid date found in column H, skipping row
+2026-01-17 03:36:05,585 - routers.upload - WARNING - Row 7: No valid date found in column H, skipping row
+2026-01-17 03:36:05,585 - routers.upload - WARNING - Row 8: No valid date found in column H, skipping row
+2026-01-17 03:36:05,585 - routers.upload - WARNING - Row 9: No valid date found in column H, skipping row
+2026-01-17 03:36:05,585 - routers.upload - WARNING - Row 10: No valid date found in column H, skipping row
+2026-01-17 03:36:05,585 - routers.upload - WARNING - Row 11: No valid date found in column H, skipping row
+2026-01-17 03:36:05,585 - routers.upload - WARNING - Row 12: No valid date found in column H, skipping row
+2026-01-17 03:36:05,586 - routers.upload - WARNING - Row 13: No valid date found in column H, skipping row
+2026-01-17 03:36:05,586 - routers.upload - WARNING - Row 14: No valid date found in column H, skipping row
+2026-01-17 03:36:05,586 - routers.upload - WARNING - Row 15: No valid date found in column H, skipping row
+2026-01-17 03:36:05,586 - routers.upload - WARNING - Row 16: No valid date found in column H, skipping row
+2026-01-17 03:36:05,586 - routers.upload - WARNING - Row 17: No valid date found in column H, skipping row
+2026-01-17 03:36:05,586 - routers.upload - WARNING - Row 18: No valid date found in column H, skipping row
+2026-01-17 03:36:05,586 - routers.upload - WARNING - Row 19: No valid date found in column H, skipping row
+2026-01-17 03:36:05,586 - routers.upload - WARNING - Row 20: No valid date found in column H, skipping row
+2026-01-17 03:36:05,587 - routers.upload - WARNING - Row 21: No valid date found in column H, skipping row
+2026-01-17 03:36:05,587 - routers.upload - WARNING - Row 22: No valid date found in column H, skipping row
+2026-01-17 03:36:05,587 - routers.upload - WARNING - Row 23: No valid date found in column H, skipping row
+2026-01-17 03:36:05,587 - routers.upload - WARNING - Row 24: No valid date found in column H, skipping row
+2026-01-17 03:36:05,587 - routers.upload - WARNING - Row 25: No valid date found in column H, skipping row
+2026-01-17 03:36:05,587 - routers.upload - WARNING - Row 26: No valid date found in column H, skipping row
+2026-01-17 03:36:05,587 - routers.upload - WARNING - Row 27: No valid date found in column H, skipping row
+2026-01-17 03:36:05,587 - routers.upload - WARNING - Row 28: No valid date found in column H, skipping row
+2026-01-17 03:36:05,587 - routers.upload - WARNING - Row 29: No valid date found in column H, skipping row
+2026-01-17 03:36:05,588 - routers.upload - WARNING - Row 30: No valid date found in column H, skipping row
+2026-01-17 03:36:05,588 - routers.upload - WARNING - Row 31: No valid date found in column H, skipping row
+2026-01-17 03:36:05,588 - routers.upload - WARNING - Row 32: No valid date found in column H, skipping row
+2026-01-17 03:36:05,588 - routers.upload - WARNING - Row 33: No valid date found in column H, skipping row
+2026-01-17 03:36:05,588 - routers.upload - WARNING - Row 34: No valid date found in column H, skipping row
+2026-01-17 03:36:05,588 - routers.upload - WARNING - Row 35: No valid date found in column H, skipping row
+2026-01-17 03:36:05,588 - routers.upload - WARNING - Row 36: No valid date found in column H, skipping row
+2026-01-17 03:36:05,588 - routers.upload - WARNING - Row 37: No valid date found in column H, skipping row
+2026-01-17 03:36:05,589 - routers.upload - WARNING - Row 38: No valid date found in column H, skipping row
+2026-01-17 03:36:05,589 - routers.upload - WARNING - Row 39: No valid date found in column H, skipping row
+2026-01-17 03:36:05,589 - routers.upload - WARNING - Row 40: No valid date found in column H, skipping row
+2026-01-17 03:36:05,589 - routers.upload - WARNING - Row 41: No valid date found in column H, skipping row
+2026-01-17 03:36:05,589 - routers.upload - WARNING - Row 42: No valid date found in column H, skipping row
+2026-01-17 03:36:05,589 - routers.upload - WARNING - Row 43: No valid date found in column H, skipping row
+2026-01-17 03:36:05,589 - routers.upload - WARNING - Row 44: No valid date found in column H, skipping row
+2026-01-17 03:36:05,589 - routers.upload - WARNING - Row 45: No valid date found in column H, skipping row
+2026-01-17 03:36:05,590 - routers.upload - WARNING - Row 46: No valid date found in column H, skipping row
+2026-01-17 03:36:05,590 - routers.upload - WARNING - Row 47: No valid date found in column H, skipping row
+2026-01-17 03:36:05,590 - routers.upload - WARNING - Row 48: No valid date found in column H, skipping row
+2026-01-17 03:36:05,590 - routers.upload - WARNING - Row 49: No valid date found in column H, skipping row
+2026-01-17 03:36:05,590 - routers.upload - WARNING - Row 50: No valid date found in column H, skipping row
+2026-01-17 03:36:05,590 - routers.upload - WARNING - Row 51: No valid date found in column H, skipping row
+2026-01-17 03:36:05,590 - routers.upload - WARNING - Row 52: No valid date found in column H, skipping row
+2026-01-17 03:36:05,591 - routers.upload - WARNING - Row 53: No valid date found in column H, skipping row
+2026-01-17 03:36:05,591 - routers.upload - WARNING - Row 54: No valid date found in column H, skipping row
+2026-01-17 03:36:05,591 - routers.upload - WARNING - Row 55: No valid date found in column H, skipping row
+2026-01-17 03:36:05,592 - routers.upload - WARNING - Row 56: No valid date found in column H, skipping row
+2026-01-17 03:36:05,592 - routers.upload - WARNING - Row 57: No valid date found in column H, skipping row
+2026-01-17 03:36:05,592 - routers.upload - WARNING - Row 58: No valid date found in column H, skipping row
+2026-01-17 03:36:05,592 - routers.upload - WARNING - Row 59: No valid date found in column H, skipping row
+2026-01-17 03:36:05,592 - routers.upload - WARNING - Row 60: No valid date found in column H, skipping row
+2026-01-17 03:36:05,592 - routers.upload - WARNING - Row 61: No valid date found in column H, skipping row
+2026-01-17 03:36:05,592 - routers.upload - WARNING - Row 62: No valid date found in column H, skipping row
+2026-01-17 03:36:05,592 - routers.upload - WARNING - Row 63: No valid date found in column H, skipping row
+2026-01-17 03:36:05,593 - routers.upload - WARNING - Row 64: No valid date found in column H, skipping row
+2026-01-17 03:36:05,593 - routers.upload - WARNING - Row 65: No valid date found in column H, skipping row
+2026-01-17 03:36:05,593 - routers.upload - WARNING - Row 66: No valid date found in column H, skipping row
+2026-01-17 03:36:05,593 - routers.upload - WARNING - Row 67: No valid date found in column H, skipping row
+2026-01-17 03:36:05,593 - routers.upload - WARNING - Row 68: No valid date found in column H, skipping row
+2026-01-17 03:36:05,593 - routers.upload - WARNING - Row 69: No valid date found in column H, skipping row
+2026-01-17 03:36:05,593 - routers.upload - WARNING - Row 70: No valid date found in column H, skipping row
+2026-01-17 03:36:05,593 - routers.upload - WARNING - Row 71: No valid date found in column H, skipping row
+2026-01-17 03:36:05,593 - routers.upload - WARNING - Row 72: No valid date found in column H, skipping row
+2026-01-17 03:36:05,594 - routers.upload - WARNING - Row 73: No valid date found in column H, skipping row
+2026-01-17 03:36:05,594 - routers.upload - WARNING - Row 74: No valid date found in column H, skipping row
+2026-01-17 03:36:05,594 - routers.upload - INFO - Parsed 0 sales records from matrix
+2026-01-17 03:36:05,594 - routers.upload - INFO - Total parsed sales rows: 0
+2026-01-17 03:36:14,700 - core.auth - DEBUG - Authentication token validated for user hash: 1fe0bfd6
+2026-01-17 03:36:14,862 - routers.upload - INFO - Processing sheet: TOT
+2026-01-17 03:36:14,862 - routers.upload - INFO - Found categories: [(1, 'Data Ordine'), (2, 'Data Consegna'), (3, 'Categoria'), (4, 'Quantità'), (5, 'Prezzo Totale')]
+2026-01-17 03:36:14,862 - routers.upload - WARNING - Row 2: No valid date found in column H, skipping row
+2026-01-17 03:36:14,863 - routers.upload - WARNING - Row 3: No valid date found in column H, skipping row
+2026-01-17 03:36:14,863 - routers.upload - WARNING - Row 4: No valid date found in column H, skipping row
+2026-01-17 03:36:14,863 - routers.upload - WARNING - Row 5: No valid date found in column H, skipping row
+2026-01-17 03:36:14,863 - routers.upload - WARNING - Row 6: No valid date found in column H, skipping row
+2026-01-17 03:36:14,863 - routers.upload - WARNING - Row 7: No valid date found in column H, skipping row
+2026-01-17 03:36:14,863 - routers.upload - WARNING - Row 8: No valid date found in column H, skipping row
+2026-01-17 03:36:14,864 - routers.upload - WARNING - Row 9: No valid date found in column H, skipping row
+2026-01-17 03:36:14,864 - routers.upload - WARNING - Row 10: No valid date found in column H, skipping row
+2026-01-17 03:36:14,864 - routers.upload - WARNING - Row 11: No valid date found in column H, skipping row
+2026-01-17 03:36:14,864 - routers.upload - WARNING - Row 12: No valid date found in column H, skipping row
+2026-01-17 03:36:14,864 - routers.upload - WARNING - Row 13: No valid date found in column H, skipping row
+2026-01-17 03:36:14,864 - routers.upload - WARNING - Row 14: No valid date found in column H, skipping row
+2026-01-17 03:36:14,864 - routers.upload - WARNING - Row 15: No valid date found in column H, skipping row
+2026-01-17 03:36:14,865 - routers.upload - WARNING - Row 16: No valid date found in column H, skipping row
+2026-01-17 03:36:14,865 - routers.upload - WARNING - Row 17: No valid date found in column H, skipping row
+2026-01-17 03:36:14,865 - routers.upload - WARNING - Row 18: No valid date found in column H, skipping row
+2026-01-17 03:36:14,865 - routers.upload - WARNING - Row 19: No valid date found in column H, skipping row
+2026-01-17 03:36:14,865 - routers.upload - WARNING - Row 20: No valid date found in column H, skipping row
+2026-01-17 03:36:14,865 - routers.upload - WARNING - Row 21: No valid date found in column H, skipping row
+2026-01-17 03:36:14,865 - routers.upload - WARNING - Row 22: No valid date found in column H, skipping row
+2026-01-17 03:36:14,865 - routers.upload - WARNING - Row 23: No valid date found in column H, skipping row
+2026-01-17 03:36:14,865 - routers.upload - WARNING - Row 24: No valid date found in column H, skipping row
+2026-01-17 03:36:14,866 - routers.upload - WARNING - Row 25: No valid date found in column H, skipping row
+2026-01-17 03:36:14,866 - routers.upload - WARNING - Row 26: No valid date found in column H, skipping row
+2026-01-17 03:36:14,866 - routers.upload - WARNING - Row 27: No valid date found in column H, skipping row
+2026-01-17 03:36:14,866 - routers.upload - WARNING - Row 28: No valid date found in column H, skipping row
+2026-01-17 03:36:14,866 - routers.upload - WARNING - Row 29: No valid date found in column H, skipping row
+2026-01-17 03:36:14,866 - routers.upload - WARNING - Row 30: No valid date found in column H, skipping row
+2026-01-17 03:36:14,866 - routers.upload - WARNING - Row 31: No valid date found in column H, skipping row
+2026-01-17 03:36:14,866 - routers.upload - WARNING - Row 32: No valid date found in column H, skipping row
+2026-01-17 03:36:14,867 - routers.upload - WARNING - Row 33: No valid date found in column H, skipping row
+2026-01-17 03:36:14,867 - routers.upload - WARNING - Row 34: No valid date found in column H, skipping row
+2026-01-17 03:36:14,867 - routers.upload - WARNING - Row 35: No valid date found in column H, skipping row
+2026-01-17 03:36:14,867 - routers.upload - WARNING - Row 36: No valid date found in column H, skipping row
+2026-01-17 03:36:14,867 - routers.upload - WARNING - Row 37: No valid date found in column H, skipping row
+2026-01-17 03:36:14,867 - routers.upload - WARNING - Row 38: No valid date found in column H, skipping row
+2026-01-17 03:36:14,867 - routers.upload - WARNING - Row 39: No valid date found in column H, skipping row
+2026-01-17 03:36:14,867 - routers.upload - WARNING - Row 40: No valid date found in column H, skipping row
+2026-01-17 03:36:14,868 - routers.upload - WARNING - Row 41: No valid date found in column H, skipping row
+2026-01-17 03:36:14,868 - routers.upload - WARNING - Row 42: No valid date found in column H, skipping row
+2026-01-17 03:36:14,868 - routers.upload - WARNING - Row 43: No valid date found in column H, skipping row
+2026-01-17 03:36:14,868 - routers.upload - WARNING - Row 44: No valid date found in column H, skipping row
+2026-01-17 03:36:14,868 - routers.upload - WARNING - Row 45: No valid date found in column H, skipping row
+2026-01-17 03:36:14,868 - routers.upload - WARNING - Row 46: No valid date found in column H, skipping row
+2026-01-17 03:36:14,868 - routers.upload - WARNING - Row 47: No valid date found in column H, skipping row
+2026-01-17 03:36:14,868 - routers.upload - WARNING - Row 48: No valid date found in column H, skipping row
+2026-01-17 03:36:14,869 - routers.upload - WARNING - Row 49: No valid date found in column H, skipping row
+2026-01-17 03:36:14,869 - routers.upload - WARNING - Row 50: No valid date found in column H, skipping row
+2026-01-17 03:36:14,869 - routers.upload - WARNING - Row 51: No valid date found in column H, skipping row
+2026-01-17 03:36:14,869 - routers.upload - WARNING - Row 52: No valid date found in column H, skipping row
+2026-01-17 03:36:14,869 - routers.upload - WARNING - Row 53: No valid date found in column H, skipping row
+2026-01-17 03:36:14,869 - routers.upload - WARNING - Row 54: No valid date found in column H, skipping row
+2026-01-17 03:36:14,870 - routers.upload - WARNING - Row 55: No valid date found in column H, skipping row
+2026-01-17 03:36:14,870 - routers.upload - WARNING - Row 56: No valid date found in column H, skipping row
+2026-01-17 03:36:14,870 - routers.upload - WARNING - Row 57: No valid date found in column H, skipping row
+2026-01-17 03:36:14,870 - routers.upload - WARNING - Row 58: No valid date found in column H, skipping row
+2026-01-17 03:36:14,870 - routers.upload - WARNING - Row 59: No valid date found in column H, skipping row
+2026-01-17 03:36:14,870 - routers.upload - WARNING - Row 60: No valid date found in column H, skipping row
+2026-01-17 03:36:14,870 - routers.upload - WARNING - Row 61: No valid date found in column H, skipping row
+2026-01-17 03:36:14,870 - routers.upload - WARNING - Row 62: No valid date found in column H, skipping row
+2026-01-17 03:36:14,871 - routers.upload - WARNING - Row 63: No valid date found in column H, skipping row
+2026-01-17 03:36:14,871 - routers.upload - WARNING - Row 64: No valid date found in column H, skipping row
+2026-01-17 03:36:14,871 - routers.upload - WARNING - Row 65: No valid date found in column H, skipping row
+2026-01-17 03:36:14,871 - routers.upload - WARNING - Row 66: No valid date found in column H, skipping row
+2026-01-17 03:36:14,871 - routers.upload - WARNING - Row 67: No valid date found in column H, skipping row
+2026-01-17 03:36:14,871 - routers.upload - WARNING - Row 68: No valid date found in column H, skipping row
+2026-01-17 03:36:14,871 - routers.upload - WARNING - Row 69: No valid date found in column H, skipping row
+2026-01-17 03:36:14,871 - routers.upload - WARNING - Row 70: No valid date found in column H, skipping row
+2026-01-17 03:36:14,872 - routers.upload - WARNING - Row 71: No valid date found in column H, skipping row
+2026-01-17 03:36:14,872 - routers.upload - WARNING - Row 72: No valid date found in column H, skipping row
+2026-01-17 03:36:14,872 - routers.upload - WARNING - Row 73: No valid date found in column H, skipping row
+2026-01-17 03:36:14,872 - routers.upload - WARNING - Row 74: No valid date found in column H, skipping row
+2026-01-17 03:36:14,872 - routers.upload - INFO - Parsed 0 sales records from matrix
+2026-01-17 03:36:14,873 - routers.upload - INFO - Total parsed sales rows: 0
+2026-01-17 03:36:23,409 - core.auth - DEBUG - Authentication token validated for user hash: 1fe0bfd6
+2026-01-17 03:36:23,429 - routers.upload - INFO - Processing sheet: TOT
+2026-01-17 03:36:23,430 - routers.upload - INFO - Found categories: [(1, 'Data Ordine'), (2, 'Data Consegna'), (3, 'Categoria'), (4, 'Quantità'), (5, 'Prezzo Totale')]
+2026-01-17 03:36:23,430 - routers.upload - WARNING - Row 2: No valid date found in column H, skipping row
+2026-01-17 03:36:23,430 - routers.upload - WARNING - Row 3: No valid date found in column H, skipping row
+2026-01-17 03:36:23,430 - routers.upload - WARNING - Row 4: No valid date found in column H, skipping row
+2026-01-17 03:36:23,430 - routers.upload - WARNING - Row 5: No valid date found in column H, skipping row
+2026-01-17 03:36:23,431 - routers.upload - WARNING - Row 6: No valid date found in column H, skipping row
+2026-01-17 03:36:23,431 - routers.upload - WARNING - Row 7: No valid date found in column H, skipping row
+2026-01-17 03:36:23,431 - routers.upload - WARNING - Row 8: No valid date found in column H, skipping row
+2026-01-17 03:36:23,431 - routers.upload - WARNING - Row 9: No valid date found in column H, skipping row
+2026-01-17 03:36:23,431 - routers.upload - WARNING - Row 10: No valid date found in column H, skipping row
+2026-01-17 03:36:23,431 - routers.upload - WARNING - Row 11: No valid date found in column H, skipping row
+2026-01-17 03:36:23,431 - routers.upload - WARNING - Row 12: No valid date found in column H, skipping row
+2026-01-17 03:36:23,431 - routers.upload - WARNING - Row 13: No valid date found in column H, skipping row
+2026-01-17 03:36:23,432 - routers.upload - WARNING - Row 14: No valid date found in column H, skipping row
+2026-01-17 03:36:23,432 - routers.upload - WARNING - Row 15: No valid date found in column H, skipping row
+2026-01-17 03:36:23,432 - routers.upload - WARNING - Row 16: No valid date found in column H, skipping row
+2026-01-17 03:36:23,432 - routers.upload - WARNING - Row 17: No valid date found in column H, skipping row
+2026-01-17 03:36:23,432 - routers.upload - WARNING - Row 18: No valid date found in column H, skipping row
+2026-01-17 03:36:23,432 - routers.upload - WARNING - Row 19: No valid date found in column H, skipping row
+2026-01-17 03:36:23,432 - routers.upload - WARNING - Row 20: No valid date found in column H, skipping row
+2026-01-17 03:36:23,432 - routers.upload - WARNING - Row 21: No valid date found in column H, skipping row
+2026-01-17 03:36:23,432 - routers.upload - WARNING - Row 22: No valid date found in column H, skipping row
+2026-01-17 03:36:23,433 - routers.upload - WARNING - Row 23: No valid date found in column H, skipping row
+2026-01-17 03:36:23,433 - routers.upload - WARNING - Row 24: No valid date found in column H, skipping row
+2026-01-17 03:36:23,433 - routers.upload - WARNING - Row 25: No valid date found in column H, skipping row
+2026-01-17 03:36:23,433 - routers.upload - WARNING - Row 26: No valid date found in column H, skipping row
+2026-01-17 03:36:23,433 - routers.upload - WARNING - Row 27: No valid date found in column H, skipping row
+2026-01-17 03:36:23,433 - routers.upload - WARNING - Row 28: No valid date found in column H, skipping row
+2026-01-17 03:36:23,433 - routers.upload - WARNING - Row 29: No valid date found in column H, skipping row
+2026-01-17 03:36:23,433 - routers.upload - WARNING - Row 30: No valid date found in column H, skipping row
+2026-01-17 03:36:23,433 - routers.upload - WARNING - Row 31: No valid date found in column H, skipping row
+2026-01-17 03:36:23,434 - routers.upload - WARNING - Row 32: No valid date found in column H, skipping row
+2026-01-17 03:36:23,434 - routers.upload - WARNING - Row 33: No valid date found in column H, skipping row
+2026-01-17 03:36:23,434 - routers.upload - WARNING - Row 34: No valid date found in column H, skipping row
+2026-01-17 03:36:23,434 - routers.upload - WARNING - Row 35: No valid date found in column H, skipping row
+2026-01-17 03:36:23,434 - routers.upload - WARNING - Row 36: No valid date found in column H, skipping row
+2026-01-17 03:36:23,434 - routers.upload - WARNING - Row 37: No valid date found in column H, skipping row
+2026-01-17 03:36:23,434 - routers.upload - WARNING - Row 38: No valid date found in column H, skipping row
+2026-01-17 03:36:23,434 - routers.upload - WARNING - Row 39: No valid date found in column H, skipping row
+2026-01-17 03:36:23,435 - routers.upload - WARNING - Row 40: No valid date found in column H, skipping row
+2026-01-17 03:36:23,435 - routers.upload - WARNING - Row 41: No valid date found in column H, skipping row
+2026-01-17 03:36:23,435 - routers.upload - WARNING - Row 42: No valid date found in column H, skipping row
+2026-01-17 03:36:23,435 - routers.upload - WARNING - Row 43: No valid date found in column H, skipping row
+2026-01-17 03:36:23,435 - routers.upload - WARNING - Row 44: No valid date found in column H, skipping row
+2026-01-17 03:36:23,435 - routers.upload - WARNING - Row 45: No valid date found in column H, skipping row
+2026-01-17 03:36:23,435 - routers.upload - WARNING - Row 46: No valid date found in column H, skipping row
+2026-01-17 03:36:23,436 - routers.upload - WARNING - Row 47: No valid date found in column H, skipping row
+2026-01-17 03:36:23,436 - routers.upload - WARNING - Row 48: No valid date found in column H, skipping row
+2026-01-17 03:36:23,436 - routers.upload - WARNING - Row 49: No valid date found in column H, skipping row
+2026-01-17 03:36:23,436 - routers.upload - WARNING - Row 50: No valid date found in column H, skipping row
+2026-01-17 03:36:23,436 - routers.upload - WARNING - Row 51: No valid date found in column H, skipping row
+2026-01-17 03:36:23,436 - routers.upload - WARNING - Row 52: No valid date found in column H, skipping row
+2026-01-17 03:36:23,436 - routers.upload - WARNING - Row 53: No valid date found in column H, skipping row
+2026-01-17 03:36:23,437 - routers.upload - WARNING - Row 54: No valid date found in column H, skipping row
+2026-01-17 03:36:23,437 - routers.upload - WARNING - Row 55: No valid date found in column H, skipping row
+2026-01-17 03:36:23,437 - routers.upload - WARNING - Row 56: No valid date found in column H, skipping row
+2026-01-17 03:36:23,437 - routers.upload - WARNING - Row 57: No valid date found in column H, skipping row
+2026-01-17 03:36:23,437 - routers.upload - WARNING - Row 58: No valid date found in column H, skipping row
+2026-01-17 03:36:23,437 - routers.upload - WARNING - Row 59: No valid date found in column H, skipping row
+2026-01-17 03:36:23,437 - routers.upload - WARNING - Row 60: No valid date found in column H, skipping row
+2026-01-17 03:36:23,437 - routers.upload - WARNING - Row 61: No valid date found in column H, skipping row
+2026-01-17 03:36:23,438 - routers.upload - WARNING - Row 62: No valid date found in column H, skipping row
+2026-01-17 03:36:23,438 - routers.upload - WARNING - Row 63: No valid date found in column H, skipping row
+2026-01-17 03:36:23,438 - routers.upload - WARNING - Row 64: No valid date found in column H, skipping row
+2026-01-17 03:36:23,438 - routers.upload - WARNING - Row 65: No valid date found in column H, skipping row
+2026-01-17 03:36:23,438 - routers.upload - WARNING - Row 66: No valid date found in column H, skipping row
+2026-01-17 03:36:23,438 - routers.upload - WARNING - Row 67: No valid date found in column H, skipping row
+2026-01-17 03:36:23,438 - routers.upload - WARNING - Row 68: No valid date found in column H, skipping row
+2026-01-17 03:36:23,438 - routers.upload - WARNING - Row 69: No valid date found in column H, skipping row
+2026-01-17 03:36:23,439 - routers.upload - WARNING - Row 70: No valid date found in column H, skipping row
+2026-01-17 03:36:23,439 - routers.upload - WARNING - Row 71: No valid date found in column H, skipping row
+2026-01-17 03:36:23,439 - routers.upload - WARNING - Row 72: No valid date found in column H, skipping row
+2026-01-17 03:36:23,439 - routers.upload - WARNING - Row 73: No valid date found in column H, skipping row
+2026-01-17 03:36:23,439 - routers.upload - WARNING - Row 74: No valid date found in column H, skipping row
+2026-01-17 03:36:23,439 - routers.upload - INFO - Parsed 0 sales records from matrix
+2026-01-17 03:36:23,439 - routers.upload - INFO - Total parsed sales rows: 0
+2026-01-17 03:36:31,639 - core.auth - DEBUG - Authentication token validated for user hash: 1fe0bfd6
+2026-01-17 03:36:31,659 - routers.upload - INFO - Column mapping: {'fornitore': 0, 'data_ordine': 1, 'data_consegna': 2, 'categoria': 3, 'quantita': 4, 'prezzo': 5}
+2026-01-17 03:36:31,662 - routers.upload - INFO - Parsed 73 supplier rows
+2026-01-17 03:36:33,440 - core.auth - DEBUG - Authentication token validated for user hash: 1fe0bfd6
+2026-01-17 03:36:33,441 - core.database - DEBUG - [DB_OP] Starting get_db session creation
+2026-01-17 03:36:33,441 - core.database - DEBUG - [DB_OP] Database session created successfully in 0.0002s
+2026-01-17 03:36:34,187 - services.acquisti - INFO - Created acquisti with id: 293
+2026-01-17 03:36:34,671 - services.acquisti - INFO - Created acquisti with id: 294
+2026-01-17 03:36:35,161 - services.acquisti - INFO - Created acquisti with id: 295
+2026-01-17 03:36:35,650 - services.acquisti - INFO - Created acquisti with id: 296
+2026-01-17 03:36:36,140 - services.acquisti - INFO - Created acquisti with id: 297
+2026-01-17 03:36:36,628 - services.acquisti - INFO - Created acquisti with id: 298
+2026-01-17 03:36:37,121 - services.acquisti - INFO - Created acquisti with id: 299
+2026-01-17 03:36:37,609 - services.acquisti - INFO - Created acquisti with id: 300
+2026-01-17 03:36:38,100 - services.acquisti - INFO - Created acquisti with id: 301
+2026-01-17 03:36:38,587 - services.acquisti - INFO - Created acquisti with id: 302
+2026-01-17 03:36:39,079 - services.acquisti - INFO - Created acquisti with id: 303
+2026-01-17 03:36:39,569 - services.acquisti - INFO - Created acquisti with id: 304
+2026-01-17 03:36:40,062 - services.acquisti - INFO - Created acquisti with id: 305
+2026-01-17 03:36:40,548 - services.acquisti - INFO - Created acquisti with id: 306
+2026-01-17 03:36:41,037 - services.acquisti - INFO - Created acquisti with id: 307
+2026-01-17 03:36:41,527 - services.acquisti - INFO - Created acquisti with id: 308
+2026-01-17 03:36:42,018 - services.acquisti - INFO - Created acquisti with id: 309
+2026-01-17 03:36:42,507 - services.acquisti - INFO - Created acquisti with id: 310
+2026-01-17 03:36:42,999 - services.acquisti - INFO - Created acquisti with id: 311
+2026-01-17 03:36:43,489 - services.acquisti - INFO - Created acquisti with id: 312
+2026-01-17 03:36:43,981 - services.acquisti - INFO - Created acquisti with id: 313
+2026-01-17 03:36:44,468 - services.acquisti - INFO - Created acquisti with id: 314
+2026-01-17 03:36:44,978 - services.acquisti - INFO - Created acquisti with id: 315
+2026-01-17 03:36:45,469 - services.acquisti - INFO - Created acquisti with id: 316
+2026-01-17 03:36:45,961 - services.acquisti - INFO - Created acquisti with id: 317
+2026-01-17 03:36:46,448 - services.acquisti - INFO - Created acquisti with id: 318
+2026-01-17 03:36:46,942 - services.acquisti - INFO - Created acquisti with id: 319
+2026-01-17 03:36:47,430 - services.acquisti - INFO - Created acquisti with id: 320
+2026-01-17 03:36:47,920 - services.acquisti - INFO - Created acquisti with id: 321
+2026-01-17 03:36:48,410 - services.acquisti - INFO - Created acquisti with id: 322
+2026-01-17 03:36:48,899 - services.acquisti - INFO - Created acquisti with id: 323
+2026-01-17 03:36:49,388 - services.acquisti - INFO - Created acquisti with id: 324
+2026-01-17 03:36:49,883 - services.acquisti - INFO - Created acquisti with id: 325
+2026-01-17 03:36:50,372 - services.acquisti - INFO - Created acquisti with id: 326
+2026-01-17 03:36:50,864 - services.acquisti - INFO - Created acquisti with id: 327
+2026-01-17 03:36:51,357 - services.acquisti - INFO - Created acquisti with id: 328
+2026-01-17 03:36:51,854 - services.acquisti - INFO - Created acquisti with id: 329
+2026-01-17 03:36:52,340 - services.acquisti - INFO - Created acquisti with id: 330
+2026-01-17 03:36:52,831 - services.acquisti - INFO - Created acquisti with id: 331
+2026-01-17 03:36:53,359 - services.acquisti - INFO - Created acquisti with id: 332
+2026-01-17 03:36:53,850 - services.acquisti - INFO - Created acquisti with id: 333
+2026-01-17 03:36:54,338 - services.acquisti - INFO - Created acquisti with id: 334
+2026-01-17 03:36:54,831 - services.acquisti - INFO - Created acquisti with id: 335
+2026-01-17 03:36:55,319 - services.acquisti - INFO - Created acquisti with id: 336
+2026-01-17 03:36:55,811 - services.acquisti - INFO - Created acquisti with id: 337
+2026-01-17 03:36:56,310 - services.acquisti - INFO - Created acquisti with id: 338
+2026-01-17 03:36:56,809 - services.acquisti - INFO - Created acquisti with id: 339
+2026-01-17 03:36:57,299 - services.acquisti - INFO - Created acquisti with id: 340
+2026-01-17 03:36:57,792 - services.acquisti - INFO - Created acquisti with id: 341
+2026-01-17 03:36:58,282 - services.acquisti - INFO - Created acquisti with id: 342
+2026-01-17 03:36:58,792 - services.acquisti - INFO - Created acquisti with id: 343
+2026-01-17 03:36:59,281 - services.acquisti - INFO - Created acquisti with id: 344
+2026-01-17 03:36:59,775 - services.acquisti - INFO - Created acquisti with id: 345
+2026-01-17 03:37:00,263 - services.acquisti - INFO - Created acquisti with id: 346
+2026-01-17 03:37:00,756 - services.acquisti - INFO - Created acquisti with id: 347
+2026-01-17 03:37:01,264 - services.acquisti - INFO - Created acquisti with id: 348
+2026-01-17 03:37:01,758 - services.acquisti - INFO - Created acquisti with id: 349
+2026-01-17 03:37:02,245 - services.acquisti - INFO - Created acquisti with id: 350
+2026-01-17 03:37:02,738 - services.acquisti - INFO - Created acquisti with id: 351
+2026-01-17 03:37:03,227 - services.acquisti - INFO - Created acquisti with id: 352
+2026-01-17 03:37:03,718 - services.acquisti - INFO - Created acquisti with id: 353
+2026-01-17 03:37:04,204 - services.acquisti - INFO - Created acquisti with id: 354
+2026-01-17 03:37:04,694 - services.acquisti - INFO - Created acquisti with id: 355
+2026-01-17 03:37:05,181 - services.acquisti - INFO - Created acquisti with id: 356
+2026-01-17 03:37:05,675 - services.acquisti - INFO - Created acquisti with id: 357
+2026-01-17 03:37:06,167 - services.acquisti - INFO - Created acquisti with id: 358
+2026-01-17 03:37:06,659 - services.acquisti - INFO - Created acquisti with id: 359
+2026-01-17 03:37:07,148 - services.acquisti - INFO - Created acquisti with id: 360
+2026-01-17 03:37:07,640 - services.acquisti - INFO - Created acquisti with id: 361
+2026-01-17 03:37:08,127 - services.acquisti - INFO - Created acquisti with id: 362
+2026-01-17 03:37:08,618 - services.acquisti - INFO - Created acquisti with id: 363
+2026-01-17 03:37:09,105 - services.acquisti - INFO - Created acquisti with id: 364
+2026-01-17 03:37:09,605 - services.acquisti - INFO - Created acquisti with id: 365
+2026-01-17 03:37:09,605 - core.database - DEBUG - [DB_OP] Database session cleanup after 36.1648s
+2026-01-17 03:37:33,301 - core.auth - DEBUG - Authentication token validated for user hash: 1fe0bfd6
+2026-01-17 03:37:33,366 - routers.upload - INFO - Processing sheet: Febbraio
+2026-01-17 03:37:33,366 - routers.upload - INFO - Found categories: [(1, 'Prize'), (2, 'Banco'), (3, 'Big'), (4, 'Nendo'), (5, 'Plush'), (6, 'Kit')]
+2026-01-17 03:37:33,367 - routers.upload - INFO - Row 2: Parsed date from column H: 2025-11-12 00:00:00 -> 2025-11-12 00:00:00
+2026-01-17 03:37:33,367 - routers.upload - INFO - Row 3: Parsed date from column H: 2025-11-13 00:00:00 -> 2025-11-13 00:00:00
+2026-01-17 03:37:33,367 - routers.upload - INFO - Row 4: Parsed date from column H: 2025-11-14 00:00:00 -> 2025-11-14 00:00:00
+2026-01-17 03:37:33,368 - routers.upload - INFO - Row 5: Parsed date from column H: 2025-11-15 00:00:00 -> 2025-11-15 00:00:00
+2026-01-17 03:37:33,368 - routers.upload - INFO - Row 6: Parsed date from column H: 2025-11-16 00:00:00 -> 2025-11-16 00:00:00
+2026-01-17 03:37:33,368 - routers.upload - INFO - Row 7: Parsed date from column H: 2025-11-17 00:00:00 -> 2025-11-17 00:00:00
+2026-01-17 03:37:33,368 - routers.upload - INFO - Row 8: Parsed date from column H: 2025-11-18 00:00:00 -> 2025-11-18 00:00:00
+2026-01-17 03:37:33,368 - routers.upload - INFO - Row 9: Parsed date from column H: 2025-11-19 00:00:00 -> 2025-11-19 00:00:00
+2026-01-17 03:37:33,368 - routers.upload - INFO - Row 10: Parsed date from column H: 2025-11-20 00:00:00 -> 2025-11-20 00:00:00
+2026-01-17 03:37:33,368 - routers.upload - INFO - Row 11: Parsed date from column H: 2025-11-21 00:00:00 -> 2025-11-21 00:00:00
+2026-01-17 03:37:33,368 - routers.upload - INFO - Row 12: Parsed date from column H: 2025-11-22 00:00:00 -> 2025-11-22 00:00:00
+2026-01-17 03:37:33,369 - routers.upload - INFO - Row 13: Parsed date from column H: 2025-11-23 00:00:00 -> 2025-11-23 00:00:00
+2026-01-17 03:37:33,369 - routers.upload - INFO - Row 14: Parsed date from column H: 2025-11-24 00:00:00 -> 2025-11-24 00:00:00
+2026-01-17 03:37:33,369 - routers.upload - INFO - Row 15: Parsed date from column H: 2025-11-25 00:00:00 -> 2025-11-25 00:00:00
+2026-01-17 03:37:33,369 - routers.upload - INFO - Row 16: Parsed date from column H: 2025-11-26 00:00:00 -> 2025-11-26 00:00:00
+2026-01-17 03:37:33,369 - routers.upload - INFO - Row 17: Parsed date from column H: 2025-11-27 00:00:00 -> 2025-11-27 00:00:00
+2026-01-17 03:37:33,369 - routers.upload - INFO - Row 18: Parsed date from column H: 2025-11-28 00:00:00 -> 2025-11-28 00:00:00
+2026-01-17 03:37:33,369 - routers.upload - INFO - Row 19: Parsed date from column H: 2025-11-29 00:00:00 -> 2025-11-29 00:00:00
+2026-01-17 03:37:33,370 - routers.upload - INFO - Row 20: Parsed date from column H: 2025-11-30 00:00:00 -> 2025-11-30 00:00:00
+2026-01-17 03:37:33,370 - routers.upload - INFO - Row 21: Parsed date from column H: 2025-12-01 00:00:00 -> 2025-12-01 00:00:00
+2026-01-17 03:37:33,370 - routers.upload - INFO - Row 22: Parsed date from column H: 2025-12-02 00:00:00 -> 2025-12-02 00:00:00
+2026-01-17 03:37:33,370 - routers.upload - INFO - Row 23: Parsed date from column H: 2025-12-03 00:00:00 -> 2025-12-03 00:00:00
+2026-01-17 03:37:33,377 - routers.upload - INFO - Parsed 112 sales records from matrix
+2026-01-17 03:37:33,377 - routers.upload - INFO - Total parsed sales rows: 112
+2026-01-17 03:37:34,823 - core.auth - DEBUG - Authentication token validated for user hash: 1fe0bfd6
+2026-01-17 03:37:34,824 - core.database - DEBUG - [DB_OP] Starting get_db session creation
+2026-01-17 03:37:34,824 - core.database - DEBUG - [DB_OP] Database session created successfully in 0.0003s
+2026-01-17 03:37:35,622 - services.vendite - INFO - Created vendite with id: 571
+2026-01-17 03:37:36,178 - services.vendite - INFO - Created vendite with id: 572
+2026-01-17 03:37:36,611 - services.vendite - INFO - Created vendite with id: 573
+2026-01-17 03:37:37,039 - services.vendite - INFO - Created vendite with id: 574
+2026-01-17 03:37:37,472 - services.vendite - INFO - Created vendite with id: 575
+2026-01-17 03:37:37,898 - services.vendite - INFO - Created vendite with id: 576
+2026-01-17 03:37:38,331 - services.vendite - INFO - Created vendite with id: 577
+2026-01-17 03:37:38,759 - services.vendite - INFO - Created vendite with id: 578
+2026-01-17 03:37:39,194 - services.vendite - INFO - Created vendite with id: 579
+2026-01-17 03:37:39,630 - services.vendite - INFO - Created vendite with id: 580
+2026-01-17 03:37:40,062 - services.vendite - INFO - Created vendite with id: 581
+2026-01-17 03:37:40,487 - services.vendite - INFO - Created vendite with id: 582
+2026-01-17 03:37:40,922 - services.vendite - INFO - Created vendite with id: 583
+2026-01-17 03:37:41,347 - services.vendite - INFO - Created vendite with id: 584
+2026-01-17 03:37:41,787 - services.vendite - INFO - Created vendite with id: 585
+2026-01-17 03:37:42,213 - services.vendite - INFO - Created vendite with id: 586
+2026-01-17 03:37:42,646 - services.vendite - INFO - Created vendite with id: 587
+2026-01-17 03:37:43,071 - services.vendite - INFO - Created vendite with id: 588
+2026-01-17 03:37:43,503 - services.vendite - INFO - Created vendite with id: 589
+2026-01-17 03:37:43,930 - services.vendite - INFO - Created vendite with id: 590
+2026-01-17 03:37:44,360 - services.vendite - INFO - Created vendite with id: 591
+2026-01-17 03:37:44,785 - services.vendite - INFO - Created vendite with id: 592
+2026-01-17 03:37:45,216 - services.vendite - INFO - Created vendite with id: 593
+2026-01-17 03:37:45,642 - services.vendite - INFO - Created vendite with id: 594
+2026-01-17 03:37:46,076 - services.vendite - INFO - Created vendite with id: 595
+2026-01-17 03:37:46,501 - services.vendite - INFO - Created vendite with id: 596
+2026-01-17 03:37:46,932 - services.vendite - INFO - Created vendite with id: 597
+2026-01-17 03:37:47,357 - services.vendite - INFO - Created vendite with id: 598
+2026-01-17 03:37:47,789 - services.vendite - INFO - Created vendite with id: 599
+2026-01-17 03:37:48,214 - services.vendite - INFO - Created vendite with id: 600
+2026-01-17 03:37:48,645 - services.vendite - INFO - Created vendite with id: 601
+2026-01-17 03:37:49,071 - services.vendite - INFO - Created vendite with id: 602
+2026-01-17 03:37:49,502 - services.vendite - INFO - Created vendite with id: 603
+2026-01-17 03:37:49,927 - services.vendite - INFO - Created vendite with id: 604
+2026-01-17 03:37:50,357 - services.vendite - INFO - Created vendite with id: 605
+2026-01-17 03:37:50,781 - services.vendite - INFO - Created vendite with id: 606
+2026-01-17 03:37:51,211 - services.vendite - INFO - Created vendite with id: 607
+2026-01-17 03:37:51,634 - services.vendite - INFO - Created vendite with id: 608
+2026-01-17 03:37:52,064 - services.vendite - INFO - Created vendite with id: 609
+2026-01-17 03:37:52,501 - services.vendite - INFO - Created vendite with id: 610
+2026-01-17 03:37:52,932 - services.vendite - INFO - Created vendite with id: 611
+2026-01-17 03:37:53,374 - services.vendite - INFO - Created vendite with id: 612
+2026-01-17 03:37:53,804 - services.vendite - INFO - Created vendite with id: 613
+2026-01-17 03:37:54,229 - services.vendite - INFO - Created vendite with id: 614
+2026-01-17 03:37:54,660 - services.vendite - INFO - Created vendite with id: 615
+2026-01-17 03:37:55,082 - services.vendite - INFO - Created vendite with id: 616
+2026-01-17 03:37:55,511 - services.vendite - INFO - Created vendite with id: 617
+2026-01-17 03:37:55,940 - services.vendite - INFO - Created vendite with id: 618
+2026-01-17 03:37:56,371 - services.vendite - INFO - Created vendite with id: 619
+2026-01-17 03:37:56,793 - services.vendite - INFO - Created vendite with id: 620
+2026-01-17 03:37:57,225 - services.vendite - INFO - Created vendite with id: 621
+2026-01-17 03:37:57,650 - services.vendite - INFO - Created vendite with id: 622
+2026-01-17 03:37:58,082 - services.vendite - INFO - Created vendite with id: 623
+2026-01-17 03:37:58,507 - services.vendite - INFO - Created vendite with id: 624
+2026-01-17 03:37:58,937 - services.vendite - INFO - Created vendite with id: 625
+2026-01-17 03:37:59,361 - services.vendite - INFO - Created vendite with id: 626
+2026-01-17 03:37:59,792 - services.vendite - INFO - Created vendite with id: 627
+2026-01-17 03:38:00,217 - services.vendite - INFO - Created vendite with id: 628
+2026-01-17 03:38:00,650 - services.vendite - INFO - Created vendite with id: 629
+2026-01-17 03:38:01,074 - services.vendite - INFO - Created vendite with id: 630
+2026-01-17 03:38:01,513 - services.vendite - INFO - Created vendite with id: 631
+2026-01-17 03:38:01,938 - services.vendite - INFO - Created vendite with id: 632
+2026-01-17 03:38:02,367 - services.vendite - INFO - Created vendite with id: 633
+2026-01-17 03:38:02,792 - services.vendite - INFO - Created vendite with id: 634
+2026-01-17 03:38:03,223 - services.vendite - INFO - Created vendite with id: 635
+2026-01-17 03:38:03,648 - services.vendite - INFO - Created vendite with id: 636
+2026-01-17 03:38:04,077 - services.vendite - INFO - Created vendite with id: 637
+2026-01-17 03:38:04,501 - services.vendite - INFO - Created vendite with id: 638
+2026-01-17 03:38:04,932 - services.vendite - INFO - Created vendite with id: 639
+2026-01-17 03:38:05,360 - services.vendite - INFO - Created vendite with id: 640
+2026-01-17 03:38:05,793 - services.vendite - INFO - Created vendite with id: 641
+2026-01-17 03:38:06,219 - services.vendite - INFO - Created vendite with id: 642
+2026-01-17 03:38:06,650 - services.vendite - INFO - Created vendite with id: 643
+2026-01-17 03:38:07,076 - services.vendite - INFO - Created vendite with id: 644
+2026-01-17 03:38:07,512 - services.vendite - INFO - Created vendite with id: 645
+2026-01-17 03:38:07,936 - services.vendite - INFO - Created vendite with id: 646
+2026-01-17 03:38:08,367 - services.vendite - INFO - Created vendite with id: 647
+2026-01-17 03:38:08,792 - services.vendite - INFO - Created vendite with id: 648
+2026-01-17 03:38:09,222 - services.vendite - INFO - Created vendite with id: 649
+2026-01-17 03:38:09,648 - services.vendite - INFO - Created vendite with id: 650
+2026-01-17 03:38:10,079 - services.vendite - INFO - Created vendite with id: 651
+2026-01-17 03:38:10,504 - services.vendite - INFO - Created vendite with id: 652
+2026-01-17 03:38:10,935 - services.vendite - INFO - Created vendite with id: 653
+2026-01-17 03:38:11,358 - services.vendite - INFO - Created vendite with id: 654
+2026-01-17 03:38:11,789 - services.vendite - INFO - Created vendite with id: 655
+2026-01-17 03:38:12,213 - services.vendite - INFO - Created vendite with id: 656
+2026-01-17 03:38:12,644 - services.vendite - INFO - Created vendite with id: 657
+2026-01-17 03:38:13,071 - services.vendite - INFO - Created vendite with id: 658
+2026-01-17 03:38:13,502 - services.vendite - INFO - Created vendite with id: 659
+2026-01-17 03:38:13,929 - services.vendite - INFO - Created vendite with id: 660
+2026-01-17 03:38:14,359 - services.vendite - INFO - Created vendite with id: 661
+2026-01-17 03:38:14,786 - services.vendite - INFO - Created vendite with id: 662
+2026-01-17 03:38:15,218 - services.vendite - INFO - Created vendite with id: 663
+2026-01-17 03:38:15,642 - services.vendite - INFO - Created vendite with id: 664
+2026-01-17 03:38:16,075 - services.vendite - INFO - Created vendite with id: 665
+2026-01-17 03:38:16,500 - services.vendite - INFO - Created vendite with id: 666
+2026-01-17 03:38:16,931 - services.vendite - INFO - Created vendite with id: 667
+2026-01-17 03:38:17,358 - services.vendite - INFO - Created vendite with id: 668
+2026-01-17 03:38:17,788 - services.vendite - INFO - Created vendite with id: 669
+2026-01-17 03:38:18,211 - services.vendite - INFO - Created vendite with id: 670
+2026-01-17 03:38:18,643 - services.vendite - INFO - Created vendite with id: 671
+2026-01-17 03:38:19,070 - services.vendite - INFO - Created vendite with id: 672
+2026-01-17 03:38:19,500 - services.vendite - INFO - Created vendite with id: 673
+2026-01-17 03:38:19,926 - services.vendite - INFO - Created vendite with id: 674
+2026-01-17 03:38:20,355 - services.vendite - INFO - Created vendite with id: 675
+2026-01-17 03:38:20,780 - services.vendite - INFO - Created vendite with id: 676
+2026-01-17 03:38:21,217 - services.vendite - INFO - Created vendite with id: 677
+2026-01-17 03:38:21,642 - services.vendite - INFO - Created vendite with id: 678
+2026-01-17 03:38:22,075 - services.vendite - INFO - Created vendite with id: 679
+2026-01-17 03:38:22,499 - services.vendite - INFO - Created vendite with id: 680
+2026-01-17 03:38:22,932 - services.vendite - INFO - Created vendite with id: 681
+2026-01-17 03:38:23,363 - services.vendite - INFO - Created vendite with id: 682
+2026-01-17 03:38:23,363 - core.database - DEBUG - [DB_OP] Database session cleanup after 48.5399s
+2026-01-17 03:38:26,533 - core.auth - DEBUG - Authentication token validated for user hash: 1fe0bfd6
+2026-01-17 03:38:26,533 - core.database - DEBUG - [DB_OP] Starting get_db session creation
+2026-01-17 03:38:26,533 - core.database - DEBUG - [DB_OP] Database session created successfully in 0.0002s
+2026-01-17 03:38:26,911 - core.database - DEBUG - [DB_OP] Database session cleanup after 0.3779s
+2026-01-17 03:38:27,364 - core.auth - DEBUG - Authentication token validated for user hash: 1fe0bfd6
+2026-01-17 03:38:27,365 - core.database - DEBUG - [DB_OP] Starting get_db session creation
+2026-01-17 03:38:27,365 - core.database - DEBUG - [DB_OP] Database session created successfully in 0.0003s
+2026-01-17 03:38:27,665 - core.database - DEBUG - [DB_OP] Database session cleanup after 0.3000s
+2026-01-17 03:38:28,636 - core.auth - DEBUG - Authentication token validated for user hash: 1fe0bfd6
+2026-01-17 03:38:28,636 - core.database - DEBUG - [DB_OP] Starting get_db session creation
+2026-01-17 03:38:28,637 - core.database - DEBUG - [DB_OP] Database session created successfully in 0.0002s
+2026-01-17 03:38:29,014 - core.database - DEBUG - [DB_OP] Database session cleanup after 0.3779s
+2026-01-17 03:38:29,471 - core.auth - DEBUG - Authentication token validated for user hash: 1fe0bfd6
+2026-01-17 03:38:29,472 - core.database - DEBUG - [DB_OP] Starting get_db session creation
+2026-01-17 03:38:29,472 - core.database - DEBUG - [DB_OP] Database session created successfully in 0.0002s
+2026-01-17 03:38:29,834 - core.database - DEBUG - [DB_OP] Database session cleanup after 0.3621s
+2026-01-17 03:38:30,166 - core.auth - DEBUG - Authentication token validated for user hash: 1fe0bfd6
+2026-01-17 03:38:30,167 - core.database - DEBUG - [DB_OP] Starting get_db session creation
+2026-01-17 03:38:30,167 - core.database - DEBUG - [DB_OP] Database session created successfully in 0.0004s
+2026-01-17 03:38:30,167 - routers.analytics - INFO - Analytics request - anno: None, mese: None, categoria: None
+2026-01-17 03:38:30,178 - core.auth - DEBUG - Authentication token validated for user hash: 1fe0bfd6
+2026-01-17 03:38:30,178 - core.database - DEBUG - [DB_OP] Starting get_db session creation
+2026-01-17 03:38:30,179 - core.database - DEBUG - [DB_OP] Database session created successfully in 0.0002s
+2026-01-17 03:38:30,179 - routers.analytics - INFO - Analytics request - anno: None, mese: None, categoria: None
+2026-01-17 03:38:30,659 - routers.analytics - INFO - Acquisti categories: ['Prize', 'Kit']
+2026-01-17 03:38:30,659 - routers.analytics - INFO - Vendite categories: ['Big', 'Kit', 'Prize', 'Banco', 'Nendo', 'Plush']
+2026-01-17 03:38:30,659 - routers.analytics - INFO - Returning 6 categories
+2026-01-17 03:38:30,664 - routers.analytics - INFO - Acquisti categories: ['Prize', 'Kit']
+2026-01-17 03:38:30,664 - routers.analytics - INFO - Vendite categories: ['Big', 'Kit', 'Prize', 'Banco', 'Nendo', 'Plush']
+2026-01-17 03:38:30,664 - routers.analytics - INFO - Returning 6 categories
+2026-01-17 03:38:30,782 - core.database - DEBUG - [DB_OP] Database session cleanup after 0.6034s
+2026-01-17 03:38:30,789 - core.database - DEBUG - [DB_OP] Database session cleanup after 0.6228s
+2026-01-17 03:38:45,433 - core.auth - DEBUG - Authentication token validated for user hash: 1fe0bfd6
+2026-01-17 03:38:45,433 - core.database - DEBUG - [DB_OP] Starting get_db session creation
+2026-01-17 03:38:45,433 - core.database - DEBUG - [DB_OP] Database session created successfully in 0.0002s
+2026-01-17 03:38:45,434 - routers.analytics - INFO - Analytics request - anno: None, mese: None, categoria: Prize
+2026-01-17 03:38:46,161 - routers.analytics - INFO - Acquisti categories: ['Prize']
+2026-01-17 03:38:46,161 - routers.analytics - INFO - Vendite categories: ['Prize']
+2026-01-17 03:38:46,161 - routers.analytics - INFO - Returning 1 categories
+2026-01-17 03:38:46,402 - core.database - DEBUG - [DB_OP] Database session cleanup after 0.9693s
+2026-01-17 03:39:43,728 - core.auth - DEBUG - Authentication token validated for user hash: 1fe0bfd6
+2026-01-17 03:39:43,729 - core.database - DEBUG - [DB_OP] Starting get_db session creation
+2026-01-17 03:39:43,729 - core.database - DEBUG - [DB_OP] Database session created successfully in 0.0003s
+2026-01-17 03:39:43,730 - routers.analytics - INFO - Analytics request - anno: None, mese: 11, categoria: Prize
+2026-01-17 03:39:44,786 - routers.analytics - INFO - Acquisti categories: ['Prize']
+2026-01-17 03:39:44,786 - routers.analytics - INFO - Vendite categories: ['Prize']
+2026-01-17 03:39:44,787 - routers.analytics - INFO - Returning 1 categories
+2026-01-17 03:39:44,787 - core.database - DEBUG - [DB_OP] Database session cleanup after 1.0580s
+2026-01-17 03:39:59,823 - core.auth - DEBUG - Authentication token validated for user hash: 1fe0bfd6
+2026-01-17 03:39:59,823 - core.database - DEBUG - [DB_OP] Starting get_db session creation
+2026-01-17 03:39:59,823 - core.database - DEBUG - [DB_OP] Database session created successfully in 0.0002s
+2026-01-17 03:39:59,824 - routers.analytics - INFO - Analytics request - anno: None, mese: 12, categoria: Prize
+2026-01-17 03:40:00,667 - routers.analytics - INFO - Acquisti categories: ['Prize']
+2026-01-17 03:40:00,668 - routers.analytics - INFO - Vendite categories: ['Prize']
+2026-01-17 03:40:00,668 - routers.analytics - INFO - Returning 1 categories
+2026-01-17 03:40:00,669 - core.database - DEBUG - [DB_OP] Database session cleanup after 0.8456s
+2026-01-17 03:40:17,250 - core.auth - DEBUG - Authentication token validated for user hash: 1fe0bfd6
+2026-01-17 03:40:17,251 - core.database - DEBUG - [DB_OP] Starting get_db session creation
+2026-01-17 03:40:17,251 - core.database - DEBUG - [DB_OP] Database session created successfully in 0.0003s
+2026-01-17 03:40:17,252 - routers.analytics - INFO - Analytics request - anno: None, mese: None, categoria: Prize
+2026-01-17 03:40:18,000 - routers.analytics - INFO - Acquisti categories: ['Prize']
+2026-01-17 03:40:18,001 - routers.analytics - INFO - Vendite categories: ['Prize']
+2026-01-17 03:40:18,001 - routers.analytics - INFO - Returning 1 categories
+2026-01-17 03:40:18,254 - core.database - DEBUG - [DB_OP] Database session cleanup after 1.0029s
+2026-01-17 03:40:22,837 - core.auth - DEBUG - Authentication token validated for user hash: 1fe0bfd6
+2026-01-17 03:40:22,837 - core.database - DEBUG - [DB_OP] Starting get_db session creation
+2026-01-17 03:40:22,838 - core.database - DEBUG - [DB_OP] Database session created successfully in 0.0003s
+2026-01-17 03:40:22,838 - routers.analytics - INFO - Analytics request - anno: 2025, mese: None, categoria: Prize
+2026-01-17 03:40:23,562 - routers.analytics - INFO - Acquisti categories: ['Prize']
+2026-01-17 03:40:23,562 - routers.analytics - INFO - Vendite categories: ['Prize']
+2026-01-17 03:40:23,562 - routers.analytics - INFO - Returning 1 categories
+2026-01-17 03:40:23,803 - core.database - DEBUG - [DB_OP] Database session cleanup after 0.9661s
+2026-01-17 03:41:31,025 - core.auth - DEBUG - Authentication token validated for user hash: 1fe0bfd6
+2026-01-17 03:41:31,025 - core.database - DEBUG - [DB_OP] Starting get_db session creation
+2026-01-17 03:41:31,026 - core.database - DEBUG - [DB_OP] Database session created successfully in 0.0003s
+2026-01-17 03:41:31,026 - routers.analytics - INFO - Analytics request - anno: 2025, mese: None, categoria: None
+2026-01-17 03:41:31,780 - routers.analytics - INFO - Acquisti categories: ['Kit', 'Prize']
+2026-01-17 03:41:31,780 - routers.analytics - INFO - Vendite categories: ['Banco', 'Big', 'Kit', 'Nendo', 'Plush', 'Prize']
+2026-01-17 03:41:31,780 - routers.analytics - INFO - Returning 6 categories
+2026-01-17 03:41:32,033 - core.database - DEBUG - [DB_OP] Database session cleanup after 1.0076s
+2026-01-17 03:43:00,172 - services.database - DEBUG - [DB_OP] Starting database close
+2026-01-17 03:43:00,302 - core.database - INFO - Database connection closed and engine disposed
+2026-01-17 03:43:00,302 - services.database - INFO - Database connections closed
+2026-01-17 03:43:00,302 - services.database - DEBUG - [DB_OP] Database close completed in 0.1307s

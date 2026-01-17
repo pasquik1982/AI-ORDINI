@@ -1,0 +1,54 @@
+{
+    "title": "acquisti",
+    "type": "object",
+    "properties": {
+        "id": {
+            "type": "integer",
+            "description": "Primary key, auto-increment"
+        },
+        "fornitore_id": {
+            "type": "integer",
+            "description": "Foreign key to fornitori table"
+        },
+        "data_ordine": {
+            "type": "string",
+            "format": "date-time",
+            "description": "Data dell'ordine"
+        },
+        "data_consegna": {
+            "type": "string",
+            "format": "date-time",
+            "description": "Data di consegna prevista"
+        },
+        "categoria_prodotto": {
+            "type": "string",
+            "description": "Categoria del prodotto"
+        },
+        "quantita": {
+            "type": "number",
+            "description": "Quantità ordinata"
+        },
+        "prezzo_totale": {
+            "type": "number",
+            "description": "Prezzo totale in EUR"
+        },
+        "user_id": {
+            "type": "string",
+            "description": "User ID"
+        },
+        "created_at": {
+            "type": "string",
+            "format": "date-time",
+            "description": "Data di creazione record"
+        }
+    },
+    "required": [
+        "id",
+        "fornitore_id",
+        "data_ordine",
+        "categoria_prodotto",
+        "quantita",
+        "prezzo_totale",
+        "user_id"
+    ]
+}

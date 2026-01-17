@@ -1,0 +1,759 @@
+2026-01-17 02:37:44,641 - main - INFO - === Logging system initialized ===
+2026-01-17 02:37:44,641 - main - INFO - Log file: logs/app_20260117_023744.log
+2026-01-17 02:37:44,641 - main - INFO - Log level: INFO
+2026-01-17 02:37:44,641 - main - INFO - Timestamp: 20260117_023744
+2026-01-17 02:37:44,650 - main - INFO - === Logging system initialized ===
+2026-01-17 02:37:44,650 - main - INFO - Log file: logs/app_20260117_023744.log
+2026-01-17 02:37:44,650 - main - INFO - Log level: INFO
+2026-01-17 02:37:44,650 - main - INFO - Timestamp: 20260117_023744
+2026-01-17 02:37:44,700 - main - INFO - Included router: routers.acquisti.router
+2026-01-17 02:37:44,701 - main - INFO - Included router: routers.acquisti.router
+2026-01-17 02:37:45,297 - main - INFO - Included router: routers.aihub.router
+2026-01-17 02:37:45,298 - main - INFO - Included router: routers.aihub.router
+2026-01-17 02:37:45,308 - main - INFO - Included router: routers.analytics.router
+2026-01-17 02:37:45,310 - main - INFO - Included router: routers.analytics.router
+2026-01-17 02:37:45,315 - main - INFO - Included router: routers.auth.router
+2026-01-17 02:37:45,317 - main - INFO - Included router: routers.auth.router
+2026-01-17 02:37:45,351 - main - INFO - Included router: routers.fornitori.router
+2026-01-17 02:37:45,353 - main - INFO - Included router: routers.fornitori.router
+2026-01-17 02:37:45,354 - main - INFO - Included router: routers.health.router
+2026-01-17 02:37:45,354 - main - INFO - Included router: routers.health.router
+2026-01-17 02:37:45,367 - main - INFO - Included router: routers.settings.router
+2026-01-17 02:37:45,368 - main - INFO - Included router: routers.settings.router
+2026-01-17 02:37:45,488 - main - INFO - Included router: routers.storage.router
+2026-01-17 02:37:45,491 - main - INFO - Included router: routers.storage.router
+2026-01-17 02:37:46,107 - main - INFO - Included router: routers.upload.router
+2026-01-17 02:37:46,114 - main - INFO - Included router: routers.user.router
+2026-01-17 02:37:46,131 - main - INFO - Included router: routers.upload.router
+2026-01-17 02:37:46,137 - main - INFO - Included router: routers.user.router
+2026-01-17 02:37:46,146 - main - INFO - Included router: routers.vendite.router
+2026-01-17 02:37:46,147 - main - INFO - === Application startup initiated ===
+2026-01-17 02:37:46,147 - services.database - DEBUG - [DB_OP] Starting database initialization
+2026-01-17 02:37:46,147 - services.database - INFO - 🔧 Starting database initialization...
+2026-01-17 02:37:46,147 - core.database - INFO - Starting database initialization...
+2026-01-17 02:37:46,148 - core.config - DEBUG - Read dynamic attribute database_url from environment variable DATABASE_URL
+2026-01-17 02:37:46,148 - core.database - INFO - Normalizing database URL for async compatibility...
+2026-01-17 02:37:46,148 - core.database - INFO - Creating async database engine...
+2026-01-17 02:37:46,149 - core.database - INFO - Using QueuePool with connection pooling for non-Lambda environment
+2026-01-17 02:37:46,167 - main - INFO - Included router: routers.vendite.router
+2026-01-17 02:37:46,168 - main - INFO - === Application startup initiated ===
+2026-01-17 02:37:46,168 - services.database - DEBUG - [DB_OP] Starting database initialization
+2026-01-17 02:37:46,168 - services.database - INFO - 🔧 Starting database initialization...
+2026-01-17 02:37:46,168 - core.database - INFO - Starting database initialization...
+2026-01-17 02:37:46,169 - core.config - DEBUG - Read dynamic attribute database_url from environment variable DATABASE_URL
+2026-01-17 02:37:46,169 - core.database - INFO - Normalizing database URL for async compatibility...
+2026-01-17 02:37:46,169 - core.database - INFO - Creating async database engine...
+2026-01-17 02:37:46,169 - core.database - INFO - Using QueuePool with connection pooling for non-Lambda environment
+2026-01-17 02:37:46,205 - core.database - INFO - Database engine created successfully
+2026-01-17 02:37:46,205 - core.database - INFO - Database engine created successfully
+2026-01-17 02:37:46,205 - core.database - INFO - Creating async session maker...
+2026-01-17 02:37:46,205 - core.database - INFO - Creating async session maker...
+2026-01-17 02:37:46,205 - core.database - INFO - Async session maker created successfully
+2026-01-17 02:37:46,205 - core.database - INFO - Async session maker created successfully
+2026-01-17 02:37:46,205 - core.database - INFO - Database connection initialized successfully
+2026-01-17 02:37:46,205 - core.database - INFO - Database connection initialized successfully
+2026-01-17 02:37:46,205 - services.database - INFO - 🔧 Database connection initialized, now creating tables if tables not exist...
+2026-01-17 02:37:46,205 - services.database - INFO - 🔧 Database connection initialized, now creating tables if tables not exist...
+2026-01-17 02:37:46,206 - core.database - DEBUG - [DB_OP] Starting create_tables
+2026-01-17 02:37:46,206 - core.database - DEBUG - [DB_OP] Starting create_tables
+2026-01-17 02:37:46,206 - core.database - INFO - 🔧 Starting table creation...
+2026-01-17 02:37:46,206 - core.database - INFO - 🔧 Starting table creation...
+2026-01-17 02:37:48,361 - core.database - INFO - Tables initialized successfully
+2026-01-17 02:37:48,361 - core.database - DEBUG - [DB_OP] Create tables completed in 2.1558s
+2026-01-17 02:37:48,375 - core.database - INFO - Tables initialized successfully
+2026-01-17 02:37:48,375 - core.database - DEBUG - [DB_OP] Create tables completed in 2.1699s
+2026-01-17 02:37:48,421 - services.database - INFO - 🔧 Table creation completed
+2026-01-17 02:37:48,421 - services.database - INFO - Database initialized successfully
+2026-01-17 02:37:48,422 - services.database - DEBUG - [DB_OP] Database initialization completed in 2.2534s
+2026-01-17 02:37:48,424 - services.mock_data - INFO - Processing mock data file fornitori.json for table fornitori
+2026-01-17 02:37:48,436 - services.database - INFO - 🔧 Table creation completed
+2026-01-17 02:37:48,437 - services.database - INFO - Database initialized successfully
+2026-01-17 02:37:48,437 - services.database - DEBUG - [DB_OP] Database initialization completed in 2.2895s
+2026-01-17 02:37:48,438 - services.mock_data - INFO - Processing mock data file fornitori.json for table fornitori
+2026-01-17 02:37:50,475 - services.mock_data - INFO - Table fornitori already has 5 rows; skipping mock insert
+2026-01-17 02:37:50,488 - services.mock_data - INFO - Table fornitori already has 5 rows; skipping mock insert
+2026-01-17 02:37:50,534 - services.database - DEBUG - [DB_OP] Starting database initialization
+2026-01-17 02:37:50,535 - services.database - INFO - 🔧 Starting database initialization...
+2026-01-17 02:37:50,535 - core.database - INFO - Starting database initialization...
+2026-01-17 02:37:50,535 - core.database - INFO - Database already initialized
+2026-01-17 02:37:50,535 - services.database - INFO - 🔧 Database connection initialized, now creating tables if tables not exist...
+2026-01-17 02:37:50,535 - core.database - DEBUG - [DB_OP] Starting create_tables
+2026-01-17 02:37:50,535 - core.database - INFO - Tables already initialized
+2026-01-17 02:37:50,536 - services.database - INFO - 🔧 Table creation completed
+2026-01-17 02:37:50,536 - services.database - INFO - Database initialized successfully
+2026-01-17 02:37:50,536 - services.database - DEBUG - [DB_OP] Database initialization completed in 0.0013s
+2026-01-17 02:37:50,536 - core.config - DEBUG - Read dynamic attribute admin_user_id from environment variable ADMIN_USER_ID
+2026-01-17 02:37:50,536 - core.config - DEBUG - Read dynamic attribute admin_user_email from environment variable ADMIN_USER_EMAIL
+2026-01-17 02:37:50,549 - services.database - DEBUG - [DB_OP] Starting database initialization
+2026-01-17 02:37:50,549 - services.database - INFO - 🔧 Starting database initialization...
+2026-01-17 02:37:50,550 - core.database - INFO - Starting database initialization...
+2026-01-17 02:37:50,550 - core.database - INFO - Database already initialized
+2026-01-17 02:37:50,550 - services.database - INFO - 🔧 Database connection initialized, now creating tables if tables not exist...
+2026-01-17 02:37:50,550 - core.database - DEBUG - [DB_OP] Starting create_tables
+2026-01-17 02:37:50,550 - core.database - INFO - Tables already initialized
+2026-01-17 02:37:50,550 - services.database - INFO - 🔧 Table creation completed
+2026-01-17 02:37:50,550 - services.database - INFO - Database initialized successfully
+2026-01-17 02:37:50,551 - services.database - DEBUG - [DB_OP] Database initialization completed in 0.0017s
+2026-01-17 02:37:50,551 - core.config - DEBUG - Read dynamic attribute admin_user_id from environment variable ADMIN_USER_ID
+2026-01-17 02:37:50,551 - core.config - DEBUG - Read dynamic attribute admin_user_email from environment variable ADMIN_USER_EMAIL
+2026-01-17 02:37:50,899 - services.auth - DEBUG - Admin user 476166 already exists
+2026-01-17 02:37:50,920 - services.auth - DEBUG - Admin user 476166 already exists
+2026-01-17 02:37:50,959 - main - INFO - === Application startup completed successfully ===
+2026-01-17 02:37:50,981 - main - INFO - === Application startup completed successfully ===
+2026-01-17 02:39:35,242 - core.config - DEBUG - Read dynamic attribute jwt_secret_key from environment variable JWT_SECRET_KEY
+2026-01-17 02:39:35,242 - core.config - DEBUG - Read dynamic attribute jwt_algorithm from environment variable JWT_ALGORITHM
+2026-01-17 02:39:35,266 - core.auth - DEBUG - Authentication token validated for user hash: 1fe0bfd6
+2026-01-17 02:39:35,481 - core.auth - DEBUG - Authentication token validated for user hash: 1fe0bfd6
+2026-01-17 02:39:35,482 - core.database - DEBUG - [DB_OP] Starting get_db session creation
+2026-01-17 02:39:35,482 - core.database - DEBUG - [DB_OP] Database session created successfully in 0.0002s
+2026-01-17 02:39:36,567 - core.database - DEBUG - [DB_OP] Database session cleanup after 1.0854s
+2026-01-17 02:40:00,095 - core.auth - DEBUG - Authentication token validated for user hash: 1fe0bfd6
+2026-01-17 02:40:00,838 - routers.upload - WARNING - Could not parse date: 2026-01-01 00:00:00, using current date
+2026-01-17 02:40:00,838 - routers.upload - WARNING - Could not parse date: 2026-01-02 00:00:00, using current date
+2026-01-17 02:40:00,838 - routers.upload - WARNING - Could not parse date: 2026-01-03 00:00:00, using current date
+2026-01-17 02:40:00,838 - routers.upload - WARNING - Could not parse date: 2026-01-04 00:00:00, using current date
+2026-01-17 02:40:00,839 - routers.upload - WARNING - Could not parse date: 2026-01-05 00:00:00, using current date
+2026-01-17 02:40:00,839 - routers.upload - WARNING - Could not parse date: 2026-01-06 00:00:00, using current date
+2026-01-17 02:40:00,839 - routers.upload - WARNING - Could not parse date: 2026-01-07 00:00:00, using current date
+2026-01-17 02:40:00,839 - routers.upload - WARNING - Could not parse date: 2026-01-08 00:00:00, using current date
+2026-01-17 02:40:00,840 - routers.upload - WARNING - Could not parse date: 2026-01-09 00:00:00, using current date
+2026-01-17 02:40:00,840 - routers.upload - WARNING - Could not parse date: 2026-01-10 00:00:00, using current date
+2026-01-17 02:40:00,840 - routers.upload - WARNING - Could not parse date: 2026-01-11 00:00:00, using current date
+2026-01-17 02:40:00,840 - routers.upload - WARNING - Could not parse date: 2026-01-12 00:00:00, using current date
+2026-01-17 02:40:00,840 - routers.upload - WARNING - Could not parse date: 2026-01-13 00:00:00, using current date
+2026-01-17 02:40:00,841 - routers.upload - WARNING - Could not parse date: 2026-01-14 00:00:00, using current date
+2026-01-17 02:40:00,841 - routers.upload - WARNING - Could not parse date: 2026-01-15 00:00:00, using current date
+2026-01-17 02:40:00,841 - routers.upload - WARNING - Could not parse date: 2026-01-16 00:00:00, using current date
+2026-01-17 02:40:00,841 - routers.upload - WARNING - Could not parse date: 2026-01-17 00:00:00, using current date
+2026-01-17 02:40:00,841 - routers.upload - WARNING - Could not parse date: 2026-01-18 00:00:00, using current date
+2026-01-17 02:40:00,842 - routers.upload - WARNING - Could not parse date: 2026-01-19 00:00:00, using current date
+2026-01-17 02:40:00,842 - routers.upload - WARNING - Could not parse date: 2026-01-20 00:00:00, using current date
+2026-01-17 02:40:00,842 - routers.upload - WARNING - Could not parse date: 2026-01-21 00:00:00, using current date
+2026-01-17 02:40:00,842 - routers.upload - WARNING - Could not parse date: 2026-01-22 00:00:00, using current date
+2026-01-17 02:40:00,843 - routers.upload - WARNING - Could not parse date: 2026-01-23 00:00:00, using current date
+2026-01-17 02:40:00,852 - routers.upload - WARNING - Could not parse date: 2025-12-12 00:00:00, using current date
+2026-01-17 02:40:00,852 - routers.upload - WARNING - Could not parse date: 2025-12-13 00:00:00, using current date
+2026-01-17 02:40:00,852 - routers.upload - WARNING - Could not parse date: 2025-12-14 00:00:00, using current date
+2026-01-17 02:40:00,852 - routers.upload - WARNING - Could not parse date: 2025-12-15 00:00:00, using current date
+2026-01-17 02:40:00,853 - routers.upload - WARNING - Could not parse date: 2025-12-16 00:00:00, using current date
+2026-01-17 02:40:00,853 - routers.upload - WARNING - Could not parse date: 2025-12-17 00:00:00, using current date
+2026-01-17 02:40:00,853 - routers.upload - WARNING - Could not parse date: 2025-12-18 00:00:00, using current date
+2026-01-17 02:40:00,853 - routers.upload - WARNING - Could not parse date: 2025-12-19 00:00:00, using current date
+2026-01-17 02:40:00,853 - routers.upload - WARNING - Could not parse date: 2025-12-20 00:00:00, using current date
+2026-01-17 02:40:00,854 - routers.upload - WARNING - Could not parse date: 2025-12-21 00:00:00, using current date
+2026-01-17 02:40:00,854 - routers.upload - WARNING - Could not parse date: 2025-12-22 00:00:00, using current date
+2026-01-17 02:40:00,854 - routers.upload - WARNING - Could not parse date: 2025-12-23 00:00:00, using current date
+2026-01-17 02:40:00,854 - routers.upload - WARNING - Could not parse date: 2025-12-24 00:00:00, using current date
+2026-01-17 02:40:00,854 - routers.upload - WARNING - Could not parse date: 2025-12-25 00:00:00, using current date
+2026-01-17 02:40:00,855 - routers.upload - WARNING - Could not parse date: 2025-12-26 00:00:00, using current date
+2026-01-17 02:40:00,855 - routers.upload - WARNING - Could not parse date: 2025-12-27 00:00:00, using current date
+2026-01-17 02:40:00,855 - routers.upload - WARNING - Could not parse date: 2025-12-28 00:00:00, using current date
+2026-01-17 02:40:00,855 - routers.upload - WARNING - Could not parse date: 2025-12-29 00:00:00, using current date
+2026-01-17 02:40:00,855 - routers.upload - WARNING - Could not parse date: 2025-12-30 00:00:00, using current date
+2026-01-17 02:40:00,856 - routers.upload - WARNING - Could not parse date: 2025-12-31 00:00:00, using current date
+2026-01-17 02:40:00,856 - routers.upload - WARNING - Could not parse date: 2026-01-03 00:00:00, using current date
+2026-01-17 02:40:00,856 - routers.upload - WARNING - Could not parse date: 2026-01-05 00:00:00, using current date
+2026-01-17 02:40:04,914 - core.auth - DEBUG - Authentication token validated for user hash: 1fe0bfd6
+2026-01-17 02:40:04,914 - core.database - DEBUG - [DB_OP] Starting get_db session creation
+2026-01-17 02:40:04,915 - core.database - DEBUG - [DB_OP] Database session created successfully in 0.0003s
+2026-01-17 02:40:05,715 - services.vendite - INFO - Created vendite with id: 1
+2026-01-17 02:40:06,141 - services.vendite - INFO - Created vendite with id: 2
+2026-01-17 02:40:06,566 - services.vendite - INFO - Created vendite with id: 3
+2026-01-17 02:40:06,992 - services.vendite - INFO - Created vendite with id: 4
+2026-01-17 02:40:07,417 - services.vendite - INFO - Created vendite with id: 5
+2026-01-17 02:40:07,847 - services.vendite - INFO - Created vendite with id: 6
+2026-01-17 02:40:08,308 - services.vendite - INFO - Created vendite with id: 7
+2026-01-17 02:40:08,733 - services.vendite - INFO - Created vendite with id: 8
+2026-01-17 02:40:09,161 - services.vendite - INFO - Created vendite with id: 9
+2026-01-17 02:40:09,588 - services.vendite - INFO - Created vendite with id: 10
+2026-01-17 02:40:10,013 - services.vendite - INFO - Created vendite with id: 11
+2026-01-17 02:40:10,440 - services.vendite - INFO - Created vendite with id: 12
+2026-01-17 02:40:10,863 - services.vendite - INFO - Created vendite with id: 13
+2026-01-17 02:40:11,289 - services.vendite - INFO - Created vendite with id: 14
+2026-01-17 02:40:11,715 - services.vendite - INFO - Created vendite with id: 15
+2026-01-17 02:40:12,141 - services.vendite - INFO - Created vendite with id: 16
+2026-01-17 02:40:12,565 - services.vendite - INFO - Created vendite with id: 17
+2026-01-17 02:40:12,994 - services.vendite - INFO - Created vendite with id: 18
+2026-01-17 02:40:13,423 - services.vendite - INFO - Created vendite with id: 19
+2026-01-17 02:40:13,849 - services.vendite - INFO - Created vendite with id: 20
+2026-01-17 02:40:14,274 - services.vendite - INFO - Created vendite with id: 21
+2026-01-17 02:40:14,704 - services.vendite - INFO - Created vendite with id: 22
+2026-01-17 02:40:15,131 - services.vendite - INFO - Created vendite with id: 23
+2026-01-17 02:40:15,556 - services.vendite - INFO - Created vendite with id: 24
+2026-01-17 02:40:15,983 - services.vendite - INFO - Created vendite with id: 25
+2026-01-17 02:40:16,425 - services.vendite - INFO - Created vendite with id: 26
+2026-01-17 02:40:16,852 - services.vendite - INFO - Created vendite with id: 27
+2026-01-17 02:40:17,279 - services.vendite - INFO - Created vendite with id: 28
+2026-01-17 02:40:17,704 - services.vendite - INFO - Created vendite with id: 29
+2026-01-17 02:40:18,131 - services.vendite - INFO - Created vendite with id: 30
+2026-01-17 02:40:18,558 - services.vendite - INFO - Created vendite with id: 31
+2026-01-17 02:40:18,982 - services.vendite - INFO - Created vendite with id: 32
+2026-01-17 02:40:19,407 - services.vendite - INFO - Created vendite with id: 33
+2026-01-17 02:40:19,833 - services.vendite - INFO - Created vendite with id: 34
+2026-01-17 02:40:20,261 - services.vendite - INFO - Created vendite with id: 35
+2026-01-17 02:40:20,687 - services.vendite - INFO - Created vendite with id: 36
+2026-01-17 02:40:21,112 - services.vendite - INFO - Created vendite with id: 37
+2026-01-17 02:40:21,538 - services.vendite - INFO - Created vendite with id: 38
+2026-01-17 02:40:21,964 - services.vendite - INFO - Created vendite with id: 39
+2026-01-17 02:40:22,391 - services.vendite - INFO - Created vendite with id: 40
+2026-01-17 02:40:22,817 - services.vendite - INFO - Created vendite with id: 41
+2026-01-17 02:40:23,243 - services.vendite - INFO - Created vendite with id: 42
+2026-01-17 02:40:23,676 - services.vendite - INFO - Created vendite with id: 43
+2026-01-17 02:40:24,100 - services.vendite - INFO - Created vendite with id: 44
+2026-01-17 02:40:24,529 - services.vendite - INFO - Created vendite with id: 45
+2026-01-17 02:40:24,953 - services.vendite - INFO - Created vendite with id: 46
+2026-01-17 02:40:25,377 - services.vendite - INFO - Created vendite with id: 47
+2026-01-17 02:40:25,802 - services.vendite - INFO - Created vendite with id: 48
+2026-01-17 02:40:26,229 - services.vendite - INFO - Created vendite with id: 49
+2026-01-17 02:40:26,653 - services.vendite - INFO - Created vendite with id: 50
+2026-01-17 02:40:27,078 - services.vendite - INFO - Created vendite with id: 51
+2026-01-17 02:40:27,503 - services.vendite - INFO - Created vendite with id: 52
+2026-01-17 02:40:27,930 - services.vendite - INFO - Created vendite with id: 53
+2026-01-17 02:40:28,358 - services.vendite - INFO - Created vendite with id: 54
+2026-01-17 02:40:28,789 - services.vendite - INFO - Created vendite with id: 55
+2026-01-17 02:40:29,218 - services.vendite - INFO - Created vendite with id: 56
+2026-01-17 02:40:29,645 - services.vendite - INFO - Created vendite with id: 57
+2026-01-17 02:40:30,090 - services.vendite - INFO - Created vendite with id: 58
+2026-01-17 02:40:30,520 - services.vendite - INFO - Created vendite with id: 59
+2026-01-17 02:40:30,950 - services.vendite - INFO - Created vendite with id: 60
+2026-01-17 02:40:31,375 - services.vendite - INFO - Created vendite with id: 61
+2026-01-17 02:40:31,802 - services.vendite - INFO - Created vendite with id: 62
+2026-01-17 02:40:32,229 - services.vendite - INFO - Created vendite with id: 63
+2026-01-17 02:40:32,659 - services.vendite - INFO - Created vendite with id: 64
+2026-01-17 02:40:33,085 - services.vendite - INFO - Created vendite with id: 65
+2026-01-17 02:40:33,512 - services.vendite - INFO - Created vendite with id: 66
+2026-01-17 02:40:33,939 - services.vendite - INFO - Created vendite with id: 67
+2026-01-17 02:40:34,362 - services.vendite - INFO - Created vendite with id: 68
+2026-01-17 02:40:34,787 - services.vendite - INFO - Created vendite with id: 69
+2026-01-17 02:40:35,213 - services.vendite - INFO - Created vendite with id: 70
+2026-01-17 02:40:35,638 - services.vendite - INFO - Created vendite with id: 71
+2026-01-17 02:40:36,066 - services.vendite - INFO - Created vendite with id: 72
+2026-01-17 02:40:36,494 - services.vendite - INFO - Created vendite with id: 73
+2026-01-17 02:40:36,919 - services.vendite - INFO - Created vendite with id: 74
+2026-01-17 02:40:37,344 - services.vendite - INFO - Created vendite with id: 75
+2026-01-17 02:40:37,776 - services.vendite - INFO - Created vendite with id: 76
+2026-01-17 02:40:38,200 - services.vendite - INFO - Created vendite with id: 77
+2026-01-17 02:40:38,677 - services.vendite - INFO - Created vendite with id: 78
+2026-01-17 02:40:39,102 - services.vendite - INFO - Created vendite with id: 79
+2026-01-17 02:40:39,531 - services.vendite - INFO - Created vendite with id: 80
+2026-01-17 02:40:39,954 - services.vendite - INFO - Created vendite with id: 81
+2026-01-17 02:40:40,380 - services.vendite - INFO - Created vendite with id: 82
+2026-01-17 02:40:40,803 - services.vendite - INFO - Created vendite with id: 83
+2026-01-17 02:40:41,227 - services.vendite - INFO - Created vendite with id: 84
+2026-01-17 02:40:41,654 - services.vendite - INFO - Created vendite with id: 85
+2026-01-17 02:40:42,083 - services.vendite - INFO - Created vendite with id: 86
+2026-01-17 02:40:42,508 - services.vendite - INFO - Created vendite with id: 87
+2026-01-17 02:40:42,935 - services.vendite - INFO - Created vendite with id: 88
+2026-01-17 02:40:43,360 - services.vendite - INFO - Created vendite with id: 89
+2026-01-17 02:40:43,791 - services.vendite - INFO - Created vendite with id: 90
+2026-01-17 02:40:44,217 - services.vendite - INFO - Created vendite with id: 91
+2026-01-17 02:40:44,645 - services.vendite - INFO - Created vendite with id: 92
+2026-01-17 02:40:45,071 - services.vendite - INFO - Created vendite with id: 93
+2026-01-17 02:40:45,494 - services.vendite - INFO - Created vendite with id: 94
+2026-01-17 02:40:45,923 - services.vendite - INFO - Created vendite with id: 95
+2026-01-17 02:40:46,398 - services.vendite - INFO - Created vendite with id: 96
+2026-01-17 02:40:46,824 - services.vendite - INFO - Created vendite with id: 97
+2026-01-17 02:40:47,250 - services.vendite - INFO - Created vendite with id: 98
+2026-01-17 02:40:47,675 - services.vendite - INFO - Created vendite with id: 99
+2026-01-17 02:40:48,100 - services.vendite - INFO - Created vendite with id: 100
+2026-01-17 02:40:48,525 - services.vendite - INFO - Created vendite with id: 101
+2026-01-17 02:40:48,949 - services.vendite - INFO - Created vendite with id: 102
+2026-01-17 02:40:49,373 - services.vendite - INFO - Created vendite with id: 103
+2026-01-17 02:40:49,799 - services.vendite - INFO - Created vendite with id: 104
+2026-01-17 02:40:50,224 - services.vendite - INFO - Created vendite with id: 105
+2026-01-17 02:40:50,657 - services.vendite - INFO - Created vendite with id: 106
+2026-01-17 02:40:51,084 - services.vendite - INFO - Created vendite with id: 107
+2026-01-17 02:40:51,510 - services.vendite - INFO - Created vendite with id: 108
+2026-01-17 02:40:51,937 - services.vendite - INFO - Created vendite with id: 109
+2026-01-17 02:40:52,379 - services.vendite - INFO - Created vendite with id: 110
+2026-01-17 02:40:52,804 - services.vendite - INFO - Created vendite with id: 111
+2026-01-17 02:40:53,230 - services.vendite - INFO - Created vendite with id: 112
+2026-01-17 02:40:53,653 - services.vendite - INFO - Created vendite with id: 113
+2026-01-17 02:40:54,078 - services.vendite - INFO - Created vendite with id: 114
+2026-01-17 02:40:54,503 - services.vendite - INFO - Created vendite with id: 115
+2026-01-17 02:40:54,927 - services.vendite - INFO - Created vendite with id: 116
+2026-01-17 02:40:55,355 - services.vendite - INFO - Created vendite with id: 117
+2026-01-17 02:40:55,812 - services.vendite - INFO - Created vendite with id: 118
+2026-01-17 02:40:56,237 - services.vendite - INFO - Created vendite with id: 119
+2026-01-17 02:40:56,663 - services.vendite - INFO - Created vendite with id: 120
+2026-01-17 02:40:57,091 - services.vendite - INFO - Created vendite with id: 121
+2026-01-17 02:40:57,519 - services.vendite - INFO - Created vendite with id: 122
+2026-01-17 02:40:57,946 - services.vendite - INFO - Created vendite with id: 123
+2026-01-17 02:40:58,373 - services.vendite - INFO - Created vendite with id: 124
+2026-01-17 02:40:58,809 - services.vendite - INFO - Created vendite with id: 125
+2026-01-17 02:40:59,236 - services.vendite - INFO - Created vendite with id: 126
+2026-01-17 02:40:59,661 - services.vendite - INFO - Created vendite with id: 127
+2026-01-17 02:41:00,085 - services.vendite - INFO - Created vendite with id: 128
+2026-01-17 02:41:00,511 - services.vendite - INFO - Created vendite with id: 129
+2026-01-17 02:41:00,968 - services.vendite - INFO - Created vendite with id: 130
+2026-01-17 02:41:01,392 - services.vendite - INFO - Created vendite with id: 131
+2026-01-17 02:41:01,821 - services.vendite - INFO - Created vendite with id: 132
+2026-01-17 02:41:02,249 - services.vendite - INFO - Created vendite with id: 133
+2026-01-17 02:41:02,674 - services.vendite - INFO - Created vendite with id: 134
+2026-01-17 02:41:03,103 - services.vendite - INFO - Created vendite with id: 135
+2026-01-17 02:41:03,528 - services.vendite - INFO - Created vendite with id: 136
+2026-01-17 02:41:03,954 - services.vendite - INFO - Created vendite with id: 137
+2026-01-17 02:41:04,378 - services.vendite - INFO - Created vendite with id: 138
+2026-01-17 02:41:04,810 - services.vendite - INFO - Created vendite with id: 139
+2026-01-17 02:41:05,235 - services.vendite - INFO - Created vendite with id: 140
+2026-01-17 02:41:05,661 - services.vendite - INFO - Created vendite with id: 141
+2026-01-17 02:41:06,086 - services.vendite - INFO - Created vendite with id: 142
+2026-01-17 02:41:06,515 - services.vendite - INFO - Created vendite with id: 143
+2026-01-17 02:41:06,951 - services.vendite - INFO - Created vendite with id: 144
+2026-01-17 02:41:07,377 - services.vendite - INFO - Created vendite with id: 145
+2026-01-17 02:41:07,801 - services.vendite - INFO - Created vendite with id: 146
+2026-01-17 02:41:08,226 - services.vendite - INFO - Created vendite with id: 147
+2026-01-17 02:41:08,655 - services.vendite - INFO - Created vendite with id: 148
+2026-01-17 02:41:09,085 - services.vendite - INFO - Created vendite with id: 149
+2026-01-17 02:41:09,512 - services.vendite - INFO - Created vendite with id: 150
+2026-01-17 02:41:09,937 - services.vendite - INFO - Created vendite with id: 151
+2026-01-17 02:41:10,121 - core.auth - DEBUG - Authentication token validated for user hash: 1fe0bfd6
+2026-01-17 02:41:10,122 - core.database - DEBUG - [DB_OP] Starting get_db session creation
+2026-01-17 02:41:10,122 - core.database - DEBUG - [DB_OP] Database session created successfully in 0.0002s
+2026-01-17 02:41:10,370 - services.vendite - INFO - Created vendite with id: 152
+2026-01-17 02:41:10,795 - services.vendite - INFO - Created vendite with id: 153
+2026-01-17 02:41:11,219 - services.vendite - INFO - Created vendite with id: 154
+2026-01-17 02:41:11,665 - services.vendite - INFO - Created vendite with id: 155
+2026-01-17 02:41:11,854 - core.database - DEBUG - [DB_OP] Database session cleanup after 1.7327s
+2026-01-17 02:41:12,089 - services.vendite - INFO - Created vendite with id: 156
+2026-01-17 02:41:12,668 - services.vendite - INFO - Created vendite with id: 157
+2026-01-17 02:41:13,188 - services.vendite - INFO - Created vendite with id: 158
+2026-01-17 02:41:13,639 - services.vendite - INFO - Created vendite with id: 159
+2026-01-17 02:41:14,075 - services.vendite - INFO - Created vendite with id: 160
+2026-01-17 02:41:14,523 - services.vendite - INFO - Created vendite with id: 161
+2026-01-17 02:41:14,960 - services.vendite - INFO - Created vendite with id: 162
+2026-01-17 02:41:15,409 - services.vendite - INFO - Created vendite with id: 163
+2026-01-17 02:41:15,859 - services.vendite - INFO - Created vendite with id: 164
+2026-01-17 02:41:16,306 - services.vendite - INFO - Created vendite with id: 165
+2026-01-17 02:41:16,742 - services.vendite - INFO - Created vendite with id: 166
+2026-01-17 02:41:17,193 - services.vendite - INFO - Created vendite with id: 167
+2026-01-17 02:41:17,633 - services.vendite - INFO - Created vendite with id: 168
+2026-01-17 02:41:18,080 - services.vendite - INFO - Created vendite with id: 169
+2026-01-17 02:41:18,528 - services.vendite - INFO - Created vendite with id: 170
+2026-01-17 02:41:18,975 - services.vendite - INFO - Created vendite with id: 171
+2026-01-17 02:41:19,416 - services.vendite - INFO - Created vendite with id: 172
+2026-01-17 02:41:19,864 - services.vendite - INFO - Created vendite with id: 173
+2026-01-17 02:41:20,300 - services.vendite - INFO - Created vendite with id: 174
+2026-01-17 02:41:20,758 - services.vendite - INFO - Created vendite with id: 175
+2026-01-17 02:41:21,193 - services.vendite - INFO - Created vendite with id: 176
+2026-01-17 02:41:21,642 - services.vendite - INFO - Created vendite with id: 177
+2026-01-17 02:41:22,077 - services.vendite - INFO - Created vendite with id: 178
+2026-01-17 02:41:22,525 - services.vendite - INFO - Created vendite with id: 179
+2026-01-17 02:41:22,961 - services.vendite - INFO - Created vendite with id: 180
+2026-01-17 02:41:23,408 - services.vendite - INFO - Created vendite with id: 181
+2026-01-17 02:41:23,843 - services.vendite - INFO - Created vendite with id: 182
+2026-01-17 02:41:24,289 - services.vendite - INFO - Created vendite with id: 183
+2026-01-17 02:41:24,609 - core.auth - DEBUG - Authentication token validated for user hash: 1fe0bfd6
+2026-01-17 02:41:24,610 - core.database - DEBUG - [DB_OP] Starting get_db session creation
+2026-01-17 02:41:24,610 - core.database - DEBUG - [DB_OP] Database session created successfully in 0.0002s
+2026-01-17 02:41:24,728 - services.vendite - INFO - Created vendite with id: 184
+2026-01-17 02:41:25,150 - services.vendite - INFO - Created vendite with id: 185
+2026-01-17 02:41:25,573 - services.vendite - INFO - Created vendite with id: 186
+2026-01-17 02:41:25,659 - core.database - DEBUG - [DB_OP] Database session cleanup after 1.0495s
+2026-01-17 02:41:25,996 - services.vendite - INFO - Created vendite with id: 187
+2026-01-17 02:41:26,449 - services.vendite - INFO - Created vendite with id: 188
+2026-01-17 02:41:26,884 - services.vendite - INFO - Created vendite with id: 189
+2026-01-17 02:41:27,331 - services.vendite - INFO - Created vendite with id: 190
+2026-01-17 02:41:27,765 - services.vendite - INFO - Created vendite with id: 191
+2026-01-17 02:41:28,216 - services.vendite - INFO - Created vendite with id: 192
+2026-01-17 02:41:28,650 - services.vendite - INFO - Created vendite with id: 193
+2026-01-17 02:41:29,100 - services.vendite - INFO - Created vendite with id: 194
+2026-01-17 02:41:29,535 - services.vendite - INFO - Created vendite with id: 195
+2026-01-17 02:41:29,983 - services.vendite - INFO - Created vendite with id: 196
+2026-01-17 02:41:29,993 - core.auth - DEBUG - Authentication token validated for user hash: 1fe0bfd6
+2026-01-17 02:41:29,994 - core.database - DEBUG - [DB_OP] Starting get_db session creation
+2026-01-17 02:41:29,994 - core.database - DEBUG - [DB_OP] Database session created successfully in 0.0002s
+2026-01-17 02:41:30,438 - services.vendite - INFO - Created vendite with id: 197
+2026-01-17 02:41:30,896 - services.vendite - INFO - Created vendite with id: 198
+2026-01-17 02:41:30,971 - core.database - DEBUG - [DB_OP] Database session cleanup after 0.9773s
+2026-01-17 02:41:31,371 - services.vendite - INFO - Created vendite with id: 199
+2026-01-17 02:41:31,806 - services.vendite - INFO - Created vendite with id: 200
+2026-01-17 02:41:32,256 - services.vendite - INFO - Created vendite with id: 201
+2026-01-17 02:41:32,691 - services.vendite - INFO - Created vendite with id: 202
+2026-01-17 02:41:33,140 - services.vendite - INFO - Created vendite with id: 203
+2026-01-17 02:41:33,306 - core.auth - DEBUG - Authentication token validated for user hash: 1fe0bfd6
+2026-01-17 02:41:33,306 - core.database - DEBUG - [DB_OP] Starting get_db session creation
+2026-01-17 02:41:33,307 - core.database - DEBUG - [DB_OP] Database session created successfully in 0.0003s
+2026-01-17 02:41:33,574 - services.vendite - INFO - Created vendite with id: 204
+2026-01-17 02:41:34,004 - services.vendite - INFO - Created vendite with id: 205
+2026-01-17 02:41:34,043 - core.database - DEBUG - [DB_OP] Database session cleanup after 0.7363s
+2026-01-17 02:41:34,450 - services.vendite - INFO - Created vendite with id: 206
+2026-01-17 02:41:34,891 - services.vendite - INFO - Created vendite with id: 207
+2026-01-17 02:41:35,338 - services.vendite - INFO - Created vendite with id: 208
+2026-01-17 02:41:35,774 - services.vendite - INFO - Created vendite with id: 209
+2026-01-17 02:41:36,226 - services.vendite - INFO - Created vendite with id: 210
+2026-01-17 02:41:36,660 - services.vendite - INFO - Created vendite with id: 211
+2026-01-17 02:41:36,834 - core.auth - DEBUG - Authentication token validated for user hash: 1fe0bfd6
+2026-01-17 02:41:36,834 - core.database - DEBUG - [DB_OP] Starting get_db session creation
+2026-01-17 02:41:36,834 - core.database - DEBUG - [DB_OP] Database session created successfully in 0.0003s
+2026-01-17 02:41:37,110 - services.vendite - INFO - Created vendite with id: 212
+2026-01-17 02:41:37,567 - services.vendite - INFO - Created vendite with id: 213
+2026-01-17 02:41:37,602 - core.database - DEBUG - [DB_OP] Database session cleanup after 0.7682s
+2026-01-17 02:41:38,000 - services.vendite - INFO - Created vendite with id: 214
+2026-01-17 02:41:38,459 - services.vendite - INFO - Created vendite with id: 215
+2026-01-17 02:41:38,894 - services.vendite - INFO - Created vendite with id: 216
+2026-01-17 02:41:39,342 - services.vendite - INFO - Created vendite with id: 217
+2026-01-17 02:41:39,775 - services.vendite - INFO - Created vendite with id: 218
+2026-01-17 02:41:40,222 - services.vendite - INFO - Created vendite with id: 219
+2026-01-17 02:41:40,655 - services.vendite - INFO - Created vendite with id: 220
+2026-01-17 02:41:41,105 - services.vendite - INFO - Created vendite with id: 221
+2026-01-17 02:41:41,540 - services.vendite - INFO - Created vendite with id: 222
+2026-01-17 02:41:41,989 - services.vendite - INFO - Created vendite with id: 223
+2026-01-17 02:41:42,424 - services.vendite - INFO - Created vendite with id: 224
+2026-01-17 02:41:42,872 - services.vendite - INFO - Created vendite with id: 225
+2026-01-17 02:41:43,307 - services.vendite - INFO - Created vendite with id: 226
+2026-01-17 02:41:43,759 - services.vendite - INFO - Created vendite with id: 227
+2026-01-17 02:41:44,192 - services.vendite - INFO - Created vendite with id: 228
+2026-01-17 02:41:44,638 - services.vendite - INFO - Created vendite with id: 229
+2026-01-17 02:41:44,638 - core.database - DEBUG - [DB_OP] Database session cleanup after 99.7240s
+2026-01-17 02:41:52,035 - core.auth - DEBUG - Authentication token validated for user hash: 1fe0bfd6
+2026-01-17 02:41:52,036 - core.database - DEBUG - [DB_OP] Starting get_db session creation
+2026-01-17 02:41:52,036 - core.database - DEBUG - [DB_OP] Database session created successfully in 0.0002s
+2026-01-17 02:41:52,779 - core.database - DEBUG - [DB_OP] Database session cleanup after 0.7432s
+2026-01-17 02:41:56,080 - core.auth - DEBUG - Authentication token validated for user hash: 1fe0bfd6
+2026-01-17 02:41:56,080 - core.database - DEBUG - [DB_OP] Starting get_db session creation
+2026-01-17 02:41:56,081 - core.database - DEBUG - [DB_OP] Database session created successfully in 0.0003s
+2026-01-17 02:41:56,871 - core.database - DEBUG - [DB_OP] Database session cleanup after 0.7907s
+2026-01-17 02:42:03,247 - core.auth - DEBUG - Authentication token validated for user hash: 1fe0bfd6
+2026-01-17 02:42:03,248 - core.database - DEBUG - [DB_OP] Starting get_db session creation
+2026-01-17 02:42:03,248 - core.database - DEBUG - [DB_OP] Database session created successfully in 0.0002s
+2026-01-17 02:42:03,742 - core.database - DEBUG - [DB_OP] Database session cleanup after 0.4942s
+2026-01-17 02:42:29,940 - core.auth - DEBUG - Authentication token validated for user hash: 1fe0bfd6
+2026-01-17 02:42:29,941 - core.database - DEBUG - [DB_OP] Starting get_db session creation
+2026-01-17 02:42:29,941 - core.database - DEBUG - [DB_OP] Database session created successfully in 0.0004s
+2026-01-17 02:42:30,466 - core.database - DEBUG - [DB_OP] Database session cleanup after 0.5252s
+2026-01-17 02:42:35,929 - core.auth - DEBUG - Authentication token validated for user hash: 1fe0bfd6
+2026-01-17 02:42:35,930 - core.database - DEBUG - [DB_OP] Starting get_db session creation
+2026-01-17 02:42:35,930 - core.database - DEBUG - [DB_OP] Database session created successfully in 0.0003s
+2026-01-17 02:42:36,438 - core.database - DEBUG - [DB_OP] Database session cleanup after 0.5088s
+2026-01-17 02:43:22,375 - core.auth - DEBUG - Authentication token validated for user hash: 1fe0bfd6
+2026-01-17 02:43:22,376 - core.database - DEBUG - [DB_OP] Starting get_db session creation
+2026-01-17 02:43:22,376 - core.database - DEBUG - [DB_OP] Database session created successfully in 0.0003s
+2026-01-17 02:43:22,905 - core.database - DEBUG - [DB_OP] Database session cleanup after 0.5294s
+2026-01-17 02:43:27,779 - core.auth - DEBUG - Authentication token validated for user hash: 1fe0bfd6
+2026-01-17 02:43:27,780 - core.database - DEBUG - [DB_OP] Starting get_db session creation
+2026-01-17 02:43:27,780 - core.database - DEBUG - [DB_OP] Database session created successfully in 0.0003s
+2026-01-17 02:43:28,589 - core.database - DEBUG - [DB_OP] Database session cleanup after 0.8090s
+2026-01-17 02:44:02,343 - core.auth - DEBUG - Authentication token validated for user hash: 1fe0bfd6
+2026-01-17 02:44:02,343 - core.database - DEBUG - [DB_OP] Starting get_db session creation
+2026-01-17 02:44:02,344 - core.database - DEBUG - [DB_OP] Database session created successfully in 0.0003s
+2026-01-17 02:44:02,869 - core.database - DEBUG - [DB_OP] Database session cleanup after 0.5261s
+2026-01-17 02:44:12,824 - core.auth - DEBUG - Authentication token validated for user hash: 1fe0bfd6
+2026-01-17 02:44:12,824 - core.database - DEBUG - [DB_OP] Starting get_db session creation
+2026-01-17 02:44:12,825 - core.database - DEBUG - [DB_OP] Database session created successfully in 0.0003s
+2026-01-17 02:44:13,318 - core.database - DEBUG - [DB_OP] Database session cleanup after 0.4934s
+2026-01-17 02:44:14,774 - core.auth - DEBUG - Authentication token validated for user hash: 1fe0bfd6
+2026-01-17 02:44:14,775 - core.database - DEBUG - [DB_OP] Starting get_db session creation
+2026-01-17 02:44:14,776 - core.database - DEBUG - [DB_OP] Database session created successfully in 0.0005s
+2026-01-17 02:44:15,844 - core.database - DEBUG - [DB_OP] Database session cleanup after 1.0689s
+2026-01-17 02:44:17,521 - core.auth - DEBUG - Authentication token validated for user hash: 1fe0bfd6
+2026-01-17 02:44:17,521 - core.database - DEBUG - [DB_OP] Starting get_db session creation
+2026-01-17 02:44:17,521 - core.database - DEBUG - [DB_OP] Database session created successfully in 0.0002s
+2026-01-17 02:44:18,499 - core.database - DEBUG - [DB_OP] Database session cleanup after 0.9777s
+2026-01-17 02:44:20,679 - core.auth - DEBUG - Authentication token validated for user hash: 1fe0bfd6
+2026-01-17 02:44:20,679 - core.database - DEBUG - [DB_OP] Starting get_db session creation
+2026-01-17 02:44:20,679 - core.database - DEBUG - [DB_OP] Database session created successfully in 0.0003s
+2026-01-17 02:44:21,360 - core.database - DEBUG - [DB_OP] Database session cleanup after 0.6808s
+2026-01-17 02:44:33,249 - core.auth - DEBUG - Authentication token validated for user hash: 1fe0bfd6
+2026-01-17 02:44:33,250 - core.database - DEBUG - [DB_OP] Starting get_db session creation
+2026-01-17 02:44:33,251 - core.database - DEBUG - [DB_OP] Database session created successfully in 0.0006s
+2026-01-17 02:44:33,932 - core.database - DEBUG - [DB_OP] Database session cleanup after 0.6816s
+2026-01-17 02:44:43,004 - core.auth - DEBUG - Authentication token validated for user hash: 1fe0bfd6
+2026-01-17 02:44:43,004 - core.database - DEBUG - [DB_OP] Starting get_db session creation
+2026-01-17 02:44:43,005 - core.database - DEBUG - [DB_OP] Database session created successfully in 0.0003s
+2026-01-17 02:44:43,684 - core.database - DEBUG - [DB_OP] Database session cleanup after 0.6802s
+2026-01-17 02:45:35,989 - core.auth - DEBUG - Authentication token validated for user hash: 1fe0bfd6
+2026-01-17 02:45:36,113 - routers.upload - WARNING - Could not parse date: 2026-01-01 00:00:00, using current date
+2026-01-17 02:45:36,113 - routers.upload - WARNING - Could not parse date: 2026-01-02 00:00:00, using current date
+2026-01-17 02:45:36,113 - routers.upload - WARNING - Could not parse date: 2026-01-03 00:00:00, using current date
+2026-01-17 02:45:36,114 - routers.upload - WARNING - Could not parse date: 2026-01-04 00:00:00, using current date
+2026-01-17 02:45:36,114 - routers.upload - WARNING - Could not parse date: 2026-01-05 00:00:00, using current date
+2026-01-17 02:45:36,114 - routers.upload - WARNING - Could not parse date: 2026-01-06 00:00:00, using current date
+2026-01-17 02:45:36,114 - routers.upload - WARNING - Could not parse date: 2026-01-07 00:00:00, using current date
+2026-01-17 02:45:36,114 - routers.upload - WARNING - Could not parse date: 2026-01-08 00:00:00, using current date
+2026-01-17 02:45:36,115 - routers.upload - WARNING - Could not parse date: 2026-01-09 00:00:00, using current date
+2026-01-17 02:45:36,115 - routers.upload - WARNING - Could not parse date: 2026-01-10 00:00:00, using current date
+2026-01-17 02:45:36,115 - routers.upload - WARNING - Could not parse date: 2026-01-11 00:00:00, using current date
+2026-01-17 02:45:36,115 - routers.upload - WARNING - Could not parse date: 2026-01-12 00:00:00, using current date
+2026-01-17 02:45:36,115 - routers.upload - WARNING - Could not parse date: 2026-01-13 00:00:00, using current date
+2026-01-17 02:45:36,116 - routers.upload - WARNING - Could not parse date: 2026-01-14 00:00:00, using current date
+2026-01-17 02:45:36,116 - routers.upload - WARNING - Could not parse date: 2026-01-15 00:00:00, using current date
+2026-01-17 02:45:36,116 - routers.upload - WARNING - Could not parse date: 2026-01-16 00:00:00, using current date
+2026-01-17 02:45:36,116 - routers.upload - WARNING - Could not parse date: 2026-01-17 00:00:00, using current date
+2026-01-17 02:45:36,116 - routers.upload - WARNING - Could not parse date: 2026-01-18 00:00:00, using current date
+2026-01-17 02:45:36,117 - routers.upload - WARNING - Could not parse date: 2026-01-19 00:00:00, using current date
+2026-01-17 02:45:36,117 - routers.upload - WARNING - Could not parse date: 2026-01-20 00:00:00, using current date
+2026-01-17 02:45:36,117 - routers.upload - WARNING - Could not parse date: 2026-01-21 00:00:00, using current date
+2026-01-17 02:45:36,117 - routers.upload - WARNING - Could not parse date: 2026-01-22 00:00:00, using current date
+2026-01-17 02:45:36,117 - routers.upload - WARNING - Could not parse date: 2026-01-23 00:00:00, using current date
+2026-01-17 02:45:36,233 - routers.upload - WARNING - Could not parse date: 2025-12-12 00:00:00, using current date
+2026-01-17 02:45:36,234 - routers.upload - WARNING - Could not parse date: 2025-12-13 00:00:00, using current date
+2026-01-17 02:45:36,234 - routers.upload - WARNING - Could not parse date: 2025-12-14 00:00:00, using current date
+2026-01-17 02:45:36,234 - routers.upload - WARNING - Could not parse date: 2025-12-15 00:00:00, using current date
+2026-01-17 02:45:36,234 - routers.upload - WARNING - Could not parse date: 2025-12-16 00:00:00, using current date
+2026-01-17 02:45:36,235 - routers.upload - WARNING - Could not parse date: 2025-12-17 00:00:00, using current date
+2026-01-17 02:45:36,235 - routers.upload - WARNING - Could not parse date: 2025-12-18 00:00:00, using current date
+2026-01-17 02:45:36,235 - routers.upload - WARNING - Could not parse date: 2025-12-19 00:00:00, using current date
+2026-01-17 02:45:36,235 - routers.upload - WARNING - Could not parse date: 2025-12-20 00:00:00, using current date
+2026-01-17 02:45:36,236 - routers.upload - WARNING - Could not parse date: 2025-12-21 00:00:00, using current date
+2026-01-17 02:45:36,236 - routers.upload - WARNING - Could not parse date: 2025-12-22 00:00:00, using current date
+2026-01-17 02:45:36,236 - routers.upload - WARNING - Could not parse date: 2025-12-23 00:00:00, using current date
+2026-01-17 02:45:36,236 - routers.upload - WARNING - Could not parse date: 2025-12-24 00:00:00, using current date
+2026-01-17 02:45:36,236 - routers.upload - WARNING - Could not parse date: 2025-12-25 00:00:00, using current date
+2026-01-17 02:45:36,237 - routers.upload - WARNING - Could not parse date: 2025-12-26 00:00:00, using current date
+2026-01-17 02:45:36,237 - routers.upload - WARNING - Could not parse date: 2025-12-27 00:00:00, using current date
+2026-01-17 02:45:36,237 - routers.upload - WARNING - Could not parse date: 2025-12-28 00:00:00, using current date
+2026-01-17 02:45:36,237 - routers.upload - WARNING - Could not parse date: 2025-12-29 00:00:00, using current date
+2026-01-17 02:45:36,237 - routers.upload - WARNING - Could not parse date: 2025-12-30 00:00:00, using current date
+2026-01-17 02:45:36,238 - routers.upload - WARNING - Could not parse date: 2025-12-31 00:00:00, using current date
+2026-01-17 02:45:36,238 - routers.upload - WARNING - Could not parse date: 2026-01-03 00:00:00, using current date
+2026-01-17 02:45:36,238 - routers.upload - WARNING - Could not parse date: 2026-01-05 00:00:00, using current date
+2026-01-17 02:45:38,029 - core.auth - DEBUG - Authentication token validated for user hash: 1fe0bfd6
+2026-01-17 02:45:38,029 - core.database - DEBUG - [DB_OP] Starting get_db session creation
+2026-01-17 02:45:38,030 - core.database - DEBUG - [DB_OP] Database session created successfully in 0.0002s
+2026-01-17 02:45:38,729 - services.vendite - INFO - Created vendite with id: 230
+2026-01-17 02:45:39,164 - services.vendite - INFO - Created vendite with id: 231
+2026-01-17 02:45:39,611 - services.vendite - INFO - Created vendite with id: 232
+2026-01-17 02:45:40,058 - services.vendite - INFO - Created vendite with id: 233
+2026-01-17 02:45:40,505 - services.vendite - INFO - Created vendite with id: 234
+2026-01-17 02:45:40,941 - services.vendite - INFO - Created vendite with id: 235
+2026-01-17 02:45:41,388 - services.vendite - INFO - Created vendite with id: 236
+2026-01-17 02:45:41,824 - services.vendite - INFO - Created vendite with id: 237
+2026-01-17 02:45:42,269 - services.vendite - INFO - Created vendite with id: 238
+2026-01-17 02:45:42,704 - services.vendite - INFO - Created vendite with id: 239
+2026-01-17 02:45:43,151 - services.vendite - INFO - Created vendite with id: 240
+2026-01-17 02:45:43,584 - services.vendite - INFO - Created vendite with id: 241
+2026-01-17 02:45:44,033 - services.vendite - INFO - Created vendite with id: 242
+2026-01-17 02:45:44,468 - services.vendite - INFO - Created vendite with id: 243
+2026-01-17 02:45:44,917 - services.vendite - INFO - Created vendite with id: 244
+2026-01-17 02:45:45,352 - services.vendite - INFO - Created vendite with id: 245
+2026-01-17 02:45:45,801 - services.vendite - INFO - Created vendite with id: 246
+2026-01-17 02:45:46,236 - services.vendite - INFO - Created vendite with id: 247
+2026-01-17 02:45:46,686 - services.vendite - INFO - Created vendite with id: 248
+2026-01-17 02:45:47,121 - services.vendite - INFO - Created vendite with id: 249
+2026-01-17 02:45:47,577 - services.vendite - INFO - Created vendite with id: 250
+2026-01-17 02:45:48,011 - services.vendite - INFO - Created vendite with id: 251
+2026-01-17 02:45:48,459 - services.vendite - INFO - Created vendite with id: 252
+2026-01-17 02:45:48,893 - services.vendite - INFO - Created vendite with id: 253
+2026-01-17 02:45:49,358 - services.vendite - INFO - Created vendite with id: 254
+2026-01-17 02:45:49,793 - services.vendite - INFO - Created vendite with id: 255
+2026-01-17 02:45:50,239 - services.vendite - INFO - Created vendite with id: 256
+2026-01-17 02:45:50,673 - services.vendite - INFO - Created vendite with id: 257
+2026-01-17 02:45:51,120 - services.vendite - INFO - Created vendite with id: 258
+2026-01-17 02:45:51,554 - services.vendite - INFO - Created vendite with id: 259
+2026-01-17 02:45:52,004 - services.vendite - INFO - Created vendite with id: 260
+2026-01-17 02:45:52,437 - services.vendite - INFO - Created vendite with id: 261
+2026-01-17 02:45:52,884 - services.vendite - INFO - Created vendite with id: 262
+2026-01-17 02:45:53,320 - services.vendite - INFO - Created vendite with id: 263
+2026-01-17 02:45:53,765 - services.vendite - INFO - Created vendite with id: 264
+2026-01-17 02:45:54,200 - services.vendite - INFO - Created vendite with id: 265
+2026-01-17 02:45:54,656 - services.vendite - INFO - Created vendite with id: 266
+2026-01-17 02:45:55,091 - services.vendite - INFO - Created vendite with id: 267
+2026-01-17 02:45:55,558 - services.vendite - INFO - Created vendite with id: 268
+2026-01-17 02:45:55,993 - services.vendite - INFO - Created vendite with id: 269
+2026-01-17 02:45:56,440 - services.vendite - INFO - Created vendite with id: 270
+2026-01-17 02:45:56,873 - services.vendite - INFO - Created vendite with id: 271
+2026-01-17 02:45:57,320 - services.vendite - INFO - Created vendite with id: 272
+2026-01-17 02:45:57,755 - services.vendite - INFO - Created vendite with id: 273
+2026-01-17 02:45:58,201 - services.vendite - INFO - Created vendite with id: 274
+2026-01-17 02:45:58,642 - services.vendite - INFO - Created vendite with id: 275
+2026-01-17 02:45:59,089 - services.vendite - INFO - Created vendite with id: 276
+2026-01-17 02:45:59,524 - services.vendite - INFO - Created vendite with id: 277
+2026-01-17 02:45:59,973 - services.vendite - INFO - Created vendite with id: 278
+2026-01-17 02:46:00,419 - services.vendite - INFO - Created vendite with id: 279
+2026-01-17 02:46:00,866 - services.vendite - INFO - Created vendite with id: 280
+2026-01-17 02:46:01,300 - services.vendite - INFO - Created vendite with id: 281
+2026-01-17 02:46:01,748 - services.vendite - INFO - Created vendite with id: 282
+2026-01-17 02:46:02,182 - services.vendite - INFO - Created vendite with id: 283
+2026-01-17 02:46:02,629 - services.vendite - INFO - Created vendite with id: 284
+2026-01-17 02:46:03,064 - services.vendite - INFO - Created vendite with id: 285
+2026-01-17 02:46:03,511 - services.vendite - INFO - Created vendite with id: 286
+2026-01-17 02:46:03,945 - services.vendite - INFO - Created vendite with id: 287
+2026-01-17 02:46:04,394 - services.vendite - INFO - Created vendite with id: 288
+2026-01-17 02:46:04,828 - services.vendite - INFO - Created vendite with id: 289
+2026-01-17 02:46:05,304 - services.vendite - INFO - Created vendite with id: 290
+2026-01-17 02:46:05,739 - services.vendite - INFO - Created vendite with id: 291
+2026-01-17 02:46:06,186 - services.vendite - INFO - Created vendite with id: 292
+2026-01-17 02:46:06,620 - services.vendite - INFO - Created vendite with id: 293
+2026-01-17 02:46:07,069 - services.vendite - INFO - Created vendite with id: 294
+2026-01-17 02:46:07,503 - services.vendite - INFO - Created vendite with id: 295
+2026-01-17 02:46:07,949 - services.vendite - INFO - Created vendite with id: 296
+2026-01-17 02:46:08,383 - services.vendite - INFO - Created vendite with id: 297
+2026-01-17 02:46:08,829 - services.vendite - INFO - Created vendite with id: 298
+2026-01-17 02:46:09,265 - services.vendite - INFO - Created vendite with id: 299
+2026-01-17 02:46:09,711 - services.vendite - INFO - Created vendite with id: 300
+2026-01-17 02:46:10,146 - services.vendite - INFO - Created vendite with id: 301
+2026-01-17 02:46:10,593 - services.vendite - INFO - Created vendite with id: 302
+2026-01-17 02:46:11,028 - services.vendite - INFO - Created vendite with id: 303
+2026-01-17 02:46:11,480 - services.vendite - INFO - Created vendite with id: 304
+2026-01-17 02:46:11,913 - services.vendite - INFO - Created vendite with id: 305
+2026-01-17 02:46:12,367 - services.vendite - INFO - Created vendite with id: 306
+2026-01-17 02:46:12,801 - services.vendite - INFO - Created vendite with id: 307
+2026-01-17 02:46:13,383 - services.vendite - INFO - Created vendite with id: 308
+2026-01-17 02:46:13,818 - services.vendite - INFO - Created vendite with id: 309
+2026-01-17 02:46:14,266 - services.vendite - INFO - Created vendite with id: 310
+2026-01-17 02:46:14,699 - services.vendite - INFO - Created vendite with id: 311
+2026-01-17 02:46:15,167 - services.vendite - INFO - Created vendite with id: 312
+2026-01-17 02:46:15,600 - services.vendite - INFO - Created vendite with id: 313
+2026-01-17 02:46:16,049 - services.vendite - INFO - Created vendite with id: 314
+2026-01-17 02:46:16,489 - services.vendite - INFO - Created vendite with id: 315
+2026-01-17 02:46:16,937 - services.vendite - INFO - Created vendite with id: 316
+2026-01-17 02:46:17,373 - services.vendite - INFO - Created vendite with id: 317
+2026-01-17 02:46:17,829 - services.vendite - INFO - Created vendite with id: 318
+2026-01-17 02:46:18,264 - services.vendite - INFO - Created vendite with id: 319
+2026-01-17 02:46:18,713 - services.vendite - INFO - Created vendite with id: 320
+2026-01-17 02:46:19,146 - services.vendite - INFO - Created vendite with id: 321
+2026-01-17 02:46:19,595 - services.vendite - INFO - Created vendite with id: 322
+2026-01-17 02:46:20,031 - services.vendite - INFO - Created vendite with id: 323
+2026-01-17 02:46:20,485 - services.vendite - INFO - Created vendite with id: 324
+2026-01-17 02:46:20,921 - services.vendite - INFO - Created vendite with id: 325
+2026-01-17 02:46:21,368 - services.vendite - INFO - Created vendite with id: 326
+2026-01-17 02:46:21,802 - services.vendite - INFO - Created vendite with id: 327
+2026-01-17 02:46:22,254 - services.vendite - INFO - Created vendite with id: 328
+2026-01-17 02:46:22,687 - services.vendite - INFO - Created vendite with id: 329
+2026-01-17 02:46:23,134 - services.vendite - INFO - Created vendite with id: 330
+2026-01-17 02:46:23,570 - services.vendite - INFO - Created vendite with id: 331
+2026-01-17 02:46:24,021 - services.vendite - INFO - Created vendite with id: 332
+2026-01-17 02:46:24,454 - services.vendite - INFO - Created vendite with id: 333
+2026-01-17 02:46:24,901 - services.vendite - INFO - Created vendite with id: 334
+2026-01-17 02:46:25,334 - services.vendite - INFO - Created vendite with id: 335
+2026-01-17 02:46:25,792 - services.vendite - INFO - Created vendite with id: 336
+2026-01-17 02:46:26,251 - services.vendite - INFO - Created vendite with id: 337
+2026-01-17 02:46:26,698 - services.vendite - INFO - Created vendite with id: 338
+2026-01-17 02:46:27,131 - services.vendite - INFO - Created vendite with id: 339
+2026-01-17 02:46:27,584 - services.vendite - INFO - Created vendite with id: 340
+2026-01-17 02:46:28,020 - services.vendite - INFO - Created vendite with id: 341
+2026-01-17 02:46:28,467 - services.vendite - INFO - Created vendite with id: 342
+2026-01-17 02:46:28,902 - services.vendite - INFO - Created vendite with id: 343
+2026-01-17 02:46:29,351 - services.vendite - INFO - Created vendite with id: 344
+2026-01-17 02:46:29,784 - services.vendite - INFO - Created vendite with id: 345
+2026-01-17 02:46:30,233 - services.vendite - INFO - Created vendite with id: 346
+2026-01-17 02:46:30,666 - services.vendite - INFO - Created vendite with id: 347
+2026-01-17 02:46:31,115 - services.vendite - INFO - Created vendite with id: 348
+2026-01-17 02:46:31,554 - services.vendite - INFO - Created vendite with id: 349
+2026-01-17 02:46:32,002 - services.vendite - INFO - Created vendite with id: 350
+2026-01-17 02:46:32,436 - services.vendite - INFO - Created vendite with id: 351
+2026-01-17 02:46:32,885 - services.vendite - INFO - Created vendite with id: 352
+2026-01-17 02:46:33,320 - services.vendite - INFO - Created vendite with id: 353
+2026-01-17 02:46:33,768 - services.vendite - INFO - Created vendite with id: 354
+2026-01-17 02:46:34,201 - services.vendite - INFO - Created vendite with id: 355
+2026-01-17 02:46:34,647 - services.vendite - INFO - Created vendite with id: 356
+2026-01-17 02:46:35,082 - services.vendite - INFO - Created vendite with id: 357
+2026-01-17 02:46:35,531 - services.vendite - INFO - Created vendite with id: 358
+2026-01-17 02:46:35,966 - services.vendite - INFO - Created vendite with id: 359
+2026-01-17 02:46:36,417 - services.vendite - INFO - Created vendite with id: 360
+2026-01-17 02:46:36,853 - services.vendite - INFO - Created vendite with id: 361
+2026-01-17 02:46:37,329 - services.vendite - INFO - Created vendite with id: 362
+2026-01-17 02:46:37,764 - services.vendite - INFO - Created vendite with id: 363
+2026-01-17 02:46:38,211 - services.vendite - INFO - Created vendite with id: 364
+2026-01-17 02:46:38,646 - services.vendite - INFO - Created vendite with id: 365
+2026-01-17 02:46:39,093 - services.vendite - INFO - Created vendite with id: 366
+2026-01-17 02:46:39,528 - services.vendite - INFO - Created vendite with id: 367
+2026-01-17 02:46:39,975 - services.vendite - INFO - Created vendite with id: 368
+2026-01-17 02:46:40,411 - services.vendite - INFO - Created vendite with id: 369
+2026-01-17 02:46:40,859 - services.vendite - INFO - Created vendite with id: 370
+2026-01-17 02:46:41,292 - services.vendite - INFO - Created vendite with id: 371
+2026-01-17 02:46:41,740 - services.vendite - INFO - Created vendite with id: 372
+2026-01-17 02:46:42,176 - services.vendite - INFO - Created vendite with id: 373
+2026-01-17 02:46:42,625 - services.vendite - INFO - Created vendite with id: 374
+2026-01-17 02:46:43,061 - services.vendite - INFO - Created vendite with id: 375
+2026-01-17 02:46:43,509 - services.vendite - INFO - Created vendite with id: 376
+2026-01-17 02:46:43,776 - core.auth - DEBUG - Authentication token validated for user hash: 1fe0bfd6
+2026-01-17 02:46:43,777 - core.database - DEBUG - [DB_OP] Starting get_db session creation
+2026-01-17 02:46:43,777 - core.database - DEBUG - [DB_OP] Database session created successfully in 0.0002s
+2026-01-17 02:46:43,943 - services.vendite - INFO - Created vendite with id: 377
+2026-01-17 02:46:44,367 - services.vendite - INFO - Created vendite with id: 378
+2026-01-17 02:46:44,572 - core.database - DEBUG - [DB_OP] Database session cleanup after 0.7955s
+2026-01-17 02:46:44,798 - services.vendite - INFO - Created vendite with id: 379
+2026-01-17 02:46:45,246 - services.vendite - INFO - Created vendite with id: 380
+2026-01-17 02:46:45,680 - services.vendite - INFO - Created vendite with id: 381
+2026-01-17 02:46:46,131 - services.vendite - INFO - Created vendite with id: 382
+2026-01-17 02:46:46,566 - services.vendite - INFO - Created vendite with id: 383
+2026-01-17 02:46:47,015 - services.vendite - INFO - Created vendite with id: 384
+2026-01-17 02:46:47,451 - services.vendite - INFO - Created vendite with id: 385
+2026-01-17 02:46:47,897 - services.vendite - INFO - Created vendite with id: 386
+2026-01-17 02:46:48,331 - services.vendite - INFO - Created vendite with id: 387
+2026-01-17 02:46:48,777 - services.vendite - INFO - Created vendite with id: 388
+2026-01-17 02:46:49,211 - services.vendite - INFO - Created vendite with id: 389
+2026-01-17 02:46:49,658 - services.vendite - INFO - Created vendite with id: 390
+2026-01-17 02:46:50,092 - services.vendite - INFO - Created vendite with id: 391
+2026-01-17 02:46:50,539 - services.vendite - INFO - Created vendite with id: 392
+2026-01-17 02:46:50,973 - services.vendite - INFO - Created vendite with id: 393
+2026-01-17 02:46:51,423 - services.vendite - INFO - Created vendite with id: 394
+2026-01-17 02:46:51,859 - services.vendite - INFO - Created vendite with id: 395
+2026-01-17 02:46:52,308 - services.vendite - INFO - Created vendite with id: 396
+2026-01-17 02:46:52,743 - services.vendite - INFO - Created vendite with id: 397
+2026-01-17 02:46:53,197 - services.vendite - INFO - Created vendite with id: 398
+2026-01-17 02:46:53,632 - services.vendite - INFO - Created vendite with id: 399
+2026-01-17 02:46:54,080 - services.vendite - INFO - Created vendite with id: 400
+2026-01-17 02:46:54,515 - services.vendite - INFO - Created vendite with id: 401
+2026-01-17 02:46:54,961 - services.vendite - INFO - Created vendite with id: 402
+2026-01-17 02:46:55,395 - services.vendite - INFO - Created vendite with id: 403
+2026-01-17 02:46:55,843 - services.vendite - INFO - Created vendite with id: 404
+2026-01-17 02:46:56,275 - services.vendite - INFO - Created vendite with id: 405
+2026-01-17 02:46:56,721 - services.vendite - INFO - Created vendite with id: 406
+2026-01-17 02:46:57,154 - services.vendite - INFO - Created vendite with id: 407
+2026-01-17 02:46:57,602 - services.vendite - INFO - Created vendite with id: 408
+2026-01-17 02:46:58,039 - services.vendite - INFO - Created vendite with id: 409
+2026-01-17 02:46:58,485 - services.vendite - INFO - Created vendite with id: 410
+2026-01-17 02:46:58,927 - services.vendite - INFO - Created vendite with id: 411
+2026-01-17 02:46:59,375 - services.vendite - INFO - Created vendite with id: 412
+2026-01-17 02:46:59,810 - services.vendite - INFO - Created vendite with id: 413
+2026-01-17 02:47:00,265 - services.vendite - INFO - Created vendite with id: 414
+2026-01-17 02:47:00,700 - services.vendite - INFO - Created vendite with id: 415
+2026-01-17 02:47:01,149 - services.vendite - INFO - Created vendite with id: 416
+2026-01-17 02:47:01,555 - core.auth - DEBUG - Authentication token validated for user hash: 1fe0bfd6
+2026-01-17 02:47:01,555 - core.database - DEBUG - [DB_OP] Starting get_db session creation
+2026-01-17 02:47:01,555 - core.database - DEBUG - [DB_OP] Database session created successfully in 0.0003s
+2026-01-17 02:47:01,582 - services.vendite - INFO - Created vendite with id: 417
+2026-01-17 02:47:02,007 - services.vendite - INFO - Created vendite with id: 418
+2026-01-17 02:47:02,437 - services.vendite - INFO - Created vendite with id: 419
+2026-01-17 02:47:02,654 - core.database - DEBUG - [DB_OP] Database session cleanup after 1.0986s
+2026-01-17 02:47:02,862 - services.vendite - INFO - Created vendite with id: 420
+2026-01-17 02:47:03,319 - services.vendite - INFO - Created vendite with id: 421
+2026-01-17 02:47:03,751 - services.vendite - INFO - Created vendite with id: 422
+2026-01-17 02:47:04,198 - services.vendite - INFO - Created vendite with id: 423
+2026-01-17 02:47:04,631 - services.vendite - INFO - Created vendite with id: 424
+2026-01-17 02:47:05,078 - services.vendite - INFO - Created vendite with id: 425
+2026-01-17 02:47:05,512 - services.vendite - INFO - Created vendite with id: 426
+2026-01-17 02:47:05,960 - services.vendite - INFO - Created vendite with id: 427
+2026-01-17 02:47:06,395 - services.vendite - INFO - Created vendite with id: 428
+2026-01-17 02:47:06,842 - services.vendite - INFO - Created vendite with id: 429
+2026-01-17 02:47:07,277 - services.vendite - INFO - Created vendite with id: 430
+2026-01-17 02:47:07,726 - services.vendite - INFO - Created vendite with id: 431
+2026-01-17 02:47:08,210 - services.vendite - INFO - Created vendite with id: 432
+2026-01-17 02:47:08,658 - services.vendite - INFO - Created vendite with id: 433
+2026-01-17 02:47:09,094 - services.vendite - INFO - Created vendite with id: 434
+2026-01-17 02:47:09,544 - services.vendite - INFO - Created vendite with id: 435
+2026-01-17 02:47:09,981 - services.vendite - INFO - Created vendite with id: 436
+2026-01-17 02:47:10,429 - services.vendite - INFO - Created vendite with id: 437
+2026-01-17 02:47:10,863 - services.vendite - INFO - Created vendite with id: 438
+2026-01-17 02:47:11,310 - services.vendite - INFO - Created vendite with id: 439
+2026-01-17 02:47:11,750 - services.vendite - INFO - Created vendite with id: 440
+2026-01-17 02:47:12,197 - services.vendite - INFO - Created vendite with id: 441
+2026-01-17 02:47:12,632 - services.vendite - INFO - Created vendite with id: 442
+2026-01-17 02:47:13,080 - services.vendite - INFO - Created vendite with id: 443
+2026-01-17 02:47:13,512 - services.vendite - INFO - Created vendite with id: 444
+2026-01-17 02:47:13,959 - services.vendite - INFO - Created vendite with id: 445
+2026-01-17 02:47:14,393 - services.vendite - INFO - Created vendite with id: 446
+2026-01-17 02:47:14,839 - services.vendite - INFO - Created vendite with id: 447
+2026-01-17 02:47:15,272 - services.vendite - INFO - Created vendite with id: 448
+2026-01-17 02:47:15,719 - services.vendite - INFO - Created vendite with id: 449
+2026-01-17 02:47:16,151 - services.vendite - INFO - Created vendite with id: 450
+2026-01-17 02:47:16,604 - services.vendite - INFO - Created vendite with id: 451
+2026-01-17 02:47:17,039 - services.vendite - INFO - Created vendite with id: 452
+2026-01-17 02:47:17,487 - services.vendite - INFO - Created vendite with id: 453
+2026-01-17 02:47:17,923 - services.vendite - INFO - Created vendite with id: 454
+2026-01-17 02:47:18,374 - services.vendite - INFO - Created vendite with id: 455
+2026-01-17 02:47:18,806 - services.vendite - INFO - Created vendite with id: 456
+2026-01-17 02:47:19,253 - services.vendite - INFO - Created vendite with id: 457
+2026-01-17 02:47:19,685 - services.vendite - INFO - Created vendite with id: 458
+2026-01-17 02:47:19,685 - core.database - DEBUG - [DB_OP] Database session cleanup after 101.6560s
+2026-01-17 02:49:01,069 - services.database - DEBUG - [DB_OP] Starting database close
+2026-01-17 02:49:01,107 - services.database - DEBUG - [DB_OP] Starting database close
+2026-01-17 02:49:01,175 - core.database - INFO - Database connection closed and engine disposed
+2026-01-17 02:49:01,175 - services.database - INFO - Database connections closed
+2026-01-17 02:49:01,175 - services.database - DEBUG - [DB_OP] Database close completed in 0.0681s
+2026-01-17 02:49:01,201 - core.database - INFO - Database connection closed and engine disposed
+2026-01-17 02:49:01,206 - services.database - INFO - Database connections closed
+2026-01-17 02:49:01,206 - services.database - DEBUG - [DB_OP] Database close completed in 0.1377s

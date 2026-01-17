@@ -1,0 +1,500 @@
+2026-01-17 03:13:31,447 - main - INFO - === Logging system initialized ===
+2026-01-17 03:13:31,447 - main - INFO - Log file: logs/app_20260117_031331.log
+2026-01-17 03:13:31,447 - main - INFO - Log level: INFO
+2026-01-17 03:13:31,447 - main - INFO - Timestamp: 20260117_031331
+2026-01-17 03:13:31,495 - main - INFO - Included router: routers.acquisti.router
+2026-01-17 03:13:32,048 - main - INFO - Included router: routers.aihub.router
+2026-01-17 03:13:32,060 - main - INFO - Included router: routers.analytics.router
+2026-01-17 03:13:32,082 - main - INFO - Included router: routers.auth.router
+2026-01-17 03:13:32,089 - main - INFO - Included router: routers.data.router
+2026-01-17 03:13:32,119 - main - INFO - Included router: routers.fornitori.router
+2026-01-17 03:13:32,120 - main - INFO - Included router: routers.health.router
+2026-01-17 03:13:32,217 - main - INFO - Included router: routers.settings.router
+2026-01-17 03:13:32,250 - main - INFO - Included router: routers.storage.router
+2026-01-17 03:13:32,266 - main - INFO - Included router: routers.upload.router
+2026-01-17 03:13:32,283 - main - INFO - Included router: routers.user.router
+2026-01-17 03:13:32,313 - main - INFO - Included router: routers.vendite.router
+2026-01-17 03:13:32,314 - main - INFO - === Application startup initiated ===
+2026-01-17 03:13:32,314 - services.database - DEBUG - [DB_OP] Starting database initialization
+2026-01-17 03:13:32,314 - services.database - INFO - 🔧 Starting database initialization...
+2026-01-17 03:13:32,314 - core.database - INFO - Starting database initialization...
+2026-01-17 03:13:32,314 - core.config - DEBUG - Read dynamic attribute database_url from environment variable DATABASE_URL
+2026-01-17 03:13:32,315 - core.database - INFO - Normalizing database URL for async compatibility...
+2026-01-17 03:13:32,315 - core.database - INFO - Creating async database engine...
+2026-01-17 03:13:32,316 - core.database - INFO - Using QueuePool with connection pooling for non-Lambda environment
+2026-01-17 03:13:32,351 - core.database - INFO - Database engine created successfully
+2026-01-17 03:13:32,351 - core.database - INFO - Creating async session maker...
+2026-01-17 03:13:32,351 - core.database - INFO - Async session maker created successfully
+2026-01-17 03:13:32,351 - core.database - INFO - Database connection initialized successfully
+2026-01-17 03:13:32,351 - services.database - INFO - 🔧 Database connection initialized, now creating tables if tables not exist...
+2026-01-17 03:13:32,351 - core.database - DEBUG - [DB_OP] Starting create_tables
+2026-01-17 03:13:32,351 - core.database - INFO - 🔧 Starting table creation...
+2026-01-17 03:13:34,280 - core.database - INFO - Tables initialized successfully
+2026-01-17 03:13:34,280 - core.database - DEBUG - [DB_OP] Create tables completed in 1.9286s
+2026-01-17 03:13:34,340 - services.database - INFO - 🔧 Table creation completed
+2026-01-17 03:13:34,340 - services.database - INFO - Database initialized successfully
+2026-01-17 03:13:34,340 - services.database - DEBUG - [DB_OP] Database initialization completed in 2.0260s
+2026-01-17 03:13:34,341 - services.mock_data - INFO - Processing mock data file fornitori.json for table fornitori
+2026-01-17 03:13:36,351 - services.mock_data - INFO - Table fornitori already has 5 rows; skipping mock insert
+2026-01-17 03:13:36,411 - services.database - DEBUG - [DB_OP] Starting database initialization
+2026-01-17 03:13:36,412 - services.database - INFO - 🔧 Starting database initialization...
+2026-01-17 03:13:36,412 - core.database - INFO - Starting database initialization...
+2026-01-17 03:13:36,412 - core.database - INFO - Database already initialized
+2026-01-17 03:13:36,412 - services.database - INFO - 🔧 Database connection initialized, now creating tables if tables not exist...
+2026-01-17 03:13:36,412 - core.database - DEBUG - [DB_OP] Starting create_tables
+2026-01-17 03:13:36,412 - core.database - INFO - Tables already initialized
+2026-01-17 03:13:36,412 - services.database - INFO - 🔧 Table creation completed
+2026-01-17 03:13:36,413 - services.database - INFO - Database initialized successfully
+2026-01-17 03:13:36,413 - services.database - DEBUG - [DB_OP] Database initialization completed in 0.0013s
+2026-01-17 03:13:36,413 - core.config - DEBUG - Read dynamic attribute admin_user_id from environment variable ADMIN_USER_ID
+2026-01-17 03:13:36,413 - core.config - DEBUG - Read dynamic attribute admin_user_email from environment variable ADMIN_USER_EMAIL
+2026-01-17 03:13:36,772 - services.auth - DEBUG - Admin user 476166 already exists
+2026-01-17 03:13:36,832 - main - INFO - === Application startup completed successfully ===
+2026-01-17 03:13:40,442 - core.config - DEBUG - Read dynamic attribute jwt_secret_key from environment variable JWT_SECRET_KEY
+2026-01-17 03:13:40,442 - core.config - DEBUG - Read dynamic attribute jwt_algorithm from environment variable JWT_ALGORITHM
+2026-01-17 03:13:40,462 - core.auth - DEBUG - Authentication token validated for user hash: 1fe0bfd6
+2026-01-17 03:13:40,676 - core.auth - DEBUG - Authentication token validated for user hash: 1fe0bfd6
+2026-01-17 03:13:40,676 - core.database - DEBUG - [DB_OP] Starting get_db session creation
+2026-01-17 03:13:40,676 - core.database - DEBUG - [DB_OP] Database session created successfully in 0.0002s
+2026-01-17 03:13:40,677 - routers.analytics - INFO - Analytics request - anno: None, mese: None, categoria: None
+2026-01-17 03:13:40,690 - core.auth - DEBUG - Authentication token validated for user hash: 1fe0bfd6
+2026-01-17 03:13:40,691 - core.database - DEBUG - [DB_OP] Starting get_db session creation
+2026-01-17 03:13:40,691 - core.database - DEBUG - [DB_OP] Database session created successfully in 0.0004s
+2026-01-17 03:13:40,692 - routers.analytics - INFO - Analytics request - anno: None, mese: None, categoria: None
+2026-01-17 03:13:41,397 - routers.analytics - INFO - Acquisti categories: ['Kit', 'Prize']
+2026-01-17 03:13:41,397 - routers.analytics - INFO - Vendite categories: ['Kit', 'Prize', 'Nendo', 'Big', 'Banco', 'Plush']
+2026-01-17 03:13:41,397 - routers.analytics - INFO - Returning 6 categories
+2026-01-17 03:13:41,640 - core.database - DEBUG - [DB_OP] Database session cleanup after 0.9633s
+2026-01-17 03:13:41,755 - core.auth - DEBUG - Authentication token validated for user hash: 1fe0bfd6
+2026-01-17 03:13:41,756 - core.database - DEBUG - [DB_OP] Starting get_db session creation
+2026-01-17 03:13:41,756 - core.database - DEBUG - [DB_OP] Database session created successfully in 0.0002s
+2026-01-17 03:13:41,979 - routers.analytics - INFO - Acquisti categories: ['Kit', 'Prize']
+2026-01-17 03:13:41,979 - routers.analytics - INFO - Vendite categories: ['Kit', 'Prize', 'Nendo', 'Big', 'Banco', 'Plush']
+2026-01-17 03:13:41,979 - routers.analytics - INFO - Returning 6 categories
+2026-01-17 03:13:42,175 - routers.data - ERROR - Error getting acquisti: 'Acquisti' object has no attribute 'fornitore'
+Traceback (most recent call last):
+  File "/workspace/app/backend/routers/data.py", line 66, in get_all_acquisti
+    items = [
+  File "/workspace/app/backend/routers/data.py", line 69, in <listcomp>
+    fornitore=a.fornitore,
+AttributeError: 'Acquisti' object has no attribute 'fornitore'. Did you mean: 'fornitore_id'?
+2026-01-17 03:13:42,191 - core.database - ERROR - Database session error: 500: Errore nel recupero degli ordini: 'Acquisti' object has no attribute 'fornitore'
+Traceback (most recent call last):
+  File "/workspace/app/backend/routers/data.py", line 66, in get_all_acquisti
+    items = [
+  File "/workspace/app/backend/routers/data.py", line 69, in <listcomp>
+    fornitore=a.fornitore,
+AttributeError: 'Acquisti' object has no attribute 'fornitore'. Did you mean: 'fornitore_id'?
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/workspace/app/backend/core/database.py", line 534, in get_db
+    yield session
+  File "/data/.cache/python/lib/python3.10/site-packages/fastapi/routing.py", line 301, in app
+    raw_response = await run_endpoint_function(
+  File "/data/.cache/python/lib/python3.10/site-packages/fastapi/routing.py", line 212, in run_endpoint_function
+    return await dependant.call(**values)
+  File "/workspace/app/backend/routers/data.py", line 84, in get_all_acquisti
+    raise HTTPException(status_code=500, detail=f"Errore nel recupero degli ordini: {str(e)}")
+fastapi.exceptions.HTTPException: 500: Errore nel recupero degli ordini: 'Acquisti' object has no attribute 'fornitore'
+2026-01-17 03:13:42,195 - core.database - DEBUG - [DB_OP] Database session cleanup after 0.4391s
+2026-01-17 03:13:42,219 - core.database - DEBUG - [DB_OP] Database session cleanup after 1.5284s
+2026-01-17 03:13:42,254 - core.database - ERROR - Failed to create database session: 500: Errore nel recupero degli ordini: 'Acquisti' object has no attribute 'fornitore'
+Traceback (most recent call last):
+  File "/workspace/app/backend/routers/data.py", line 66, in get_all_acquisti
+    items = [
+  File "/workspace/app/backend/routers/data.py", line 69, in <listcomp>
+    fornitore=a.fornitore,
+AttributeError: 'Acquisti' object has no attribute 'fornitore'. Did you mean: 'fornitore_id'?
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/workspace/app/backend/core/database.py", line 534, in get_db
+    yield session
+  File "/data/.cache/python/lib/python3.10/site-packages/fastapi/routing.py", line 301, in app
+    raw_response = await run_endpoint_function(
+  File "/data/.cache/python/lib/python3.10/site-packages/fastapi/routing.py", line 212, in run_endpoint_function
+    return await dependant.call(**values)
+  File "/workspace/app/backend/routers/data.py", line 84, in get_all_acquisti
+    raise HTTPException(status_code=500, detail=f"Errore nel recupero degli ordini: {str(e)}")
+fastapi.exceptions.HTTPException: 500: Errore nel recupero degli ordini: 'Acquisti' object has no attribute 'fornitore'
+2026-01-17 03:13:43,581 - core.auth - DEBUG - Authentication token validated for user hash: 1fe0bfd6
+2026-01-17 03:13:43,581 - core.database - DEBUG - [DB_OP] Starting get_db session creation
+2026-01-17 03:13:43,581 - core.database - DEBUG - [DB_OP] Database session created successfully in 0.0002s
+2026-01-17 03:13:44,059 - routers.data - ERROR - Error getting vendite: 'Vendite' object has no attribute 'prezzo_unitario'
+Traceback (most recent call last):
+  File "/workspace/app/backend/routers/data.py", line 98, in get_all_vendite
+    items = [
+  File "/workspace/app/backend/routers/data.py", line 104, in <listcomp>
+    prezzo_unitario=v.prezzo_unitario or 0.0,
+AttributeError: 'Vendite' object has no attribute 'prezzo_unitario'
+2026-01-17 03:13:44,061 - core.database - ERROR - Database session error: 500: Errore nel recupero delle vendite: 'Vendite' object has no attribute 'prezzo_unitario'
+Traceback (most recent call last):
+  File "/workspace/app/backend/routers/data.py", line 98, in get_all_vendite
+    items = [
+  File "/workspace/app/backend/routers/data.py", line 104, in <listcomp>
+    prezzo_unitario=v.prezzo_unitario or 0.0,
+AttributeError: 'Vendite' object has no attribute 'prezzo_unitario'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/workspace/app/backend/core/database.py", line 534, in get_db
+    yield session
+  File "/data/.cache/python/lib/python3.10/site-packages/fastapi/routing.py", line 301, in app
+    raw_response = await run_endpoint_function(
+  File "/data/.cache/python/lib/python3.10/site-packages/fastapi/routing.py", line 212, in run_endpoint_function
+    return await dependant.call(**values)
+  File "/workspace/app/backend/routers/data.py", line 115, in get_all_vendite
+    raise HTTPException(status_code=500, detail=f"Errore nel recupero delle vendite: {str(e)}")
+fastapi.exceptions.HTTPException: 500: Errore nel recupero delle vendite: 'Vendite' object has no attribute 'prezzo_unitario'
+2026-01-17 03:13:44,081 - core.database - DEBUG - [DB_OP] Database session cleanup after 0.4999s
+2026-01-17 03:13:44,141 - core.database - ERROR - Failed to create database session: 500: Errore nel recupero delle vendite: 'Vendite' object has no attribute 'prezzo_unitario'
+Traceback (most recent call last):
+  File "/workspace/app/backend/routers/data.py", line 98, in get_all_vendite
+    items = [
+  File "/workspace/app/backend/routers/data.py", line 104, in <listcomp>
+    prezzo_unitario=v.prezzo_unitario or 0.0,
+AttributeError: 'Vendite' object has no attribute 'prezzo_unitario'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/workspace/app/backend/core/database.py", line 534, in get_db
+    yield session
+  File "/data/.cache/python/lib/python3.10/site-packages/fastapi/routing.py", line 301, in app
+    raw_response = await run_endpoint_function(
+  File "/data/.cache/python/lib/python3.10/site-packages/fastapi/routing.py", line 212, in run_endpoint_function
+    return await dependant.call(**values)
+  File "/workspace/app/backend/routers/data.py", line 115, in get_all_vendite
+    raise HTTPException(status_code=500, detail=f"Errore nel recupero delle vendite: {str(e)}")
+fastapi.exceptions.HTTPException: 500: Errore nel recupero delle vendite: 'Vendite' object has no attribute 'prezzo_unitario'
+2026-01-17 03:13:46,624 - core.auth - DEBUG - Authentication token validated for user hash: 1fe0bfd6
+2026-01-17 03:13:46,625 - core.database - DEBUG - [DB_OP] Starting get_db session creation
+2026-01-17 03:13:46,625 - core.database - DEBUG - [DB_OP] Database session created successfully in 0.0003s
+2026-01-17 03:13:47,099 - routers.data - ERROR - Error getting acquisti: 'Acquisti' object has no attribute 'fornitore'
+Traceback (most recent call last):
+  File "/workspace/app/backend/routers/data.py", line 66, in get_all_acquisti
+    items = [
+  File "/workspace/app/backend/routers/data.py", line 69, in <listcomp>
+    fornitore=a.fornitore,
+AttributeError: 'Acquisti' object has no attribute 'fornitore'. Did you mean: 'fornitore_id'?
+2026-01-17 03:13:47,101 - core.database - ERROR - Database session error: 500: Errore nel recupero degli ordini: 'Acquisti' object has no attribute 'fornitore'
+Traceback (most recent call last):
+  File "/workspace/app/backend/routers/data.py", line 66, in get_all_acquisti
+    items = [
+  File "/workspace/app/backend/routers/data.py", line 69, in <listcomp>
+    fornitore=a.fornitore,
+AttributeError: 'Acquisti' object has no attribute 'fornitore'. Did you mean: 'fornitore_id'?
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/workspace/app/backend/core/database.py", line 534, in get_db
+    yield session
+  File "/data/.cache/python/lib/python3.10/site-packages/fastapi/routing.py", line 301, in app
+    raw_response = await run_endpoint_function(
+  File "/data/.cache/python/lib/python3.10/site-packages/fastapi/routing.py", line 212, in run_endpoint_function
+    return await dependant.call(**values)
+  File "/workspace/app/backend/routers/data.py", line 84, in get_all_acquisti
+    raise HTTPException(status_code=500, detail=f"Errore nel recupero degli ordini: {str(e)}")
+fastapi.exceptions.HTTPException: 500: Errore nel recupero degli ordini: 'Acquisti' object has no attribute 'fornitore'
+2026-01-17 03:13:47,119 - core.database - DEBUG - [DB_OP] Database session cleanup after 0.4946s
+2026-01-17 03:13:47,178 - core.database - ERROR - Failed to create database session: 500: Errore nel recupero degli ordini: 'Acquisti' object has no attribute 'fornitore'
+Traceback (most recent call last):
+  File "/workspace/app/backend/routers/data.py", line 66, in get_all_acquisti
+    items = [
+  File "/workspace/app/backend/routers/data.py", line 69, in <listcomp>
+    fornitore=a.fornitore,
+AttributeError: 'Acquisti' object has no attribute 'fornitore'. Did you mean: 'fornitore_id'?
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/workspace/app/backend/core/database.py", line 534, in get_db
+    yield session
+  File "/data/.cache/python/lib/python3.10/site-packages/fastapi/routing.py", line 301, in app
+    raw_response = await run_endpoint_function(
+  File "/data/.cache/python/lib/python3.10/site-packages/fastapi/routing.py", line 212, in run_endpoint_function
+    return await dependant.call(**values)
+  File "/workspace/app/backend/routers/data.py", line 84, in get_all_acquisti
+    raise HTTPException(status_code=500, detail=f"Errore nel recupero degli ordini: {str(e)}")
+fastapi.exceptions.HTTPException: 500: Errore nel recupero degli ordini: 'Acquisti' object has no attribute 'fornitore'
+2026-01-17 03:13:51,070 - core.auth - DEBUG - Authentication token validated for user hash: 1fe0bfd6
+2026-01-17 03:13:51,070 - core.database - DEBUG - [DB_OP] Starting get_db session creation
+2026-01-17 03:13:51,071 - core.database - DEBUG - [DB_OP] Database session created successfully in 0.0003s
+2026-01-17 03:13:51,487 - routers.data - ERROR - Error getting vendite: 'Vendite' object has no attribute 'prezzo_unitario'
+Traceback (most recent call last):
+  File "/workspace/app/backend/routers/data.py", line 98, in get_all_vendite
+    items = [
+  File "/workspace/app/backend/routers/data.py", line 104, in <listcomp>
+    prezzo_unitario=v.prezzo_unitario or 0.0,
+AttributeError: 'Vendite' object has no attribute 'prezzo_unitario'
+2026-01-17 03:13:51,489 - core.database - ERROR - Database session error: 500: Errore nel recupero delle vendite: 'Vendite' object has no attribute 'prezzo_unitario'
+Traceback (most recent call last):
+  File "/workspace/app/backend/routers/data.py", line 98, in get_all_vendite
+    items = [
+  File "/workspace/app/backend/routers/data.py", line 104, in <listcomp>
+    prezzo_unitario=v.prezzo_unitario or 0.0,
+AttributeError: 'Vendite' object has no attribute 'prezzo_unitario'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/workspace/app/backend/core/database.py", line 534, in get_db
+    yield session
+  File "/data/.cache/python/lib/python3.10/site-packages/fastapi/routing.py", line 301, in app
+    raw_response = await run_endpoint_function(
+  File "/data/.cache/python/lib/python3.10/site-packages/fastapi/routing.py", line 212, in run_endpoint_function
+    return await dependant.call(**values)
+  File "/workspace/app/backend/routers/data.py", line 115, in get_all_vendite
+    raise HTTPException(status_code=500, detail=f"Errore nel recupero delle vendite: {str(e)}")
+fastapi.exceptions.HTTPException: 500: Errore nel recupero delle vendite: 'Vendite' object has no attribute 'prezzo_unitario'
+2026-01-17 03:13:51,506 - core.database - DEBUG - [DB_OP] Database session cleanup after 0.4358s
+2026-01-17 03:13:51,565 - core.database - ERROR - Failed to create database session: 500: Errore nel recupero delle vendite: 'Vendite' object has no attribute 'prezzo_unitario'
+Traceback (most recent call last):
+  File "/workspace/app/backend/routers/data.py", line 98, in get_all_vendite
+    items = [
+  File "/workspace/app/backend/routers/data.py", line 104, in <listcomp>
+    prezzo_unitario=v.prezzo_unitario or 0.0,
+AttributeError: 'Vendite' object has no attribute 'prezzo_unitario'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/workspace/app/backend/core/database.py", line 534, in get_db
+    yield session
+  File "/data/.cache/python/lib/python3.10/site-packages/fastapi/routing.py", line 301, in app
+    raw_response = await run_endpoint_function(
+  File "/data/.cache/python/lib/python3.10/site-packages/fastapi/routing.py", line 212, in run_endpoint_function
+    return await dependant.call(**values)
+  File "/workspace/app/backend/routers/data.py", line 115, in get_all_vendite
+    raise HTTPException(status_code=500, detail=f"Errore nel recupero delle vendite: {str(e)}")
+fastapi.exceptions.HTTPException: 500: Errore nel recupero delle vendite: 'Vendite' object has no attribute 'prezzo_unitario'
+2026-01-17 03:13:52,378 - core.auth - DEBUG - Authentication token validated for user hash: 1fe0bfd6
+2026-01-17 03:13:52,379 - core.database - DEBUG - [DB_OP] Starting get_db session creation
+2026-01-17 03:13:52,379 - core.database - DEBUG - [DB_OP] Database session created successfully in 0.0002s
+2026-01-17 03:13:52,738 - routers.data - ERROR - Error getting acquisti: 'Acquisti' object has no attribute 'fornitore'
+Traceback (most recent call last):
+  File "/workspace/app/backend/routers/data.py", line 66, in get_all_acquisti
+    items = [
+  File "/workspace/app/backend/routers/data.py", line 69, in <listcomp>
+    fornitore=a.fornitore,
+AttributeError: 'Acquisti' object has no attribute 'fornitore'. Did you mean: 'fornitore_id'?
+2026-01-17 03:13:52,740 - core.database - ERROR - Database session error: 500: Errore nel recupero degli ordini: 'Acquisti' object has no attribute 'fornitore'
+Traceback (most recent call last):
+  File "/workspace/app/backend/routers/data.py", line 66, in get_all_acquisti
+    items = [
+  File "/workspace/app/backend/routers/data.py", line 69, in <listcomp>
+    fornitore=a.fornitore,
+AttributeError: 'Acquisti' object has no attribute 'fornitore'. Did you mean: 'fornitore_id'?
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/workspace/app/backend/core/database.py", line 534, in get_db
+    yield session
+  File "/data/.cache/python/lib/python3.10/site-packages/fastapi/routing.py", line 301, in app
+    raw_response = await run_endpoint_function(
+  File "/data/.cache/python/lib/python3.10/site-packages/fastapi/routing.py", line 212, in run_endpoint_function
+    return await dependant.call(**values)
+  File "/workspace/app/backend/routers/data.py", line 84, in get_all_acquisti
+    raise HTTPException(status_code=500, detail=f"Errore nel recupero degli ordini: {str(e)}")
+fastapi.exceptions.HTTPException: 500: Errore nel recupero degli ordini: 'Acquisti' object has no attribute 'fornitore'
+2026-01-17 03:13:52,750 - core.database - DEBUG - [DB_OP] Database session cleanup after 0.3714s
+2026-01-17 03:13:52,810 - core.database - ERROR - Failed to create database session: 500: Errore nel recupero degli ordini: 'Acquisti' object has no attribute 'fornitore'
+Traceback (most recent call last):
+  File "/workspace/app/backend/routers/data.py", line 66, in get_all_acquisti
+    items = [
+  File "/workspace/app/backend/routers/data.py", line 69, in <listcomp>
+    fornitore=a.fornitore,
+AttributeError: 'Acquisti' object has no attribute 'fornitore'. Did you mean: 'fornitore_id'?
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/workspace/app/backend/core/database.py", line 534, in get_db
+    yield session
+  File "/data/.cache/python/lib/python3.10/site-packages/fastapi/routing.py", line 301, in app
+    raw_response = await run_endpoint_function(
+  File "/data/.cache/python/lib/python3.10/site-packages/fastapi/routing.py", line 212, in run_endpoint_function
+    return await dependant.call(**values)
+  File "/workspace/app/backend/routers/data.py", line 84, in get_all_acquisti
+    raise HTTPException(status_code=500, detail=f"Errore nel recupero degli ordini: {str(e)}")
+fastapi.exceptions.HTTPException: 500: Errore nel recupero degli ordini: 'Acquisti' object has no attribute 'fornitore'
+2026-01-17 03:13:59,871 - core.auth - DEBUG - Authentication token validated for user hash: 1fe0bfd6
+2026-01-17 03:14:00,534 - routers.upload - WARNING - Could not parse date: 2025-11-12 00:00:00, using current date
+2026-01-17 03:14:00,534 - routers.upload - WARNING - Could not parse date: 2025-11-13 00:00:00, using current date
+2026-01-17 03:14:00,535 - routers.upload - WARNING - Could not parse date: 2025-11-14 00:00:00, using current date
+2026-01-17 03:14:00,535 - routers.upload - WARNING - Could not parse date: 2025-11-15 00:00:00, using current date
+2026-01-17 03:14:00,535 - routers.upload - WARNING - Could not parse date: 2025-11-16 00:00:00, using current date
+2026-01-17 03:14:00,535 - routers.upload - WARNING - Could not parse date: 2025-11-17 00:00:00, using current date
+2026-01-17 03:14:00,535 - routers.upload - WARNING - Could not parse date: 2025-11-18 00:00:00, using current date
+2026-01-17 03:14:00,536 - routers.upload - WARNING - Could not parse date: 2025-11-19 00:00:00, using current date
+2026-01-17 03:14:00,536 - routers.upload - WARNING - Could not parse date: 2025-11-20 00:00:00, using current date
+2026-01-17 03:14:00,536 - routers.upload - WARNING - Could not parse date: 2025-11-21 00:00:00, using current date
+2026-01-17 03:14:00,536 - routers.upload - WARNING - Could not parse date: 2025-11-22 00:00:00, using current date
+2026-01-17 03:14:00,536 - routers.upload - WARNING - Could not parse date: 2025-12-23 00:00:00, using current date
+2026-01-17 03:14:00,537 - routers.upload - WARNING - Could not parse date: 2025-12-24 00:00:00, using current date
+2026-01-17 03:14:00,537 - routers.upload - WARNING - Could not parse date: 2025-12-25 00:00:00, using current date
+2026-01-17 03:14:00,537 - routers.upload - WARNING - Could not parse date: 2025-12-26 00:00:00, using current date
+2026-01-17 03:14:00,537 - routers.upload - WARNING - Could not parse date: 2025-12-27 00:00:00, using current date
+2026-01-17 03:14:00,537 - routers.upload - WARNING - Could not parse date: 2025-12-28 00:00:00, using current date
+2026-01-17 03:14:00,538 - routers.upload - WARNING - Could not parse date: 2025-12-29 00:00:00, using current date
+2026-01-17 03:14:00,538 - routers.upload - WARNING - Could not parse date: 2025-12-30 00:00:00, using current date
+2026-01-17 03:14:00,538 - routers.upload - WARNING - Could not parse date: 2025-12-31 00:00:00, using current date
+2026-01-17 03:14:00,538 - routers.upload - WARNING - Could not parse date: 2026-01-03 00:00:00, using current date
+2026-01-17 03:14:00,539 - routers.upload - WARNING - Could not parse date: 2026-01-05 00:00:00, using current date
+2026-01-17 03:14:30,254 - core.auth - DEBUG - Authentication token validated for user hash: 1fe0bfd6
+2026-01-17 03:14:30,290 - routers.upload - WARNING - Could not parse date: 2025-06-11 00:00:00, using current date
+2026-01-17 03:14:30,291 - routers.upload - WARNING - Could not parse date: 2026-01-15 00:00:00, using current date
+2026-01-17 03:14:30,291 - routers.upload - WARNING - Could not parse date: 2025-06-11 00:00:00, using current date
+2026-01-17 03:14:30,291 - routers.upload - WARNING - Could not parse date: 2026-01-15 00:00:00, using current date
+2026-01-17 03:14:30,292 - routers.upload - WARNING - Could not parse date: 2025-06-11 00:00:00, using current date
+2026-01-17 03:14:30,292 - routers.upload - WARNING - Could not parse date: 2026-01-15 00:00:00, using current date
+2026-01-17 03:14:30,292 - routers.upload - WARNING - Could not parse date: 2025-06-11 00:00:00, using current date
+2026-01-17 03:14:30,292 - routers.upload - WARNING - Could not parse date: 2026-01-15 00:00:00, using current date
+2026-01-17 03:14:30,292 - routers.upload - WARNING - Could not parse date: 2025-06-11 00:00:00, using current date
+2026-01-17 03:14:30,293 - routers.upload - WARNING - Could not parse date: 2026-01-15 00:00:00, using current date
+2026-01-17 03:14:30,293 - routers.upload - WARNING - Could not parse date: 2025-06-11 00:00:00, using current date
+2026-01-17 03:14:30,293 - routers.upload - WARNING - Could not parse date: 2026-01-15 00:00:00, using current date
+2026-01-17 03:14:30,293 - routers.upload - WARNING - Could not parse date: 2025-06-11 00:00:00, using current date
+2026-01-17 03:14:30,293 - routers.upload - WARNING - Could not parse date: 2026-01-15 00:00:00, using current date
+2026-01-17 03:14:30,294 - routers.upload - WARNING - Could not parse date: 2025-06-11 00:00:00, using current date
+2026-01-17 03:14:30,294 - routers.upload - WARNING - Could not parse date: 2026-01-15 00:00:00, using current date
+2026-01-17 03:14:30,294 - routers.upload - WARNING - Could not parse date: 2025-06-11 00:00:00, using current date
+2026-01-17 03:14:30,294 - routers.upload - WARNING - Could not parse date: 2026-01-15 00:00:00, using current date
+2026-01-17 03:14:30,294 - routers.upload - WARNING - Could not parse date: 2025-06-11 00:00:00, using current date
+2026-01-17 03:14:30,295 - routers.upload - WARNING - Could not parse date: 2026-01-15 00:00:00, using current date
+2026-01-17 03:14:30,295 - routers.upload - WARNING - Could not parse date: 2025-06-11 00:00:00, using current date
+2026-01-17 03:14:30,295 - routers.upload - WARNING - Could not parse date: 2026-01-15 00:00:00, using current date
+2026-01-17 03:14:30,296 - routers.upload - WARNING - Could not parse date: 2025-06-11 00:00:00, using current date
+2026-01-17 03:14:30,296 - routers.upload - WARNING - Could not parse date: 2026-01-15 00:00:00, using current date
+2026-01-17 03:14:30,296 - routers.upload - WARNING - Could not parse date: 2025-06-11 00:00:00, using current date
+2026-01-17 03:14:30,297 - routers.upload - WARNING - Could not parse date: 2026-01-15 00:00:00, using current date
+2026-01-17 03:14:30,297 - routers.upload - WARNING - Could not parse date: 2025-06-11 00:00:00, using current date
+2026-01-17 03:14:30,298 - routers.upload - WARNING - Could not parse date: 2026-01-15 00:00:00, using current date
+2026-01-17 03:14:30,298 - routers.upload - WARNING - Could not parse date: 2025-06-11 00:00:00, using current date
+2026-01-17 03:14:30,298 - routers.upload - WARNING - Could not parse date: 2026-01-15 00:00:00, using current date
+2026-01-17 03:14:30,298 - routers.upload - WARNING - Could not parse date: 2025-06-11 00:00:00, using current date
+2026-01-17 03:14:30,298 - routers.upload - WARNING - Could not parse date: 2026-01-15 00:00:00, using current date
+2026-01-17 03:14:30,299 - routers.upload - WARNING - Could not parse date: 2025-06-11 00:00:00, using current date
+2026-01-17 03:14:30,299 - routers.upload - WARNING - Could not parse date: 2026-01-15 00:00:00, using current date
+2026-01-17 03:14:30,299 - routers.upload - WARNING - Could not parse date: 2025-06-11 00:00:00, using current date
+2026-01-17 03:14:30,299 - routers.upload - WARNING - Could not parse date: 2026-01-15 00:00:00, using current date
+2026-01-17 03:14:30,299 - routers.upload - WARNING - Could not parse date: 2025-06-11 00:00:00, using current date
+2026-01-17 03:14:30,300 - routers.upload - WARNING - Could not parse date: 2026-01-15 00:00:00, using current date
+2026-01-17 03:14:30,300 - routers.upload - WARNING - Could not parse date: 2025-06-11 00:00:00, using current date
+2026-01-17 03:14:30,300 - routers.upload - WARNING - Could not parse date: 2026-01-15 00:00:00, using current date
+2026-01-17 03:14:30,300 - routers.upload - WARNING - Could not parse date: 2025-06-11 00:00:00, using current date
+2026-01-17 03:14:30,300 - routers.upload - WARNING - Could not parse date: 2026-01-15 00:00:00, using current date
+2026-01-17 03:14:30,301 - routers.upload - WARNING - Could not parse date: 2025-06-11 00:00:00, using current date
+2026-01-17 03:14:30,301 - routers.upload - WARNING - Could not parse date: 2026-01-15 00:00:00, using current date
+2026-01-17 03:14:30,301 - routers.upload - WARNING - Could not parse date: 2025-06-11 00:00:00, using current date
+2026-01-17 03:14:30,301 - routers.upload - WARNING - Could not parse date: 2026-01-15 00:00:00, using current date
+2026-01-17 03:14:30,302 - routers.upload - WARNING - Could not parse date: 2025-06-11 00:00:00, using current date
+2026-01-17 03:14:30,302 - routers.upload - WARNING - Could not parse date: 2026-01-15 00:00:00, using current date
+2026-01-17 03:14:30,302 - routers.upload - WARNING - Could not parse date: 2025-06-11 00:00:00, using current date
+2026-01-17 03:14:30,302 - routers.upload - WARNING - Could not parse date: 2026-01-15 00:00:00, using current date
+2026-01-17 03:14:30,302 - routers.upload - WARNING - Could not parse date: 2025-06-11 00:00:00, using current date
+2026-01-17 03:14:30,303 - routers.upload - WARNING - Could not parse date: 2026-01-15 00:00:00, using current date
+2026-01-17 03:14:30,303 - routers.upload - WARNING - Could not parse date: 2025-06-11 00:00:00, using current date
+2026-01-17 03:14:30,303 - routers.upload - WARNING - Could not parse date: 2026-01-15 00:00:00, using current date
+2026-01-17 03:14:30,303 - routers.upload - WARNING - Could not parse date: 2025-06-11 00:00:00, using current date
+2026-01-17 03:14:30,303 - routers.upload - WARNING - Could not parse date: 2026-01-15 00:00:00, using current date
+2026-01-17 03:14:30,304 - routers.upload - WARNING - Could not parse date: 2025-06-11 00:00:00, using current date
+2026-01-17 03:14:30,304 - routers.upload - WARNING - Could not parse date: 2026-01-15 00:00:00, using current date
+2026-01-17 03:14:30,304 - routers.upload - WARNING - Could not parse date: 2025-06-11 00:00:00, using current date
+2026-01-17 03:14:30,304 - routers.upload - WARNING - Could not parse date: 2026-01-15 00:00:00, using current date
+2026-01-17 03:14:30,305 - routers.upload - WARNING - Could not parse date: 2025-06-11 00:00:00, using current date
+2026-01-17 03:14:30,305 - routers.upload - WARNING - Could not parse date: 2026-01-15 00:00:00, using current date
+2026-01-17 03:14:30,305 - routers.upload - WARNING - Could not parse date: 2025-06-11 00:00:00, using current date
+2026-01-17 03:14:30,305 - routers.upload - WARNING - Could not parse date: 2026-01-15 00:00:00, using current date
+2026-01-17 03:14:30,306 - routers.upload - WARNING - Could not parse date: 2025-06-11 00:00:00, using current date
+2026-01-17 03:14:30,306 - routers.upload - WARNING - Could not parse date: 2026-01-15 00:00:00, using current date
+2026-01-17 03:14:30,306 - routers.upload - WARNING - Could not parse date: 2025-06-11 00:00:00, using current date
+2026-01-17 03:14:30,306 - routers.upload - WARNING - Could not parse date: 2026-01-15 00:00:00, using current date
+2026-01-17 03:14:30,306 - routers.upload - WARNING - Could not parse date: 2025-06-11 00:00:00, using current date
+2026-01-17 03:14:30,307 - routers.upload - WARNING - Could not parse date: 2026-01-15 00:00:00, using current date
+2026-01-17 03:14:30,307 - routers.upload - WARNING - Could not parse date: 2025-06-11 00:00:00, using current date
+2026-01-17 03:14:30,307 - routers.upload - WARNING - Could not parse date: 2026-01-15 00:00:00, using current date
+2026-01-17 03:14:30,307 - routers.upload - WARNING - Could not parse date: 2025-06-11 00:00:00, using current date
+2026-01-17 03:14:30,307 - routers.upload - WARNING - Could not parse date: 2026-01-15 00:00:00, using current date
+2026-01-17 03:14:30,308 - routers.upload - WARNING - Could not parse date: 2025-06-11 00:00:00, using current date
+2026-01-17 03:14:30,308 - routers.upload - WARNING - Could not parse date: 2026-01-15 00:00:00, using current date
+2026-01-17 03:14:30,308 - routers.upload - WARNING - Could not parse date: 2025-06-11 00:00:00, using current date
+2026-01-17 03:14:30,308 - routers.upload - WARNING - Could not parse date: 2026-01-15 00:00:00, using current date
+2026-01-17 03:14:30,309 - routers.upload - WARNING - Could not parse date: 2025-06-11 00:00:00, using current date
+2026-01-17 03:14:30,309 - routers.upload - WARNING - Could not parse date: 2026-01-15 00:00:00, using current date
+2026-01-17 03:14:30,309 - routers.upload - WARNING - Could not parse date: 2025-06-11 00:00:00, using current date
+2026-01-17 03:14:30,309 - routers.upload - WARNING - Could not parse date: 2026-01-15 00:00:00, using current date
+2026-01-17 03:14:30,309 - routers.upload - WARNING - Could not parse date: 2025-06-11 00:00:00, using current date
+2026-01-17 03:14:30,310 - routers.upload - WARNING - Could not parse date: 2026-01-15 00:00:00, using current date
+2026-01-17 03:14:30,310 - routers.upload - WARNING - Could not parse date: 2025-06-11 00:00:00, using current date
+2026-01-17 03:14:30,310 - routers.upload - WARNING - Could not parse date: 2026-01-15 00:00:00, using current date
+2026-01-17 03:14:30,310 - routers.upload - WARNING - Could not parse date: 2025-06-11 00:00:00, using current date
+2026-01-17 03:14:30,310 - routers.upload - WARNING - Could not parse date: 2026-01-15 00:00:00, using current date
+2026-01-17 03:14:30,311 - routers.upload - WARNING - Could not parse date: 2025-06-11 00:00:00, using current date
+2026-01-17 03:14:30,311 - routers.upload - WARNING - Could not parse date: 2026-01-15 00:00:00, using current date
+2026-01-17 03:14:30,311 - routers.upload - WARNING - Could not parse date: 2025-06-11 00:00:00, using current date
+2026-01-17 03:14:30,311 - routers.upload - WARNING - Could not parse date: 2026-01-15 00:00:00, using current date
+2026-01-17 03:14:30,312 - routers.upload - WARNING - Could not parse date: 2025-06-11 00:00:00, using current date
+2026-01-17 03:14:30,312 - routers.upload - WARNING - Could not parse date: 2026-01-15 00:00:00, using current date
+2026-01-17 03:14:30,312 - routers.upload - WARNING - Could not parse date: 2025-06-11 00:00:00, using current date
+2026-01-17 03:14:30,312 - routers.upload - WARNING - Could not parse date: 2026-01-15 00:00:00, using current date
+2026-01-17 03:14:30,312 - routers.upload - WARNING - Could not parse date: 2025-06-11 00:00:00, using current date
+2026-01-17 03:14:30,313 - routers.upload - WARNING - Could not parse date: 2026-01-15 00:00:00, using current date
+2026-01-17 03:14:30,313 - routers.upload - WARNING - Could not parse date: 2025-06-11 00:00:00, using current date
+2026-01-17 03:14:30,313 - routers.upload - WARNING - Could not parse date: 2026-01-15 00:00:00, using current date
+2026-01-17 03:14:30,313 - routers.upload - WARNING - Could not parse date: 2025-06-11 00:00:00, using current date
+2026-01-17 03:14:30,313 - routers.upload - WARNING - Could not parse date: 2026-01-15 00:00:00, using current date
+2026-01-17 03:14:30,314 - routers.upload - WARNING - Could not parse date: 2025-06-11 00:00:00, using current date
+2026-01-17 03:14:30,314 - routers.upload - WARNING - Could not parse date: 2026-01-15 00:00:00, using current date
+2026-01-17 03:14:30,314 - routers.upload - WARNING - Could not parse date: 2025-06-11 00:00:00, using current date
+2026-01-17 03:14:30,314 - routers.upload - WARNING - Could not parse date: 2026-01-15 00:00:00, using current date
+2026-01-17 03:14:30,315 - routers.upload - WARNING - Could not parse date: 2025-06-11 00:00:00, using current date
+2026-01-17 03:14:30,315 - routers.upload - WARNING - Could not parse date: 2026-01-15 00:00:00, using current date
+2026-01-17 03:14:30,315 - routers.upload - WARNING - Could not parse date: 2025-06-11 00:00:00, using current date
+2026-01-17 03:14:30,315 - routers.upload - WARNING - Could not parse date: 2026-01-15 00:00:00, using current date
+2026-01-17 03:14:30,315 - routers.upload - WARNING - Could not parse date: 2025-06-11 00:00:00, using current date
+2026-01-17 03:14:30,316 - routers.upload - WARNING - Could not parse date: 2026-01-15 00:00:00, using current date
+2026-01-17 03:14:30,316 - routers.upload - WARNING - Could not parse date: 2025-06-11 00:00:00, using current date
+2026-01-17 03:14:30,316 - routers.upload - WARNING - Could not parse date: 2026-01-15 00:00:00, using current date
+2026-01-17 03:14:30,316 - routers.upload - WARNING - Could not parse date: 2025-06-11 00:00:00, using current date
+2026-01-17 03:14:30,316 - routers.upload - WARNING - Could not parse date: 2026-01-15 00:00:00, using current date
+2026-01-17 03:14:30,317 - routers.upload - WARNING - Could not parse date: 2025-06-11 00:00:00, using current date
+2026-01-17 03:14:30,317 - routers.upload - WARNING - Could not parse date: 2026-01-15 00:00:00, using current date
+2026-01-17 03:14:30,317 - routers.upload - WARNING - Could not parse date: 2025-06-11 00:00:00, using current date
+2026-01-17 03:14:30,317 - routers.upload - WARNING - Could not parse date: 2026-01-15 00:00:00, using current date
+2026-01-17 03:14:30,318 - routers.upload - WARNING - Could not parse date: 2025-06-11 00:00:00, using current date
+2026-01-17 03:14:30,318 - routers.upload - WARNING - Could not parse date: 2026-01-15 00:00:00, using current date
+2026-01-17 03:14:30,318 - routers.upload - WARNING - Could not parse date: 2025-06-11 00:00:00, using current date
+2026-01-17 03:14:30,318 - routers.upload - WARNING - Could not parse date: 2026-01-15 00:00:00, using current date
+2026-01-17 03:14:30,318 - routers.upload - WARNING - Could not parse date: 2025-06-11 00:00:00, using current date
+2026-01-17 03:14:30,319 - routers.upload - WARNING - Could not parse date: 2026-01-15 00:00:00, using current date
+2026-01-17 03:14:30,319 - routers.upload - WARNING - Could not parse date: 2025-06-11 00:00:00, using current date
+2026-01-17 03:14:30,319 - routers.upload - WARNING - Could not parse date: 2026-01-15 00:00:00, using current date
+2026-01-17 03:14:30,319 - routers.upload - WARNING - Could not parse date: 2025-06-11 00:00:00, using current date
+2026-01-17 03:14:30,320 - routers.upload - WARNING - Could not parse date: 2026-01-15 00:00:00, using current date
+2026-01-17 03:14:30,320 - routers.upload - WARNING - Could not parse date: 2025-06-11 00:00:00, using current date
+2026-01-17 03:14:30,320 - routers.upload - WARNING - Could not parse date: 2026-01-15 00:00:00, using current date
+2026-01-17 03:14:30,321 - routers.upload - WARNING - Could not parse date: 2025-06-11 00:00:00, using current date
+2026-01-17 03:14:30,321 - routers.upload - WARNING - Could not parse date: 2026-01-15 00:00:00, using current date
+2026-01-17 03:14:30,321 - routers.upload - WARNING - Could not parse date: 2025-06-11 00:00:00, using current date
+2026-01-17 03:14:30,321 - routers.upload - WARNING - Could not parse date: 2026-01-15 00:00:00, using current date
+2026-01-17 03:14:30,322 - routers.upload - WARNING - Could not parse date: 2025-06-11 00:00:00, using current date
+2026-01-17 03:14:30,322 - routers.upload - WARNING - Could not parse date: 2026-01-15 00:00:00, using current date
+2026-01-17 03:14:30,322 - routers.upload - WARNING - Could not parse date: 2025-06-11 00:00:00, using current date
+2026-01-17 03:14:30,322 - routers.upload - WARNING - Could not parse date: 2026-01-15 00:00:00, using current date
+2026-01-17 03:14:30,322 - routers.upload - WARNING - Could not parse date: 2025-06-11 00:00:00, using current date
+2026-01-17 03:14:30,323 - routers.upload - WARNING - Could not parse date: 2026-01-15 00:00:00, using current date
+2026-01-17 03:14:30,323 - routers.upload - WARNING - Could not parse date: 2025-06-11 00:00:00, using current date
+2026-01-17 03:14:30,323 - routers.upload - WARNING - Could not parse date: 2026-01-15 00:00:00, using current date
+2026-01-17 03:14:30,323 - routers.upload - WARNING - Could not parse date: 2025-06-11 00:00:00, using current date
+2026-01-17 03:14:30,323 - routers.upload - WARNING - Could not parse date: 2026-01-15 00:00:00, using current date
+2026-01-17 03:17:39,600 - services.database - DEBUG - [DB_OP] Starting database close
+2026-01-17 03:17:39,725 - core.database - INFO - Database connection closed and engine disposed
+2026-01-17 03:17:39,725 - services.database - INFO - Database connections closed
+2026-01-17 03:17:39,726 - services.database - DEBUG - [DB_OP] Database close completed in 0.1252s

@@ -1,0 +1,318 @@
+2026-01-17 03:59:45,348 - main - INFO - === Logging system initialized ===
+2026-01-17 03:59:45,348 - main - INFO - Log file: logs/app_20260117_035945.log
+2026-01-17 03:59:45,348 - main - INFO - Log level: INFO
+2026-01-17 03:59:45,348 - main - INFO - Timestamp: 20260117_035945
+2026-01-17 03:59:45,393 - main - INFO - Included router: routers.acquisti.router
+2026-01-17 03:59:45,951 - main - INFO - Included router: routers.aihub.router
+2026-01-17 03:59:45,966 - main - INFO - Included router: routers.analytics.router
+2026-01-17 03:59:45,988 - main - INFO - Included router: routers.auth.router
+2026-01-17 03:59:45,993 - main - INFO - Included router: routers.custom_auth.router
+2026-01-17 03:59:46,049 - main - INFO - Included router: routers.data.router
+2026-01-17 03:59:46,178 - main - INFO - Included router: routers.fornitori.router
+2026-01-17 03:59:46,179 - main - INFO - Included router: routers.health.router
+2026-01-17 03:59:46,192 - main - INFO - Included router: routers.settings.router
+2026-01-17 03:59:46,222 - main - INFO - Included router: routers.storage.router
+2026-01-17 03:59:46,236 - main - INFO - Included router: routers.upload.router
+2026-01-17 03:59:46,242 - main - INFO - Included router: routers.user.router
+2026-01-17 03:59:46,273 - main - INFO - Included router: routers.vendite.router
+2026-01-17 03:59:46,274 - main - INFO - === Application startup initiated ===
+2026-01-17 03:59:46,274 - services.database - DEBUG - [DB_OP] Starting database initialization
+2026-01-17 03:59:46,274 - services.database - INFO - 🔧 Starting database initialization...
+2026-01-17 03:59:46,274 - core.database - INFO - Starting database initialization...
+2026-01-17 03:59:46,274 - core.config - DEBUG - Read dynamic attribute database_url from environment variable DATABASE_URL
+2026-01-17 03:59:46,274 - core.database - INFO - Normalizing database URL for async compatibility...
+2026-01-17 03:59:46,275 - core.database - INFO - Creating async database engine...
+2026-01-17 03:59:46,275 - core.database - INFO - Using QueuePool with connection pooling for non-Lambda environment
+2026-01-17 03:59:46,324 - core.database - INFO - Database engine created successfully
+2026-01-17 03:59:46,324 - core.database - INFO - Creating async session maker...
+2026-01-17 03:59:46,325 - core.database - INFO - Async session maker created successfully
+2026-01-17 03:59:46,325 - core.database - INFO - Database connection initialized successfully
+2026-01-17 03:59:46,325 - services.database - INFO - 🔧 Database connection initialized, now creating tables if tables not exist...
+2026-01-17 03:59:46,325 - core.database - DEBUG - [DB_OP] Starting create_tables
+2026-01-17 03:59:46,325 - core.database - INFO - 🔧 Starting table creation...
+2026-01-17 03:59:48,104 - core.database - INFO - Tables initialized successfully
+2026-01-17 03:59:48,105 - core.database - DEBUG - [DB_OP] Create tables completed in 1.7799s
+2026-01-17 03:59:48,164 - services.database - INFO - 🔧 Table creation completed
+2026-01-17 03:59:48,165 - services.database - INFO - Database initialized successfully
+2026-01-17 03:59:48,165 - services.database - DEBUG - [DB_OP] Database initialization completed in 1.8907s
+2026-01-17 03:59:48,166 - services.mock_data - INFO - Processing mock data file fornitori.json for table fornitori
+2026-01-17 03:59:50,217 - services.mock_data - INFO - Table fornitori already has 6 rows; skipping mock insert
+2026-01-17 03:59:50,277 - services.database - DEBUG - [DB_OP] Starting database initialization
+2026-01-17 03:59:50,277 - services.database - INFO - 🔧 Starting database initialization...
+2026-01-17 03:59:50,277 - core.database - INFO - Starting database initialization...
+2026-01-17 03:59:50,277 - core.database - INFO - Database already initialized
+2026-01-17 03:59:50,277 - services.database - INFO - 🔧 Database connection initialized, now creating tables if tables not exist...
+2026-01-17 03:59:50,277 - core.database - DEBUG - [DB_OP] Starting create_tables
+2026-01-17 03:59:50,277 - core.database - INFO - Tables already initialized
+2026-01-17 03:59:50,277 - services.database - INFO - 🔧 Table creation completed
+2026-01-17 03:59:50,278 - services.database - INFO - Database initialized successfully
+2026-01-17 03:59:50,278 - services.database - DEBUG - [DB_OP] Database initialization completed in 0.0011s
+2026-01-17 03:59:50,278 - core.config - DEBUG - Read dynamic attribute admin_user_id from environment variable ADMIN_USER_ID
+2026-01-17 03:59:50,278 - core.config - DEBUG - Read dynamic attribute admin_user_email from environment variable ADMIN_USER_EMAIL
+2026-01-17 03:59:50,639 - services.auth - DEBUG - Admin user 476166 already exists
+2026-01-17 03:59:50,699 - main - INFO - === Application startup completed successfully ===
+2026-01-17 03:59:54,647 - core.config - DEBUG - Read dynamic attribute jwt_secret_key from environment variable JWT_SECRET_KEY
+2026-01-17 03:59:54,647 - core.config - DEBUG - Read dynamic attribute jwt_algorithm from environment variable JWT_ALGORITHM
+2026-01-17 03:59:54,668 - core.auth - DEBUG - Authentication token validated for user hash: 1fe0bfd6
+2026-01-17 03:59:54,668 - core.database - DEBUG - [DB_OP] Starting get_db session creation
+2026-01-17 03:59:54,669 - core.database - DEBUG - [DB_OP] Database session created successfully in 0.0002s
+2026-01-17 03:59:54,669 - routers.analytics - INFO - Analytics request - anno: None, mese: None, categoria: None
+2026-01-17 03:59:54,671 - core.auth - DEBUG - Authentication token validated for user hash: 1fe0bfd6
+2026-01-17 03:59:54,671 - core.database - DEBUG - [DB_OP] Starting get_db session creation
+2026-01-17 03:59:54,671 - core.database - DEBUG - [DB_OP] Database session created successfully in 0.0001s
+2026-01-17 03:59:54,671 - routers.analytics - INFO - Analytics request - anno: None, mese: None, categoria: None
+2026-01-17 03:59:55,393 - routers.analytics - INFO - Acquisti categories: ['Prize', 'Kit']
+2026-01-17 03:59:55,393 - routers.analytics - INFO - Vendite categories: ['Kit', 'Prize', 'Nendo', 'Big', 'Banco', 'Plush']
+2026-01-17 03:59:55,393 - routers.analytics - INFO - Returning 6 categories
+2026-01-17 03:59:55,634 - core.database - DEBUG - [DB_OP] Database session cleanup after 0.9660s
+2026-01-17 03:59:56,061 - routers.analytics - INFO - Acquisti categories: ['Prize', 'Kit']
+2026-01-17 03:59:56,062 - routers.analytics - INFO - Vendite categories: ['Kit', 'Prize', 'Nendo', 'Big', 'Banco', 'Plush']
+2026-01-17 03:59:56,062 - routers.analytics - INFO - Returning 6 categories
+2026-01-17 03:59:56,324 - core.database - DEBUG - [DB_OP] Database session cleanup after 1.6534s
+2026-01-17 04:00:00,303 - core.auth - DEBUG - Authentication token validated for user hash: 1fe0bfd6
+2026-01-17 04:00:00,303 - core.database - DEBUG - [DB_OP] Starting get_db session creation
+2026-01-17 04:00:00,303 - core.database - DEBUG - [DB_OP] Database session created successfully in 0.0002s
+2026-01-17 04:00:00,669 - core.database - DEBUG - [DB_OP] Database session cleanup after 0.3661s
+2026-01-17 04:00:06,834 - core.auth - DEBUG - Authentication token validated for user hash: 1fe0bfd6
+2026-01-17 04:00:06,834 - core.database - DEBUG - [DB_OP] Starting get_db session creation
+2026-01-17 04:00:06,834 - core.database - DEBUG - [DB_OP] Database session created successfully in 0.0003s
+2026-01-17 04:00:07,750 - routers.data - INFO - User 476166 deleted supplier Fornitore A (ID: 1)
+2026-01-17 04:00:07,750 - core.database - DEBUG - [DB_OP] Database session cleanup after 0.9162s
+2026-01-17 04:00:07,968 - core.auth - DEBUG - Authentication token validated for user hash: 1fe0bfd6
+2026-01-17 04:00:07,968 - core.database - DEBUG - [DB_OP] Starting get_db session creation
+2026-01-17 04:00:07,968 - core.database - DEBUG - [DB_OP] Database session created successfully in 0.0002s
+2026-01-17 04:00:08,266 - core.database - DEBUG - [DB_OP] Database session cleanup after 0.2975s
+2026-01-17 04:00:10,694 - core.auth - DEBUG - Authentication token validated for user hash: 1fe0bfd6
+2026-01-17 04:00:10,694 - core.database - DEBUG - [DB_OP] Starting get_db session creation
+2026-01-17 04:00:10,695 - core.database - DEBUG - [DB_OP] Database session created successfully in 0.0006s
+2026-01-17 04:00:11,285 - routers.data - INFO - User 476166 deleted supplier Fornitore B (ID: 2)
+2026-01-17 04:00:11,286 - core.database - DEBUG - [DB_OP] Database session cleanup after 0.5912s
+2026-01-17 04:00:11,519 - core.auth - DEBUG - Authentication token validated for user hash: 1fe0bfd6
+2026-01-17 04:00:11,519 - core.database - DEBUG - [DB_OP] Starting get_db session creation
+2026-01-17 04:00:11,520 - core.database - DEBUG - [DB_OP] Database session created successfully in 0.0004s
+2026-01-17 04:00:11,818 - core.database - DEBUG - [DB_OP] Database session cleanup after 0.2984s
+2026-01-17 04:00:14,435 - core.auth - DEBUG - Authentication token validated for user hash: 1fe0bfd6
+2026-01-17 04:00:14,436 - core.database - DEBUG - [DB_OP] Starting get_db session creation
+2026-01-17 04:00:14,436 - core.database - DEBUG - [DB_OP] Database session created successfully in 0.0003s
+2026-01-17 04:00:15,019 - routers.data - INFO - User 476166 deleted supplier Fornitore C (ID: 3)
+2026-01-17 04:00:15,020 - core.database - DEBUG - [DB_OP] Database session cleanup after 0.5840s
+2026-01-17 04:00:15,221 - core.auth - DEBUG - Authentication token validated for user hash: 1fe0bfd6
+2026-01-17 04:00:15,222 - core.database - DEBUG - [DB_OP] Starting get_db session creation
+2026-01-17 04:00:15,222 - core.database - DEBUG - [DB_OP] Database session created successfully in 0.0003s
+2026-01-17 04:00:15,519 - core.database - DEBUG - [DB_OP] Database session cleanup after 0.2977s
+2026-01-17 04:00:17,589 - core.auth - DEBUG - Authentication token validated for user hash: 1fe0bfd6
+2026-01-17 04:00:17,590 - core.database - DEBUG - [DB_OP] Starting get_db session creation
+2026-01-17 04:00:17,590 - core.database - DEBUG - [DB_OP] Database session created successfully in 0.0002s
+2026-01-17 04:00:18,171 - routers.data - INFO - User 476166 deleted supplier PROVA (ID: 6)
+2026-01-17 04:00:18,172 - core.database - DEBUG - [DB_OP] Database session cleanup after 0.5823s
+2026-01-17 04:00:18,382 - core.auth - DEBUG - Authentication token validated for user hash: 1fe0bfd6
+2026-01-17 04:00:18,382 - core.database - DEBUG - [DB_OP] Starting get_db session creation
+2026-01-17 04:00:18,383 - core.database - DEBUG - [DB_OP] Database session created successfully in 0.0003s
+2026-01-17 04:00:18,687 - core.database - DEBUG - [DB_OP] Database session cleanup after 0.3049s
+2026-01-17 04:00:22,667 - core.auth - DEBUG - Authentication token validated for user hash: 1fe0bfd6
+2026-01-17 04:00:22,668 - core.database - DEBUG - [DB_OP] Starting get_db session creation
+2026-01-17 04:00:22,668 - core.database - DEBUG - [DB_OP] Database session created successfully in 0.0002s
+2026-01-17 04:00:23,613 - routers.data - INFO - User 476166 created supplier: Prova
+2026-01-17 04:00:23,614 - core.database - DEBUG - [DB_OP] Database session cleanup after 0.9462s
+2026-01-17 04:00:23,897 - core.auth - DEBUG - Authentication token validated for user hash: 1fe0bfd6
+2026-01-17 04:00:23,897 - core.database - DEBUG - [DB_OP] Starting get_db session creation
+2026-01-17 04:00:23,897 - core.database - DEBUG - [DB_OP] Database session created successfully in 0.0002s
+2026-01-17 04:00:24,284 - core.database - DEBUG - [DB_OP] Database session cleanup after 0.3869s
+2026-01-17 04:00:26,446 - core.auth - DEBUG - Authentication token validated for user hash: 1fe0bfd6
+2026-01-17 04:00:26,447 - core.database - DEBUG - [DB_OP] Starting get_db session creation
+2026-01-17 04:00:26,447 - core.database - DEBUG - [DB_OP] Database session created successfully in 0.0004s
+2026-01-17 04:00:26,745 - core.database - DEBUG - [DB_OP] Database session cleanup after 0.2985s
+2026-01-17 04:00:50,495 - core.auth - DEBUG - Authentication token validated for user hash: 1fe0bfd6
+2026-01-17 04:00:50,495 - core.database - DEBUG - [DB_OP] Starting get_db session creation
+2026-01-17 04:00:50,496 - core.database - DEBUG - [DB_OP] Database session created successfully in 0.0003s
+2026-01-17 04:00:51,399 - core.database - DEBUG - [DB_OP] Database session cleanup after 0.9038s
+2026-01-17 04:00:51,704 - core.auth - DEBUG - Authentication token validated for user hash: 1fe0bfd6
+2026-01-17 04:00:51,705 - core.database - DEBUG - [DB_OP] Starting get_db session creation
+2026-01-17 04:00:51,706 - core.database - DEBUG - [DB_OP] Database session created successfully in 0.0003s
+2026-01-17 04:00:52,165 - core.database - DEBUG - [DB_OP] Database session cleanup after 0.4600s
+2026-01-17 04:00:52,596 - core.auth - DEBUG - Authentication token validated for user hash: 1fe0bfd6
+2026-01-17 04:00:52,596 - core.database - DEBUG - [DB_OP] Starting get_db session creation
+2026-01-17 04:00:52,597 - core.database - DEBUG - [DB_OP] Database session created successfully in 0.0005s
+2026-01-17 04:00:52,960 - core.database - DEBUG - [DB_OP] Database session cleanup after 0.3642s
+2026-01-17 04:00:59,165 - core.auth - DEBUG - Authentication token validated for user hash: 1fe0bfd6
+2026-01-17 04:00:59,165 - core.database - DEBUG - [DB_OP] Starting get_db session creation
+2026-01-17 04:00:59,166 - core.database - DEBUG - [DB_OP] Database session created successfully in 0.0002s
+2026-01-17 04:00:59,166 - routers.analytics - INFO - Analytics request - anno: None, mese: None, categoria: None
+2026-01-17 04:00:59,168 - core.auth - DEBUG - Authentication token validated for user hash: 1fe0bfd6
+2026-01-17 04:00:59,168 - core.database - DEBUG - [DB_OP] Starting get_db session creation
+2026-01-17 04:00:59,169 - core.database - DEBUG - [DB_OP] Database session created successfully in 0.0002s
+2026-01-17 04:00:59,169 - routers.analytics - INFO - Analytics request - anno: None, mese: None, categoria: None
+2026-01-17 04:00:59,652 - routers.analytics - INFO - Acquisti categories: ['Prize', 'Kit']
+2026-01-17 04:00:59,652 - routers.analytics - INFO - Vendite categories: ['Kit', 'Prize', 'Nendo', 'Big', 'Banco', 'Plush']
+2026-01-17 04:00:59,652 - routers.analytics - INFO - Returning 6 categories
+2026-01-17 04:00:59,682 - routers.analytics - INFO - Acquisti categories: ['Prize', 'Kit']
+2026-01-17 04:00:59,683 - routers.analytics - INFO - Vendite categories: ['Kit', 'Prize', 'Nendo', 'Big', 'Banco', 'Plush']
+2026-01-17 04:00:59,683 - routers.analytics - INFO - Returning 6 categories
+2026-01-17 04:00:59,773 - core.database - DEBUG - [DB_OP] Database session cleanup after 0.6048s
+2026-01-17 04:00:59,816 - core.database - DEBUG - [DB_OP] Database session cleanup after 0.6510s
+2026-01-17 04:01:12,458 - core.auth - DEBUG - Authentication token validated for user hash: 1fe0bfd6
+2026-01-17 04:01:12,459 - core.database - DEBUG - [DB_OP] Starting get_db session creation
+2026-01-17 04:01:12,459 - core.database - DEBUG - [DB_OP] Database session created successfully in 0.0003s
+2026-01-17 04:01:12,460 - routers.analytics - INFO - Analytics request - anno: 2025, mese: None, categoria: None
+2026-01-17 04:01:13,185 - routers.analytics - INFO - Acquisti categories: ['Kit', 'Prize']
+2026-01-17 04:01:13,186 - routers.analytics - INFO - Vendite categories: ['Banco', 'Big', 'Kit', 'Nendo', 'Plush', 'Prize']
+2026-01-17 04:01:13,186 - routers.analytics - INFO - Returning 6 categories
+2026-01-17 04:01:13,428 - core.database - DEBUG - [DB_OP] Database session cleanup after 0.9694s
+2026-01-17 04:01:15,271 - core.auth - DEBUG - Authentication token validated for user hash: 1fe0bfd6
+2026-01-17 04:01:15,272 - core.database - DEBUG - [DB_OP] Starting get_db session creation
+2026-01-17 04:01:15,272 - core.database - DEBUG - [DB_OP] Database session created successfully in 0.0005s
+2026-01-17 04:01:15,273 - routers.analytics - INFO - Analytics request - anno: 2025, mese: 1, categoria: None
+2026-01-17 04:01:16,060 - routers.analytics - INFO - Acquisti categories: []
+2026-01-17 04:01:16,060 - routers.analytics - INFO - Vendite categories: []
+2026-01-17 04:01:16,061 - routers.analytics - INFO - Returning 0 categories
+2026-01-17 04:01:16,061 - core.database - DEBUG - [DB_OP] Database session cleanup after 0.7892s
+2026-01-17 04:01:18,994 - core.auth - DEBUG - Authentication token validated for user hash: 1fe0bfd6
+2026-01-17 04:01:18,995 - core.database - DEBUG - [DB_OP] Starting get_db session creation
+2026-01-17 04:01:18,995 - core.database - DEBUG - [DB_OP] Database session created successfully in 0.0004s
+2026-01-17 04:01:18,996 - routers.analytics - INFO - Analytics request - anno: 2025, mese: 12, categoria: None
+2026-01-17 04:01:19,723 - routers.analytics - INFO - Acquisti categories: ['Prize']
+2026-01-17 04:01:19,724 - routers.analytics - INFO - Vendite categories: ['Banco', 'Big', 'Kit', 'Nendo', 'Plush', 'Prize']
+2026-01-17 04:01:19,724 - routers.analytics - INFO - Returning 6 categories
+2026-01-17 04:01:19,725 - core.database - DEBUG - [DB_OP] Database session cleanup after 0.7305s
+2026-01-17 04:02:53,303 - core.auth - DEBUG - Authentication token validated for user hash: 1fe0bfd6
+2026-01-17 04:02:53,304 - core.database - DEBUG - [DB_OP] Starting get_db session creation
+2026-01-17 04:02:53,304 - core.database - DEBUG - [DB_OP] Database session created successfully in 0.0003s
+2026-01-17 04:02:53,304 - routers.analytics - INFO - Analytics request - anno: None, mese: None, categoria: None
+2026-01-17 04:02:53,306 - core.auth - DEBUG - Authentication token validated for user hash: 1fe0bfd6
+2026-01-17 04:02:53,306 - core.database - DEBUG - [DB_OP] Starting get_db session creation
+2026-01-17 04:02:53,306 - core.database - DEBUG - [DB_OP] Database session created successfully in 0.0001s
+2026-01-17 04:02:53,307 - routers.analytics - INFO - Analytics request - anno: None, mese: None, categoria: None
+2026-01-17 04:02:53,784 - routers.analytics - INFO - Acquisti categories: ['Prize', 'Kit']
+2026-01-17 04:02:53,784 - routers.analytics - INFO - Vendite categories: ['Kit', 'Prize', 'Nendo', 'Big', 'Banco', 'Plush']
+2026-01-17 04:02:53,784 - routers.analytics - INFO - Returning 6 categories
+2026-01-17 04:02:53,821 - routers.analytics - INFO - Acquisti categories: ['Prize', 'Kit']
+2026-01-17 04:02:53,822 - routers.analytics - INFO - Vendite categories: ['Kit', 'Prize', 'Nendo', 'Big', 'Banco', 'Plush']
+2026-01-17 04:02:53,822 - routers.analytics - INFO - Returning 6 categories
+2026-01-17 04:02:53,905 - core.database - DEBUG - [DB_OP] Database session cleanup after 0.5992s
+2026-01-17 04:02:53,952 - core.database - DEBUG - [DB_OP] Database session cleanup after 0.6486s
+2026-01-17 04:03:09,320 - core.auth - DEBUG - Authentication token validated for user hash: 1fe0bfd6
+2026-01-17 04:03:09,321 - core.database - DEBUG - [DB_OP] Starting get_db session creation
+2026-01-17 04:03:09,321 - core.database - DEBUG - [DB_OP] Database session created successfully in 0.0003s
+2026-01-17 04:03:09,618 - core.database - DEBUG - [DB_OP] Database session cleanup after 0.2975s
+2026-01-17 04:03:20,700 - core.auth - DEBUG - Authentication token validated for user hash: 1fe0bfd6
+2026-01-17 04:03:21,555 - routers.upload - INFO - Column mapping: {'quantita': 3, 'prezzo': 9, 'fornitore': 11, 'categoria': 12}
+2026-01-17 04:03:21,559 - routers.upload - WARNING - Could not parse date string: 4983164895490
+2026-01-17 04:03:21,559 - routers.upload - WARNING - Could not parse date value: 4983164895490, type: <class 'str'>
+2026-01-17 04:03:21,559 - routers.upload - WARNING - Row 2: Missing or invalid data_consegna, skipping
+2026-01-17 04:03:21,560 - routers.upload - WARNING - Could not parse date string: 4983164895506
+2026-01-17 04:03:21,560 - routers.upload - WARNING - Could not parse date value: 4983164895506, type: <class 'str'>
+2026-01-17 04:03:21,560 - routers.upload - WARNING - Row 3: Missing or invalid data_consegna, skipping
+2026-01-17 04:03:21,560 - routers.upload - WARNING - Could not parse date string: 4983164895513
+2026-01-17 04:03:21,560 - routers.upload - WARNING - Could not parse date value: 4983164895513, type: <class 'str'>
+2026-01-17 04:03:21,560 - routers.upload - WARNING - Row 4: Missing or invalid data_consegna, skipping
+2026-01-17 04:03:21,560 - routers.upload - WARNING - Could not parse date string: 4983164895544
+2026-01-17 04:03:21,561 - routers.upload - WARNING - Could not parse date value: 4983164895544, type: <class 'str'>
+2026-01-17 04:03:21,561 - routers.upload - WARNING - Row 5: Missing or invalid data_consegna, skipping
+2026-01-17 04:03:21,561 - routers.upload - WARNING - Could not parse date string: 4983164895599
+2026-01-17 04:03:21,561 - routers.upload - WARNING - Could not parse date value: 4983164895599, type: <class 'str'>
+2026-01-17 04:03:21,561 - routers.upload - WARNING - Row 6: Missing or invalid data_consegna, skipping
+2026-01-17 04:03:21,562 - routers.upload - WARNING - Could not parse date string: 4983164895674
+2026-01-17 04:03:21,562 - routers.upload - WARNING - Could not parse date value: 4983164895674, type: <class 'str'>
+2026-01-17 04:03:21,562 - routers.upload - WARNING - Row 7: Missing or invalid data_consegna, skipping
+2026-01-17 04:03:21,562 - routers.upload - WARNING - Could not parse date string: 4983164895452
+2026-01-17 04:03:21,562 - routers.upload - WARNING - Could not parse date value: 4983164895452, type: <class 'str'>
+2026-01-17 04:03:21,562 - routers.upload - WARNING - Row 8: Missing or invalid data_consegna, skipping
+2026-01-17 04:03:21,563 - routers.upload - WARNING - Could not parse date string: 4983164895230
+2026-01-17 04:03:21,563 - routers.upload - WARNING - Could not parse date value: 4983164895230, type: <class 'str'>
+2026-01-17 04:03:21,563 - routers.upload - WARNING - Row 9: Missing or invalid data_consegna, skipping
+2026-01-17 04:03:21,563 - routers.upload - WARNING - Could not parse date string: 4983164895247
+2026-01-17 04:03:21,563 - routers.upload - WARNING - Could not parse date value: 4983164895247, type: <class 'str'>
+2026-01-17 04:03:21,563 - routers.upload - WARNING - Row 10: Missing or invalid data_consegna, skipping
+2026-01-17 04:03:21,564 - routers.upload - WARNING - Could not parse date string: 4983164895353
+2026-01-17 04:03:21,564 - routers.upload - WARNING - Could not parse date value: 4983164895353, type: <class 'str'>
+2026-01-17 04:03:21,564 - routers.upload - WARNING - Row 11: Missing or invalid data_consegna, skipping
+2026-01-17 04:03:21,564 - routers.upload - WARNING - Could not parse date string: 4983164895438
+2026-01-17 04:03:21,564 - routers.upload - WARNING - Could not parse date value: 4983164895438, type: <class 'str'>
+2026-01-17 04:03:21,564 - routers.upload - WARNING - Row 12: Missing or invalid data_consegna, skipping
+2026-01-17 04:03:21,564 - routers.upload - WARNING - Could not parse date string: 4983164895445
+2026-01-17 04:03:21,564 - routers.upload - WARNING - Could not parse date value: 4983164895445, type: <class 'str'>
+2026-01-17 04:03:21,565 - routers.upload - WARNING - Row 13: Missing or invalid data_consegna, skipping
+2026-01-17 04:03:21,565 - routers.upload - WARNING - Could not parse date string: 4983164895780
+2026-01-17 04:03:21,565 - routers.upload - WARNING - Could not parse date value: 4983164895780, type: <class 'str'>
+2026-01-17 04:03:21,565 - routers.upload - WARNING - Row 14: Missing or invalid data_consegna, skipping
+2026-01-17 04:03:21,621 - routers.upload - INFO - Parsed 0 supplier rows
+2026-01-17 04:03:32,267 - core.auth - DEBUG - Authentication token validated for user hash: 1fe0bfd6
+2026-01-17 04:03:32,268 - core.database - DEBUG - [DB_OP] Starting get_db session creation
+2026-01-17 04:03:32,268 - core.database - DEBUG - [DB_OP] Database session created successfully in 0.0003s
+2026-01-17 04:03:32,269 - routers.analytics - INFO - Analytics request - anno: None, mese: None, categoria: None
+2026-01-17 04:03:32,271 - core.auth - DEBUG - Authentication token validated for user hash: 1fe0bfd6
+2026-01-17 04:03:32,271 - core.database - DEBUG - [DB_OP] Starting get_db session creation
+2026-01-17 04:03:32,271 - core.database - DEBUG - [DB_OP] Database session created successfully in 0.0001s
+2026-01-17 04:03:32,271 - routers.analytics - INFO - Analytics request - anno: None, mese: None, categoria: None
+2026-01-17 04:03:32,758 - routers.analytics - INFO - Acquisti categories: ['Prize', 'Kit']
+2026-01-17 04:03:32,758 - routers.analytics - INFO - Vendite categories: ['Kit', 'Prize', 'Nendo', 'Big', 'Banco', 'Plush']
+2026-01-17 04:03:32,759 - routers.analytics - INFO - Returning 6 categories
+2026-01-17 04:03:32,806 - routers.analytics - INFO - Acquisti categories: ['Prize', 'Kit']
+2026-01-17 04:03:32,807 - routers.analytics - INFO - Vendite categories: ['Kit', 'Prize', 'Nendo', 'Big', 'Banco', 'Plush']
+2026-01-17 04:03:32,807 - routers.analytics - INFO - Returning 6 categories
+2026-01-17 04:03:32,879 - core.database - DEBUG - [DB_OP] Database session cleanup after 0.6085s
+2026-01-17 04:03:32,938 - core.database - DEBUG - [DB_OP] Database session cleanup after 0.6703s
+2026-01-17 04:05:22,946 - core.auth - DEBUG - Authentication token validated for user hash: 1fe0bfd6
+2026-01-17 04:05:22,946 - core.database - DEBUG - [DB_OP] Starting get_db session creation
+2026-01-17 04:05:22,947 - core.database - DEBUG - [DB_OP] Database session created successfully in 0.0003s
+2026-01-17 04:05:22,947 - routers.analytics - INFO - Analytics request - anno: None, mese: None, categoria: None
+2026-01-17 04:05:22,949 - core.auth - DEBUG - Authentication token validated for user hash: 1fe0bfd6
+2026-01-17 04:05:22,949 - core.database - DEBUG - [DB_OP] Starting get_db session creation
+2026-01-17 04:05:22,949 - core.database - DEBUG - [DB_OP] Database session created successfully in 0.0002s
+2026-01-17 04:05:22,949 - routers.analytics - INFO - Analytics request - anno: None, mese: None, categoria: None
+2026-01-17 04:05:23,593 - routers.analytics - INFO - Acquisti categories: ['Prize', 'Kit']
+2026-01-17 04:05:23,594 - routers.analytics - INFO - Vendite categories: ['Kit', 'Prize', 'Nendo', 'Big', 'Banco', 'Plush']
+2026-01-17 04:05:23,594 - routers.analytics - INFO - Returning 6 categories
+2026-01-17 04:05:23,715 - routers.analytics - INFO - Acquisti categories: ['Prize', 'Kit']
+2026-01-17 04:05:23,715 - routers.analytics - INFO - Vendite categories: ['Kit', 'Prize', 'Nendo', 'Big', 'Banco', 'Plush']
+2026-01-17 04:05:23,715 - routers.analytics - INFO - Returning 6 categories
+2026-01-17 04:05:23,724 - core.database - DEBUG - [DB_OP] Database session cleanup after 0.7752s
+2026-01-17 04:05:23,836 - core.database - DEBUG - [DB_OP] Database session cleanup after 0.8892s
+2026-01-17 04:08:48,418 - core.auth - DEBUG - Authentication token validated for user hash: 1fe0bfd6
+2026-01-17 04:08:48,418 - core.database - DEBUG - [DB_OP] Starting get_db session creation
+2026-01-17 04:08:48,418 - core.database - DEBUG - [DB_OP] Database session created successfully in 0.0003s
+2026-01-17 04:08:48,419 - routers.analytics - INFO - Analytics request - anno: None, mese: None, categoria: None
+2026-01-17 04:08:48,424 - core.auth - DEBUG - Authentication token validated for user hash: 1fe0bfd6
+2026-01-17 04:08:48,424 - core.database - DEBUG - [DB_OP] Starting get_db session creation
+2026-01-17 04:08:48,425 - core.database - DEBUG - [DB_OP] Database session created successfully in 0.0002s
+2026-01-17 04:08:48,425 - routers.analytics - INFO - Analytics request - anno: None, mese: None, categoria: None
+2026-01-17 04:08:48,902 - routers.analytics - INFO - Acquisti categories: ['Prize', 'Kit']
+2026-01-17 04:08:48,903 - routers.analytics - INFO - Vendite categories: ['Kit', 'Prize', 'Nendo', 'Big', 'Banco', 'Plush']
+2026-01-17 04:08:48,903 - routers.analytics - INFO - Returning 6 categories
+2026-01-17 04:08:48,935 - routers.analytics - INFO - Acquisti categories: ['Prize', 'Kit']
+2026-01-17 04:08:48,936 - routers.analytics - INFO - Vendite categories: ['Kit', 'Prize', 'Nendo', 'Big', 'Banco', 'Plush']
+2026-01-17 04:08:48,936 - routers.analytics - INFO - Returning 6 categories
+2026-01-17 04:08:49,023 - core.database - DEBUG - [DB_OP] Database session cleanup after 0.5983s
+2026-01-17 04:08:49,066 - core.database - DEBUG - [DB_OP] Database session cleanup after 0.6474s
+2026-01-17 04:13:01,360 - core.auth - DEBUG - Authentication token validated for user hash: 1fe0bfd6
+2026-01-17 04:13:01,360 - core.database - DEBUG - [DB_OP] Starting get_db session creation
+2026-01-17 04:13:01,360 - core.database - DEBUG - [DB_OP] Database session created successfully in 0.0002s
+2026-01-17 04:13:01,361 - routers.analytics - INFO - Analytics request - anno: None, mese: None, categoria: None
+2026-01-17 04:13:01,362 - core.auth - DEBUG - Authentication token validated for user hash: 1fe0bfd6
+2026-01-17 04:13:01,362 - core.database - DEBUG - [DB_OP] Starting get_db session creation
+2026-01-17 04:13:01,363 - core.database - DEBUG - [DB_OP] Database session created successfully in 0.0002s
+2026-01-17 04:13:01,363 - routers.analytics - INFO - Analytics request - anno: None, mese: None, categoria: None
+2026-01-17 04:13:01,960 - routers.analytics - INFO - Acquisti categories: ['Prize', 'Kit']
+2026-01-17 04:13:01,960 - routers.analytics - INFO - Vendite categories: ['Kit', 'Prize', 'Nendo', 'Big', 'Banco', 'Plush']
+2026-01-17 04:13:01,960 - routers.analytics - INFO - Returning 6 categories
+2026-01-17 04:13:01,962 - routers.analytics - INFO - Acquisti categories: ['Prize', 'Kit']
+2026-01-17 04:13:01,962 - routers.analytics - INFO - Vendite categories: ['Kit', 'Prize', 'Nendo', 'Big', 'Banco', 'Plush']
+2026-01-17 04:13:01,962 - routers.analytics - INFO - Returning 6 categories
+2026-01-17 04:13:02,080 - core.database - DEBUG - [DB_OP] Database session cleanup after 0.7181s
+2026-01-17 04:13:02,081 - core.database - DEBUG - [DB_OP] Database session cleanup after 0.7211s
+2026-01-17 04:17:43,254 - core.auth - DEBUG - Authentication token validated for user hash: 1fe0bfd6
+2026-01-17 04:17:43,255 - core.database - DEBUG - [DB_OP] Starting get_db session creation
+2026-01-17 04:17:43,255 - core.database - DEBUG - [DB_OP] Database session created successfully in 0.0002s
+2026-01-17 04:17:43,255 - routers.analytics - INFO - Analytics request - anno: None, mese: None, categoria: None
+2026-01-17 04:17:43,258 - core.auth - DEBUG - Authentication token validated for user hash: 1fe0bfd6
+2026-01-17 04:17:43,258 - core.database - DEBUG - [DB_OP] Starting get_db session creation
+2026-01-17 04:17:43,258 - core.database - DEBUG - [DB_OP] Database session created successfully in 0.0001s
+2026-01-17 04:17:43,259 - routers.analytics - INFO - Analytics request - anno: None, mese: None, categoria: None
+2026-01-17 04:17:43,734 - routers.analytics - INFO - Acquisti categories: ['Prize', 'Kit']
+2026-01-17 04:17:43,734 - routers.analytics - INFO - Vendite categories: ['Kit', 'Prize', 'Nendo', 'Big', 'Banco', 'Plush']
+2026-01-17 04:17:43,735 - routers.analytics - INFO - Returning 6 categories
+2026-01-17 04:17:43,744 - routers.analytics - INFO - Acquisti categories: ['Prize', 'Kit']
+2026-01-17 04:17:43,744 - routers.analytics - INFO - Vendite categories: ['Kit', 'Prize', 'Nendo', 'Big', 'Banco', 'Plush']
+2026-01-17 04:17:43,745 - routers.analytics - INFO - Returning 6 categories
+2026-01-17 04:17:43,856 - core.database - DEBUG - [DB_OP] Database session cleanup after 0.6015s
+2026-01-17 04:17:43,865 - core.database - DEBUG - [DB_OP] Database session cleanup after 0.6063s

@@ -1,0 +1,681 @@
+2026-01-17 02:28:44,344 - main - INFO - === Logging system initialized ===
+2026-01-17 02:28:44,344 - main - INFO - Log file: logs/app_20260117_022844.log
+2026-01-17 02:28:44,344 - main - INFO - Log level: INFO
+2026-01-17 02:28:44,344 - main - INFO - Timestamp: 20260117_022844
+2026-01-17 02:28:44,345 - main - INFO - === Logging system initialized ===
+2026-01-17 02:28:44,345 - main - INFO - Log file: logs/app_20260117_022844.log
+2026-01-17 02:28:44,346 - main - INFO - Log level: INFO
+2026-01-17 02:28:44,346 - main - INFO - Timestamp: 20260117_022844
+2026-01-17 02:28:44,390 - main - INFO - Included router: routers.acquisti.router
+2026-01-17 02:28:44,390 - main - INFO - Included router: routers.acquisti.router
+2026-01-17 02:28:44,935 - main - INFO - Included router: routers.aihub.router
+2026-01-17 02:28:44,936 - main - INFO - Included router: routers.aihub.router
+2026-01-17 02:28:44,948 - main - INFO - Included router: routers.analytics.router
+2026-01-17 02:28:44,948 - main - INFO - Included router: routers.analytics.router
+2026-01-17 02:28:44,962 - main - INFO - Included router: routers.auth.router
+2026-01-17 02:28:44,962 - main - INFO - Included router: routers.auth.router
+2026-01-17 02:28:45,003 - main - INFO - Included router: routers.fornitori.router
+2026-01-17 02:28:45,004 - main - INFO - Included router: routers.fornitori.router
+2026-01-17 02:28:45,032 - main - INFO - Included router: routers.health.router
+2026-01-17 02:28:45,032 - main - INFO - Included router: routers.health.router
+2026-01-17 02:28:45,045 - main - INFO - Included router: routers.settings.router
+2026-01-17 02:28:45,048 - main - INFO - Included router: routers.settings.router
+2026-01-17 02:28:45,182 - main - INFO - Included router: routers.storage.router
+2026-01-17 02:28:45,192 - main - INFO - Included router: routers.storage.router
+2026-01-17 02:28:45,221 - main - INFO - Included router: routers.upload.router
+2026-01-17 02:28:45,239 - main - INFO - Included router: routers.user.router
+2026-01-17 02:28:45,247 - main - INFO - Included router: routers.upload.router
+2026-01-17 02:28:45,259 - main - INFO - Included router: routers.user.router
+2026-01-17 02:28:45,270 - main - INFO - Included router: routers.vendite.router
+2026-01-17 02:28:45,271 - main - INFO - === Application startup initiated ===
+2026-01-17 02:28:45,271 - services.database - DEBUG - [DB_OP] Starting database initialization
+2026-01-17 02:28:45,272 - services.database - INFO - 🔧 Starting database initialization...
+2026-01-17 02:28:45,272 - core.database - INFO - Starting database initialization...
+2026-01-17 02:28:45,272 - core.config - DEBUG - Read dynamic attribute database_url from environment variable DATABASE_URL
+2026-01-17 02:28:45,272 - core.database - INFO - Normalizing database URL for async compatibility...
+2026-01-17 02:28:45,273 - core.database - INFO - Creating async database engine...
+2026-01-17 02:28:45,273 - core.database - INFO - Using QueuePool with connection pooling for non-Lambda environment
+2026-01-17 02:28:45,293 - main - INFO - Included router: routers.vendite.router
+2026-01-17 02:28:45,294 - main - INFO - === Application startup initiated ===
+2026-01-17 02:28:45,294 - services.database - DEBUG - [DB_OP] Starting database initialization
+2026-01-17 02:28:45,295 - services.database - INFO - 🔧 Starting database initialization...
+2026-01-17 02:28:45,295 - core.database - INFO - Starting database initialization...
+2026-01-17 02:28:45,295 - core.config - DEBUG - Read dynamic attribute database_url from environment variable DATABASE_URL
+2026-01-17 02:28:45,295 - core.database - INFO - Normalizing database URL for async compatibility...
+2026-01-17 02:28:45,296 - core.database - INFO - Creating async database engine...
+2026-01-17 02:28:45,296 - core.database - INFO - Using QueuePool with connection pooling for non-Lambda environment
+2026-01-17 02:28:45,321 - core.database - INFO - Database engine created successfully
+2026-01-17 02:28:45,321 - core.database - INFO - Creating async session maker...
+2026-01-17 02:28:45,321 - core.database - INFO - Async session maker created successfully
+2026-01-17 02:28:45,322 - core.database - INFO - Database connection initialized successfully
+2026-01-17 02:28:45,322 - services.database - INFO - 🔧 Database connection initialized, now creating tables if tables not exist...
+2026-01-17 02:28:45,322 - core.database - DEBUG - [DB_OP] Starting create_tables
+2026-01-17 02:28:45,322 - core.database - INFO - 🔧 Starting table creation...
+2026-01-17 02:28:45,335 - core.database - INFO - Database engine created successfully
+2026-01-17 02:28:45,335 - core.database - INFO - Creating async session maker...
+2026-01-17 02:28:45,335 - core.database - INFO - Async session maker created successfully
+2026-01-17 02:28:45,335 - core.database - INFO - Database connection initialized successfully
+2026-01-17 02:28:45,335 - services.database - INFO - 🔧 Database connection initialized, now creating tables if tables not exist...
+2026-01-17 02:28:45,335 - core.database - DEBUG - [DB_OP] Starting create_tables
+2026-01-17 02:28:45,335 - core.database - INFO - 🔧 Starting table creation...
+2026-01-17 02:28:47,126 - core.database - INFO - Tables initialized successfully
+2026-01-17 02:28:47,126 - core.database - DEBUG - [DB_OP] Create tables completed in 1.8045s
+2026-01-17 02:28:47,172 - core.database - INFO - Tables initialized successfully
+2026-01-17 02:28:47,173 - core.database - DEBUG - [DB_OP] Create tables completed in 1.8374s
+2026-01-17 02:28:47,187 - services.database - INFO - 🔧 Table creation completed
+2026-01-17 02:28:47,187 - services.database - INFO - Database initialized successfully
+2026-01-17 02:28:47,187 - services.database - DEBUG - [DB_OP] Database initialization completed in 1.9157s
+2026-01-17 02:28:47,199 - services.mock_data - INFO - Processing mock data file fornitori.json for table fornitori
+2026-01-17 02:28:47,234 - services.database - INFO - 🔧 Table creation completed
+2026-01-17 02:28:47,235 - services.database - INFO - Database initialized successfully
+2026-01-17 02:28:47,235 - services.database - DEBUG - [DB_OP] Database initialization completed in 1.9404s
+2026-01-17 02:28:47,236 - services.mock_data - INFO - Processing mock data file fornitori.json for table fornitori
+2026-01-17 02:28:49,231 - services.mock_data - INFO - Table fornitori already has 4 rows; skipping mock insert
+2026-01-17 02:28:49,291 - services.database - DEBUG - [DB_OP] Starting database initialization
+2026-01-17 02:28:49,292 - services.database - INFO - 🔧 Starting database initialization...
+2026-01-17 02:28:49,292 - core.database - INFO - Starting database initialization...
+2026-01-17 02:28:49,292 - core.database - INFO - Database already initialized
+2026-01-17 02:28:49,292 - services.database - INFO - 🔧 Database connection initialized, now creating tables if tables not exist...
+2026-01-17 02:28:49,292 - core.database - DEBUG - [DB_OP] Starting create_tables
+2026-01-17 02:28:49,292 - core.database - INFO - Tables already initialized
+2026-01-17 02:28:49,292 - services.database - INFO - 🔧 Table creation completed
+2026-01-17 02:28:49,292 - services.database - INFO - Database initialized successfully
+2026-01-17 02:28:49,293 - services.database - DEBUG - [DB_OP] Database initialization completed in 0.0014s
+2026-01-17 02:28:49,293 - core.config - DEBUG - Read dynamic attribute admin_user_id from environment variable ADMIN_USER_ID
+2026-01-17 02:28:49,293 - core.config - DEBUG - Read dynamic attribute admin_user_email from environment variable ADMIN_USER_EMAIL
+2026-01-17 02:28:49,323 - services.mock_data - INFO - Table fornitori already has 4 rows; skipping mock insert
+2026-01-17 02:28:49,385 - services.database - DEBUG - [DB_OP] Starting database initialization
+2026-01-17 02:28:49,385 - services.database - INFO - 🔧 Starting database initialization...
+2026-01-17 02:28:49,385 - core.database - INFO - Starting database initialization...
+2026-01-17 02:28:49,385 - core.database - INFO - Database already initialized
+2026-01-17 02:28:49,386 - services.database - INFO - 🔧 Database connection initialized, now creating tables if tables not exist...
+2026-01-17 02:28:49,386 - core.database - DEBUG - [DB_OP] Starting create_tables
+2026-01-17 02:28:49,386 - core.database - INFO - Tables already initialized
+2026-01-17 02:28:49,386 - services.database - INFO - 🔧 Table creation completed
+2026-01-17 02:28:49,386 - services.database - INFO - Database initialized successfully
+2026-01-17 02:28:49,386 - services.database - DEBUG - [DB_OP] Database initialization completed in 0.0011s
+2026-01-17 02:28:49,386 - core.config - DEBUG - Read dynamic attribute admin_user_id from environment variable ADMIN_USER_ID
+2026-01-17 02:28:49,386 - core.config - DEBUG - Read dynamic attribute admin_user_email from environment variable ADMIN_USER_EMAIL
+2026-01-17 02:28:49,663 - services.auth - DEBUG - Admin user 476166 already exists
+2026-01-17 02:28:49,723 - main - INFO - === Application startup completed successfully ===
+2026-01-17 02:28:49,762 - services.auth - DEBUG - Admin user 476166 already exists
+2026-01-17 02:28:49,825 - main - INFO - === Application startup completed successfully ===
+2026-01-17 02:30:24,021 - core.config - DEBUG - Read dynamic attribute jwt_secret_key from environment variable JWT_SECRET_KEY
+2026-01-17 02:30:24,021 - core.config - DEBUG - Read dynamic attribute jwt_algorithm from environment variable JWT_ALGORITHM
+2026-01-17 02:30:24,045 - core.auth - DEBUG - Authentication token validated for user hash: 1fe0bfd6
+2026-01-17 02:30:24,270 - core.auth - DEBUG - Authentication token validated for user hash: 1fe0bfd6
+2026-01-17 02:30:24,271 - core.database - DEBUG - [DB_OP] Starting get_db session creation
+2026-01-17 02:30:24,271 - core.database - DEBUG - [DB_OP] Database session created successfully in 0.0003s
+2026-01-17 02:30:25,281 - core.database - DEBUG - [DB_OP] Database session cleanup after 1.0099s
+2026-01-17 02:30:56,253 - core.auth - DEBUG - Authentication token validated for user hash: 1fe0bfd6
+2026-01-17 02:30:56,816 - routers.upload - WARNING - Could not parse date: 2025-06-11 00:00:00, using current date
+2026-01-17 02:30:56,817 - routers.upload - WARNING - Could not parse date: 2026-01-15 00:00:00, using current date
+2026-01-17 02:30:56,817 - routers.upload - WARNING - Could not parse date: 2025-06-11 00:00:00, using current date
+2026-01-17 02:30:56,818 - routers.upload - WARNING - Could not parse date: 2026-01-15 00:00:00, using current date
+2026-01-17 02:30:56,818 - routers.upload - WARNING - Could not parse date: 2025-06-11 00:00:00, using current date
+2026-01-17 02:30:56,818 - routers.upload - WARNING - Could not parse date: 2026-01-15 00:00:00, using current date
+2026-01-17 02:30:56,819 - routers.upload - WARNING - Could not parse date: 2025-06-11 00:00:00, using current date
+2026-01-17 02:30:56,819 - routers.upload - WARNING - Could not parse date: 2026-01-15 00:00:00, using current date
+2026-01-17 02:30:56,819 - routers.upload - WARNING - Could not parse date: 2025-06-11 00:00:00, using current date
+2026-01-17 02:30:56,819 - routers.upload - WARNING - Could not parse date: 2026-01-15 00:00:00, using current date
+2026-01-17 02:30:56,820 - routers.upload - WARNING - Could not parse date: 2025-06-11 00:00:00, using current date
+2026-01-17 02:30:56,820 - routers.upload - WARNING - Could not parse date: 2026-01-15 00:00:00, using current date
+2026-01-17 02:30:56,820 - routers.upload - WARNING - Could not parse date: 2025-06-11 00:00:00, using current date
+2026-01-17 02:30:56,820 - routers.upload - WARNING - Could not parse date: 2026-01-15 00:00:00, using current date
+2026-01-17 02:30:56,820 - routers.upload - WARNING - Could not parse date: 2025-06-11 00:00:00, using current date
+2026-01-17 02:30:56,821 - routers.upload - WARNING - Could not parse date: 2026-01-15 00:00:00, using current date
+2026-01-17 02:30:56,821 - routers.upload - WARNING - Could not parse date: 2025-06-11 00:00:00, using current date
+2026-01-17 02:30:56,821 - routers.upload - WARNING - Could not parse date: 2026-01-15 00:00:00, using current date
+2026-01-17 02:30:56,821 - routers.upload - WARNING - Could not parse date: 2025-06-11 00:00:00, using current date
+2026-01-17 02:30:56,821 - routers.upload - WARNING - Could not parse date: 2026-01-15 00:00:00, using current date
+2026-01-17 02:30:56,822 - routers.upload - WARNING - Could not parse date: 2025-06-11 00:00:00, using current date
+2026-01-17 02:30:56,822 - routers.upload - WARNING - Could not parse date: 2026-01-15 00:00:00, using current date
+2026-01-17 02:30:56,822 - routers.upload - WARNING - Could not parse date: 2025-06-11 00:00:00, using current date
+2026-01-17 02:30:56,822 - routers.upload - WARNING - Could not parse date: 2026-01-15 00:00:00, using current date
+2026-01-17 02:30:56,823 - routers.upload - WARNING - Could not parse date: 2025-06-11 00:00:00, using current date
+2026-01-17 02:30:56,823 - routers.upload - WARNING - Could not parse date: 2026-01-15 00:00:00, using current date
+2026-01-17 02:30:56,823 - routers.upload - WARNING - Could not parse date: 2025-06-11 00:00:00, using current date
+2026-01-17 02:30:56,824 - routers.upload - WARNING - Could not parse date: 2026-01-15 00:00:00, using current date
+2026-01-17 02:30:56,824 - routers.upload - WARNING - Could not parse date: 2025-06-11 00:00:00, using current date
+2026-01-17 02:30:56,824 - routers.upload - WARNING - Could not parse date: 2026-01-15 00:00:00, using current date
+2026-01-17 02:30:56,824 - routers.upload - WARNING - Could not parse date: 2025-06-11 00:00:00, using current date
+2026-01-17 02:30:56,825 - routers.upload - WARNING - Could not parse date: 2026-01-15 00:00:00, using current date
+2026-01-17 02:30:56,825 - routers.upload - WARNING - Could not parse date: 2025-06-11 00:00:00, using current date
+2026-01-17 02:30:56,825 - routers.upload - WARNING - Could not parse date: 2026-01-15 00:00:00, using current date
+2026-01-17 02:30:56,825 - routers.upload - WARNING - Could not parse date: 2025-06-11 00:00:00, using current date
+2026-01-17 02:30:56,826 - routers.upload - WARNING - Could not parse date: 2026-01-15 00:00:00, using current date
+2026-01-17 02:30:56,826 - routers.upload - WARNING - Could not parse date: 2025-06-11 00:00:00, using current date
+2026-01-17 02:30:56,826 - routers.upload - WARNING - Could not parse date: 2026-01-15 00:00:00, using current date
+2026-01-17 02:30:56,826 - routers.upload - WARNING - Could not parse date: 2025-06-11 00:00:00, using current date
+2026-01-17 02:30:56,826 - routers.upload - WARNING - Could not parse date: 2026-01-15 00:00:00, using current date
+2026-01-17 02:30:56,827 - routers.upload - WARNING - Could not parse date: 2025-06-11 00:00:00, using current date
+2026-01-17 02:30:56,827 - routers.upload - WARNING - Could not parse date: 2026-01-15 00:00:00, using current date
+2026-01-17 02:30:56,827 - routers.upload - WARNING - Could not parse date: 2025-06-11 00:00:00, using current date
+2026-01-17 02:30:56,827 - routers.upload - WARNING - Could not parse date: 2026-01-15 00:00:00, using current date
+2026-01-17 02:30:56,828 - routers.upload - WARNING - Could not parse date: 2025-06-11 00:00:00, using current date
+2026-01-17 02:30:56,828 - routers.upload - WARNING - Could not parse date: 2026-01-15 00:00:00, using current date
+2026-01-17 02:30:56,828 - routers.upload - WARNING - Could not parse date: 2025-06-11 00:00:00, using current date
+2026-01-17 02:30:56,828 - routers.upload - WARNING - Could not parse date: 2026-01-15 00:00:00, using current date
+2026-01-17 02:30:56,829 - routers.upload - WARNING - Could not parse date: 2025-06-11 00:00:00, using current date
+2026-01-17 02:30:56,829 - routers.upload - WARNING - Could not parse date: 2026-01-15 00:00:00, using current date
+2026-01-17 02:30:56,829 - routers.upload - WARNING - Could not parse date: 2025-06-11 00:00:00, using current date
+2026-01-17 02:30:56,829 - routers.upload - WARNING - Could not parse date: 2026-01-15 00:00:00, using current date
+2026-01-17 02:30:56,829 - routers.upload - WARNING - Could not parse date: 2025-06-11 00:00:00, using current date
+2026-01-17 02:30:56,830 - routers.upload - WARNING - Could not parse date: 2026-01-15 00:00:00, using current date
+2026-01-17 02:30:56,830 - routers.upload - WARNING - Could not parse date: 2025-06-11 00:00:00, using current date
+2026-01-17 02:30:56,830 - routers.upload - WARNING - Could not parse date: 2026-01-15 00:00:00, using current date
+2026-01-17 02:30:56,830 - routers.upload - WARNING - Could not parse date: 2025-06-11 00:00:00, using current date
+2026-01-17 02:30:56,831 - routers.upload - WARNING - Could not parse date: 2026-01-15 00:00:00, using current date
+2026-01-17 02:30:56,831 - routers.upload - WARNING - Could not parse date: 2025-06-11 00:00:00, using current date
+2026-01-17 02:30:56,831 - routers.upload - WARNING - Could not parse date: 2026-01-15 00:00:00, using current date
+2026-01-17 02:30:56,831 - routers.upload - WARNING - Could not parse date: 2025-06-11 00:00:00, using current date
+2026-01-17 02:30:56,831 - routers.upload - WARNING - Could not parse date: 2026-01-15 00:00:00, using current date
+2026-01-17 02:30:56,832 - routers.upload - WARNING - Could not parse date: 2025-06-11 00:00:00, using current date
+2026-01-17 02:30:56,832 - routers.upload - WARNING - Could not parse date: 2026-01-15 00:00:00, using current date
+2026-01-17 02:30:56,832 - routers.upload - WARNING - Could not parse date: 2025-06-11 00:00:00, using current date
+2026-01-17 02:30:56,832 - routers.upload - WARNING - Could not parse date: 2026-01-15 00:00:00, using current date
+2026-01-17 02:30:56,833 - routers.upload - WARNING - Could not parse date: 2025-06-11 00:00:00, using current date
+2026-01-17 02:30:56,833 - routers.upload - WARNING - Could not parse date: 2026-01-15 00:00:00, using current date
+2026-01-17 02:30:56,833 - routers.upload - WARNING - Could not parse date: 2025-06-11 00:00:00, using current date
+2026-01-17 02:30:56,833 - routers.upload - WARNING - Could not parse date: 2026-01-15 00:00:00, using current date
+2026-01-17 02:30:56,833 - routers.upload - WARNING - Could not parse date: 2025-06-11 00:00:00, using current date
+2026-01-17 02:30:56,834 - routers.upload - WARNING - Could not parse date: 2026-01-15 00:00:00, using current date
+2026-01-17 02:30:56,834 - routers.upload - WARNING - Could not parse date: 2025-06-11 00:00:00, using current date
+2026-01-17 02:30:56,834 - routers.upload - WARNING - Could not parse date: 2026-01-15 00:00:00, using current date
+2026-01-17 02:30:56,834 - routers.upload - WARNING - Could not parse date: 2025-06-11 00:00:00, using current date
+2026-01-17 02:30:56,834 - routers.upload - WARNING - Could not parse date: 2026-01-15 00:00:00, using current date
+2026-01-17 02:30:56,835 - routers.upload - WARNING - Could not parse date: 2025-06-11 00:00:00, using current date
+2026-01-17 02:30:56,835 - routers.upload - WARNING - Could not parse date: 2026-01-15 00:00:00, using current date
+2026-01-17 02:30:56,835 - routers.upload - WARNING - Could not parse date: 2025-06-11 00:00:00, using current date
+2026-01-17 02:30:56,835 - routers.upload - WARNING - Could not parse date: 2026-01-15 00:00:00, using current date
+2026-01-17 02:30:56,836 - routers.upload - WARNING - Could not parse date: 2025-06-11 00:00:00, using current date
+2026-01-17 02:30:56,836 - routers.upload - WARNING - Could not parse date: 2026-01-15 00:00:00, using current date
+2026-01-17 02:30:56,836 - routers.upload - WARNING - Could not parse date: 2025-06-11 00:00:00, using current date
+2026-01-17 02:30:56,836 - routers.upload - WARNING - Could not parse date: 2026-01-15 00:00:00, using current date
+2026-01-17 02:30:56,836 - routers.upload - WARNING - Could not parse date: 2025-06-11 00:00:00, using current date
+2026-01-17 02:30:56,837 - routers.upload - WARNING - Could not parse date: 2026-01-15 00:00:00, using current date
+2026-01-17 02:30:56,837 - routers.upload - WARNING - Could not parse date: 2025-06-11 00:00:00, using current date
+2026-01-17 02:30:56,837 - routers.upload - WARNING - Could not parse date: 2026-01-15 00:00:00, using current date
+2026-01-17 02:30:56,837 - routers.upload - WARNING - Could not parse date: 2025-06-11 00:00:00, using current date
+2026-01-17 02:30:56,837 - routers.upload - WARNING - Could not parse date: 2026-01-15 00:00:00, using current date
+2026-01-17 02:30:56,838 - routers.upload - WARNING - Could not parse date: 2025-06-11 00:00:00, using current date
+2026-01-17 02:30:56,838 - routers.upload - WARNING - Could not parse date: 2026-01-15 00:00:00, using current date
+2026-01-17 02:30:56,838 - routers.upload - WARNING - Could not parse date: 2025-06-11 00:00:00, using current date
+2026-01-17 02:30:56,838 - routers.upload - WARNING - Could not parse date: 2026-01-15 00:00:00, using current date
+2026-01-17 02:30:56,839 - routers.upload - WARNING - Could not parse date: 2025-06-11 00:00:00, using current date
+2026-01-17 02:30:56,839 - routers.upload - WARNING - Could not parse date: 2026-01-15 00:00:00, using current date
+2026-01-17 02:30:56,839 - routers.upload - WARNING - Could not parse date: 2025-06-11 00:00:00, using current date
+2026-01-17 02:30:56,839 - routers.upload - WARNING - Could not parse date: 2026-01-15 00:00:00, using current date
+2026-01-17 02:30:56,839 - routers.upload - WARNING - Could not parse date: 2025-06-11 00:00:00, using current date
+2026-01-17 02:30:56,840 - routers.upload - WARNING - Could not parse date: 2026-01-15 00:00:00, using current date
+2026-01-17 02:30:56,840 - routers.upload - WARNING - Could not parse date: 2025-06-11 00:00:00, using current date
+2026-01-17 02:30:56,840 - routers.upload - WARNING - Could not parse date: 2026-01-15 00:00:00, using current date
+2026-01-17 02:30:56,841 - routers.upload - WARNING - Could not parse date: 2025-06-11 00:00:00, using current date
+2026-01-17 02:30:56,841 - routers.upload - WARNING - Could not parse date: 2026-01-15 00:00:00, using current date
+2026-01-17 02:30:56,842 - routers.upload - WARNING - Could not parse date: 2025-06-11 00:00:00, using current date
+2026-01-17 02:30:56,842 - routers.upload - WARNING - Could not parse date: 2026-01-15 00:00:00, using current date
+2026-01-17 02:30:56,842 - routers.upload - WARNING - Could not parse date: 2025-06-11 00:00:00, using current date
+2026-01-17 02:30:56,842 - routers.upload - WARNING - Could not parse date: 2026-01-15 00:00:00, using current date
+2026-01-17 02:30:56,842 - routers.upload - WARNING - Could not parse date: 2025-06-11 00:00:00, using current date
+2026-01-17 02:30:56,843 - routers.upload - WARNING - Could not parse date: 2026-01-15 00:00:00, using current date
+2026-01-17 02:30:56,843 - routers.upload - WARNING - Could not parse date: 2025-06-11 00:00:00, using current date
+2026-01-17 02:30:56,843 - routers.upload - WARNING - Could not parse date: 2026-01-15 00:00:00, using current date
+2026-01-17 02:30:56,843 - routers.upload - WARNING - Could not parse date: 2025-06-11 00:00:00, using current date
+2026-01-17 02:30:56,843 - routers.upload - WARNING - Could not parse date: 2026-01-15 00:00:00, using current date
+2026-01-17 02:30:56,844 - routers.upload - WARNING - Could not parse date: 2025-06-11 00:00:00, using current date
+2026-01-17 02:30:56,844 - routers.upload - WARNING - Could not parse date: 2026-01-15 00:00:00, using current date
+2026-01-17 02:30:56,844 - routers.upload - WARNING - Could not parse date: 2025-06-11 00:00:00, using current date
+2026-01-17 02:30:56,844 - routers.upload - WARNING - Could not parse date: 2026-01-15 00:00:00, using current date
+2026-01-17 02:30:56,845 - routers.upload - WARNING - Could not parse date: 2025-06-11 00:00:00, using current date
+2026-01-17 02:30:56,845 - routers.upload - WARNING - Could not parse date: 2026-01-15 00:00:00, using current date
+2026-01-17 02:30:56,845 - routers.upload - WARNING - Could not parse date: 2025-06-11 00:00:00, using current date
+2026-01-17 02:30:56,845 - routers.upload - WARNING - Could not parse date: 2026-01-15 00:00:00, using current date
+2026-01-17 02:30:56,845 - routers.upload - WARNING - Could not parse date: 2025-06-11 00:00:00, using current date
+2026-01-17 02:30:56,846 - routers.upload - WARNING - Could not parse date: 2026-01-15 00:00:00, using current date
+2026-01-17 02:30:56,846 - routers.upload - WARNING - Could not parse date: 2025-06-11 00:00:00, using current date
+2026-01-17 02:30:56,846 - routers.upload - WARNING - Could not parse date: 2026-01-15 00:00:00, using current date
+2026-01-17 02:30:56,846 - routers.upload - WARNING - Could not parse date: 2025-06-11 00:00:00, using current date
+2026-01-17 02:30:56,847 - routers.upload - WARNING - Could not parse date: 2026-01-15 00:00:00, using current date
+2026-01-17 02:30:56,847 - routers.upload - WARNING - Could not parse date: 2025-06-11 00:00:00, using current date
+2026-01-17 02:30:56,847 - routers.upload - WARNING - Could not parse date: 2026-01-15 00:00:00, using current date
+2026-01-17 02:30:56,847 - routers.upload - WARNING - Could not parse date: 2025-06-11 00:00:00, using current date
+2026-01-17 02:30:56,847 - routers.upload - WARNING - Could not parse date: 2026-01-15 00:00:00, using current date
+2026-01-17 02:30:56,848 - routers.upload - WARNING - Could not parse date: 2025-06-11 00:00:00, using current date
+2026-01-17 02:30:56,848 - routers.upload - WARNING - Could not parse date: 2026-01-15 00:00:00, using current date
+2026-01-17 02:30:56,848 - routers.upload - WARNING - Could not parse date: 2025-06-11 00:00:00, using current date
+2026-01-17 02:30:56,848 - routers.upload - WARNING - Could not parse date: 2026-01-15 00:00:00, using current date
+2026-01-17 02:30:56,849 - routers.upload - WARNING - Could not parse date: 2025-06-11 00:00:00, using current date
+2026-01-17 02:30:56,849 - routers.upload - WARNING - Could not parse date: 2026-01-15 00:00:00, using current date
+2026-01-17 02:30:56,849 - routers.upload - WARNING - Could not parse date: 2025-06-11 00:00:00, using current date
+2026-01-17 02:30:56,849 - routers.upload - WARNING - Could not parse date: 2026-01-15 00:00:00, using current date
+2026-01-17 02:30:56,849 - routers.upload - WARNING - Could not parse date: 2025-06-11 00:00:00, using current date
+2026-01-17 02:30:56,850 - routers.upload - WARNING - Could not parse date: 2026-01-15 00:00:00, using current date
+2026-01-17 02:30:56,850 - routers.upload - WARNING - Could not parse date: 2025-06-11 00:00:00, using current date
+2026-01-17 02:30:56,850 - routers.upload - WARNING - Could not parse date: 2026-01-15 00:00:00, using current date
+2026-01-17 02:30:56,850 - routers.upload - WARNING - Could not parse date: 2025-06-11 00:00:00, using current date
+2026-01-17 02:30:56,851 - routers.upload - WARNING - Could not parse date: 2026-01-15 00:00:00, using current date
+2026-01-17 02:30:58,462 - core.auth - DEBUG - Authentication token validated for user hash: 1fe0bfd6
+2026-01-17 02:30:58,463 - core.database - DEBUG - [DB_OP] Starting get_db session creation
+2026-01-17 02:30:58,464 - core.database - DEBUG - [DB_OP] Database session created successfully in 0.0006s
+2026-01-17 02:30:59,378 - services.acquisti - INFO - Created acquisti with id: 1
+2026-01-17 02:30:59,862 - services.acquisti - INFO - Created acquisti with id: 2
+2026-01-17 02:31:00,354 - services.acquisti - INFO - Created acquisti with id: 3
+2026-01-17 02:31:00,836 - services.acquisti - INFO - Created acquisti with id: 4
+2026-01-17 02:31:01,321 - services.acquisti - INFO - Created acquisti with id: 5
+2026-01-17 02:31:01,806 - services.acquisti - INFO - Created acquisti with id: 6
+2026-01-17 02:31:02,289 - services.acquisti - INFO - Created acquisti with id: 7
+2026-01-17 02:31:02,769 - services.acquisti - INFO - Created acquisti with id: 8
+2026-01-17 02:31:03,251 - services.acquisti - INFO - Created acquisti with id: 9
+2026-01-17 02:31:03,732 - services.acquisti - INFO - Created acquisti with id: 10
+2026-01-17 02:31:04,213 - services.acquisti - INFO - Created acquisti with id: 11
+2026-01-17 02:31:04,693 - services.acquisti - INFO - Created acquisti with id: 12
+2026-01-17 02:31:05,176 - services.acquisti - INFO - Created acquisti with id: 13
+2026-01-17 02:31:05,666 - services.acquisti - INFO - Created acquisti with id: 14
+2026-01-17 02:31:06,147 - services.acquisti - INFO - Created acquisti with id: 15
+2026-01-17 02:31:06,629 - services.acquisti - INFO - Created acquisti with id: 16
+2026-01-17 02:31:07,121 - services.acquisti - INFO - Created acquisti with id: 17
+2026-01-17 02:31:07,603 - services.acquisti - INFO - Created acquisti with id: 18
+2026-01-17 02:31:08,085 - services.acquisti - INFO - Created acquisti with id: 19
+2026-01-17 02:31:08,568 - services.acquisti - INFO - Created acquisti with id: 20
+2026-01-17 02:31:09,048 - services.acquisti - INFO - Created acquisti with id: 21
+2026-01-17 02:31:09,531 - services.acquisti - INFO - Created acquisti with id: 22
+2026-01-17 02:31:10,011 - services.acquisti - INFO - Created acquisti with id: 23
+2026-01-17 02:31:10,491 - services.acquisti - INFO - Created acquisti with id: 24
+2026-01-17 02:31:10,977 - services.acquisti - INFO - Created acquisti with id: 25
+2026-01-17 02:31:11,456 - services.acquisti - INFO - Created acquisti with id: 26
+2026-01-17 02:31:11,939 - services.acquisti - INFO - Created acquisti with id: 27
+2026-01-17 02:31:12,420 - services.acquisti - INFO - Created acquisti with id: 28
+2026-01-17 02:31:12,900 - services.acquisti - INFO - Created acquisti with id: 29
+2026-01-17 02:31:13,382 - services.acquisti - INFO - Created acquisti with id: 30
+2026-01-17 02:31:13,865 - services.acquisti - INFO - Created acquisti with id: 31
+2026-01-17 02:31:14,348 - services.acquisti - INFO - Created acquisti with id: 32
+2026-01-17 02:31:14,837 - services.acquisti - INFO - Created acquisti with id: 33
+2026-01-17 02:31:15,350 - services.acquisti - INFO - Created acquisti with id: 34
+2026-01-17 02:31:15,832 - services.acquisti - INFO - Created acquisti with id: 35
+2026-01-17 02:31:16,316 - services.acquisti - INFO - Created acquisti with id: 36
+2026-01-17 02:31:16,797 - services.acquisti - INFO - Created acquisti with id: 37
+2026-01-17 02:31:17,282 - services.acquisti - INFO - Created acquisti with id: 38
+2026-01-17 02:31:17,763 - services.acquisti - INFO - Created acquisti with id: 39
+2026-01-17 02:31:18,244 - services.acquisti - INFO - Created acquisti with id: 40
+2026-01-17 02:31:18,726 - services.acquisti - INFO - Created acquisti with id: 41
+2026-01-17 02:31:19,205 - services.acquisti - INFO - Created acquisti with id: 42
+2026-01-17 02:31:19,685 - services.acquisti - INFO - Created acquisti with id: 43
+2026-01-17 02:31:20,176 - services.acquisti - INFO - Created acquisti with id: 44
+2026-01-17 02:31:20,659 - services.acquisti - INFO - Created acquisti with id: 45
+2026-01-17 02:31:21,139 - services.acquisti - INFO - Created acquisti with id: 46
+2026-01-17 02:31:21,620 - services.acquisti - INFO - Created acquisti with id: 47
+2026-01-17 02:31:22,103 - services.acquisti - INFO - Created acquisti with id: 48
+2026-01-17 02:31:22,585 - services.acquisti - INFO - Created acquisti with id: 49
+2026-01-17 02:31:23,067 - services.acquisti - INFO - Created acquisti with id: 50
+2026-01-17 02:31:23,549 - services.acquisti - INFO - Created acquisti with id: 51
+2026-01-17 02:31:24,030 - services.acquisti - INFO - Created acquisti with id: 52
+2026-01-17 02:31:24,513 - services.acquisti - INFO - Created acquisti with id: 53
+2026-01-17 02:31:24,995 - services.acquisti - INFO - Created acquisti with id: 54
+2026-01-17 02:31:25,486 - services.acquisti - INFO - Created acquisti with id: 55
+2026-01-17 02:31:25,968 - services.acquisti - INFO - Created acquisti with id: 56
+2026-01-17 02:31:26,452 - services.acquisti - INFO - Created acquisti with id: 57
+2026-01-17 02:31:26,934 - services.acquisti - INFO - Created acquisti with id: 58
+2026-01-17 02:31:27,419 - services.acquisti - INFO - Created acquisti with id: 59
+2026-01-17 02:31:27,899 - services.acquisti - INFO - Created acquisti with id: 60
+2026-01-17 02:31:28,380 - services.acquisti - INFO - Created acquisti with id: 61
+2026-01-17 02:31:28,861 - services.acquisti - INFO - Created acquisti with id: 62
+2026-01-17 02:31:29,350 - services.acquisti - INFO - Created acquisti with id: 63
+2026-01-17 02:31:29,830 - services.acquisti - INFO - Created acquisti with id: 64
+2026-01-17 02:31:30,316 - services.acquisti - INFO - Created acquisti with id: 65
+2026-01-17 02:31:30,803 - services.acquisti - INFO - Created acquisti with id: 66
+2026-01-17 02:31:31,285 - services.acquisti - INFO - Created acquisti with id: 67
+2026-01-17 02:31:31,766 - services.acquisti - INFO - Created acquisti with id: 68
+2026-01-17 02:31:32,251 - services.acquisti - INFO - Created acquisti with id: 69
+2026-01-17 02:31:32,731 - services.acquisti - INFO - Created acquisti with id: 70
+2026-01-17 02:31:33,212 - services.acquisti - INFO - Created acquisti with id: 71
+2026-01-17 02:31:33,736 - services.acquisti - INFO - Created acquisti with id: 72
+2026-01-17 02:31:34,219 - services.acquisti - INFO - Created acquisti with id: 73
+2026-01-17 02:31:34,220 - core.database - DEBUG - [DB_OP] Database session cleanup after 35.7570s
+2026-01-17 02:31:42,171 - core.auth - DEBUG - Authentication token validated for user hash: 1fe0bfd6
+2026-01-17 02:31:42,191 - routers.upload - WARNING - Could not parse date: 2025-01-11 00:00:00, using current date
+2026-01-17 02:31:42,191 - routers.upload - WARNING - Could not parse date: 2025-12-15 00:00:00, using current date
+2026-01-17 02:31:42,191 - routers.upload - WARNING - Could not parse date: 2025-01-11 00:00:00, using current date
+2026-01-17 02:31:42,192 - routers.upload - WARNING - Could not parse date: 2025-12-15 00:00:00, using current date
+2026-01-17 02:31:42,192 - routers.upload - WARNING - Could not parse date: 2025-01-11 00:00:00, using current date
+2026-01-17 02:31:42,192 - routers.upload - WARNING - Could not parse date: 2025-12-15 00:00:00, using current date
+2026-01-17 02:31:42,192 - routers.upload - WARNING - Could not parse date: 2025-01-11 00:00:00, using current date
+2026-01-17 02:31:42,192 - routers.upload - WARNING - Could not parse date: 2025-12-15 00:00:00, using current date
+2026-01-17 02:31:42,193 - routers.upload - WARNING - Could not parse date: 2025-01-11 00:00:00, using current date
+2026-01-17 02:31:42,193 - routers.upload - WARNING - Could not parse date: 2025-12-15 00:00:00, using current date
+2026-01-17 02:31:42,193 - routers.upload - WARNING - Could not parse date: 2025-01-11 00:00:00, using current date
+2026-01-17 02:31:42,193 - routers.upload - WARNING - Could not parse date: 2025-12-15 00:00:00, using current date
+2026-01-17 02:31:42,194 - routers.upload - WARNING - Could not parse date: 2025-01-11 00:00:00, using current date
+2026-01-17 02:31:42,194 - routers.upload - WARNING - Could not parse date: 2025-12-15 00:00:00, using current date
+2026-01-17 02:31:42,194 - routers.upload - WARNING - Could not parse date: 2025-01-11 00:00:00, using current date
+2026-01-17 02:31:42,194 - routers.upload - WARNING - Could not parse date: 2025-12-15 00:00:00, using current date
+2026-01-17 02:31:42,194 - routers.upload - WARNING - Could not parse date: 2025-01-11 00:00:00, using current date
+2026-01-17 02:31:42,195 - routers.upload - WARNING - Could not parse date: 2025-12-15 00:00:00, using current date
+2026-01-17 02:31:42,195 - routers.upload - WARNING - Could not parse date: 2025-01-11 00:00:00, using current date
+2026-01-17 02:31:42,195 - routers.upload - WARNING - Could not parse date: 2025-12-15 00:00:00, using current date
+2026-01-17 02:31:42,195 - routers.upload - WARNING - Could not parse date: 2025-01-11 00:00:00, using current date
+2026-01-17 02:31:42,195 - routers.upload - WARNING - Could not parse date: 2025-12-15 00:00:00, using current date
+2026-01-17 02:31:42,196 - routers.upload - WARNING - Could not parse date: 2025-01-11 00:00:00, using current date
+2026-01-17 02:31:42,196 - routers.upload - WARNING - Could not parse date: 2025-12-15 00:00:00, using current date
+2026-01-17 02:31:42,196 - routers.upload - WARNING - Could not parse date: 2025-01-11 00:00:00, using current date
+2026-01-17 02:31:42,196 - routers.upload - WARNING - Could not parse date: 2025-12-15 00:00:00, using current date
+2026-01-17 02:31:42,196 - routers.upload - WARNING - Could not parse date: 2025-01-11 00:00:00, using current date
+2026-01-17 02:31:42,197 - routers.upload - WARNING - Could not parse date: 2025-12-15 00:00:00, using current date
+2026-01-17 02:31:42,197 - routers.upload - WARNING - Could not parse date: 2025-01-11 00:00:00, using current date
+2026-01-17 02:31:42,197 - routers.upload - WARNING - Could not parse date: 2025-12-15 00:00:00, using current date
+2026-01-17 02:31:42,197 - routers.upload - WARNING - Could not parse date: 2025-01-11 00:00:00, using current date
+2026-01-17 02:31:42,197 - routers.upload - WARNING - Could not parse date: 2025-12-15 00:00:00, using current date
+2026-01-17 02:31:42,198 - routers.upload - WARNING - Could not parse date: 2025-01-11 00:00:00, using current date
+2026-01-17 02:31:42,198 - routers.upload - WARNING - Could not parse date: 2025-12-15 00:00:00, using current date
+2026-01-17 02:31:42,198 - routers.upload - WARNING - Could not parse date: 2025-01-11 00:00:00, using current date
+2026-01-17 02:31:42,198 - routers.upload - WARNING - Could not parse date: 2025-12-15 00:00:00, using current date
+2026-01-17 02:31:42,198 - routers.upload - WARNING - Could not parse date: 2025-01-11 00:00:00, using current date
+2026-01-17 02:31:42,199 - routers.upload - WARNING - Could not parse date: 2025-12-15 00:00:00, using current date
+2026-01-17 02:31:42,199 - routers.upload - WARNING - Could not parse date: 2025-01-11 00:00:00, using current date
+2026-01-17 02:31:42,199 - routers.upload - WARNING - Could not parse date: 2025-12-15 00:00:00, using current date
+2026-01-17 02:31:42,199 - routers.upload - WARNING - Could not parse date: 2025-01-11 00:00:00, using current date
+2026-01-17 02:31:42,199 - routers.upload - WARNING - Could not parse date: 2025-12-15 00:00:00, using current date
+2026-01-17 02:31:42,200 - routers.upload - WARNING - Could not parse date: 2025-01-11 00:00:00, using current date
+2026-01-17 02:31:42,200 - routers.upload - WARNING - Could not parse date: 2025-12-15 00:00:00, using current date
+2026-01-17 02:31:42,200 - routers.upload - WARNING - Could not parse date: 2025-01-11 00:00:00, using current date
+2026-01-17 02:31:42,200 - routers.upload - WARNING - Could not parse date: 2025-12-15 00:00:00, using current date
+2026-01-17 02:31:42,200 - routers.upload - WARNING - Could not parse date: 2025-01-11 00:00:00, using current date
+2026-01-17 02:31:42,201 - routers.upload - WARNING - Could not parse date: 2025-12-15 00:00:00, using current date
+2026-01-17 02:31:42,201 - routers.upload - WARNING - Could not parse date: 2025-01-11 00:00:00, using current date
+2026-01-17 02:31:42,201 - routers.upload - WARNING - Could not parse date: 2025-12-15 00:00:00, using current date
+2026-01-17 02:31:42,201 - routers.upload - WARNING - Could not parse date: 2025-01-11 00:00:00, using current date
+2026-01-17 02:31:42,201 - routers.upload - WARNING - Could not parse date: 2025-12-15 00:00:00, using current date
+2026-01-17 02:31:42,202 - routers.upload - WARNING - Could not parse date: 2025-01-11 00:00:00, using current date
+2026-01-17 02:31:42,202 - routers.upload - WARNING - Could not parse date: 2025-12-15 00:00:00, using current date
+2026-01-17 02:31:42,202 - routers.upload - WARNING - Could not parse date: 2025-01-11 00:00:00, using current date
+2026-01-17 02:31:42,202 - routers.upload - WARNING - Could not parse date: 2025-12-15 00:00:00, using current date
+2026-01-17 02:31:42,202 - routers.upload - WARNING - Could not parse date: 2025-01-11 00:00:00, using current date
+2026-01-17 02:31:42,203 - routers.upload - WARNING - Could not parse date: 2025-12-15 00:00:00, using current date
+2026-01-17 02:31:42,203 - routers.upload - WARNING - Could not parse date: 2025-01-11 00:00:00, using current date
+2026-01-17 02:31:42,203 - routers.upload - WARNING - Could not parse date: 2025-12-15 00:00:00, using current date
+2026-01-17 02:31:42,203 - routers.upload - WARNING - Could not parse date: 2025-01-11 00:00:00, using current date
+2026-01-17 02:31:42,203 - routers.upload - WARNING - Could not parse date: 2025-12-15 00:00:00, using current date
+2026-01-17 02:31:42,204 - routers.upload - WARNING - Could not parse date: 2025-01-11 00:00:00, using current date
+2026-01-17 02:31:42,204 - routers.upload - WARNING - Could not parse date: 2025-12-15 00:00:00, using current date
+2026-01-17 02:31:42,204 - routers.upload - WARNING - Could not parse date: 2025-01-11 00:00:00, using current date
+2026-01-17 02:31:42,204 - routers.upload - WARNING - Could not parse date: 2025-12-15 00:00:00, using current date
+2026-01-17 02:31:42,205 - routers.upload - WARNING - Could not parse date: 2025-01-11 00:00:00, using current date
+2026-01-17 02:31:42,205 - routers.upload - WARNING - Could not parse date: 2025-12-15 00:00:00, using current date
+2026-01-17 02:31:42,205 - routers.upload - WARNING - Could not parse date: 2025-01-11 00:00:00, using current date
+2026-01-17 02:31:42,205 - routers.upload - WARNING - Could not parse date: 2025-12-15 00:00:00, using current date
+2026-01-17 02:31:42,205 - routers.upload - WARNING - Could not parse date: 2025-01-11 00:00:00, using current date
+2026-01-17 02:31:42,206 - routers.upload - WARNING - Could not parse date: 2025-12-15 00:00:00, using current date
+2026-01-17 02:31:42,206 - routers.upload - WARNING - Could not parse date: 2025-01-11 00:00:00, using current date
+2026-01-17 02:31:42,206 - routers.upload - WARNING - Could not parse date: 2025-12-15 00:00:00, using current date
+2026-01-17 02:31:42,206 - routers.upload - WARNING - Could not parse date: 2025-01-11 00:00:00, using current date
+2026-01-17 02:31:42,206 - routers.upload - WARNING - Could not parse date: 2025-12-15 00:00:00, using current date
+2026-01-17 02:31:42,207 - routers.upload - WARNING - Could not parse date: 2025-01-11 00:00:00, using current date
+2026-01-17 02:31:42,207 - routers.upload - WARNING - Could not parse date: 2025-12-15 00:00:00, using current date
+2026-01-17 02:31:42,207 - routers.upload - WARNING - Could not parse date: 2025-01-11 00:00:00, using current date
+2026-01-17 02:31:42,207 - routers.upload - WARNING - Could not parse date: 2025-12-15 00:00:00, using current date
+2026-01-17 02:31:42,208 - routers.upload - WARNING - Could not parse date: 2025-01-11 00:00:00, using current date
+2026-01-17 02:31:42,208 - routers.upload - WARNING - Could not parse date: 2025-12-15 00:00:00, using current date
+2026-01-17 02:31:42,208 - routers.upload - WARNING - Could not parse date: 2025-01-11 00:00:00, using current date
+2026-01-17 02:31:42,208 - routers.upload - WARNING - Could not parse date: 2025-12-15 00:00:00, using current date
+2026-01-17 02:31:42,209 - routers.upload - WARNING - Could not parse date: 2025-01-11 00:00:00, using current date
+2026-01-17 02:31:42,209 - routers.upload - WARNING - Could not parse date: 2025-12-15 00:00:00, using current date
+2026-01-17 02:31:42,209 - routers.upload - WARNING - Could not parse date: 2025-01-11 00:00:00, using current date
+2026-01-17 02:31:42,209 - routers.upload - WARNING - Could not parse date: 2025-12-15 00:00:00, using current date
+2026-01-17 02:31:42,209 - routers.upload - WARNING - Could not parse date: 2025-01-11 00:00:00, using current date
+2026-01-17 02:31:42,210 - routers.upload - WARNING - Could not parse date: 2025-12-15 00:00:00, using current date
+2026-01-17 02:31:42,210 - routers.upload - WARNING - Could not parse date: 2025-01-11 00:00:00, using current date
+2026-01-17 02:31:42,210 - routers.upload - WARNING - Could not parse date: 2025-12-15 00:00:00, using current date
+2026-01-17 02:31:42,210 - routers.upload - WARNING - Could not parse date: 2025-01-11 00:00:00, using current date
+2026-01-17 02:31:42,210 - routers.upload - WARNING - Could not parse date: 2025-12-15 00:00:00, using current date
+2026-01-17 02:31:42,211 - routers.upload - WARNING - Could not parse date: 2025-01-11 00:00:00, using current date
+2026-01-17 02:31:42,211 - routers.upload - WARNING - Could not parse date: 2025-12-15 00:00:00, using current date
+2026-01-17 02:31:42,211 - routers.upload - WARNING - Could not parse date: 2025-01-11 00:00:00, using current date
+2026-01-17 02:31:42,211 - routers.upload - WARNING - Could not parse date: 2025-12-15 00:00:00, using current date
+2026-01-17 02:31:42,211 - routers.upload - WARNING - Could not parse date: 2025-01-11 00:00:00, using current date
+2026-01-17 02:31:42,212 - routers.upload - WARNING - Could not parse date: 2025-12-15 00:00:00, using current date
+2026-01-17 02:31:42,212 - routers.upload - WARNING - Could not parse date: 2025-01-11 00:00:00, using current date
+2026-01-17 02:31:42,212 - routers.upload - WARNING - Could not parse date: 2025-12-15 00:00:00, using current date
+2026-01-17 02:31:42,212 - routers.upload - WARNING - Could not parse date: 2025-01-11 00:00:00, using current date
+2026-01-17 02:31:42,212 - routers.upload - WARNING - Could not parse date: 2025-12-15 00:00:00, using current date
+2026-01-17 02:31:42,213 - routers.upload - WARNING - Could not parse date: 2025-01-11 00:00:00, using current date
+2026-01-17 02:31:42,213 - routers.upload - WARNING - Could not parse date: 2025-12-15 00:00:00, using current date
+2026-01-17 02:31:42,213 - routers.upload - WARNING - Could not parse date: 2025-01-11 00:00:00, using current date
+2026-01-17 02:31:42,213 - routers.upload - WARNING - Could not parse date: 2025-12-15 00:00:00, using current date
+2026-01-17 02:31:42,214 - routers.upload - WARNING - Could not parse date: 2025-01-11 00:00:00, using current date
+2026-01-17 02:31:42,214 - routers.upload - WARNING - Could not parse date: 2025-12-15 00:00:00, using current date
+2026-01-17 02:31:42,214 - routers.upload - WARNING - Could not parse date: 2025-01-11 00:00:00, using current date
+2026-01-17 02:31:42,214 - routers.upload - WARNING - Could not parse date: 2025-12-15 00:00:00, using current date
+2026-01-17 02:31:42,214 - routers.upload - WARNING - Could not parse date: 2025-01-11 00:00:00, using current date
+2026-01-17 02:31:42,215 - routers.upload - WARNING - Could not parse date: 2025-12-15 00:00:00, using current date
+2026-01-17 02:31:42,215 - routers.upload - WARNING - Could not parse date: 2025-01-11 00:00:00, using current date
+2026-01-17 02:31:42,215 - routers.upload - WARNING - Could not parse date: 2025-12-15 00:00:00, using current date
+2026-01-17 02:31:42,215 - routers.upload - WARNING - Could not parse date: 2025-01-11 00:00:00, using current date
+2026-01-17 02:31:42,215 - routers.upload - WARNING - Could not parse date: 2025-12-15 00:00:00, using current date
+2026-01-17 02:31:42,216 - routers.upload - WARNING - Could not parse date: 2025-01-11 00:00:00, using current date
+2026-01-17 02:31:42,216 - routers.upload - WARNING - Could not parse date: 2025-12-15 00:00:00, using current date
+2026-01-17 02:31:42,216 - routers.upload - WARNING - Could not parse date: 2025-01-11 00:00:00, using current date
+2026-01-17 02:31:42,216 - routers.upload - WARNING - Could not parse date: 2025-12-15 00:00:00, using current date
+2026-01-17 02:31:42,216 - routers.upload - WARNING - Could not parse date: 2025-01-11 00:00:00, using current date
+2026-01-17 02:31:42,217 - routers.upload - WARNING - Could not parse date: 2025-12-15 00:00:00, using current date
+2026-01-17 02:31:42,217 - routers.upload - WARNING - Could not parse date: 2025-01-11 00:00:00, using current date
+2026-01-17 02:31:42,217 - routers.upload - WARNING - Could not parse date: 2025-12-15 00:00:00, using current date
+2026-01-17 02:31:42,217 - routers.upload - WARNING - Could not parse date: 2025-01-11 00:00:00, using current date
+2026-01-17 02:31:42,217 - routers.upload - WARNING - Could not parse date: 2025-12-15 00:00:00, using current date
+2026-01-17 02:31:42,218 - routers.upload - WARNING - Could not parse date: 2025-01-11 00:00:00, using current date
+2026-01-17 02:31:42,218 - routers.upload - WARNING - Could not parse date: 2025-12-15 00:00:00, using current date
+2026-01-17 02:31:42,218 - routers.upload - WARNING - Could not parse date: 2025-01-11 00:00:00, using current date
+2026-01-17 02:31:42,218 - routers.upload - WARNING - Could not parse date: 2025-12-15 00:00:00, using current date
+2026-01-17 02:31:42,218 - routers.upload - WARNING - Could not parse date: 2025-01-11 00:00:00, using current date
+2026-01-17 02:31:42,219 - routers.upload - WARNING - Could not parse date: 2025-12-15 00:00:00, using current date
+2026-01-17 02:31:42,219 - routers.upload - WARNING - Could not parse date: 2025-01-11 00:00:00, using current date
+2026-01-17 02:31:42,219 - routers.upload - WARNING - Could not parse date: 2025-12-15 00:00:00, using current date
+2026-01-17 02:31:42,219 - routers.upload - WARNING - Could not parse date: 2025-01-11 00:00:00, using current date
+2026-01-17 02:31:42,219 - routers.upload - WARNING - Could not parse date: 2025-12-15 00:00:00, using current date
+2026-01-17 02:31:42,220 - routers.upload - WARNING - Could not parse date: 2025-01-11 00:00:00, using current date
+2026-01-17 02:31:42,220 - routers.upload - WARNING - Could not parse date: 2025-12-15 00:00:00, using current date
+2026-01-17 02:31:42,220 - routers.upload - WARNING - Could not parse date: 2025-01-11 00:00:00, using current date
+2026-01-17 02:31:42,220 - routers.upload - WARNING - Could not parse date: 2025-12-15 00:00:00, using current date
+2026-01-17 02:31:42,220 - routers.upload - WARNING - Could not parse date: 2025-01-11 00:00:00, using current date
+2026-01-17 02:31:42,221 - routers.upload - WARNING - Could not parse date: 2025-12-15 00:00:00, using current date
+2026-01-17 02:31:42,221 - routers.upload - WARNING - Could not parse date: 2025-01-11 00:00:00, using current date
+2026-01-17 02:31:42,221 - routers.upload - WARNING - Could not parse date: 2025-12-15 00:00:00, using current date
+2026-01-17 02:31:43,857 - core.auth - DEBUG - Authentication token validated for user hash: 1fe0bfd6
+2026-01-17 02:31:43,857 - core.database - DEBUG - [DB_OP] Starting get_db session creation
+2026-01-17 02:31:43,858 - core.database - DEBUG - [DB_OP] Database session created successfully in 0.0003s
+2026-01-17 02:31:44,699 - services.fornitori - INFO - Created fornitori with id: 5
+2026-01-17 02:31:45,136 - services.acquisti - INFO - Created acquisti with id: 74
+2026-01-17 02:31:45,619 - services.acquisti - INFO - Created acquisti with id: 75
+2026-01-17 02:31:46,103 - services.acquisti - INFO - Created acquisti with id: 76
+2026-01-17 02:31:46,584 - services.acquisti - INFO - Created acquisti with id: 77
+2026-01-17 02:31:47,067 - services.acquisti - INFO - Created acquisti with id: 78
+2026-01-17 02:31:47,549 - services.acquisti - INFO - Created acquisti with id: 79
+2026-01-17 02:31:48,031 - services.acquisti - INFO - Created acquisti with id: 80
+2026-01-17 02:31:48,516 - services.acquisti - INFO - Created acquisti with id: 81
+2026-01-17 02:31:48,999 - services.acquisti - INFO - Created acquisti with id: 82
+2026-01-17 02:31:49,481 - services.acquisti - INFO - Created acquisti with id: 83
+2026-01-17 02:31:49,961 - services.acquisti - INFO - Created acquisti with id: 84
+2026-01-17 02:31:50,443 - services.acquisti - INFO - Created acquisti with id: 85
+2026-01-17 02:31:50,925 - services.acquisti - INFO - Created acquisti with id: 86
+2026-01-17 02:31:51,409 - services.acquisti - INFO - Created acquisti with id: 87
+2026-01-17 02:31:51,893 - services.acquisti - INFO - Created acquisti with id: 88
+2026-01-17 02:31:52,379 - services.acquisti - INFO - Created acquisti with id: 89
+2026-01-17 02:31:52,862 - services.acquisti - INFO - Created acquisti with id: 90
+2026-01-17 02:31:53,344 - services.acquisti - INFO - Created acquisti with id: 91
+2026-01-17 02:31:53,828 - services.acquisti - INFO - Created acquisti with id: 92
+2026-01-17 02:31:54,307 - services.acquisti - INFO - Created acquisti with id: 93
+2026-01-17 02:31:54,787 - services.acquisti - INFO - Created acquisti with id: 94
+2026-01-17 02:31:55,269 - services.acquisti - INFO - Created acquisti with id: 95
+2026-01-17 02:31:55,757 - services.acquisti - INFO - Created acquisti with id: 96
+2026-01-17 02:31:56,238 - services.acquisti - INFO - Created acquisti with id: 97
+2026-01-17 02:31:56,721 - services.acquisti - INFO - Created acquisti with id: 98
+2026-01-17 02:31:57,227 - services.acquisti - INFO - Created acquisti with id: 99
+2026-01-17 02:31:57,709 - services.acquisti - INFO - Created acquisti with id: 100
+2026-01-17 02:31:58,190 - services.acquisti - INFO - Created acquisti with id: 101
+2026-01-17 02:31:58,670 - services.acquisti - INFO - Created acquisti with id: 102
+2026-01-17 02:31:59,158 - services.acquisti - INFO - Created acquisti with id: 103
+2026-01-17 02:31:59,641 - services.acquisti - INFO - Created acquisti with id: 104
+2026-01-17 02:32:00,125 - services.acquisti - INFO - Created acquisti with id: 105
+2026-01-17 02:32:00,610 - services.acquisti - INFO - Created acquisti with id: 106
+2026-01-17 02:32:01,097 - services.acquisti - INFO - Created acquisti with id: 107
+2026-01-17 02:32:01,579 - services.acquisti - INFO - Created acquisti with id: 108
+2026-01-17 02:32:02,061 - services.acquisti - INFO - Created acquisti with id: 109
+2026-01-17 02:32:02,544 - services.acquisti - INFO - Created acquisti with id: 110
+2026-01-17 02:32:03,036 - services.acquisti - INFO - Created acquisti with id: 111
+2026-01-17 02:32:03,520 - services.acquisti - INFO - Created acquisti with id: 112
+2026-01-17 02:32:04,001 - services.acquisti - INFO - Created acquisti with id: 113
+2026-01-17 02:32:04,482 - services.acquisti - INFO - Created acquisti with id: 114
+2026-01-17 02:32:04,965 - services.acquisti - INFO - Created acquisti with id: 115
+2026-01-17 02:32:05,447 - services.acquisti - INFO - Created acquisti with id: 116
+2026-01-17 02:32:05,929 - services.acquisti - INFO - Created acquisti with id: 117
+2026-01-17 02:32:06,408 - services.acquisti - INFO - Created acquisti with id: 118
+2026-01-17 02:32:06,890 - services.acquisti - INFO - Created acquisti with id: 119
+2026-01-17 02:32:07,372 - services.acquisti - INFO - Created acquisti with id: 120
+2026-01-17 02:32:07,852 - services.acquisti - INFO - Created acquisti with id: 121
+2026-01-17 02:32:08,337 - services.acquisti - INFO - Created acquisti with id: 122
+2026-01-17 02:32:08,819 - services.acquisti - INFO - Created acquisti with id: 123
+2026-01-17 02:32:09,300 - services.acquisti - INFO - Created acquisti with id: 124
+2026-01-17 02:32:09,780 - services.acquisti - INFO - Created acquisti with id: 125
+2026-01-17 02:32:10,267 - services.acquisti - INFO - Created acquisti with id: 126
+2026-01-17 02:32:10,748 - services.acquisti - INFO - Created acquisti with id: 127
+2026-01-17 02:32:11,232 - services.acquisti - INFO - Created acquisti with id: 128
+2026-01-17 02:32:11,712 - services.acquisti - INFO - Created acquisti with id: 129
+2026-01-17 02:32:12,192 - services.acquisti - INFO - Created acquisti with id: 130
+2026-01-17 02:32:12,673 - services.acquisti - INFO - Created acquisti with id: 131
+2026-01-17 02:32:13,155 - services.acquisti - INFO - Created acquisti with id: 132
+2026-01-17 02:32:13,638 - services.acquisti - INFO - Created acquisti with id: 133
+2026-01-17 02:32:14,118 - services.acquisti - INFO - Created acquisti with id: 134
+2026-01-17 02:32:14,599 - services.acquisti - INFO - Created acquisti with id: 135
+2026-01-17 02:32:15,084 - services.acquisti - INFO - Created acquisti with id: 136
+2026-01-17 02:32:15,564 - services.acquisti - INFO - Created acquisti with id: 137
+2026-01-17 02:32:16,046 - services.acquisti - INFO - Created acquisti with id: 138
+2026-01-17 02:32:16,530 - services.acquisti - INFO - Created acquisti with id: 139
+2026-01-17 02:32:17,012 - services.acquisti - INFO - Created acquisti with id: 140
+2026-01-17 02:32:17,493 - services.acquisti - INFO - Created acquisti with id: 141
+2026-01-17 02:32:17,975 - services.acquisti - INFO - Created acquisti with id: 142
+2026-01-17 02:32:18,456 - services.acquisti - INFO - Created acquisti with id: 143
+2026-01-17 02:32:18,939 - services.acquisti - INFO - Created acquisti with id: 144
+2026-01-17 02:32:19,432 - services.acquisti - INFO - Created acquisti with id: 145
+2026-01-17 02:32:19,915 - services.acquisti - INFO - Created acquisti with id: 146
+2026-01-17 02:32:19,915 - core.database - DEBUG - [DB_OP] Database session cleanup after 36.0579s
+2026-01-17 02:32:30,596 - core.auth - DEBUG - Authentication token validated for user hash: 1fe0bfd6
+2026-01-17 02:32:30,692 - routers.upload - WARNING - Could not parse date: FESTIVAL DEL FUMETTO , using current date
+2026-01-17 02:32:30,692 - routers.upload - WARNING - Could not parse number: =19, using 0.0
+2026-01-17 02:32:30,692 - routers.upload - WARNING - Could not parse date: NERD SHOW, using current date
+2026-01-17 02:32:30,693 - routers.upload - WARNING - Could not parse date: DEDECO, using current date
+2026-01-17 02:32:30,693 - routers.upload - WARNING - Could not parse date: HEROES MIA NL, using current date
+2026-01-17 02:32:30,693 - routers.upload - WARNING - Could not parse date: MADE IN ASIA , using current date
+2026-01-17 02:32:30,693 - routers.upload - WARNING - Could not parse number: =SUM(1+23+5+32+2+43), using 0.0
+2026-01-17 02:32:30,694 - routers.upload - WARNING - Could not parse date: MODEL EXPO ITALY, using current date
+2026-01-17 02:32:30,694 - routers.upload - WARNING - Could not parse date: JAPAN EXPO SUD, using current date
+2026-01-17 02:32:30,695 - routers.upload - WARNING - Could not parse number: =2+1+1+26+32, using 0.0
+2026-01-17 02:32:30,695 - routers.upload - WARNING - Could not parse date: BE COMICS, using current date
+2026-01-17 02:32:30,696 - routers.upload - WARNING - Could not parse number: =23+20, using 0.0
+2026-01-17 02:32:30,696 - routers.upload - WARNING - Could not parse date: LEIPZIGER BUCHMESSE, using current date
+2026-01-17 02:32:30,696 - routers.upload - WARNING - Could not parse number: =48+33+35+30+33+16+54+7, using 0.0
+2026-01-17 02:32:30,696 - routers.upload - WARNING - Could not parse date: FACTS, using current date
+2026-01-17 02:32:30,696 - routers.upload - WARNING - Could not parse number: =46, using 0.0
+2026-01-17 02:32:30,696 - routers.upload - WARNING - Could not parse date: ROMICS, using current date
+2026-01-17 02:32:30,696 - routers.upload - WARNING - Could not parse number: =20+5+11+8+11+29, using 0.0
+2026-01-17 02:32:30,697 - routers.upload - WARNING - Could not parse date: TORINO COMICS, using current date
+2026-01-17 02:32:30,697 - routers.upload - WARNING - Could not parse number: =31+17+12, using 0.0
+2026-01-17 02:32:30,697 - routers.upload - WARNING - Could not parse date: GAMIX, using current date
+2026-01-17 02:32:30,697 - routers.upload - WARNING - Could not parse date: JAPAN TOUCH HARU, using current date
+2026-01-17 02:32:30,697 - routers.upload - WARNING - Could not parse number: =2+13+2+12+1, using 0.0
+2026-01-17 02:32:30,697 - routers.upload - WARNING - Could not parse date: FESTIVAL DEL FUMETTO , using current date
+2026-01-17 02:32:30,698 - routers.upload - WARNING - Could not parse date: METZ TORI, using current date
+2026-01-17 02:32:30,698 - routers.upload - WARNING - Could not parse number: =4+23, using 0.0
+2026-01-17 02:32:30,698 - routers.upload - WARNING - Could not parse date: MMC BERLIN, using current date
+2026-01-17 02:32:30,698 - routers.upload - WARNING - Could not parse date: HANAMI, using current date
+2026-01-17 02:32:30,698 - routers.upload - WARNING - Could not parse date: JTAG, using current date
+2026-01-17 02:32:30,699 - routers.upload - WARNING - Could not parse date: FALCOMICS, using current date
+2026-01-17 02:32:30,699 - routers.upload - WARNING - Could not parse date: ANIMECON, using current date
+2026-01-17 02:32:30,699 - routers.upload - WARNING - Could not parse number: =58, using 0.0
+2026-01-17 02:32:30,699 - routers.upload - WARNING - Could not parse date: HEROES DUTCH, using current date
+2026-01-17 02:32:30,699 - routers.upload - WARNING - Could not parse number: =27+47+6+31+31+1+1, using 0.0
+2026-01-17 02:32:30,699 - routers.upload - WARNING - Could not parse date: DOKOMI, using current date
+2026-01-17 02:32:30,699 - routers.upload - WARNING - Could not parse number: =22+39+135+19+5+12, using 0.0
+2026-01-17 02:32:30,892 - routers.upload - WARNING - Could not parse date: JAPAN EXPO AI, using current date
+2026-01-17 02:32:30,893 - routers.upload - WARNING - Could not parse date: JAPAN EXPO JUNGLE, using current date
+2026-01-17 02:32:30,893 - routers.upload - WARNING - Could not parse number: =52+47+75+6+7+2, using 0.0
+2026-01-17 02:32:30,893 - routers.upload - WARNING - Could not parse date: NARCON SUMMER, using current date
+2026-01-17 02:32:30,893 - routers.upload - WARNING - Could not parse number: =103, using 0.0
+2026-01-17 02:32:30,894 - routers.upload - WARNING - Could not parse date: ANIMAGIC, using current date
+2026-01-17 02:32:30,894 - routers.upload - WARNING - Could not parse date: ABUNAI, using current date
+2026-01-17 02:32:30,894 - routers.upload - WARNING - Could not parse date: GAMESCOM, using current date
+2026-01-17 02:32:30,894 - routers.upload - WARNING - Could not parse number: =5+2+123+110+63+83+33, using 0.0
+2026-01-17 02:32:30,894 - routers.upload - WARNING - Could not parse date: CONNICHI , using current date
+2026-01-17 02:32:30,895 - routers.upload - WARNING - Could not parse number: =8+43, using 0.0
+2026-01-17 02:32:30,895 - routers.upload - WARNING - Could not parse date: MODENA NERD, using current date
+2026-01-17 02:32:30,895 - routers.upload - WARNING - Could not parse number: =13+3+4, using 0.0
+2026-01-17 02:32:30,895 - routers.upload - WARNING - Could not parse date: PESCARA COMIX, using current date
+2026-01-17 02:32:30,895 - routers.upload - WARNING - Could not parse date: MODEL HOBBY SPIEL, using current date
+2026-01-17 02:32:30,895 - routers.upload - WARNING - Could not parse date: NICON, using current date
+2026-01-17 02:32:30,896 - routers.upload - WARNING - Could not parse date: SPIEL , using current date
+2026-01-17 02:32:30,896 - routers.upload - WARNING - Could not parse date: ROMICS, using current date
+2026-01-17 02:32:30,896 - routers.upload - WARNING - Could not parse number: =24+18+1+2+10, using 0.0
+2026-01-17 02:32:30,896 - routers.upload - WARNING - Could not parse date: MEX, using current date
+2026-01-17 02:32:30,896 - routers.upload - WARNING - Could not parse date: MIA WINTER, using current date
+2026-01-17 02:32:30,896 - routers.upload - WARNING - Could not parse number: =15+2+3+4+31+26, using 0.0
+2026-01-17 02:32:30,897 - routers.upload - WARNING - Could not parse date: FACTS, using current date
+2026-01-17 02:32:30,897 - routers.upload - WARNING - Could not parse date: LUCCA SAN FRANCESCO, using current date
+2026-01-17 02:32:30,897 - routers.upload - WARNING - Could not parse number: =38+58+51+79+5, using 0.0
+2026-01-17 02:32:30,897 - routers.upload - WARNING - Could not parse date: LUCCA CENTRO FIERE, using current date
+2026-01-17 02:32:30,897 - routers.upload - WARNING - Could not parse number: =9+10+26+50+92, using 0.0
+2026-01-17 02:32:30,897 - routers.upload - WARNING - Could not parse date: LUCCA padoghe, using current date
+2026-01-17 02:32:30,898 - routers.upload - WARNING - Could not parse date: LUCCA MURA, using current date
+2026-01-17 02:32:30,898 - routers.upload - WARNING - Could not parse date: MGW, using current date
+2026-01-17 02:32:30,898 - routers.upload - WARNING - Could not parse number: =13+8+1+3+7+14+24, using 0.0
+2026-01-17 02:32:30,898 - routers.upload - WARNING - Could not parse date: JAPAN TOUCH , using current date
+2026-01-17 02:33:49,364 - core.auth - DEBUG - Authentication token validated for user hash: 1fe0bfd6
+2026-01-17 02:33:49,485 - routers.upload - WARNING - Could not parse date: FESTIVAL DEL FUMETTO , using current date
+2026-01-17 02:33:49,486 - routers.upload - WARNING - Could not parse date: NERD SHOW, using current date
+2026-01-17 02:33:49,486 - routers.upload - WARNING - Could not parse date: DEDECO, using current date
+2026-01-17 02:33:49,486 - routers.upload - WARNING - Could not parse date: HEROES MIA NL, using current date
+2026-01-17 02:33:49,486 - routers.upload - WARNING - Could not parse date: MADE IN ASIA , using current date
+2026-01-17 02:33:49,487 - routers.upload - WARNING - Could not parse date: MODEL EXPO ITALY, using current date
+2026-01-17 02:33:49,487 - routers.upload - WARNING - Could not parse date: JAPAN EXPO SUD, using current date
+2026-01-17 02:33:49,487 - routers.upload - WARNING - Could not parse date: BE COMICS, using current date
+2026-01-17 02:33:49,488 - routers.upload - WARNING - Could not parse date: LEIPZIGER BUCHMESSE, using current date
+2026-01-17 02:33:49,488 - routers.upload - WARNING - Could not parse date: FACTS, using current date
+2026-01-17 02:33:49,488 - routers.upload - WARNING - Could not parse date: ROMICS, using current date
+2026-01-17 02:33:49,489 - routers.upload - WARNING - Could not parse date: TORINO COMICS, using current date
+2026-01-17 02:33:49,489 - routers.upload - WARNING - Could not parse date: GAMIX, using current date
+2026-01-17 02:33:49,489 - routers.upload - WARNING - Could not parse date: JAPAN TOUCH HARU, using current date
+2026-01-17 02:33:49,489 - routers.upload - WARNING - Could not parse date: FESTIVAL DEL FUMETTO , using current date
+2026-01-17 02:33:49,490 - routers.upload - WARNING - Could not parse date: METZ TORI, using current date
+2026-01-17 02:33:49,490 - routers.upload - WARNING - Could not parse date: MMC BERLIN, using current date
+2026-01-17 02:33:49,490 - routers.upload - WARNING - Could not parse date: HANAMI, using current date
+2026-01-17 02:33:49,490 - routers.upload - WARNING - Could not parse date: JTAG, using current date
+2026-01-17 02:33:49,490 - routers.upload - WARNING - Could not parse date: FALCOMICS, using current date
+2026-01-17 02:33:49,491 - routers.upload - WARNING - Could not parse date: ANIMECON, using current date
+2026-01-17 02:33:49,491 - routers.upload - WARNING - Could not parse date: HEROES DUTCH, using current date
+2026-01-17 02:33:49,491 - routers.upload - WARNING - Could not parse date: DOKOMI, using current date
+2026-01-17 02:33:49,504 - routers.upload - WARNING - Could not parse date: JAPAN EXPO AI, using current date
+2026-01-17 02:33:49,505 - routers.upload - WARNING - Could not parse date: JAPAN EXPO JUNGLE, using current date
+2026-01-17 02:33:49,505 - routers.upload - WARNING - Could not parse date: NARCON SUMMER, using current date
+2026-01-17 02:33:49,505 - routers.upload - WARNING - Could not parse date: ANIMAGIC, using current date
+2026-01-17 02:33:49,505 - routers.upload - WARNING - Could not parse date: ABUNAI, using current date
+2026-01-17 02:33:49,505 - routers.upload - WARNING - Could not parse date: GAMESCOM, using current date
+2026-01-17 02:33:49,506 - routers.upload - WARNING - Could not parse date: CONNICHI , using current date
+2026-01-17 02:33:49,506 - routers.upload - WARNING - Could not parse date: MODENA NERD, using current date
+2026-01-17 02:33:49,506 - routers.upload - WARNING - Could not parse date: PESCARA COMIX, using current date
+2026-01-17 02:33:49,506 - routers.upload - WARNING - Could not parse date: MODEL HOBBY SPIEL, using current date
+2026-01-17 02:33:49,506 - routers.upload - WARNING - Could not parse date: NICON, using current date
+2026-01-17 02:33:49,507 - routers.upload - WARNING - Could not parse date: SPIEL , using current date
+2026-01-17 02:33:49,507 - routers.upload - WARNING - Could not parse date: ROMICS, using current date
+2026-01-17 02:33:49,507 - routers.upload - WARNING - Could not parse date: MEX, using current date
+2026-01-17 02:33:49,507 - routers.upload - WARNING - Could not parse date: MIA WINTER, using current date
+2026-01-17 02:33:49,507 - routers.upload - WARNING - Could not parse date: FACTS, using current date
+2026-01-17 02:33:49,508 - routers.upload - WARNING - Could not parse date: LUCCA SAN FRANCESCO, using current date
+2026-01-17 02:33:49,508 - routers.upload - WARNING - Could not parse date: LUCCA CENTRO FIERE, using current date
+2026-01-17 02:33:49,508 - routers.upload - WARNING - Could not parse date: LUCCA padoghe, using current date
+2026-01-17 02:33:49,508 - routers.upload - WARNING - Could not parse date: LUCCA MURA, using current date
+2026-01-17 02:33:49,509 - routers.upload - WARNING - Could not parse date: MGW, using current date
+2026-01-17 02:33:49,509 - routers.upload - WARNING - Could not parse date: JAPAN TOUCH , using current date
+2026-01-17 02:37:43,038 - services.database - DEBUG - [DB_OP] Starting database close
+2026-01-17 02:37:43,039 - core.database - INFO - Database connection closed and engine disposed
+2026-01-17 02:37:43,039 - services.database - INFO - Database connections closed
+2026-01-17 02:37:43,040 - services.database - DEBUG - [DB_OP] Database close completed in 0.0012s
+2026-01-17 02:37:43,100 - services.database - DEBUG - [DB_OP] Starting database close
+2026-01-17 02:37:43,101 - core.database - INFO - Database connection closed and engine disposed
+2026-01-17 02:37:43,102 - services.database - INFO - Database connections closed
+2026-01-17 02:37:43,102 - services.database - DEBUG - [DB_OP] Database close completed in 0.0014s

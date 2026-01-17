@@ -1,0 +1,79 @@
+2026-01-17 03:49:22,689 - main - INFO - === Logging system initialized ===
+2026-01-17 03:49:22,689 - main - INFO - Log file: logs/app_20260117_034922.log
+2026-01-17 03:49:22,689 - main - INFO - Log level: INFO
+2026-01-17 03:49:22,689 - main - INFO - Timestamp: 20260117_034922
+2026-01-17 03:49:22,741 - main - INFO - Included router: routers.acquisti.router
+2026-01-17 03:49:23,337 - main - INFO - Included router: routers.aihub.router
+2026-01-17 03:49:23,354 - main - INFO - Included router: routers.analytics.router
+2026-01-17 03:49:23,362 - main - INFO - Included router: routers.auth.router
+2026-01-17 03:49:23,366 - main - INFO - Included router: routers.custom_auth.router
+2026-01-17 03:49:23,381 - main - INFO - Included router: routers.data.router
+2026-01-17 03:49:23,521 - main - INFO - Included router: routers.fornitori.router
+2026-01-17 03:49:23,523 - main - INFO - Included router: routers.health.router
+2026-01-17 03:49:23,536 - main - INFO - Included router: routers.settings.router
+2026-01-17 03:49:23,575 - main - INFO - Included router: routers.storage.router
+2026-01-17 03:49:23,589 - main - INFO - Included router: routers.upload.router
+2026-01-17 03:49:23,595 - main - INFO - Included router: routers.user.router
+2026-01-17 03:49:23,624 - main - INFO - Included router: routers.vendite.router
+2026-01-17 03:49:23,625 - main - INFO - === Application startup initiated ===
+2026-01-17 03:49:23,625 - services.database - DEBUG - [DB_OP] Starting database initialization
+2026-01-17 03:49:23,626 - services.database - INFO - 🔧 Starting database initialization...
+2026-01-17 03:49:23,626 - core.database - INFO - Starting database initialization...
+2026-01-17 03:49:23,626 - core.config - DEBUG - Read dynamic attribute database_url from environment variable DATABASE_URL
+2026-01-17 03:49:23,626 - core.database - INFO - Normalizing database URL for async compatibility...
+2026-01-17 03:49:23,627 - core.database - INFO - Creating async database engine...
+2026-01-17 03:49:23,627 - core.database - INFO - Using QueuePool with connection pooling for non-Lambda environment
+2026-01-17 03:49:23,672 - core.database - INFO - Database engine created successfully
+2026-01-17 03:49:23,672 - core.database - INFO - Creating async session maker...
+2026-01-17 03:49:23,672 - core.database - INFO - Async session maker created successfully
+2026-01-17 03:49:23,672 - core.database - INFO - Database connection initialized successfully
+2026-01-17 03:49:23,673 - services.database - INFO - 🔧 Database connection initialized, now creating tables if tables not exist...
+2026-01-17 03:49:23,673 - core.database - DEBUG - [DB_OP] Starting create_tables
+2026-01-17 03:49:23,673 - core.database - INFO - 🔧 Starting table creation...
+2026-01-17 03:49:25,589 - core.database - INFO - Tables initialized successfully
+2026-01-17 03:49:25,589 - core.database - DEBUG - [DB_OP] Create tables completed in 1.9165s
+2026-01-17 03:49:25,654 - services.database - INFO - 🔧 Table creation completed
+2026-01-17 03:49:25,654 - services.database - INFO - Database initialized successfully
+2026-01-17 03:49:25,654 - services.database - DEBUG - [DB_OP] Database initialization completed in 2.0291s
+2026-01-17 03:49:25,656 - services.mock_data - INFO - Processing mock data file fornitori.json for table fornitori
+2026-01-17 03:49:27,848 - services.mock_data - INFO - Table fornitori already has 5 rows; skipping mock insert
+2026-01-17 03:49:27,914 - services.database - DEBUG - [DB_OP] Starting database initialization
+2026-01-17 03:49:27,914 - services.database - INFO - 🔧 Starting database initialization...
+2026-01-17 03:49:27,914 - core.database - INFO - Starting database initialization...
+2026-01-17 03:49:27,914 - core.database - INFO - Database already initialized
+2026-01-17 03:49:27,915 - services.database - INFO - 🔧 Database connection initialized, now creating tables if tables not exist...
+2026-01-17 03:49:27,915 - core.database - DEBUG - [DB_OP] Starting create_tables
+2026-01-17 03:49:27,915 - core.database - INFO - Tables already initialized
+2026-01-17 03:49:27,915 - services.database - INFO - 🔧 Table creation completed
+2026-01-17 03:49:27,915 - services.database - INFO - Database initialized successfully
+2026-01-17 03:49:27,915 - services.database - DEBUG - [DB_OP] Database initialization completed in 0.0012s
+2026-01-17 03:49:27,915 - core.config - DEBUG - Read dynamic attribute admin_user_id from environment variable ADMIN_USER_ID
+2026-01-17 03:49:27,915 - core.config - DEBUG - Read dynamic attribute admin_user_email from environment variable ADMIN_USER_EMAIL
+2026-01-17 03:49:28,314 - services.auth - DEBUG - Admin user 476166 already exists
+2026-01-17 03:49:28,378 - main - INFO - === Application startup completed successfully ===
+2026-01-17 03:49:36,482 - core.config - DEBUG - Read dynamic attribute jwt_secret_key from environment variable JWT_SECRET_KEY
+2026-01-17 03:49:36,482 - core.config - DEBUG - Read dynamic attribute jwt_algorithm from environment variable JWT_ALGORITHM
+2026-01-17 03:49:36,506 - core.auth - DEBUG - Authentication token validated for user hash: 1fe0bfd6
+2026-01-17 03:49:36,506 - core.database - DEBUG - [DB_OP] Starting get_db session creation
+2026-01-17 03:49:36,506 - core.database - DEBUG - [DB_OP] Database session created successfully in 0.0002s
+2026-01-17 03:49:36,507 - routers.analytics - INFO - Analytics request - anno: None, mese: None, categoria: None
+2026-01-17 03:49:36,509 - core.auth - DEBUG - Authentication token validated for user hash: 1fe0bfd6
+2026-01-17 03:49:36,509 - core.database - DEBUG - [DB_OP] Starting get_db session creation
+2026-01-17 03:49:36,510 - core.database - DEBUG - [DB_OP] Database session created successfully in 0.0001s
+2026-01-17 03:49:36,510 - routers.analytics - INFO - Analytics request - anno: None, mese: None, categoria: None
+2026-01-17 03:49:37,292 - routers.analytics - INFO - Acquisti categories: ['Prize', 'Kit']
+2026-01-17 03:49:37,292 - routers.analytics - INFO - Vendite categories: ['Kit', 'Prize', 'Nendo', 'Big', 'Banco', 'Plush']
+2026-01-17 03:49:37,292 - routers.analytics - INFO - Returning 6 categories
+2026-01-17 03:49:37,555 - core.database - DEBUG - [DB_OP] Database session cleanup after 1.0491s
+2026-01-17 03:49:37,911 - routers.analytics - INFO - Acquisti categories: ['Prize', 'Kit']
+2026-01-17 03:49:37,911 - routers.analytics - INFO - Vendite categories: ['Kit', 'Prize', 'Nendo', 'Big', 'Banco', 'Plush']
+2026-01-17 03:49:37,911 - routers.analytics - INFO - Returning 6 categories
+2026-01-17 03:49:38,172 - core.database - DEBUG - [DB_OP] Database session cleanup after 1.6627s
+2026-01-17 03:49:45,113 - core.auth - DEBUG - Authentication token validated for user hash: 1fe0bfd6
+2026-01-17 03:49:45,113 - core.database - DEBUG - [DB_OP] Starting get_db session creation
+2026-01-17 03:49:45,114 - core.database - DEBUG - [DB_OP] Database session created successfully in 0.0003s
+2026-01-17 03:49:45,503 - core.database - DEBUG - [DB_OP] Database session cleanup after 0.3894s
+2026-01-17 03:51:46,165 - services.database - DEBUG - [DB_OP] Starting database close
+2026-01-17 03:51:46,301 - core.database - INFO - Database connection closed and engine disposed
+2026-01-17 03:51:46,301 - services.database - INFO - Database connections closed
+2026-01-17 03:51:46,301 - services.database - DEBUG - [DB_OP] Database close completed in 0.1364s
